@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.928" height="47.927" viewBox="0 0 47.928 47.927">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_773" data-name="Rectangle 773" width="47.928" height="47.928" transform="translate(0 0)" fill="#8f8f8f"/>
+    </clipPath>
+  </defs>
+  <g id="brandico_facebook-rect" clip-path="url(#clip-path)">
+    <path id="Path_1071" data-name="Path 1071" d="M8.628,0A8.61,8.61,0,0,0,0,8.628v30a8.61,8.61,0,0,0,8.628,8.628H24.886V28.78H20V22.129h4.885V16.447c0-4.464,2.886-8.563,9.535-8.563a40.327,40.327,0,0,1,4.682.258l-.157,6.211s-2.03-.019-4.245-.019c-2.4,0-2.782,1.1-2.782,2.939v4.857h7.218l-.315,6.651h-6.9V47.252h6.705a8.609,8.609,0,0,0,8.628-8.628v-30A8.61,8.61,0,0,0,38.624,0h-30Z" transform="translate(-0.009 0.337)" fill="#8f8f8f"/>
+  </g>
+</svg>

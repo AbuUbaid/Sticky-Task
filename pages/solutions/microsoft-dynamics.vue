@@ -1,0 +1,142 @@
+<template>
+  <div>
+    <div class="banner-container solution-banner">
+      <div class="contain">
+        <h1>One-Stop-Shop For Remote Comprehensive Management Needs</h1>
+      </div>
+    </div>
+
+    <div class="featured-features">
+      <div class="home-container">
+        <h2 class="text-center">
+          We promise Continuous delivery, deployment and best infrastructure
+          automation.
+        </h2>
+        <div class="features">
+          <div class="feature">
+            <img src="~/assets/icons/evaluation.svg" alt="Evaluation icon" />
+            <h4>DevOps Assessment</h4>
+            <p>
+              DevOps practice evaluation, existing infrastructure audit,
+              development pipeline assessment, eliminating redundant work, and
+              identifying the correct set of DevOps tools are all part of our
+              DevOps assessment.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="~/assets/icons/evaluation.svg" alt="Evaluation icon" />
+            <h4>DevOps Assessment</h4>
+            <p>
+              DevOps practice evaluation, existing infrastructure audit,
+              development pipeline assessment, eliminating redundant work, and
+              identifying the correct set of DevOps tools are all part of our
+              DevOps assessment.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="~/assets/icons/evaluation.svg" alt="Evaluation icon" />
+            <h4>DevOps Assessment</h4>
+            <p>
+              DevOps practice evaluation, existing infrastructure audit,
+              development pipeline assessment, eliminating redundant work, and
+              identifying the correct set of DevOps tools are all part of our
+              DevOps assessment.
+            </p>
+          </div>
+          <div class="feature">
+            <img src="~/assets/icons/evaluation.svg" alt="Evaluation icon" />
+            <h4>DevOps Assessment</h4>
+            <p>
+              DevOps practice evaluation, existing infrastructure audit,
+              development pipeline assessment, eliminating redundant work, and
+              identifying the correct set of DevOps tools are all part of our
+              DevOps assessment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="digital-solutions">
+      <h2 class="text-center">Devops Tools We Leverage</h2>
+      <img src="~/assets/icons/tools1.svg" alt="Ecommerce Solutions" />
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  components: {},
+  name: "MicrosoftDynamics",
+  data: () => {
+    return {};
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+.solution-banner {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  background: url("~/assets/images/about.jpg");
+  .contain {
+    margin-left: 70px;
+    h1 {
+      width: 820px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.featured-features {
+  background: #f2f5ff;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  h2 {
+    color: black;
+  }
+  .features {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    gap: 4%;
+    .feature {
+      margin-bottom: 40px;
+      width: 48%;
+      img {
+        width: 50px;
+      }
+      h4 {
+        font-size: 18px;
+        color: #ef861d;
+        font-weight: 500;
+        font-family: "Gilroy-Medium";
+        margin-top: 10px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.digital-solutions {
+  padding: 50px;
+  text-align: center;
+  h2 {
+    color: black;
+    margin-bottom: 50px;
+  }
+  img {
+    width: 90%;
+  }
+}
+</style>
