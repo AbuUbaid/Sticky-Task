@@ -68,4 +68,57 @@ export default {
   width: 212px;
   height: 212px;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .secpage-images {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fbfbfb 0% 0% no-repeat padding-box;
+    opacity: 1;
+    gap: 20px;
+    align-items: center;
+    justify-content: start;
+    margin: 30px auto;
+    padding: 20px;
+    position: relative;
+  }
+
+  .fi-first h2 {
+    color: #091756;
+    margin-top: 10px;
+  }
+  .fi-first img {
+    width: 94px;
+    position: absolute;
+    top: -20px;
+    left: 18px;
+  }
+
+  .secpage-images .fi-first {
+    margin: 0;
+  }
+
+  .secpage-images .fi-first {
+    margin: 0;
+  }
+
+  .square {
+    width: 80%;
+    height: auto;
+    display: none;
+  }
+
+  .rec {
+    width: 50%;
+    height: auto;
+  }
+
+  .circle {
+    width: 40%;
+    height: auto;
+  }
+}
 </style>

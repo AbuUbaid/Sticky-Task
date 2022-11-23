@@ -101,7 +101,6 @@
       absolute
       temporary
       height="100vh"
-      width="45vw"
       @transitionend="checkDrawer"
     >
       <div class="menu-container">
@@ -174,6 +173,18 @@ export default {
         this.industryOpen = false;
       }
     },
+    closeMega() {
+      return;
+      if (
+        this.serviceOpen == true ||
+        this.solutionOpen == true ||
+        this.industryOpen == true
+      ) {
+        this.serviceOpen = false;
+        this.solutionOpen = false;
+        this.industryOpen = false;
+      }
+    },
   },
 };
 </script>
@@ -215,13 +226,16 @@ export default {
       font-size: 40px;
       margin-bottom: 25px;
       position: relative;
-      cursor: pointer;
       a {
         color: black;
         display: block;
+        cursor: pointer;
       }
       img {
         width: 12px;
+        box-sizing: content-box;
+        padding-left: 50px;
+        cursor: pointer;
       }
     }
     .menu-item.sub-menu-item {
@@ -246,6 +260,7 @@ export default {
 
 .v-navigation-drawer {
   z-index: -1;
+  width: 45vw !important;
 }
 
 .mega-menu {
@@ -277,5 +292,112 @@ export default {
 .mega-menu a {
   color: white;
   font-size: 30px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media all and (max-width: 480px) {
+  .main-header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    .header-body {
+      height: 60px;
+      background: white;
+      padding: 0px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        img {
+          width: 100px;
+        }
+      }
+      .menu {
+        img {
+          width: 70px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .menu-container {
+    padding: 20px;
+    padding-top: 120px;
+    .menu {
+      list-style: none;
+      .menu-item {
+        font-size: 28px;
+        margin-bottom: 25px;
+        position: relative;
+        a {
+          color: black;
+          display: block;
+          cursor: pointer;
+        }
+        img {
+          width: 12px;
+          box-sizing: content-box;
+          padding-left: 50px;
+          cursor: pointer;
+        }
+      }
+      .menu-item.sub-menu-item {
+        display: flex;
+        justify-content: space-between;
+        a {
+          flex: 1;
+        }
+      }
+      .menu-item.sub-menu-item.services {
+        display: flex;
+        justify-content: space-between;
+        a {
+          flex: 0;
+        }
+        img {
+          width: 12px;
+        }
+      }
+    }
+  }
+
+  .mega-menu {
+    height: 100vh;
+    background-color: #091756;
+    position: fixed;
+    width: 70vw;
+    left: 0vw;
+    top: 0;
+    display: flex;
+    padding: 20px;
+    padding-top: 120px;
+    transition: transform 0.7s cubic-bezier(0.32, 0.01, 0, 1);
+    transform: translateX(-100vw);
+    z-index: 1;
+  }
+
+  .mega-menu.open {
+    transform: translateX(0);
+  }
+
+  .mega-menu .menu-side {
+    list-style: none;
+  }
+
+  .mega-menu .menu-side li {
+    margin-bottom: 35px;
+  }
+  .mega-menu a {
+    color: white;
+    font-size: 20px;
+  }
+
+  .v-navigation-drawer {
+    width: 85vw !important;
+  }
 }
 </style>

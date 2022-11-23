@@ -93,4 +93,23 @@ export default {
   font-size: 20px;
   line-height: 1.4em;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .casestudy-slider > h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .case-slide {
+    padding: 0px 20px;
+  }
+
+  .case-slide p {
+    width: 100%;
+  }
+}
 </style>

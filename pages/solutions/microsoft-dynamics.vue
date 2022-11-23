@@ -139,4 +139,75 @@ export default {
     width: 90%;
   }
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .solution-banner {
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    background: url("~/assets/images/about.jpg");
+    .contain {
+      margin-left: 20px;
+      h1 {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .featured-features {
+    background: #f2f5ff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    h2 {
+      color: black;
+      text-align: left;
+    }
+    .features {
+      display: flex;
+      margin-top: 50px;
+      flex-wrap: wrap;
+      gap: 8%;
+      .feature {
+        margin-bottom: 40px;
+        width: 100%;
+        img {
+          width: 50px;
+        }
+        h4 {
+          font-size: 18px;
+          color: #ef861d;
+          font-weight: 500;
+          font-family: "Gilroy-Medium";
+          margin-top: 10px;
+          margin-bottom: 15px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .digital-solutions {
+    padding: 20px;
+    text-align: center;
+    h2 {
+      color: black;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
 </style>

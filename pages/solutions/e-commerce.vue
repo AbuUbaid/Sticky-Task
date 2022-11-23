@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="banner-container solution-banner" >
+    <div class="banner-container solution-banner">
       <div class="contain">
         <h1 class="text-center">
           One-Stop-Shop For Remote Comprehensive Management Needs
@@ -104,39 +104,6 @@ export default {
   width: 1100px;
 }
 
-.featured-feature {
-  margin: 50px auto;
-  display: flex;
-  gap: 80px;
-  .image-area {
-    width: 50%;
-    flex-basis: 50%;
-    img {
-      width: 100%;
-    }
-  }
-  .text-area {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 50%;
-    flex-basis: 50%;
-    h2 {
-      font-family: "Gilroy-Regular";
-      font-weight: normal;
-      color: black;
-    }
-    p {
-      margin-top: 20px;
-    }
-  }
-}
-.featured-feature.reversed {
-  .image-area {
-    order: 1;
-  }
-}
-
 .features {
   display: flex;
   margin-top: 80px;
@@ -193,6 +160,77 @@ export default {
   }
   img {
     width: 90%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .solution-banner {
+    .contain {
+      h1 {
+        width: 100%;
+      }
+    }
+  }
+
+  .entry-text {
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .image-area {
+      flex-basis: 100%;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      h2 {
+        margin-bottom: 10px;
+        color: black;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .text-area {
+      flex-basis: 100%;
+      margin-top: 30px;
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+      .solution {
+        margin-bottom: 25px;
+        h4 {
+          color: #ef861d;
+          font-size: 20px;
+          font-family: "Gilroy-Regular";
+          font-weight: normal;
+        }
+        p {
+          font-size: 20px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .digital-solutions {
+    padding: 20px;
+    h2 {
+      color: black;
+    }
+    > p {
+      width: 100%;
+      margin-bottom: 30px;
+    }
   }
 }
 </style>

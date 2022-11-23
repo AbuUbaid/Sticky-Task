@@ -162,3 +162,66 @@ ul {
 .testi-slider .v-window__next img {
   width: 30px;
 }
+
+.v-navigation-drawer {
+  width: 45vw !important;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .home-container {
+    padding: 0px 30px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 0px 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  
+}

@@ -79,4 +79,48 @@ export default {
     }
   }
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .solution-features {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .cards {
+      .card {
+        border: 0.5px solid #707070;
+        border-radius: 12px;
+        padding: 20px;
+        width: 100%;
+        margin-bottom: 2%;
+
+        h4 {
+          color: #ef861d;
+          font-size: 20px;
+          font-family: "Gilroy-Regular";
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          span {
+            margin-right: 15px;
+            color: white;
+            background-color: #091756;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        p {
+          font-size: 18px;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
 </style>

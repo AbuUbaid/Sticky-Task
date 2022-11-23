@@ -40,7 +40,7 @@ export default {
 
 <style scoped>
 .secpage-donut {
-  margin-bottom: 50px;  
+  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,6 +79,47 @@ export default {
   margin-top: 50px;
 }
 
+@media (min-width: 481px) and (max-width: 1024px) {
+}
 
+@media (max-width: 480px) {
+  .secpage-donut {
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
 
+  .secpage-donut .donut,
+  .secpage-donut .donut-text {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .secpage-donut .donut img {
+    width: 100%;
+  }
+
+  .donut-logo {
+    display: flex;
+    gap: 30px;
+    margin: 15px 0;
+    font-weight: 900;
+  }
+
+  .donut-text p {
+    margin-bottom: 45px;
+  }
+
+  .donut-logo img {
+    width: 30px;
+    height: 30px;
+  }
+  .donut-logo h3 {
+    font-size: 18px;
+  }
+
+  .secpage-values {
+    margin-top: 50px;
+  }
+}
 </style>

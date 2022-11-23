@@ -64,4 +64,25 @@ export default {
 .f-right {
   background: url("~/assets/images/rightt.jpg");
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .image-ctas {
+    flex-direction: column;
+  }
+
+  .imageCard {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 450px;
+  }
+
+  .imageCard h2 {
+    font-size: 30px;
+    width: 100%;
+  }
+}
 </style>

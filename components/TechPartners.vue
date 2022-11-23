@@ -44,4 +44,20 @@ export default {
 .ei-two img {
   width: 100%;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .partner-platforms{
+    padding: 30px 0px;
+  }
+  .partner-platforms h2 {
+    font-size: 30px;
+  }
+
+  .yellow {
+    width: 15px;
+  }
+}
 </style>

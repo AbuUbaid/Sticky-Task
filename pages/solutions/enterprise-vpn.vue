@@ -158,9 +158,9 @@ export default {
         font-size: 20px;
       }
       li::before {
-        // content: "⚆"; 
-        // content: "◎"; 
-        content: "◯"; 
+        // content: "⚆";
+        // content: "◎";
+        content: "◯";
         color: #ef861d; /* Change the color */
         font-weight: bold; /* If you want it to be bold */
         display: inline-block; /* Needed to add space between the bullet and the text */
@@ -187,6 +187,77 @@ export default {
         font-weight: normal;
         color: #ef861d;
         margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .solution-banner {
+    background: url("~/assets/images/about.jpg");
+    .contain {
+      margin-bottom: 150px;
+      margin-left: 20px;
+      margin-right: 20px;
+      h1 {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .entry-text {
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .features {
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .image-area {
+      flex-basis: 100%;
+      width: 100%;
+    }
+    .text-area {
+      flex-basis: 100%;
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      h2 {
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          font-family: "Gilroy-Regular";
+          margin-bottom: 20px;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .why-vpn {
+    margin: 30px auto;
+    > h2 {
+      margin-bottom: 25px;
+    }
+    .reasons {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 50px;
+      .reason {
+        text-align: center;
+        h4 {
+          font-family: "Gilroy-Regular";
+          font-weight: normal;
+          color: #ef861d;
+          margin-bottom: 15px;
+        }
       }
     }
   }

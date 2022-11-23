@@ -72,4 +72,26 @@ export default {
     }
   }
 }
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .values-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    .values {
+      flex-wrap: wrap;
+      .text-area {
+        flex-basis: 100%;
+        width: 100%;
+      }
+      .icons-area {
+        flex-basis: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
 </style>

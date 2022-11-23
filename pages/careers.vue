@@ -27,7 +27,6 @@
       </v-expansion-panels>
     </div>
     <values />
-    <benefits />
     <impact-icons :Impact="Impact" />
   </div>
 </template>

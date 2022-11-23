@@ -2,7 +2,7 @@
   <div class="banner-container home-slides">
     <v-carousel
       :continuous="true"
-      :cycle="false"
+      :cycle="true"
       :interval="5000"
       :show-arrows="false"
       hide-delimiter-background
@@ -37,22 +37,6 @@
         </div>
       </v-carousel-item>
     </v-carousel>
-    <!-- <div class="slideshow-container">
-      <div class="home-slide">
-        <div class="text-area">
-          <h1>
-            Integrating High-End Software For Better Digital Infrastructure
-          </h1>
-          <a href="#!" class="explore-link">Explore More</a>
-          <img
-            src="~/assets/logos/goldpartner.svg"
-            alt="Microsoft Gold Partner"
-          />
-        </div>
-        <div class="image-area side-img"></div>
-      </div>
-     
-    </div> -->
   </div>
 </template>
 
@@ -115,16 +99,36 @@ export default {
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
-  /* transition: 0.3s ease-out; */
 }
 
+@media (min-width: 481px) and (max-width: 1024px) {
+}
 
+@media (max-width: 480px) {
+  .home-slides {
+    height: 80vh;
+    overflow: hidden;
+  }
 
-/* .home-slides .home-slide .side-img2 {
-  background: url("assets/Mask\ Group\ 10.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  transition: 0.3s ease-out;
-} */
+  .home-slides .home-slide {
+    height: 80vh;
+  }
+  .home-slide {
+    flex-wrap: wrap;
+  }
+  .home-slides .home-slide .text-area,
+  .home-slides .home-slide .image-area {
+    width: 100vw;
+    flex-basis: 100vw;
+  }
+  .home-slides .home-slide .text-area {
+    padding: 20px;
+    padding-bottom: 50px;
+    order: 1;
+  }
+
+  .home-slides .home-slide .image-area {
+    height: 90vw;
+  }
+}
 </style>

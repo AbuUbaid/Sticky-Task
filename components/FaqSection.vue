@@ -67,4 +67,38 @@ export default {
   display: flex;
   align-items: center;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .faq-parent {
+    padding: 20px 0px;
+  }
+  .faq-parent h2 {
+    color: #091756;
+  }
+
+  .faq-container {
+    margin-top: 40px;
+    padding: 20px 0px;
+    background: #ecf5ff;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .faq-container > * {
+    width: 100%;
+    flex-basis: 100%;
+  }
+  .faq-container img {
+    width: 100%;
+  }
+
+  .faq-container .faqs {
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+  }
+}
 </style>

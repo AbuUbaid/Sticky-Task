@@ -135,4 +135,42 @@ export default {
   margin-top: 15px;
   margin-bottom: 30px;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .testi-slide {
+    flex-wrap: wrap;
+    padding: 20px 0px;
+  }
+  .testi-slide .text-area h3 {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+  .testi-slide .text-area p.title {
+    font-size: 16px;
+  }
+  .testi-slide .text-area p.client-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+
+  .testi-slide .text-area {
+    width: 100%;
+    flex: 1;
+  }
+
+  .testi-slide .image-area {
+    width: 100%;
+    flex: 1;
+  }
+
+  .testi-slide .image-area img {
+    width: 100px;
+  }
+}
 </style>

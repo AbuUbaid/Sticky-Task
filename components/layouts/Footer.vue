@@ -188,11 +188,44 @@ export default {
   height: 45px;
 }
 
-.contact-icons{
+.contact-icons {
   margin-top: 10px;
 }
 
 .follow-us {
   margin-top: 25px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 20px;
+    padding-bottom: 15px;
+  }
+  .footer-detail {
+    padding: 0;
+  }
+  .footer-detail h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .footer-detail > a {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .footer-flex {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .footer-flex .logo {
+    margin-bottom: 20px;
+  }
+  .footer-subscribe {
+    width: 100%;
+  }
 }
 </style>

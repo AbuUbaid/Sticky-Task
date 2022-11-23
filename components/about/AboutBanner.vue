@@ -24,7 +24,19 @@ export default {
   justify-content: center;
 }
 
-.about-banner h1{
+.about-banner h1 {
   width: 840px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .about-banner {
+    background: url("~/assets/images/about.jpg");
+  }
+  .about-banner h1 {
+    width: 100%;
+  }
 }
 </style>

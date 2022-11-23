@@ -79,9 +79,37 @@ export default {
   }
 }
 .img-bg {
-  // background: url("~/assets/images/one.svg");
   background-size: cover;
   background-position: center;
   height: 600px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .service-single {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .service-single > * {
+    width: 100%;
+    flex-basis: 100%;
+  }
+
+  
+  .txt-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    order: 1 !important;
+  }
+
+  .img-bg {
+    background-size: cover;
+    height: 310px;
+    order: 0 !important;
+  }
 }
 </style>

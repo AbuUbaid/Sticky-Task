@@ -94,4 +94,13 @@ export default {
   width: 18px;
   height: 18px;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .secpage-values{
+    display: none;
+  }
+}
 </style>

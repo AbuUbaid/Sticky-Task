@@ -60,6 +60,7 @@ export default {
   min-height: 680px;
   padding-bottom: 50px;
   margin-bottom: 50px;
+  overflow: hidden;
 }
 
 .background {
@@ -158,5 +159,53 @@ export default {
 .values-four .t-four {
   width: 17%;
   margin-top: 25px;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  #third {
+    padding-bottom: 30px;
+
+    margin-bottom: 0px;
+  }
+  .third-text {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .third-text h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .third-img2 {
+    width: 130px;
+    height: 95px;
+  }
+
+  .t-left {
+    width: 100%;
+  }
+
+  .t-right {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  .third-text a.cta-orange {
+    margin-top: 15px;
+  }
+
+  .t-four img {
+    width: 40px;
+    height: 40px;
+  }
+  .t-four h4 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
 }
 </style>

@@ -156,4 +156,43 @@ export default {
   display: flex;
   gap: 10px;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .contact-form-container {
+    flex-wrap: wrap;
+  }
+
+  .contact-info {
+    flex-basis: 100%;
+    padding: 20px;
+    margin-top: 50px;
+    order: 1;
+    h2 {
+      margin-bottom: 10px;
+    }
+    > p {
+      margin-bottom: 15px;
+    }
+    .top-shape {
+      position: absolute;
+      width: 120px;
+      left: -90px;
+      top: -60px;
+    }
+    .bottom-shape {
+      position: absolute;
+      right: 20px;
+      bottom: 0;
+      width: 60px;
+    }
+  }
+  .contact-form {
+    flex-basis: 100%;
+    padding-left: 0;
+    padding: 20px;
+  }
+}
 </style>

@@ -94,4 +94,34 @@ export default {
 .logos img {
   width: 100%;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  #second {
+    padding: 30px 0px;
+  }
+
+  .count h4 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  #second {
+    padding: 30px 0px;
+  }
+
+  .count h4 {
+    font-size: 30px;
+  }
+
+  .three {
+    flex-wrap: wrap;
+  }
+
+  .count:nth-child(2) {
+    border: 0;
+    border-top: 0.5px solid #707070;
+    border-bottom: 0.5px solid #707070;
+  }
+}
 </style>

@@ -31,4 +31,18 @@ export default {
     margin-bottom: 30px;
   }
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .partners {
+    p {
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
 </style>

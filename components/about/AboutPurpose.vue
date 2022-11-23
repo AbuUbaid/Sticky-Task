@@ -29,4 +29,20 @@ export default {
   margin-bottom: 30px;
   font-size: 40px;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .about-purpose {
+    padding: 20px 0;
+  }
+
+  .about-purpose h2 {
+    color: #091756;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+}
 </style>

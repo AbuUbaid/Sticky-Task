@@ -114,4 +114,47 @@ export default {
     }
   }
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .how-it-works {
+    margin: 30px auto;
+    > p {
+      margin-top: 15px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .slide {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    .image-area {
+      width: 100%;
+      flex-basis: 100%;
+      text-align: center;
+      img {
+        width: 100%;
+      }
+    }
+    .text-area {
+      width: 100%;
+      flex-basis: 100%;
+      flex-wrap: wrap;
+      .innerText {
+        width: 100%;
+        text-align: center;
+        p {
+          font-size: 18px;
+        }
+        p.heading {
+          font-family: "Gilroy-Bold";
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
 </style>

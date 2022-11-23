@@ -10,8 +10,6 @@
           <p>{{ icon.heading }}</p>
           <h4>{{ icon.value }}</h4>
         </div>
-
-        
       </div>
     </div>
   </div>
@@ -72,5 +70,52 @@ export default {
 
 .count:not(:last-child) {
   border-right: 0.5px solid #707070;
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  #second {
+    text-align: center;
+    color: #091756;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+
+  #second h2 {
+    padding-top: 15px;
+    font-size: 28px;
+  }
+
+  #second p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+  }
+
+  .three {
+    flex-wrap: wrap;
+  }
+
+  .count {
+    padding: 1% 3%;
+    margin-top: 2%;
+  }
+
+  .count p {
+    font-size: 25px;
+    margin-bottom: 0px;
+  }
+
+  .count h4 {
+    color: rgb(239, 134, 29);
+    font-size: 50px;
+    font-family: "Gilroy-Bold";
+  }
+
+  .count:not(:last-child) {
+    border: 0;
+  }
 }
 </style>

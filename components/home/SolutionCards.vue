@@ -122,4 +122,23 @@ export default {
   padding: 10%;
   height: 100%;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  #fifth {
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .fisix {
+    grid-template-columns: 1fr;
+  }
+
+  .fisix > * {
+    width: 100%;
+  }
+}
 </style>

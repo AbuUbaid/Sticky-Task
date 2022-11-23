@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="banner-container solution-banner" >
+    <div class="banner-container solution-banner">
       <div class="contain">
         <h1 class="text-center">
           One-Stop-Shop For Remote Comprehensive Management Needs
@@ -182,6 +182,83 @@ export default {
       color: white;
       margin-top: 15px;
       margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .solution-banner {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    background: url("~/assets/images/about.jpg");
+    .contain {
+      margin-top: 150px;
+      h1 {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .entry-text {
+    margin: 30px auto;
+    width: 100%;
+  }
+
+  .features {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    .image-area {
+      flex-basis: 100%;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .text-area {
+      margin-top: 30px;
+      flex-basis: 100%;
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      h2 {
+        margin-bottom: 20px;
+      }
+      .solution {
+        margin-bottom: 25px;
+        h4 {
+          color: #ef861d;
+          font-size: 20px;
+          font-family: "Gilroy-Regular";
+          font-weight: normal;
+        }
+        p {
+          font-size: 20px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  .video-section {
+    background: url("~/assets/images/videobg.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0px;
+    .home-container {
+      h2 {
+        color: white;
+      }
+      p {
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 50px;
+      }
     }
   }
 }

@@ -64,4 +64,40 @@ export default {
 .values-four .t-four img {
   width: 60px;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .secpage-values {
+    margin: 30px auto;
+  }
+
+  .intro-text h2 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+
+  .values-four {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5%;
+    margin-top: 25px;
+  }
+
+  .values-four .t-four {
+    width: 47%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .values-four h4 {
+    margin: 10px 0px;
+  }
+
+  .values-four .t-four img {
+    width: 60px;
+  }
+}
 </style>

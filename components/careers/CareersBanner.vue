@@ -39,4 +39,22 @@ export default {
 .about-banner a {
   color: black;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .contain {
+    margin-left: 20px;
+    margin-bottom: 80px;
+  }
+
+  .about-banner h1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .about-banner a {
+    color: black;
+  }
+}
 </style>
