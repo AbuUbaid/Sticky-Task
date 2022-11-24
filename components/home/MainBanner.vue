@@ -20,20 +20,20 @@
               alt="Microsoft Gold Partner"
             />
           </div>
-          <div class="image-area side-img"></div>
+          <div class="image-area side-img sideimg1"></div>
         </div>
       </v-carousel-item>
       <v-carousel-item>
         <div class="home-slide">
           <div class="text-area">
-            <h1>Testing life</h1>
-            <a href="#!" class="explore-link">Explore More</a>
+            <h1>Leading The Future Of Innovative Business</h1>
+            <a href="#!" class="explore-link">Let's get to work</a>
             <img
               src="~/assets/logos/goldpartner.svg"
               alt="Microsoft Gold Partner"
             />
           </div>
-          <div class="image-area side-img"></div>
+          <div class="image-area side-img sideimg2"></div>
         </div>
       </v-carousel-item>
     </v-carousel>
@@ -95,10 +95,15 @@ export default {
 }
 
 .home-slides .home-slide .side-img.image-area {
-  background: url("~/assets/images/STBanner.jpg");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: cover;
+}
+.sideimg1 {
+  background: url("~/assets/images/STBanner.jpg");
+}
+.sideimg2 {
+  background: url("~/assets/images/secondbanner.jpg");
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {

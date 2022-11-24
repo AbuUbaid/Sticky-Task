@@ -2,7 +2,7 @@
   <div>
     <div class="banner-container solution-banner">
       <div class="contain">
-        <h1>One-Stop-Shop For Remote Comprehensive Management Needs</h1>
+        <h1>DevOps Services</h1>
       </div>
     </div>
 
@@ -24,33 +24,32 @@
             </p>
           </div>
           <div class="feature">
-            <img src="~/assets/icons/evaluation.svg" alt="Evaluation icon" />
-            <h4>DevOps Assessment</h4>
+            <img src="~/assets/icons/automation.svg" alt="Evaluation icon" />
+            <h4>DevOps Automation</h4>
             <p>
-              DevOps practice evaluation, existing infrastructure audit,
-              development pipeline assessment, eliminating redundant work, and
-              identifying the correct set of DevOps tools are all part of our
-              DevOps assessment.
+              We assist enterprises in implementing a continuous development and
+              continuous delivery pipeline, automating processes, using
+              sophisticated DevOps technologies, and avoiding dangerous
+              deployments.
             </p>
           </div>
           <div class="feature">
-            <img src="~/assets/icons/evaluation.svg" alt="Evaluation icon" />
-            <h4>DevOps Assessment</h4>
+            <img src="~/assets/icons/management.svg" alt="Evaluation icon" />
+            <h4>DevOps Management</h4>
             <p>
-              DevOps practice evaluation, existing infrastructure audit,
-              development pipeline assessment, eliminating redundant work, and
-              identifying the correct set of DevOps tools are all part of our
-              DevOps assessment.
+              OneDrive for Business is unmatched by any other storage management
+              tool when it comes to storage management, and it gives
+              intelligence to storage management.
             </p>
           </div>
           <div class="feature">
-            <img src="~/assets/icons/evaluation.svg" alt="Evaluation icon" />
-            <h4>DevOps Assessment</h4>
+            <img src="~/assets/icons/service.svg" alt="Evaluation icon" />
+            <h4>DevOps Managed Services</h4>
             <p>
-              DevOps practice evaluation, existing infrastructure audit,
-              development pipeline assessment, eliminating redundant work, and
-              identifying the correct set of DevOps tools are all part of our
-              DevOps assessment.
+              Our DevOps managed services provide effective software delivery
+              and implementation, as well as automation of infrastructure to
+              build and release, security management to system stability, and
+              Process Automation to provide 24/7 support.
             </p>
           </div>
         </div>
@@ -78,14 +77,15 @@ export default {
 .solution-banner {
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/msdb.jpg");
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
   .contain {
     margin-left: 70px;
     h1 {

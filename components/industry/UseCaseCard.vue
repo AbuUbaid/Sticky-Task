@@ -88,4 +88,30 @@ export default {
 .fifteen-usecase .image-area img {
   width: 100%;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .fifteen-usecase {
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .fifteen-usecase .text-area {
+    width: 100%;
+    flex-basis: 100%;
+    left: 0;
+    padding: 30px;
+    height: auto;
+    padding-bottom: 80px;
+  }
+
+  .fifteen-usecase .image-area {
+    margin-top: -30px;
+    flex-basis: 100%;
+    width: 100%;
+    background-position: center center;
+  }
+}
 </style>

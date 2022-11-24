@@ -1,6 +1,6 @@
 <template>
   <div>
-    <service-banner :BannerData="bannerData" />
+    <service-banner :BannerData="bannerData" class="mss-banner" />
     <div class="home-container starting-text">
       <p class="text-center">Our Industry</p>
       <h2 class="text-center">Adding Value To Medicinal Care</h2>
@@ -49,8 +49,9 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        top: "Pharmaceutical",
+        img: "pharma.jpg",
+        heading: "Seize The Space In Health",
         url: "#",
       },
       IndustryCards: [
@@ -84,34 +85,37 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry1.jpg",
-        bgImg: "gradient1.jpg",
+        img: "industry5.jpg",
+        bgImg: "gradient5.jpg",
         heading: "Use Cases",
         listItems: [
           {
-            title: "End-To-End Process Automation",
+            title: "Predictive Analytics",
           },
           {
-            title: "Computer Assisted Diagnosis (CAD)",
+            title: "Product Development",
           },
           {
-            title: "Data Analysis For Customer- Centric Growth",
+            title: "Sentiment Analysis",
+          },
+          {
+            title: "Churn Prevention",
           },
         ],
       },
       IndustryC: {
         items: [
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Global Experts",
+            value: "5250+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Services Delivered From Countries",
+            value: "5+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Active Clients Across Globe",
+            value: "2670+",
           },
         ],
       },
@@ -120,11 +124,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .starting-text {
   margin: 50px auto;
   h2 {
     margin: 10px 0px;
   }
 }
+
+
 </style>

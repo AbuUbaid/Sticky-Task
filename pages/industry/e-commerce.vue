@@ -1,20 +1,17 @@
 <template>
   <div>
-    <service-banner :BannerData="bannerData" />
+    <service-banner :BannerData="bannerData" class="mss-banner" />
     <div class="home-container starting-text">
       <p class="text-center">Our Industry</p>
-      <h2 class="text-center">Adding Value To Medicinal Care</h2>
+      <h2 class="text-center">Elevating The Fashion Hub In Digital Sphere</h2>
       <p class="text-center">
-        The process of developing medical apps for use in healthcare involves
-        customizing, developing, supporting, and evolving these apps. As part of
-        our commitment to providing state-of-the-art care, we strive to develop
-        cutting-edge apps.
-        <br /><br />
-        Our thorough market analysis, keen software ideation helped us create
-        staunch digital infrastructure with promising API integration. In
-        achieving agile development, we run the process from healthcare standard
-        and maintenance. This expertise and critical approach maneuver a digital
-        experience for our clients.
+        To grow their enterprises efficiently, Silicon Network creates
+        all-in-one, cloud-based systems for apparel manufacturers. We help the
+        client simplify the business setup and optimize it.
+        <br />
+        To achieve omnichannel success, users can manage accounting, inventory,
+        order management, supply chain, marketing, and CRM aspects of their
+        apparel and footwear businesses using the software.
       </p>
     </div>
     <impact-icons :Impact="Impact" />
@@ -49,8 +46,9 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        top: "Apparel And Footwear",
+        img: "ecombanner.jpg",
+        heading: "Scale Up The Your Business Structure",
         url: "#",
       },
       IndustryCards: [
@@ -68,7 +66,7 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Support",
+            heading: "Consultancy",
             desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
           },
           {
@@ -102,16 +100,16 @@ export default {
       IndustryC: {
         items: [
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Global Experts",
+            value: "5250+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Services Delivered From Countries",
+            value: "5+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Active Clients Across Globe",
+            value: "2670+",
           },
         ],
       },
@@ -120,11 +118,13 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .starting-text {
   margin: 50px auto;
   h2 {
     margin: 10px 0px;
   }
 }
+
+
 </style>

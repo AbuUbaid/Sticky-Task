@@ -27,7 +27,7 @@
           />
         </template>
         <v-carousel-item>
-          <div class="case-slide">
+          <div class="case-slide slide1">
             <h2>Product Development</h2>
             <p>
               We built this product from initial concept to final market launch.
@@ -38,13 +38,12 @@
           </div>
         </v-carousel-item>
         <v-carousel-item>
-          <div class="case-slide">
-            <h2>Product Development</h2>
+          <div class="case-slide slide2">
+            <h2>E-commerce</h2>
             <p>
-              We built this product from initial concept to final market launch.
-              By identifying a market need, researching the competition,
-              ideating a solution, developing a product roadmap for encompassing
-              usage.
+              By deploying site reliability engineering strategy we reduced
+              friction in operability-related experience on HDD digital
+              channels.
             </p>
           </div>
         </v-carousel-item>
@@ -75,7 +74,6 @@ export default {
   color: white;
   background-size: cover;
   background-position: center;
-  background: url("~/assets/images/cslide1.png");
   padding: 0px 80px;
   display: flex;
   justify-content: center;
@@ -83,6 +81,13 @@ export default {
   border-radius: 12px;
 }
 
+.slide1 {
+  background: url("~/assets/images/cslide1.png");
+}
+
+.slide2 {
+  background: url("~/assets/images/cslide2.jpg");
+}
 .case-slide h2 {
   margin-bottom: 30px;
   color: white;

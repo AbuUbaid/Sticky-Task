@@ -16,7 +16,7 @@
           <h4>Digital</h4>
           <p>
             Create digital Infrastructures, Design websites and make an online
-            impact
+            impact.
           </p>
         </div>
         <div class="t-four">
@@ -24,7 +24,7 @@
           <h4>Dev-Ops And Cloud</h4>
           <p>
             Best Cloud Services, Cloud consult, transformation, security service
-            and management
+            and management.
           </p>
         </div>
         <div class="t-four">
@@ -32,7 +32,7 @@
           <h4>Microsoft Services</h4>
           <p>
             Assessing technological framework and business objective with
-            Microsoft Azure and Dynamics
+            Microsoft Azure and Dynamics.
           </p>
         </div>
         <div class="t-four">

@@ -2,51 +2,46 @@
   <div>
     <div class="banner-container solution-banner">
       <div class="contain">
-        <h1 class="text-center">
-          One-Stop-Shop For Remote Comprehensive Management Needs
-        </h1>
+        <h1 class="text-center">Improve Your Virtual Storefront</h1>
       </div>
     </div>
     <p class="entry-text home-container text-center">
-      Sticky Tasks allows you to organize your tasks effectively. This software
-      keeps track of your work, your business, employees, and your most valuable
-      asset, your time. This attendance management software allows you to set
-      approval workflows and detailed reporting based on company policy for
-      higher productivity and streamlined output.
+      Companies’ needs anywhere in the world that deal with technology can be
+      met through e-commerce. Clients can access a group of experienced business
+      consultants and expert coders on this platform to assist them in
+      overcoming a wide range of challenges and achieving their business
+      objectives
     </p>
 
     <div class="features">
       <div class="image-area">
-        <h2>Solution To Human Resources That Is Adaptable And Effective</h2>
-        <img src="~/assets/images/stickyfeatures.jpg" alt="Features image" />
+        <h2>Keeping Retailers Current And Connected</h2>
+        <img src="~/assets/images/connected.jpg" alt="Features image" />
       </div>
       <div class="text-area">
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Customer Data Platform</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Create a centralized customer database to understand and connect
+            with the customers and create more personalized marketing campaigns.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Omni-Channel Experience Platforms</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Create a merged agile system that ensures a cohesive customer experience and makes businesses profitable through increased sales.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Advanced Digital Experience</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Make creative visuals & impactful marketing campaigns that deliver the brand’s message to the audience across all the platforms. Generate a seamless brand experience for customers.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Personalization</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Digital solutions that customize the business’s content based on client behavior and profiles. Optimize the brand’s appeal to the audience by catering best customer serv ice through agile personalized software.
           </p>
         </div>
       </div>
@@ -89,7 +84,10 @@ export default {
   justify-content: start;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/ecom.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   .contain {
     margin-top: 150px;
     h1 {

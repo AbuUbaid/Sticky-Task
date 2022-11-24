@@ -10,20 +10,20 @@
           <p>Work Smart</p>
         </div>
         <div class="icon">
-          <img src="~/assets/icons/work.svg" alt="Work icon" />
-          <p>Work Smart</p>
+          <img src="~/assets/icons/key.svg" alt="Work icon" />
+          <p>Ownership</p>
         </div>
         <div class="icon">
-          <img src="~/assets/icons/work.svg" alt="Work icon" />
-          <p>Work Smart</p>
+          <img src="~/assets/icons/empathy.svg" alt="Work icon" />
+          <p>Empathy</p>
         </div>
         <div class="icon">
-          <img src="~/assets/icons/work.svg" alt="Work icon" />
-          <p>Work Smart</p>
+          <img src="~/assets/icons/growth.svg" alt="Work icon" />
+          <p>Continuous Growth</p>
         </div>
         <div class="icon">
-          <img src="~/assets/icons/work.svg" alt="Work icon" />
-          <p>Work Smart</p>
+          <img src="~/assets/icons/solutions.svg" alt="Work icon" />
+          <p>Solutions, Not Products</p>
         </div>
       </div>
     </div>

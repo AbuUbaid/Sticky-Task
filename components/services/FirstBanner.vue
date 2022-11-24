@@ -18,7 +18,7 @@ export default {
 .about-banner {
   height: 100vh;
   width: 100%;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/servicesbg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;

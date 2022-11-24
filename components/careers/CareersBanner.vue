@@ -17,14 +17,14 @@ export default {
 .about-banner {
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: start;
   justify-content: end;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/careers.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .contain {
@@ -35,9 +35,10 @@ export default {
 .about-banner h1 {
   width: 600px;
   margin-bottom: 30px;
+  color: white;
 }
 .about-banner a {
-  color: black;
+  color: white;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {

@@ -39,71 +39,92 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
+        img: "digital.jpg",
         heading: "Curating Top-Notch Brand, Product And Services",
         url: "#",
       },
       Metrics: {
-        heading: "Services That Reflect Ingenuity",
-        desc: "Silicon Network brings together IT strategy, deep industry knowledge, change management and large-scale application delivery.",
+        heading: "Digital Transformation",
+        desc: "We Contemplate Your Digital Strategy For Perfect Brand Experience By Curating Outstanding Content And Experimenting With Different Forms Of Media.",
         icons: [
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Active Social Media Marketing Projects.",
+            value: "255+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Dedicated Design Studios",
+            value: "10",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Design Consultants & Creative Artists",
+            value: "435+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Omni-Channel Experienced Engineers",
+            value: "225+",
           },
         ],
       },
       data: [
         {
+          heading: "Consult & Strategy",
           url: "one.svg",
-          text: "Aaaaaaaa",
+          text: `For any other potential business the journey starts with a great idea.
+Our team of experts make sure to refine the ideation process with
+responsible insights and thorough comprehension.
+We also take immense pride in working with established firms and
+assisting them in strategizing an exponential route through the digital
+landscape and triumph.`,
           listItems: [
-            "Content & Media",
+            "Brand Experience",
             "Content & Media",
             "Information & Architecture",
             "Design Thinking",
           ],
         },
         {
+          heading: "Consult & Strategy",
           url: "two.svg",
-          text: "",
+          text: `Our experts analyze the system switch keeping in check technical errors
+across applications, data and multiple processes. We work with the goal
+to provide supportive machine infrastructure which can provide a 360-
+degree view of the respective business for customers, partners and
+employees.`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Efficient Operations",
+            "Data Cleansing",
+            "Product Evaluation",
           ],
         },
         {
+          heading: "Consult & Strategy",
           url: "three.svg",
-          text: "",
+          text: `Ideation expands into the visual sphere through comprehensive
+procedure. In the digital domain, design is not reduced to mere
+aesthetics or beautification. We believe that design has a key
+role in problem solving for agile customer experience.  Our
+methodology aspires to be holistically interactive and practical.`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Holistic Approach",
+            "Contextualized Data Collection",
+            "Iterative Validation",
+            "Stakeholders Identification",
           ],
         },
         {
+          heading: "Experience & Design",
           url: "four.svg",
-          text: "",
+          text: `We have analyzed market behavior for a long time to understand the
+highs and lows of it. In this way, we help businesses improve relevance
+and drive growth by re-imagining buying and selling experiences. 
+<br><br>
+Using an astute business model, we balance the complexity of the sales 
+and commerce ecosystem with the simplicity of a simple sales process.`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Supply Chain Management",
+            "Internet Marketing",
+            "User Experience",
+            "Electronic Data Interchange",
           ],
         },
       ],
@@ -116,34 +137,6 @@ export default {
         { title: "Food & Beverage", link: "" },
         { title: "Pharmaceutical", link: "" },
       ],
-      Values: {
-        title: "Our Services",
-        heading:
-          "Integrating Practical Technology Through Software Into Digital World",
-        paragraph: "",
-        cards: [
-          {
-            heading: "Digital",
-            desc: "Create digital Infrastructures, Design websites and make an online impact",
-            img: "digital.svg",
-          },
-          {
-            heading: "Dev-Ops And Cloud",
-            desc: "Best Cloud Services, Cloud consult, transformation, security service and management",
-            img: "ms.svg",
-          },
-          {
-            heading: "Microsoft Services",
-            desc: "From finance operation, project service automation, sales, and talent acquisition, we refine these steps to get best results.",
-            img: "devops.svg",
-          },
-          {
-            heading: "BPAAS",
-            desc: "Depend on consistent, stable development resources with our global scale connectivity to world-class talent hubs to digitise land records.",
-            img: "bpaas.svg",
-          },
-        ],
-      },
       Faqs: {
         title: "Our Process",
         heading: "Our Groundbreaking Work Sequence",

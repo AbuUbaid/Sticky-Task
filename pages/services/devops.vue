@@ -39,71 +39,75 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        img: "cloud.jpg",
+        heading: "Ensuring Continuous Delivery, Deployment, And Integration",
         url: "#",
       },
       Metrics: {
-        heading: "Services That Reflect Ingenuity",
-        desc: "Silicon Network brings together IT strategy, deep industry knowledge, change management and large-scale application delivery.",
+        heading: "Cloud Services",
+        desc: "Through Devops, We Enhance The Quality Of Software Development By Re-Engineering Your Development And Deployment Processes.",
         icons: [
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Expert Devops Consultants",
+            value: "35+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Devops Automations",
+            value: "200+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Cloud Migrations & Upgradations",
+            value: "535+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Customer Engagements",
+            value: "500k+",
           },
         ],
       },
       data: [
         {
+          heading: "Cloud Management",
           url: "one.svg",
-          text: "Aaaaaaaa",
+          text: `Managed Cloud Services Evaluate The User's Applications And Data To Determine The Best Cloud Resources For Their IT Infrastructure. Our Team Then Develops A Custom Plan That Outlines How To Get Started With Building And Running An Optimized Cloud Environment.`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Tracking Cloud Costs",
+            "Monitor And Track Workloads",
+            "End User Experience (EUE) Monitoring Tool",
           ],
         },
         {
+          heading: "Cloud Consult",
           url: "two.svg",
-          text: "",
+          text: `Our Practical And Interactive Approach To Cloud Computing Makes Use Of Devops Tools To Improve Our Customers' Capacity For Rapid Delivery Of Both Applications And Services.`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Cloud Strategy",
+            "Cloud Readiness Assessment",
+            "Data Center Services",
+            "Development & Integration Services",
+            "Cloud Migration Services",
+            "Support Services",
           ],
         },
         {
+          heading: "Cloud Migration",
           url: "three.svg",
-          text: "",
+          text: `For Any Sustainable Business Journey, It Is Important To Create And Ensure A Secure And Scalable Cloud Landscape.With Our Cloud Assessment Tools, Infrastructure, And Processes, We Can Assist You Regardless Of Where You Are In Your Cloud Journey.`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Secure And Scalable Cloud Landscape",
+            "Migration Strategy And Planning",
+            "Migration Execution",
           ],
         },
         {
+          heading: "DevOps",
           url: "four.svg",
-          text: "",
+          text: `With our Azure or AWS DevOps Consulting Services, we assist you in focusing on agile methodology and bringing a best practice implementation for your organization in the cloud era:`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "DevOps Assessment",
+            "DevOps Automation",
+            "DevOps Management",
+            "DevOps Managed Services",
           ],
         },
       ],
@@ -116,34 +120,6 @@ export default {
         { title: "Food & Beverage", link: "" },
         { title: "Pharmaceutical", link: "" },
       ],
-      Values: {
-        title: "Our Services",
-        heading:
-          "Integrating Practical Technology Through Software Into Digital World",
-        paragraph: "",
-        cards: [
-          {
-            heading: "Digital",
-            desc: "Create digital Infrastructures, Design websites and make an online impact",
-            img: "digital.svg",
-          },
-          {
-            heading: "Dev-Ops And Cloud",
-            desc: "Best Cloud Services, Cloud consult, transformation, security service and management",
-            img: "ms.svg",
-          },
-          {
-            heading: "Microsoft Services",
-            desc: "From finance operation, project service automation, sales, and talent acquisition, we refine these steps to get best results.",
-            img: "devops.svg",
-          },
-          {
-            heading: "BPAAS",
-            desc: "Depend on consistent, stable development resources with our global scale connectivity to world-class talent hubs to digitise land records.",
-            img: "bpaas.svg",
-          },
-        ],
-      },
       Faqs: {
         title: "Our Process",
         heading: "Our Groundbreaking Work Sequence",

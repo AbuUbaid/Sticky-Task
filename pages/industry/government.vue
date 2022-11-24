@@ -3,18 +3,14 @@
     <service-banner :BannerData="bannerData" />
     <div class="home-container starting-text">
       <p class="text-center">Our Industry</p>
-      <h2 class="text-center">Adding Value To Medicinal Care</h2>
+      <h2 class="text-center">Empowering Public Sector For Betterment</h2>
       <p class="text-center">
-        The process of developing medical apps for use in healthcare involves
-        customizing, developing, supporting, and evolving these apps. As part of
-        our commitment to providing state-of-the-art care, we strive to develop
-        cutting-edge apps.
-        <br /><br />
-        Our thorough market analysis, keen software ideation helped us create
-        staunch digital infrastructure with promising API integration. In
-        achieving agile development, we run the process from healthcare standard
-        and maintenance. This expertise and critical approach maneuver a digital
-        experience for our clients.
+        Silicon Network has been assisting federal to local government bodies to
+        amalgamate digital sense into the public sector. Our experts provide
+        informed solutions to promote economic growth, the expansion of social
+        responsibility, and better citizen service. The fields of expertise
+        includes, education, land record management showcasing better
+        understanding of social fabric and digital human sciences
       </p>
     </div>
     <impact-icons :Impact="Impact" />
@@ -49,7 +45,7 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
+        img: "government.jpg",
         heading: "Curating Top-Notch Brand, Product And Services",
         url: "#",
       },
@@ -68,7 +64,7 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Support",
+            heading: "Consultancy",
             desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
           },
           {
@@ -84,34 +80,37 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry1.jpg",
-        bgImg: "gradient1.jpg",
+        img: "industry6.jpg",
+        bgImg: "gradient6.jpg",
         heading: "Use Cases",
         listItems: [
           {
-            title: "End-To-End Process Automation",
+            title: "Decision Analytics",
           },
           {
-            title: "Computer Assisted Diagnosis (CAD)",
+            title: "Object Detection And Classification",
           },
           {
-            title: "Data Analysis For Customer- Centric Growth",
+            title: "Smart Security Protocols",
+          },
+          {
+            title: "Fraud Detection",
           },
         ],
       },
       IndustryC: {
         items: [
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Global Experts",
+            value: "5250+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Services Delivered From Countries",
+            value: "5+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Active Clients Across Globe",
+            value: "2670+",
           },
         ],
       },

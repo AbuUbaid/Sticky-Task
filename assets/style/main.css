@@ -167,6 +167,13 @@ ul {
   width: 45vw !important;
 }
 
+.mss-banner h1 {
+  color: white;
+}
+.mss-banner a {
+  color: white !important;
+}
+
 @media (min-width: 481px) and (max-width: 1024px) {
   .home-container {
     padding: 0px 30px;
@@ -223,5 +230,4 @@ ul {
 }
 
 @media (max-width: 480px) {
-  
 }

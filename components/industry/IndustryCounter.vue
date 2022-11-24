@@ -78,4 +78,16 @@ export default {
 .logos img {
   width: 100%;
 }
+
+@media (min-width: 481px) and (max-width: 1024px) {
+}
+
+@media (max-width: 480px) {
+  .three {
+    flex-wrap: wrap;
+  }
+  .count:nth-child(2) {
+    border: none;
+  }
+}
 </style>

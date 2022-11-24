@@ -7,8 +7,6 @@
     <about-team />
     <solution-cards :Cards="IndustryCards" />
     <case-study-slide />
-    <tech-partners />
-    <building-cta />
   </div>
 </template>
 
@@ -53,12 +51,12 @@ export default {
           {
             heading: "Reliability",
             desc: "In every aspect of our business, we strive to deliver what we promise. We meet every deadline, and we communicate effectively.",
-            img: "ms.svg",
+            img: "devops.svg",
           },
           {
             heading: "Community",
             desc: "The mission of our organization is to drive positive, long-term growth for the community to make it a better place for everyone to live.",
-            img: "devops.svg",
+            img: "ms.svg",
           },
           {
             heading: "Empathy",

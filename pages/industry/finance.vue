@@ -3,18 +3,13 @@
     <service-banner :BannerData="bannerData" />
     <div class="home-container starting-text">
       <p class="text-center">Our Industry</p>
-      <h2 class="text-center">Adding Value To Medicinal Care</h2>
+      <h2 class="text-center">Enabling Finance Digitalization</h2>
       <p class="text-center">
-        The process of developing medical apps for use in healthcare involves
-        customizing, developing, supporting, and evolving these apps. As part of
-        our commitment to providing state-of-the-art care, we strive to develop
-        cutting-edge apps.
-        <br /><br />
-        Our thorough market analysis, keen software ideation helped us create
-        staunch digital infrastructure with promising API integration. In
-        achieving agile development, we run the process from healthcare standard
-        and maintenance. This expertise and critical approach maneuver a digital
-        experience for our clients.
+        Our belief in transforming financial services into concrete
+        relationships has kept our passion intact. By implementing solutions
+        such as enterprise integration, business process management, and robotic
+        process automation, we help banks and financial institutions improve
+        efficiency and boost their bottom line.
       </p>
     </div>
     <impact-icons :Impact="Impact" />
@@ -49,8 +44,9 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        top: "Insurance & Financial",
+        img: "financebanner.jpg",
+        heading: "Strengthening Banking Experience And Innovation",
         url: "#",
       },
       IndustryCards: [
@@ -68,7 +64,7 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Support",
+            heading: "Consultancy",
             desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
           },
           {
@@ -84,34 +80,37 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry1.jpg",
-        bgImg: "gradient1.jpg",
+        img: "industry2.jpg",
+        bgImg: "gradient2.jpg",
         heading: "Use Cases",
         listItems: [
+          {
+            title: "Fraud Detection",
+          },
           {
             title: "End-To-End Process Automation",
           },
           {
-            title: "Computer Assisted Diagnosis (CAD)",
+            title: "Object Detection And Classification",
           },
           {
-            title: "Data Analysis For Customer- Centric Growth",
+            title: "Smart Security Protocols",
           },
         ],
       },
       IndustryC: {
         items: [
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Global Experts",
+            value: "5250+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Services Delivered From Countries",
+            value: "5+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Active Clients Across Globe",
+            value: "2670+",
           },
         ],
       },

@@ -8,11 +8,11 @@
       </div>
     </div>
     <p class="entry-text home-container text-center">
-      Sticky Tasks allows you to organize your tasks effectively. This software
-      keeps track of your work, your business, employees, and your most valuable
-      asset, your time. This attendance management software allows you to set
-      approval workflows and detailed reporting based on company policy for
-      higher productivity and streamlined output.
+      Known for its expertise in HR, Marketing, Sales, and Financial Services,
+      HR Connect provides small-medium business owners with access to these
+      services that don't typically fall within their budgets. As your business
+      grows, HR Connect ensures you receive simple, practical and proven
+      strategies for people management.
     </p>
     <div class="featured-feature home-container">
       <div class="image-area">
@@ -35,20 +35,18 @@
         <img src="~/assets/images/hrimg.jpg" alt="Featured image" />
       </div>
       <div class="text-area">
-        <h2>Human Resources Administration Made Easy</h2>
+        <h2>Managing Digital Communities</h2>
         <p>
-          Our company aims for the flexibility and automation of our client's
-          businesses and provides them with the latest software solutions. Our
-          industry specialists utilize Agile and Smart AWS software to give HR
-          services with project and test management tools in addition to other
-          development tools so that organizations may control their digital
-          environment with complete authority.
+          Digital solutions connect and engage teams, from Talent Recruitment to
+          Training new Employees, providing reports with on-the-job product
+          training, and teaching leaders the value of soft skills in the
+          workplace. Connect HRMS is the most effective instrument in every way.
         </p>
       </div>
     </div>
     <div class="features">
       <div class="image-area">
-        <h2>Solution To Human Resources That Is Adaptable And Effective</h2>
+        <h2>Results-Oriented Policies</h2>
         <p>
           Develop a digital platform that utilizes global approaches and Fast
           integrated web technology to effectively manage proactive e-commerce
@@ -59,31 +57,35 @@
       </div>
       <div class="text-area">
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Cloud Capable</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Utilize the adaptability and intelligence of cloud-integrated
+            solutions to create a cloud-ready, safe, and dependable digital
+            space.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Intra-net Biometric</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Automation of a cloud software network that reduces security threats
+            and maintains the confidentiality of data across the digital
+            environment.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Integration of ERP</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Integration of Microsoft Dynamics 365 ERP to securely transfer data
+            across the digital environment and connect systems, resulting in
+            increased productivity.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>BI and Interactional</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Utilize potent BI technologies to examine corporate information and
+            document past and current strategies. Interpret data both internally
+            and externally.
           </p>
         </div>
       </div>
@@ -102,32 +104,40 @@ export default {
   data: () => {
     return {
       Features: {
-        heading: "HAH?",
-        desc: "WHAT",
+        heading: "Features",
+        desc: "Silicon Networks is a professional corporation recognized for its top-tier HR solutions by using smart AWS software for business expansion.",
         cards: [
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: "Human Capital Management ",
+            desc: `The HCM module is a cost-effective solution to centralize personnel information, engage employees and managers, and empower the HR Department. It is developed using cutting-edge technologies by the industry's foremost experts and professionals to manage end-to-end HR processes across the enterprise. Connect HRMS offers the most effective HR software in Pakistan.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Payroll & Attendance`,
+            desc: `Define Pay packages across your entire firm and obtain accurate, compliant payroll in a few clicks. ESS portal automates all the leave, advance, loan, costs, OT, and other perks and deductions. Payroll module is directly integrated with your biometric attendance devices.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Employee Auto-Service`,
+            desc: `Employees can record time, expenses, Leaves, advances, and loans, as well as access paystubs, deductions, and taxation update their personal information via mobile or web, as well as design custom workflows, and handle all approvals.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Talent Management`,
+            desc: `Utilize low-hanging fruit to determine a rough estimate of a value-added activity for beta testing the digital divide.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Compliance`,
+            desc: `A comprehensive examination of the organization's adherence to regulatory obligations.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Digital Documents`,
+            desc: `Document management software is a program used for storing, managing, and tracking electronic documents and scanned pictures of paper-based information.`,
+          },
+          {
+            heading: `Tasks Management`,
+            desc: `The process of managing activities throughout the life cycle. Includes planning, testing, surveillance, and reporting.`,
+          },
+          {
+            heading: `Recruitment`,
+            desc: `The recruitment process consists of locating, investigating, selecting, and recruiting candidates to fill vacancies. This is a crucial component of the human resource management system.`,
           },
         ],
       },
@@ -140,14 +150,15 @@ export default {
 .solution-banner {
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/hrcon.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   .contain {
     margin-top: 150px;
     h1 {

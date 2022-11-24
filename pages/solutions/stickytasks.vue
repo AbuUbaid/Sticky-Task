@@ -28,24 +28,25 @@
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Rework and Error Elimination</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Reduce errors and rework for your business by improving
+            employee-manager communication.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Comply with Organizational Objectives</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Create seamless, agile networking and reporting channels with
+            powerful digital space governance.
           </p>
         </div>
         <div class="solution">
-          <h4>Impactful Efficiency</h4>
+          <h4>Methodical and Resourceful</h4>
           <p>
-            Track the performance of your business with complete authority to
-            accelerate scalability.
+            Establishing on-time project delivery to reduce time waste and
+            accurate cost estimates to maintain the budget per business
+            projects.
           </p>
         </div>
       </div>
@@ -75,32 +76,32 @@ export default {
   data: () => {
     return {
       Features: {
-        heading: "HAH?",
-        desc: "WHAT",
+        heading: "Coordinated Work Across Departments",
+        desc: "Manage Multiple Projects At Once And Get Rid Of The Obstacles That Slow Progress.",
         cards: [
           {
             heading: "Productivity",
             desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Monitoring`,
+            desc: `Screen your team through-out project lifecycle with time tracker and screenshot features offered at Sticky Tasks.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Reporting`,
+            desc: `Get an automated, precise report instantly with Sticky Tasks so you can focus on what matters the most - your business.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Integrations`,
+            desc: `Connect, Manage and track everything under one digital space Attendance management: Keep the attendance log, and see who’s absent through the management tool.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Attendance Management`,
+            desc: `Get an automated, precise report instantly with Sticky Tasks so you can focus on what matters the most - your business.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Payroll`,
+            desc: `Pay on time to the employees & manage the cash-flow`,
           },
         ],
       },
@@ -113,14 +114,15 @@ export default {
 .solution-banner {
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: start;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/stb.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   .contain {
     margin-top: 150px;
     h1 {

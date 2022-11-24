@@ -17,44 +17,32 @@
       </div>
       <div class="t-four">
         <p class="slide-text">
-          Consult & Strategy<img src="~/assets/icons/arrow-right.svg" />
+          Cloud Consult Service<img src="~/assets/icons/arrow-right.svg" />
         </p>
         <p class="slide-text">
-          Experience & Design<img src="~/assets/icons/arrow-right.svg" />
+          Cloud Transform Service<img src="~/assets/icons/arrow-right.svg" />
         </p>
         <p class="slide-text">
-          Digital Commerce<img src="~/assets/icons/arrow-right.svg" />
+          Cloud Security Service<img src="~/assets/icons/arrow-right.svg" />
         </p>
         <p class="slide-text">
-          Integrations<img src="~/assets/icons/arrow-right.svg" />
-        </p>
-      </div>
-      <div class="t-four">
-        <p class="slide-text">
-          Consult & Strategy<img src="~/assets/icons/arrow-right.svg" />
-        </p>
-        <p class="slide-text">
-          Experience & Design<img src="~/assets/icons/arrow-right.svg" />
-        </p>
-        <p class="slide-text">
-          Digital Commerce<img src="~/assets/icons/arrow-right.svg" />
-        </p>
-        <p class="slide-text">
-          Integrations<img src="~/assets/icons/arrow-right.svg" />
+          Cloud Managed Service<img src="~/assets/icons/arrow-right.svg" />
         </p>
       </div>
       <div class="t-four">
         <p class="slide-text">
-          Consult & Strategy<img src="~/assets/icons/arrow-right.svg" />
+          Dynamic 365<img src="~/assets/icons/arrow-right.svg" />
         </p>
         <p class="slide-text">
-          Experience & Design<img src="~/assets/icons/arrow-right.svg" />
+          Power BI<img src="~/assets/icons/arrow-right.svg" />
+        </p>
+      </div>
+      <div class="t-four">
+        <p class="slide-text">
+          Staff Augmentation<img src="~/assets/icons/arrow-right.svg" />
         </p>
         <p class="slide-text">
-          Digital Commerce<img src="~/assets/icons/arrow-right.svg" />
-        </p>
-        <p class="slide-text">
-          Integrations<img src="~/assets/icons/arrow-right.svg" />
+          BPO<img src="~/assets/icons/arrow-right.svg" />
         </p>
       </div>
     </div>
@@ -99,7 +87,7 @@ export default {
 }
 
 @media (max-width: 480px) {
-  .secpage-values{
+  .secpage-values {
     display: none;
   }
 }

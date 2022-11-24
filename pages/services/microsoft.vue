@@ -1,6 +1,6 @@
 <template>
   <div>
-    <service-banner :BannerData="bannerData" />
+    <service-banner :BannerData="bannerData" class="mss-banner" />
     <metrics-counter :Metrics="Metrics" />
     <section class="">
       <Service
@@ -39,71 +39,53 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
+        img: "ms.jpg",
         heading: "Curating Top-Notch Brand, Product And Services",
         url: "#",
       },
       Metrics: {
-        heading: "Services That Reflect Ingenuity",
-        desc: "Silicon Network brings together IT strategy, deep industry knowledge, change management and large-scale application delivery.",
+        heading: "Microsoft Services",
+        desc: `We make sure that these tools along with multiple productivity applications and artificial intelligence can be best subscribed to your business goals. From finance operation, marketing, project service automation, retails, sales, and talent acquisition, we refine these applications to get top-notch results.`,
         icons: [
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Foolproof And Interactive Websites Developed.",
+            value: "10k",
+          },
+          {
+            heading: "Omni Channel Experience Experts & Engineers",
+            value: "225",
+          },
+          {
+            heading: "Automation Center Bots",
+            value: "50",
           },
           {
             heading: "Full Stack Engineers",
-            value: "220+",
-          },
-          {
-            heading: "Full Stack Engineers",
-            value: "220+",
-          },
-          {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            value: "220",
           },
         ],
       },
       data: [
         {
+          heading: "Dynamic 365",
           url: "one.svg",
-          text: "Aaaaaaaa",
+          text: `Efficient results require trustworthy tools. Our experts build your business growth by deploying top-notch softwares and services. A cloud-based business application Dynamic 365 combines components of customer relationship management (CRM) and enterprise resources planning (ERP) for your business.`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Easy To Use And Deploy",
+            "Full Integration With Microsoft Products",
+            "Reduced Sales Cycle",
+            "Improved Customer Service Experience",
           ],
         },
         {
+          heading: "Power BI",
           url: "two.svg",
-          text: "",
+          text: `Business intelligence is achieved by data-driven culture. We deploy Power BI service which provides analytic eye on enterprise level. 
+Our team uses such cloud-based applications to integrate with other Microsoft solutions, lowering the security risks, added cost and unwanted complexities scaling from individual to organization as a whole. `,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
-          ],
-        },
-        {
-          url: "three.svg",
-          text: "",
-          listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
-          ],
-        },
-        {
-          url: "four.svg",
-          text: "",
-          listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Interactive Power BI Desktop",
+            "Customized Visualization",
+            "Visibility",
           ],
         },
       ],
@@ -116,34 +98,6 @@ export default {
         { title: "Food & Beverage", link: "" },
         { title: "Pharmaceutical", link: "" },
       ],
-      Values: {
-        title: "Our Services",
-        heading:
-          "Integrating Practical Technology Through Software Into Digital World",
-        paragraph: "",
-        cards: [
-          {
-            heading: "Digital",
-            desc: "Create digital Infrastructures, Design websites and make an online impact",
-            img: "digital.svg",
-          },
-          {
-            heading: "Dev-Ops And Cloud",
-            desc: "Best Cloud Services, Cloud consult, transformation, security service and management",
-            img: "ms.svg",
-          },
-          {
-            heading: "Microsoft Services",
-            desc: "From finance operation, project service automation, sales, and talent acquisition, we refine these steps to get best results.",
-            img: "devops.svg",
-          },
-          {
-            heading: "BPAAS",
-            desc: "Depend on consistent, stable development resources with our global scale connectivity to world-class talent hubs to digitise land records.",
-            img: "bpaas.svg",
-          },
-        ],
-      },
       Faqs: {
         title: "Our Process",
         heading: "Our Groundbreaking Work Sequence",
@@ -200,5 +154,12 @@ export default {
 .fopage-width {
   width: 50%;
   margin: auto;
+}
+
+.mss-banner h1 {
+  color: white;
+}
+.mss-banner a {
+  color: white !important; 
 }
 </style>

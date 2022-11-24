@@ -1,20 +1,16 @@
 <template>
   <div>
-    <service-banner :BannerData="bannerData" />
+    <service-banner :BannerData="bannerData" class="mss-banner" />
     <div class="home-container starting-text">
       <p class="text-center">Our Industry</p>
-      <h2 class="text-center">Adding Value To Medicinal Care</h2>
+      <h2 class="text-center">Achieving Optimal Fleet Management</h2>
       <p class="text-center">
-        The process of developing medical apps for use in healthcare involves
-        customizing, developing, supporting, and evolving these apps. As part of
-        our commitment to providing state-of-the-art care, we strive to develop
-        cutting-edge apps.
-        <br /><br />
-        Our thorough market analysis, keen software ideation helped us create
-        staunch digital infrastructure with promising API integration. In
-        achieving agile development, we run the process from healthcare standard
-        and maintenance. This expertise and critical approach maneuver a digital
-        experience for our clients.
+        Our transportation infrastructure serves a variety of purposes, from
+        transporting freight to enabling business travel. By utilizing digital
+        solutions, fleet management logistics can be significantly improved,
+        including routing, maintenance, and financing. Using digital technology,
+        Silicon Network helps transportation clients become more efficient and
+        customer-focused.
       </p>
     </div>
     <impact-icons :Impact="Impact" />
@@ -49,8 +45,9 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        top: "Manufacturing And Distribution",
+        img: "manufacturing.jpg",
+        heading: "Enabling Seamless Logistical Flow",
         url: "#",
       },
       IndustryCards: [
@@ -68,7 +65,7 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Support",
+            heading: "Consultancy",
             desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
           },
           {
@@ -84,34 +81,40 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry1.jpg",
-        bgImg: "gradient1.jpg",
+        img: "industry3.jpg",
+        bgImg: "gradient3.jpg",
         heading: "Use Cases",
         listItems: [
           {
-            title: "End-To-End Process Automation",
+            title: "Precision Farming",
           },
           {
-            title: "Computer Assisted Diagnosis (CAD)",
+            title: "Predictive Maintenance",
           },
           {
-            title: "Data Analysis For Customer- Centric Growth",
+            title: "Asset Tracking",
+          },
+          {
+            title: "Decision Analytics",
+          },
+          {
+            title: "Product Management",
           },
         ],
       },
       IndustryC: {
         items: [
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Global Experts",
+            value: "5250+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Services Delivered From Countries",
+            value: "5+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Active Clients Across Globe",
+            value: "2670+",
           },
         ],
       },
@@ -120,11 +123,12 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 .starting-text {
   margin: 50px auto;
   h2 {
     margin: 10px 0px;
   }
 }
+
 </style>

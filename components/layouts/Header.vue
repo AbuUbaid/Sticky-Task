@@ -84,13 +84,17 @@
     <div class="header-body">
       <div class="logo">
         <NuxtLink to="/"
-          ><img src="~/assets/logos/snlogo.svg" alt="Silicon Networks Logo"
+          ><img src="~/assets/logos/snlogo.png" alt="Silicon Networks Logo"
         /></NuxtLink>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:sales@siliconnet.com">sales@siliconnet.com</a>
+        <a href="tel:855-904-4417">855-904-4417</a>
       </div>
       <div class="menu">
         <img
           @click.stop="drawer = !drawer"
-          src="~/assets/icons/menu.svg"
+          src="~/assets/icons/menuicon.svg"
           alt="Menu"
         />
       </div>
@@ -208,9 +212,23 @@ export default {
         width: 180px;
       }
     }
+    .contact-links {
+      flex: 1;
+      text-align: right;
+      padding-right: 22px;
+      display: flex;
+      flex-direction: column;
+      display: none;
+      a {
+        color: #e38601;
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-family: "Gilroy-Medium";
+      }
+    }
     .menu {
       img {
-        width: 100px;
+        width: 40px;
         cursor: pointer;
       }
     }
@@ -318,7 +336,7 @@ export default {
       }
       .menu {
         img {
-          width: 70px;
+          width: 40px;
           cursor: pointer;
         }
       }

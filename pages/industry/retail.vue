@@ -3,18 +3,16 @@
     <service-banner :BannerData="bannerData" />
     <div class="home-container starting-text">
       <p class="text-center">Our Industry</p>
-      <h2 class="text-center">Adding Value To Medicinal Care</h2>
+      <h2 class="text-center">Reshaping Retail And Consumer Goods</h2>
       <p class="text-center">
-        The process of developing medical apps for use in healthcare involves
-        customizing, developing, supporting, and evolving these apps. As part of
-        our commitment to providing state-of-the-art care, we strive to develop
-        cutting-edge apps.
-        <br /><br />
-        Our thorough market analysis, keen software ideation helped us create
-        staunch digital infrastructure with promising API integration. In
-        achieving agile development, we run the process from healthcare standard
-        and maintenance. This expertise and critical approach maneuver a digital
-        experience for our clients.
+        From an avant garde fashion hub to seasoned conglomerate, our
+        forward-thinking experts create top-notch solutions for lasting customer
+        relationships. By providing secure digital options to their respective
+        customers and retailers, we have enhanced their revenue and growth.
+        Silicon Network’s technology driven methodology has created an
+        equilibrium of innovation and engagement for the brands. We create
+        multiple channels for retail and customer goods to reach their desired
+        audience via mobile apps, software and digital solutions.
       </p>
     </div>
     <impact-icons :Impact="Impact" />
@@ -49,8 +47,9 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        top: "Retail And CPG",
+        img: "retailbanner.jpg",
+        heading: "Equipping Customer With Digital Solution",
         url: "#",
       },
       IndustryCards: [
@@ -68,7 +67,7 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Support",
+            heading: "Consultancy",
             desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
           },
           {
@@ -84,34 +83,34 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry1.jpg",
-        bgImg: "gradient1.jpg",
+        img: "industry4.jpg",
+        bgImg: "gradient4.jpg",
         heading: "Use Cases",
         listItems: [
           {
-            title: "End-To-End Process Automation",
+            title: "Precision Farming",
           },
           {
-            title: "Computer Assisted Diagnosis (CAD)",
+            title: "Predictive Maintenance",
           },
           {
-            title: "Data Analysis For Customer- Centric Growth",
+            title: "Asset Tracking",
           },
         ],
       },
       IndustryC: {
         items: [
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Global Experts",
+            value: "5250+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Services Delivered From Countries",
+            value: "5+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Active Clients Across Globe",
+            value: "2670+",
           },
         ],
       },

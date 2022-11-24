@@ -13,15 +13,21 @@
       <h2 class="text-center">OPEN ROLES</h2>
       <v-expansion-panels accordion>
         <v-expansion-panel>
-          <v-expansion-panel-header> Role Title </v-expansion-panel-header>
+          <v-expansion-panel-header>
+            Full Stack Developer (JavaScript)
+          </v-expansion-panel-header>
           <v-expansion-panel-content> Role Desc </v-expansion-panel-content>
         </v-expansion-panel>
         <v-expansion-panel>
-          <v-expansion-panel-header> Role Title </v-expansion-panel-header>
+          <v-expansion-panel-header>
+            Senior Test Automation Engineer
+          </v-expansion-panel-header>
           <v-expansion-panel-content> Role Desc </v-expansion-panel-content>
         </v-expansion-panel>
         <v-expansion-panel>
-          <v-expansion-panel-header> Role Title </v-expansion-panel-header>
+          <v-expansion-panel-header>
+            WooCommerce Developer</v-expansion-panel-header
+          >
           <v-expansion-panel-content> Role Desc </v-expansion-panel-content>
         </v-expansion-panel>
       </v-expansion-panels>
@@ -47,38 +53,38 @@ export default {
   data: () => {
     return {
       Impact: {
-        title: "Our Impact",
-        heading: "Empowering Tech Industry On Every Step",
+        title: "Benefits",
+        heading: "Best Advantages At Best Company",
         icons: [
           {
-            img: "consult.svg",
-            heading: "Support",
-            desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
+            img: "training.svg",
+            heading: "Training & Development",
+            desc: "Occasionally, You’ll Get An Email From HR Asking You To Participate In Training Sessions Where We Enhance Your Hard Skills And Soft Skills.",
           },
           {
-            img: "implem.svg",
-            heading: "Implementation",
-            desc: "Deploying fast paced strategy without compromising quality  Load-Testing for long-term scalability Balancing cost and hybrid innovation",
+            img: "medical.svg",
+            heading: "Medical",
+            desc: "Sure, Work Is Important, But Nothing Comes Before Your Health. We Provide A Comprehensive Medical Plan Tailored According To Your Designation.",
           },
           {
-            img: "supp.svg",
-            heading: "Support",
-            desc: "Minimize the disruption via continuity plan. Match and strengthen your digital asset Provide responsive and effective technology",
+            img: "pto.svg",
+            heading: "PTO And Holidays",
+            desc: "We Believe In Maintaining A Work-Life Balance. Need To Spend Time With Family And Friends, Call In Sick, Or Take That Well-Deserved Vacation To The Bahamas? You Got It.",
           },
           {
-            img: "supp.svg",
-            heading: "Support",
-            desc: "Minimize the disruption via continuity plan. Match and strengthen your digital asset Provide responsive and effective technology",
+            img: "mental.svg",
+            heading: "Mental Health Activities",
+            desc: "Your Wellness Is Our Priority, And Nobody Should Feel Alone. Speak To A Counselor, Participate In Pep Talks, And Get A Stipend In Your Package.",
           },
           {
-            img: "supp.svg",
-            heading: "Support",
-            desc: "Minimize the disruption via continuity plan. Match and strengthen your digital asset Provide responsive and effective technology",
+            img: "workk.svg",
+            heading: "Work Anywhere, Anytime",
+            desc: "We’re Headquartered In Fresno, US, But You Can Work Your Magic From Any Location And Time Zone. We Only Ask That You Have Wi-Fi, And You’re Good To Go.",
           },
           {
-            img: "supp.svg",
-            heading: "Support",
-            desc: "Minimize the disruption via continuity plan. Match and strengthen your digital asset Provide responsive and effective technology",
+            img: "next.svg",
+            heading: "Next-Gen Technologies",
+            desc: "We Succeed Because We Are Hands-On With The Latest Tools And Technologies. You Name It, We Have It!",
           },
         ],
       },

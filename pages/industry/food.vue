@@ -1,20 +1,20 @@
 <template>
   <div>
-    <service-banner :BannerData="bannerData" />
+    <service-banner :BannerData="bannerData" class="mss-banner" />
     <div class="home-container starting-text">
       <p class="text-center">Our Industry</p>
-      <h2 class="text-center">Adding Value To Medicinal Care</h2>
+      <h2 class="text-center">
+        Simplifying Expert Food & Beverage App Solutions
+      </h2>
       <p class="text-center">
-        The process of developing medical apps for use in healthcare involves
-        customizing, developing, supporting, and evolving these apps. As part of
-        our commitment to providing state-of-the-art care, we strive to develop
-        cutting-edge apps.
-        <br /><br />
-        Our thorough market analysis, keen software ideation helped us create
-        staunch digital infrastructure with promising API integration. In
-        achieving agile development, we run the process from healthcare standard
-        and maintenance. This expertise and critical approach maneuver a digital
-        experience for our clients.
+        In order to ensure quality and streamline dispatches, food and beverage
+        manufacturers should maintain compliance adherence, control temperature,
+        and control packaging methods.
+        <br />
+        By creating custom software products for your food and beverage
+        business, our leading software development company can help you meet
+        compliance requirements, maintain quality, keep track of your
+        competitors, streamline distribution, and plan processes intelligently.
       </p>
     </div>
     <impact-icons :Impact="Impact" />
@@ -49,8 +49,9 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        top: "Food & Beverages",
+        img: "food.jpg",
+        heading: "Create Custom Software Products With Ease",
         url: "#",
       },
       IndustryCards: [
@@ -84,8 +85,8 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry1.jpg",
-        bgImg: "gradient1.jpg",
+        img: "industry7.jpg",
+        bgImg: "gradient7.jpg",
         heading: "Use Cases",
         listItems: [
           {
@@ -102,16 +103,16 @@ export default {
       IndustryC: {
         items: [
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Global Experts",
+            value: "5250+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Services Delivered From Countries",
+            value: "5+",
           },
           {
-            heading: "ACTIVE CLIENTS",
-            value: "2.6k+",
+            heading: "Active Clients Across Globe",
+            value: "2670+",
           },
         ],
       },

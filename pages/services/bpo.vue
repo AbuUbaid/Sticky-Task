@@ -39,71 +39,54 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        img: "bpaas.jpg",
+        heading: "Development Resources With Global Scale Connectivity",
         url: "#",
       },
       Metrics: {
-        heading: "Services That Reflect Ingenuity",
-        desc: "Silicon Network brings together IT strategy, deep industry knowledge, change management and large-scale application delivery.",
+        heading: "BPAAS",
+        desc: "We Contemplate Your Digital Strategy For Perfect Brand Experience By Curating Outstanding Content And Experimenting With Different Forms Of Media.",
         icons: [
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Access Vetted Pool Of Trained Consultants",
+            value: "5k+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Engineers & Architects",
+            value: "3k+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Data Scientists",
+            value: "52+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "CX Consumer Panels",
+            value: "20+",
           },
         ],
       },
       data: [
         {
+          heading: "Staff Augmentation",
           url: "one.svg",
-          text: "Aaaaaaaa",
+          text: `Successful companies operate on an efficient workforce, which require a crucial scale up development for better and high quality products. Silicon Network works tirelessly to provide coherent technical talent for all-encompassing and high-end value. Our experienced approach allows us to connect companies with high-seasoned  talent which can grow your team quickly and cost-effectively; making a way of success for your business. `,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Hiring Capacity And Volume",
+            "Basic Filtering Of Vendors",
+            "Success Measurement",
           ],
         },
         {
+          heading: "BPO",
           url: "two.svg",
-          text: "",
+          text: `By leveraging our expertise in the digital sphere, we provide efficient, accurate, and measurable BPO services. By automating, managing quality, embracing multichannel approaches, and embracing digital transformation, we accelerate the delivery of your service. 
+Our commitment to complete client satisfaction is backed by impeccable transparency and accountability.
+`,
           listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
-          ],
-        },
-        {
-          url: "three.svg",
-          text: "",
-          listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
-          ],
-        },
-        {
-          url: "four.svg",
-          text: "",
-          listItems: [
-            "Content & Media",
-            "Content & Media",
-            "Information & Architecture",
-            "Design Thinking",
+            "Multi-Channel/Omnichannel Support.",
+            "Robust CRM Integration Capabilities.",
+            "Compliant Service Solutions.",
+            "High Uptime Reliability.",
           ],
         },
       ],
@@ -116,34 +99,6 @@ export default {
         { title: "Food & Beverage", link: "" },
         { title: "Pharmaceutical", link: "" },
       ],
-      Values: {
-        title: "Our Services",
-        heading:
-          "Integrating Practical Technology Through Software Into Digital World",
-        paragraph: "",
-        cards: [
-          {
-            heading: "Digital",
-            desc: "Create digital Infrastructures, Design websites and make an online impact",
-            img: "digital.svg",
-          },
-          {
-            heading: "Dev-Ops And Cloud",
-            desc: "Best Cloud Services, Cloud consult, transformation, security service and management",
-            img: "ms.svg",
-          },
-          {
-            heading: "Microsoft Services",
-            desc: "From finance operation, project service automation, sales, and talent acquisition, we refine these steps to get best results.",
-            img: "devops.svg",
-          },
-          {
-            heading: "BPAAS",
-            desc: "Depend on consistent, stable development resources with our global scale connectivity to world-class talent hubs to digitise land records.",
-            img: "bpaas.svg",
-          },
-        ],
-      },
       Faqs: {
         title: "Our Process",
         heading: "Our Groundbreaking Work Sequence",

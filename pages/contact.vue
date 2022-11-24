@@ -1,6 +1,6 @@
 <template>
   <div>
-    <service-banner :BannerData="bannerData" />
+    <service-banner :BannerData="bannerData" class="mss-banner"/>
     <contact-form />
     <building-cta />
   </div>
@@ -17,8 +17,8 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "about.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        img: "contactbg.jpg",
+        heading: "Get All Of Your Queries Answered By The Best In The Field ",
         url: "#",
       },
     };

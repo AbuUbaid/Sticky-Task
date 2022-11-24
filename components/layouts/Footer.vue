@@ -29,9 +29,9 @@
         </div>
         <div class="footer-text">
           <h3>USA</h3>
-          <p>
-            346, Block G3, Johar Town, Lahore, Pakistan +92 (423) 544 5651-2
-          </p>
+          <p>44288 Fremont Blvd Fremont, CA 94538</p>
+          <a href="tel:855-904-4417">855-904-4417</a>
+          <a href="mailto:info@siliconnet.com">info@siliconnet.com</a>
         </div>
         <div class="footer-text">
           <h3>China</h3>
@@ -158,6 +158,9 @@ export default {
   width: 43%;
 }
 
+.footer-text a {
+  color: black;
+}
 .copyright {
   display: flex;
   justify-content: space-between;

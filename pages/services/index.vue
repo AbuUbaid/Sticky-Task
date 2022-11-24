@@ -49,16 +49,16 @@ export default {
             value: "220+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Devops & Cloud Experts",
+            value: "230+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "AI & Data Scientists",
+            value: "100+",
           },
           {
-            heading: "Full Stack Engineers",
-            value: "220+",
+            heading: "Design & Digital Professionals",
+            value: "1000+",
           },
         ],
       },
@@ -70,18 +70,18 @@ export default {
         cards: [
           {
             heading: "Digital",
-            desc: "Create digital Infrastructures, Design websites and make an online impact",
+            desc: "Create digital Infrastructures, Design websites and make an online impact;",
             img: "digital.svg",
           },
           {
             heading: "Dev-Ops And Cloud",
-            desc: "Best Cloud Services, Cloud consult, transformation, security service and management",
-            img: "ms.svg",
+            desc: "Best Cloud Services, Cloud consult, transformation, security service and management.",
+            img: "devops.svg",
           },
           {
             heading: "Microsoft Services",
             desc: "From finance operation, project service automation, sales, and talent acquisition, we refine these steps to get best results.",
-            img: "devops.svg",
+            img: "ms.svg",
           },
           {
             heading: "BPAAS",

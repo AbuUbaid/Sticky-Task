@@ -2,28 +2,31 @@
   <div>
     <div class="banner-container solution-banner">
       <div class="contain">
-        <h1>One-Stop-Shop For Remote Comprehensive Management Needs</h1>
+        <h1>Access Business Resources And Assets Safely And Easily.</h1>
       </div>
     </div>
     <p class="entry-text home-container text-center">
-      Sticky Tasks allows you to organize your tasks effectively. This software
-      keeps track of your work, your business, employees, and your most valuable
-      asset, your time. This attendance management software allows you to set
-      approval workflows and detailed reporting based on company policy for
-      higher productivity and streamlined output.
+      Enterprise VPN creates a tunnel between your organization's resources and
+      its employees. VPN-connected employees can access company networks. Since
+      this tunnel is end-to-end encrypted, businesses need not worry about
+      unauthorized access or network visibility, ensuring total traffic
+      protection and anonymity.
     </p>
     <div class="features">
       <div class="image-area">
-        <img src="~/assets/images/stickyfeatures.jpg" alt="Features image" />
+        <img src="~/assets/images/servers.svg" alt="Features image" />
       </div>
       <div class="text-area">
         <h2>AWS Certified Partner BOH Support</h2>
         <ul>
           <li>Programming (Technical) Support</li>
-          <li>Programming (Technical) Support</li>
-          <li>Programming (Technical) Support</li>
-          <li>Programming (Technical) Support</li>
-          <li>Programming (Technical) Support</li>
+          <li>Non-Programming (Functional) Support</li>
+          <li>Implementations & Integrations</li>
+          <li>DevOps Support</li>
+          <li>Setup & Configuration</li>
+          <li>Bug Fixes & Troubleshooting</li>
+          <li>Migration & Updates</li>
+          <li>Application Support</li>
         </ul>
       </div>
     </div>
@@ -40,19 +43,19 @@
           </p>
         </div>
         <div class="reason">
-          <h4>Extra protection 24/7</h4>
+          <h4>Large server network</h4>
           <p>
-            Threat Protection monitors your activity to prevent harmful website
-            visits and software downloads. Blocking trackers and intrusive ads
-            makes browsing safer and smoother.
+            When it comes to speed, Enterprise VPN is among the best VPNs
+            available. With more servers, you're more likely to find one nearby
+            and always have a stable and secure VPN connection.
           </p>
         </div>
         <div class="reason">
-          <h4>Extra protection 24/7</h4>
+          <h4>Cross Platform Access</h4>
           <p>
-            Threat Protection monitors your activity to prevent harmful website
-            visits and software downloads. Blocking trackers and intrusive ads
-            makes browsing safer and smoother.
+            Enterprise is one of the best VPN services in the United States,
+            United Kingdom, Australia, and Canada for all of your devices. It
+            provides apps for all major platforms.
           </p>
         </div>
       </div>
@@ -70,32 +73,32 @@ export default {
   data: () => {
     return {
       Features: {
-        heading: "HAH?",
-        desc: "WHAT",
+        heading: "",
+        desc: "",
         cards: [
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: "AWS Configurations",
+            desc: "Our  experts provide  configurations, enabling us to assess, audit, and evaluate your current infrastructure and simplify compliance auditing, change management, security analysis, and operational troubleshooting.",
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Migrations`,
+            desc: `Our Experienced AWS Cloud Migration Experts Perform A Full Assessment Of Your IT Infrastructure To Determine The Best Framework, Library, And SDK To Effectively Migrate Your Application And/Or Data To AWS With Zero-To-Minimal Downtime.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Integrations`,
+            desc: `We seamlessly integrate AWS cloud and other third-party plugins, add-ons, and extensions into your existing on-premise systems, incorporating customizable features, functionalities, and capabilities to enhance your current business workflows.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Compliance`,
+            desc: `Our AWS DevOps experts provide AWS configurations, enabling us to assess, audit, and evaluate your current AWS infrastructure and simplify compliance auditing, change management, security analysis, and operational troubleshooting.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Security`,
+            desc: `Our experienced AWS cloud migration experts perform a full assessment of your IT infrastructure to determine the best framework, library, and SDK to effectively migrate your application and/or data to AWS with zero-to-minimal downtime.`,
           },
           {
-            heading: "Productivity",
-            desc: "Get a 360 view of productive and idle time of your team to manage employee appraisals and payroll accordingly.",
+            heading: `Support`,
+            desc: `We seamlessly integrate AWS cloud and other third-party plugins, add-ons, and extensions into your existing on-premise systems, incorporating customizable features, functionalities, and capabilities to enhance your current business workflows`,
           },
         ],
       },
@@ -108,14 +111,14 @@ export default {
 .solution-banner {
   height: 100vh;
   width: 100%;
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: start;
   justify-content: end;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/chr.jpg");
+  background-size: cover;
+  background-position: top center;
   .contain {
     margin-bottom: 150px;
     margin-left: 70px;

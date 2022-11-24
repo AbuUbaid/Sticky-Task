@@ -1,5 +1,5 @@
 <template>
-  <div class="faq-parent">
+  <!-- <div class="faq-parent">
     <p class="text-center">{{ Faqs.title }}</p>
     <h2 class="text-center">{{ Faqs.heading }}</h2>
     <div class="faq-container">
@@ -14,6 +14,55 @@
             }}</v-expansion-panel-header>
             <v-expansion-panel-content>
               {{ question.answer }}
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="faq-parent">
+    <p class="text-center">Our Process</p>
+    <h2 class="text-center">Our Groundbreaking Work Sequence</h2>
+    <div class="faq-container">
+      <div class="img">
+        <img :src="imgUrl(Faqs.img)" alt="FAQ image" />
+      </div>
+      <div class="faqs">
+        <v-expansion-panels accordion>
+          <v-expansion-panel>
+            <v-expansion-panel-header> Hypothesize </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              Study current and potential customers to see what they need and
+              want.
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header> Build </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              Design the interface, create and analyze user flows and build
+              prototypes.
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header> Test </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              Refine based on feedback from team, friends, family and beta
+              testers.
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header> Launch </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              Don't mistake speed for precocity. Your product is ready when it's
+              ready.
+            </v-expansion-panel-content>
+          </v-expansion-panel>
+          <v-expansion-panel>
+            <v-expansion-panel-header> Monitor </v-expansion-panel-header>
+            <v-expansion-panel-content>
+              Some of the ways you can use is market research, competitive
+              analysis, product feedback and customer support.
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
