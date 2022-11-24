@@ -3,7 +3,7 @@
     <div class="footer-detail">
       <p>Reaching</p>
       <h2>To New Heights</h2>
-      <a class="cta-orange">Contact Us</a>
+      <NuxtLink to="/contact" class="cta-orange">Contact Us</NuxtLink>
     </div>
     <hr />
     <p class="top-notch">

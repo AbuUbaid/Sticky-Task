@@ -1,7 +1,7 @@
 <template>
   <div class="secpage-values home-container">
     <div class="values-four">
-      <div class="t-four">
+      <NuxtLink to="/services/digital" class="t-four">
         <p class="slide-text">
           Consult & Strategy<img src="~/assets/icons/arrow-right.svg" />
         </p>
@@ -14,8 +14,8 @@
         <p class="slide-text">
           Integrations<img src="~/assets/icons/arrow-right.svg" />
         </p>
-      </div>
-      <div class="t-four">
+      </NuxtLink>
+      <NuxtLink to="/services/devops" class="t-four">
         <p class="slide-text">
           Cloud Consult Service<img src="~/assets/icons/arrow-right.svg" />
         </p>
@@ -28,23 +28,23 @@
         <p class="slide-text">
           Cloud Managed Service<img src="~/assets/icons/arrow-right.svg" />
         </p>
-      </div>
-      <div class="t-four">
+      </NuxtLink>
+      <NuxtLink to="/services/microsoft" class="t-four">
         <p class="slide-text">
           Dynamic 365<img src="~/assets/icons/arrow-right.svg" />
         </p>
         <p class="slide-text">
           Power BI<img src="~/assets/icons/arrow-right.svg" />
         </p>
-      </div>
-      <div class="t-four">
+      </NuxtLink>
+      <NuxtLink to="/services/bpo" class="t-four">
         <p class="slide-text">
           Staff Augmentation<img src="~/assets/icons/arrow-right.svg" />
         </p>
         <p class="slide-text">
           BPO<img src="~/assets/icons/arrow-right.svg" />
         </p>
-      </div>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -71,6 +71,7 @@ export default {
   border-top: 0.5px solid #707070;
   width: 17%;
   margin-top: 25px;
+  color: black;
 }
 .slide-text {
   margin-top: 15px;

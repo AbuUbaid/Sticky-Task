@@ -3,7 +3,7 @@
     <first-banner />
     <p class="text-center">Services</p>
     <metrics-counter :Metrics="Metrics" />
-    <about-values :Values="Values" />
+    <service-values :Values="Values" />
     <service-internal-links />
     <methodology />
     <solution-cards :Cards="IndustryCards" />
@@ -20,6 +20,7 @@ import ServiceInternalLinks from "../../components/services/ServiceInternalLinks
 import BuildingCta from "../../components/BuildingCTA.vue";
 import MetricsCounter from "../../components/services/MetricsCounter.vue";
 import Methodology from "../../components/services/Methodology.vue";
+import ServiceValues from "../../components/services/ServiceValues.vue";
 export default {
   components: {
     BuildingCta,
@@ -27,6 +28,7 @@ export default {
     MetricsCounter,
     ServiceInternalLinks,
     Methodology,
+    ServiceValues,
   },
   name: "ServicesPage",
   data: () => {
@@ -72,21 +74,25 @@ export default {
             heading: "Digital",
             desc: "Create digital Infrastructures, Design websites and make an online impact;",
             img: "digital.svg",
+            link: "digital",
           },
           {
             heading: "Dev-Ops And Cloud",
             desc: "Best Cloud Services, Cloud consult, transformation, security service and management.",
             img: "devops.svg",
+            link: "devlops",
           },
           {
             heading: "Microsoft Services",
             desc: "From finance operation, project service automation, sales, and talent acquisition, we refine these steps to get best results.",
             img: "ms.svg",
+            link: "microsoft",
           },
           {
             heading: "BPAAS",
             desc: "Depend on consistent, stable development resources with our global scale connectivity to world-class talent hubs to digitise land records.",
             img: "bpaas.svg",
+            link: "bpo",
           },
         ],
       },

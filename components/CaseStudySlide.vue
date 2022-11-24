@@ -6,9 +6,8 @@
       <v-carousel
         :continuous="true"
         :cycle="false"
-        :interval="5000"
-        :show-arrows="true"
-        hide-delimiters
+        :interval="3000"
+        :show-arrows="false"
       >
         <template v-slot:prev="{ on, attrs }">
           <img
@@ -27,7 +26,7 @@
           />
         </template>
         <v-carousel-item>
-          <div class="case-slide slide1">
+          <NuxtLink to="/solutions/stickytasks" class="case-slide slide1">
             <h2>Product Development</h2>
             <p>
               We built this product from initial concept to final market launch.
@@ -35,17 +34,17 @@
               ideating a solution, developing a product roadmap for encompassing
               usage.
             </p>
-          </div>
+          </NuxtLink>
         </v-carousel-item>
         <v-carousel-item>
-          <div class="case-slide slide2">
+          <NuxtLink to="/solutions/e-commerce" class="case-slide slide2">
             <h2>E-commerce</h2>
             <p>
               By deploying site reliability engineering strategy we reduced
               friction in operability-related experience on HDD digital
               channels.
             </p>
-          </div>
+          </NuxtLink>
         </v-carousel-item>
       </v-carousel>
     </div>

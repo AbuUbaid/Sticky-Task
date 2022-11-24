@@ -5,9 +5,9 @@
         <img src="~/assets/images/shape3.svg" alt="Shape" />
         <p>Our Solutions</p>
         <h2>Offering Comprehensive Digital Solutions</h2>
-        <a class="cta-orange">Let's Talk</a>
+        <NuxtLink to="/contact" class="cta-orange">Let's Talk</NuxtLink>
       </div>
-      <div class="fi-two">
+      <NuxtLink to="/solutions/microsoft-dynamics" class="fi-two">
         <img
           src="~/assets/logos/msdynamics.svg"
           alt="Microsoft Dynamics Logo"
@@ -17,8 +17,8 @@
           Combine the power of CRM and ERP in your business network through AI
           tools and intelligent applications.
         </p>
-      </div>
-      <div class="fi-two">
+      </NuxtLink>
+      <NuxtLink to="/solutions/hr-connect" class="fi-two">
         <img src="~/assets/logos/hrcon.svg" alt="fi-two" />
         <h3>HR Connect</h3>
         <p>
@@ -26,8 +26,8 @@
           profits of your business through our agile HR services that provide an
           efficient workforce.
         </p>
-      </div>
-      <div class="fi-two">
+      </NuxtLink>
+      <NuxtLink to="/solutions/e-commerce" class="fi-two">
         <img src="~/assets/logos/ecom.svg" alt="fi-two" />
         <h3>E-Commerce</h3>
         <p>
@@ -35,16 +35,16 @@
           with advanced techniques from buying to selling the services or
           products online.
         </p>
-      </div>
-      <div class="fi-two">
+      </NuxtLink>
+      <NuxtLink to="/solutions/stickytasks" class="fi-two">
         <img src="~/assets/logos/st.svg" alt="fi-two" />
         <h3>Sticky Tasks</h3>
         <p>
           Plan the strategies, prioritise the workload, schedule meetings with
           the managers and keep an eye on the workforce through this software.
         </p>
-      </div>
-      <div class="fi-two">
+      </NuxtLink>
+      <NuxtLink to="/solutions/enterprise-vpn" class="fi-two">
         <img src="~/assets/logos/vpn.svg" alt="fi-two" />
         <h3>Enterprise VPN</h3>
         <p>
@@ -52,7 +52,7 @@
           can access the information with the resources, hosted both locally and
           in the cloud-integrated system.
         </p>
-      </div>
+      </NuxtLink>
     </div>
   </div>
 </template>
@@ -84,6 +84,7 @@ export default {
   position: relative;
   display: flex;
   flex-direction: column;
+  color: black;
   justify-content: center;
 }
 

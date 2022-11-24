@@ -4,12 +4,30 @@
     <h2 class="text-center">
       Serving The Best Tech Solution In Every Walk Of Life
     </h2>
-    <a
+    <!-- <a
       class="single-card"
       :href="card.link"
       :key="card"
       v-for="card in Cards"
       >{{ card.title }}</a
+    >  -->
+
+    <NuxtLink to="/industry/retail" class="single-card">CPG & Retail</NuxtLink>
+    <NuxtLink to="/industry/government" class="single-card"
+      >Government</NuxtLink
+    >
+    <NuxtLink to="/industry/e-commerce" class="single-card"
+      >Apparel & Footwear</NuxtLink
+    >
+    <NuxtLink to="/industry/manufacturing" class="single-card"
+      >Manufacturing & Retail</NuxtLink
+    >
+    <NuxtLink to="/industry/finance" class="single-card"
+      >Insurance & Financial Services</NuxtLink
+    >
+    <NuxtLink to="/industry/food" class="single-card">Food & Beverage</NuxtLink>
+    <NuxtLink to="/industry/pharma" class="single-card"
+      >Pharmaceutical</NuxtLink
     >
   </div>
 </template>
@@ -55,6 +73,8 @@ export default {
   border: 1px solid #707070;
   text-transform: capitalize;
   transition: all 0.3s ease;
+  color: black;
+  font-family: "Gilroy-Medium";
 }
 /* 
 .single-card.hover:hover {

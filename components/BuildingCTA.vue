@@ -2,9 +2,9 @@
   <div class="building-cta">
     <div class="text-area">
       <h2>Next Starts Now</h2>
-      <NuxtLink to="/about" class="explore-link">Business Inquiries</NuxtLink>
-      <a href="" class="explore-link">Job Openings</a>
-      <a href="" class="explore-link">Media Inquiries</a>
+      <NuxtLink to="/contact" class="explore-link">Business Inquiries</NuxtLink>
+      <NuxtLink to="/careers" class="explore-link">Job Openings</NuxtLink>
+      <NuxtLink to="/contact" class="explore-link">Media Inquiries</NuxtLink>
     </div>
     <div class="image-area">
       <img src="~/assets/images/building.jpg" alt="Silicon Networks Office" />

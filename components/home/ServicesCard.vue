@@ -8,41 +8,41 @@
         <p id="head">Our Services</p>
         <h2>Let's Level Up Your Business Together</h2>
         <p>We create effective road-map for your success</p>
-        <a class="cta-orange">Let's Talk</a>
+        <NuxtLink to="/contact" class="cta-orange">Let's Talk</NuxtLink>
       </div>
       <div class="t-right values-four">
-        <div class="t-four">
+        <NuxtLink to="/services/digital" class="t-four">
           <img src="~/assets/icons/digital.svg" alt="Digital Logo" />
           <h4>Digital</h4>
           <p>
             Create digital Infrastructures, Design websites and make an online
             impact.
           </p>
-        </div>
-        <div class="t-four">
+        </NuxtLink>
+        <NuxtLink to="/services/devops" class="t-four">
           <img src="~/assets/icons/devops.svg" alt="Dev Ops" />
           <h4>Dev-Ops And Cloud</h4>
           <p>
             Best Cloud Services, Cloud consult, transformation, security service
             and management.
           </p>
-        </div>
-        <div class="t-four">
+        </NuxtLink>
+        <NuxtLink to="/services/microsoft" class="t-four">
           <img src="~/assets/icons/ms.svg" alt="Microsoft Logo" />
           <h4>Microsoft Services</h4>
           <p>
             Assessing technological framework and business objective with
             Microsoft Azure and Dynamics.
           </p>
-        </div>
-        <div class="t-four">
+        </NuxtLink>
+        <NuxtLink to="/services/bpo" class="t-four">
           <img src="~/assets/icons/bpaas.svg" alt="BPAAS Logo" />
           <h4>BPAAS</h4>
           <p>
             We have industry professionals that have viable experience in
             understanding and evaluating the BPAAS trends.
           </p>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -109,6 +109,9 @@ export default {
   width: 43% !important;
 }
 
+.t-four {
+  color: black;
+}
 .t-four img {
   width: 64px;
   height: 64px;

@@ -14,7 +14,7 @@
             <h1>
               Integrating High-End Software For Better Digital Infrastructure
             </h1>
-            <a href="#!" class="explore-link">Explore More</a>
+            <NuxtLink to="/solutions/stickytasks" class="explore-link">Explore More</NuxtLink>
             <img
               src="~/assets/logos/goldpartner.svg"
               alt="Microsoft Gold Partner"
@@ -27,7 +27,7 @@
         <div class="home-slide">
           <div class="text-area">
             <h1>Leading The Future Of Innovative Business</h1>
-            <a href="#!" class="explore-link">Let's get to work</a>
+            <NuxtLink to="/contact" class="explore-link">Let's get to work</NuxtLink>
             <img
               src="~/assets/logos/goldpartner.svg"
               alt="Microsoft Gold Partner"
