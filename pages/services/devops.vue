@@ -39,7 +39,7 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "cloud.jpg",
+        img: "cloud.webp",
         heading: "Ensuring Continuous Delivery, Deployment, And Integration",
         url: "#",
       },
@@ -123,32 +123,50 @@ export default {
       Faqs: {
         title: "Our Process",
         heading: "Our Groundbreaking Work Sequence",
-        img: "faqs.jpg",
+        img: "devopsimg.webp",
         questions: [
           {
-            title: "Plan",
-            answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+            title: "Consultation",
+            answer: `Server Orchestration
+            <br>
+Server Support
+            <br>
+Virtualization
+            <br>
+Server Security
+`,
           },
           {
-            title: "Plan",
-            answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+            title: "Infrastructure Automation",
+            answer: `Server Installation
+            <br>
+Configuration Environment Scripting
+`,
           },
           {
-            title: "Plan",
-            answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+            title: "Configuration Management",
+            answer: `Hypothesis Validation
+              <br>
+Exploratory Data Analysis
+<br>
+Graphical Representation
+`,
           },
           {
-            title: "Plan",
-            answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+            title: "Integration & Deployment",
+            answer: `Continuous Integration
+            <br>
+Integration Testing
+`,
           },
           {
-            title: "Plan",
-            answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+            title: "Infrastructure Monitoring",
+            answer: `Built-in Knowledge Base Deployment
+              <br>
+Performance Diagnosis
+<br>
+Availability diagnosis
+`,
           },
         ],
       },

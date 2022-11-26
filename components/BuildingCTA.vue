@@ -7,7 +7,7 @@
       <NuxtLink to="/contact" class="explore-link">Media Inquiries</NuxtLink>
     </div>
     <div class="image-area">
-      <img src="~/assets/images/building.jpg" alt="Silicon Networks Office" />
+      <img src="~/assets/images/building.webp" alt="Silicon Networks Office" />
     </div>
   </div>
 </template>

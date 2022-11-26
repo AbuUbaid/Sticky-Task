@@ -22,7 +22,7 @@ export default {
   justify-content: end;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/careers.jpg");
+  background: url("~/assets/images/careers.webp");
   background-size: cover;
   background-position: center;
 }

@@ -16,7 +16,7 @@ export default {
 .about-banner {
   height: 100vh;
   width: 100%;
-  background: url("~/assets/images/about.jpg");
+  background: url("~/assets/images/about.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -33,7 +33,7 @@ export default {
 
 @media (max-width: 480px) {
   .about-banner {
-    background: url("~/assets/images/about.jpg");
+    background: url("~/assets/images/about.webp");
   }
   .about-banner h1 {
     width: 100%;

@@ -103,6 +103,7 @@ export default {
 }
 
 .roles {
+  display: none;
   margin-top: 80px;
   margin-bottom: 50px;
 }

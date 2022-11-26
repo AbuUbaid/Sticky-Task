@@ -12,32 +12,29 @@
     </p>
     <div class="footer-flex">
       <div class="logo">
-        <img src="~/assets/logos/snlogo.svg" alt="Silicon Networks Logo" />
+        <img src="~/assets/logos/snlogo.webp" alt="Silicon Networks Logo" />
       </div>
       <div class="footer-texts">
         <div class="footer-text">
           <h3>Karachi Office</h3>
-          <p>
-            346, Block G3, Johar Town, Lahore, Pakistan +92 (423) 544 5651-2
-          </p>
+          <p>47 Street No 6،, Darul Aman Society PECHS, Karachi, Pakistan</p>
         </div>
         <div class="footer-text">
           <h3>Lahore Office</h3>
           <p>
-            346, Block G3, Johar Town, Lahore, Pakistan +92 (423) 544 5651-2
+            30 Khayaban-e-Iqbal, Sector XX DHA Phase 3, Lahore, Pakistan <br />
+            +92 (423) 544 5651-2
           </p>
         </div>
         <div class="footer-text">
           <h3>USA</h3>
-          <p>44288 Fremont Blvd Fremont, CA 94538</p>
+          <p>4288 Fremont Blvd Fremont, CA 94538</p>
           <a href="tel:855-904-4417">855-904-4417</a>
           <a href="mailto:info@siliconnet.com">info@siliconnet.com</a>
         </div>
         <div class="footer-text">
-          <h3>China</h3>
-          <p>
-            346, Block G3, Johar Town, Lahore, Pakistan +92 (423) 544 5651-2
-          </p>
+          <h3>Dubai</h3>
+          <p>Office 403, Bay Square Building 3 - Dubai - UAE</p>
         </div>
       </div>
       <div class="footer-subscribe">

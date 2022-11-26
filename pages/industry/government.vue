@@ -19,7 +19,7 @@
       <h2 class="text-center">Embracing New Horizons</h2>
     </div>
     <use-case-card :UseCaseCard="UseCaseCard" />
-    <mission-globe />
+    <mission-globe :Footprint="Footprint"/>
     <industry-counter :IndustryC="IndustryC" />
     <solution-cards :Cards="IndustryCards" />
   </div>
@@ -45,9 +45,14 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "government.jpg",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        top: "Government",
+        img: "government.webp",
+        heading: "Offering Secure Digital Options For Institutions",
         url: "#",
+      },
+      
+      Footprint: {
+        heading: `Creating Successful Global Footprint In Leading Industry `
       },
       IndustryCards: [
         { title: "CPG & Retail", link: "" },
@@ -80,8 +85,8 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry6.jpg",
-        bgImg: "gradient6.jpg",
+        img: "industry6.webp",
+        bgImg: "gradient6.webp",
         heading: "Use Cases",
         listItems: [
           {

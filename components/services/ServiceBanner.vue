@@ -1,8 +1,11 @@
 <template>
   <div class="banner-container about-banner" :style="inlineStyle">
     <div class="contain">
+      <p class="top">{{ BannerData.top }}</p>
       <h1>{{ BannerData.heading }}</h1>
-      <a href="" class="explore-link">Explore More</a>
+      <template v-if="BannerData.url !== '#'">
+        <a :href="BannerData.url"  class="explore-link">Explore More</a>
+      </template>
     </div>
   </div>
 </template>

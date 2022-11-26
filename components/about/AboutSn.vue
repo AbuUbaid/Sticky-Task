@@ -1,7 +1,7 @@
 <template>
   <div class="secpage-donut home-container">
     <div class="donut">
-      <img src="~/assets/images/donut.jpg" alt="donut" />
+      <img src="~/assets/images/donut.webp" alt="donut" />
     </div>
     <div class="donut-text">
       <p>

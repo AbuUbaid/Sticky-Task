@@ -15,12 +15,12 @@
 </template>
 
 <script>
-var images = require.context("../../assets/images/", false, /\.jpg$/);
+var images = require.context("../../assets/images/", false, /\.webp$/);
 export default {
   name: "UserCaseCard",
   props: {
     UseCaseCard: {
-      type: Array,
+      type: Object,
     },
   },
   methods: {
@@ -56,7 +56,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("~/assets/images/gradient1.jpg");
+  background-image: url("~/assets/images/gradient1.webp");
   background-position: left center;
   background-size: cover;
   padding-left: 71px;

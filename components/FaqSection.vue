@@ -1,5 +1,5 @@
 <template>
-  <!-- <div class="faq-parent">
+  <div class="faq-parent">
     <p class="text-center">{{ Faqs.title }}</p>
     <h2 class="text-center">{{ Faqs.heading }}</h2>
     <div class="faq-container">
@@ -13,15 +13,15 @@
               question.title
             }}</v-expansion-panel-header>
             <v-expansion-panel-content>
-              {{ question.answer }}
+              <div v-html="question.answer"></div>
             </v-expansion-panel-content>
           </v-expansion-panel>
         </v-expansion-panels>
       </div>
     </div>
-  </div> -->
+  </div>
 
-  <div class="faq-parent">
+  <!-- <div class="faq-parent">
     <p class="text-center">Our Process</p>
     <h2 class="text-center">Our Groundbreaking Work Sequence</h2>
     <div class="faq-container">
@@ -68,11 +68,11 @@
         </v-expansion-panels>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
-var images = require.context("../assets/images/", false, /\.jpg$/);
+var images = require.context("../assets/images/", false, /\.webp$/);
 export default {
   name: "FaqSection",
   props: {

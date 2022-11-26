@@ -16,7 +16,7 @@
     </p>
     <div class="featured-feature home-container">
       <div class="image-area">
-        <img src="~/assets/images/hrimg.jpg" alt="Featured image" />
+        <img src="~/assets/images/hrimg.webp" alt="Featured image" />
       </div>
       <div class="text-area">
         <h2>Human Resources Administration Made Easy</h2>
@@ -32,7 +32,7 @@
     </div>
     <div class="featured-feature reversed home-container">
       <div class="image-area">
-        <img src="~/assets/images/hrimg.jpg" alt="Featured image" />
+        <img src="~/assets/images/hrimg.webp" alt="Featured image" />
       </div>
       <div class="text-area">
         <h2>Managing Digital Communities</h2>
@@ -53,7 +53,7 @@
           through workflow creative thinking. Protected personal office spaces
           with a networked and unified front and back office activities.
         </p>
-        <img src="~/assets/images/stickyfeatures.jpg" alt="Features image" />
+        <img src="~/assets/images/stickyfeatures.webp" alt="Features image" />
       </div>
       <div class="text-area">
         <div class="solution">
@@ -155,7 +155,7 @@ export default {
   justify-content: start;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/hrcon.jpg");
+  background: url("~/assets/images/hrcon.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -262,7 +262,6 @@ export default {
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 30px;
-    background: url("~/assets/images/about.jpg");
     .contain {
       margin-top: 150px;
       h1 {

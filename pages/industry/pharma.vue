@@ -23,7 +23,7 @@
       <h2 class="text-center">Embracing New Horizons</h2>
     </div>
     <use-case-card :UseCaseCard="UseCaseCard" />
-    <mission-globe />
+    <mission-globe :Footprint="Footprint" />
     <industry-counter :IndustryC="IndustryC" />
     <solution-cards :Cards="IndustryCards" />
   </div>
@@ -50,9 +50,13 @@ export default {
     return {
       bannerData: {
         top: "Pharmaceutical",
-        img: "pharma.jpg",
+        img: "pharma.webp",
         heading: "Seize The Space In Health",
         url: "#",
+      },
+
+      Footprint: {
+        heading: `Creating Successful Global Footprint In Leading Industry`,
       },
       IndustryCards: [
         { title: "CPG & Retail", link: "" },
@@ -69,7 +73,7 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Support",
+            heading: "Consulting",
             desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
           },
           {
@@ -85,8 +89,8 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry5.jpg",
-        bgImg: "gradient5.jpg",
+        img: "industry5.webp",
+        bgImg: "gradient5.webp",
         heading: "Use Cases",
         listItems: [
           {
@@ -99,7 +103,7 @@ export default {
             title: "Sentiment Analysis",
           },
           {
-            title: "Churn Prevention",
+            title: "Product Management",
           },
         ],
       },
@@ -131,6 +135,4 @@ export default {
     margin: 10px 0px;
   }
 }
-
-
 </style>

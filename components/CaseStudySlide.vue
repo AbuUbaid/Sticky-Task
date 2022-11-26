@@ -1,6 +1,6 @@
 <template>
   <div class="casestudy-slider">
-    <p class="text-center">Case Study</p>
+    <p class="text-center">Featured Work</p>
     <h2 class="text-center">Discovering New Horizons Together</h2>
     <div class="slideshow-container home-container testi-slider">
       <v-carousel
@@ -26,7 +26,7 @@
           />
         </template>
         <v-carousel-item>
-          <NuxtLink to="/solutions/stickytasks" class="case-slide slide1">
+          <div to="/solutions/stickytasks" class="case-slide slide1">
             <h2>Product Development</h2>
             <p>
               We built this product from initial concept to final market launch.
@@ -34,17 +34,17 @@
               ideating a solution, developing a product roadmap for encompassing
               usage.
             </p>
-          </NuxtLink>
+          </div>
         </v-carousel-item>
         <v-carousel-item>
-          <NuxtLink to="/solutions/e-commerce" class="case-slide slide2">
+          <div to="/solutions/e-commerce" class="case-slide slide2">
             <h2>E-commerce</h2>
             <p>
               By deploying site reliability engineering strategy we reduced
               friction in operability-related experience on HDD digital
               channels.
             </p>
-          </NuxtLink>
+          </div>
         </v-carousel-item>
       </v-carousel>
     </div>
@@ -68,6 +68,14 @@ export default {
   margin-bottom: 40px;
   font-size: 40px;
 }
+
+.slide1 {
+  background: url("~/assets/images/cslide1.webp");
+}
+
+.slide2 {
+  background: url("~/assets/images/cslide2.webp");
+}
 .case-slide {
   height: 500px;
   color: white;
@@ -78,14 +86,6 @@ export default {
   justify-content: center;
   flex-direction: column;
   border-radius: 12px;
-}
-
-.slide1 {
-  background: url("~/assets/images/cslide1.png");
-}
-
-.slide2 {
-  background: url("~/assets/images/cslide2.jpg");
 }
 .case-slide h2 {
   margin-bottom: 30px;

@@ -1,11 +1,11 @@
 <template>
   <div class="home-container globe-container">
     <div class="intro-text">
-      <p class="text-center">Values</p>
-      <h2 class="text-center">Our Identity And Our Devotion Go Hand-In-Hand</h2>
+      <p class="text-center">Mission</p>
+      <h2 class="text-center">{{Footprint.heading}}</h2>
     </div>
     <div class="globe-image">
-      <img src="~/assets/images/globe.jpg" alt="Globe image" />
+      <img src="~/assets/images/globe.webp" alt="Globe image" />
     </div>
   </div>
 </template>
@@ -13,6 +13,11 @@
 <script>
 export default {
   name: "MissionGlobe",
+  props: {
+    Footprint: {
+      type: Object,
+    },
+  },
 };
 </script>
 

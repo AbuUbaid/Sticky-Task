@@ -4,7 +4,7 @@
       <div class="f-left imageCard">
         <p>A-Team</p>
         <h2>Give your Business a Robust Drive</h2>
-        <a class="cta-black">Augment your Team</a>
+        <NuxtLink to="/team-augmentation" class="cta-black">Augment your Team</NuxtLink>
       </div>
       <div class="f-right imageCard">
         <p>Blog</p>
@@ -28,7 +28,7 @@ export default {
 }
 
 .imageCard {
-  height: 700px;
+  height: 500px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -58,11 +58,11 @@ export default {
 }
 
 .f-left {
-  background: url("~/assets/images/leftt.jpg");
+  background: url("~/assets/images/leftt.webp");
 }
 
 .f-right {
-  background: url("~/assets/images/rightt.jpg");
+  background: url("~/assets/images/rightt.webp");
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {

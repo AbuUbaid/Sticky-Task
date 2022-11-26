@@ -116,7 +116,7 @@ export default {
   justify-content: end;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/chr.jpg");
+  background: url("~/assets/images/chr.webp");
   background-size: cover;
   background-position: top center;
   .contain {
@@ -200,7 +200,6 @@ export default {
 
 @media (max-width: 480px) {
   .solution-banner {
-    background: url("~/assets/images/about.jpg");
     .contain {
       margin-bottom: 150px;
       margin-left: 20px;

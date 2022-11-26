@@ -16,7 +16,7 @@
     </p>
     <div class="features">
       <div class="image-area">
-        <img src="~/assets/images/stickyfeatures.jpg" alt="Features image" />
+        <img src="~/assets/images/stickyfeatures.webp" alt="Features image" />
       </div>
       <div class="text-area">
         <h2>Solution To Human Resources That Is Adaptable And Effective</h2>
@@ -59,7 +59,7 @@
           That Slow Progress.
         </p>
 
-        <h1 class="text-center">Video Placeholder</h1>
+        <video-player src="https://www.youtube.com/watch?v=YBrreLKNz6c" />
       </div>
     </div>
     <solution-features :Features="Features" />
@@ -70,8 +70,12 @@
 <script>
 import OurPartners from "../../components/solutions/OurPartners.vue";
 import SolutionFeatures from "../../components/solutions/SolutionFeatures.vue";
+import VideoPlayer from "nuxt-video-player";
+
+require("nuxt-video-player/src/assets/css/main.css");
+
 export default {
-  components: { SolutionFeatures, OurPartners },
+  components: { SolutionFeatures, OurPartners, VideoPlayer },
   name: "StickyTasks",
   data: () => {
     return {
@@ -119,7 +123,7 @@ export default {
   justify-content: start;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/stb.jpg");
+  background: url("~/assets/images/stb.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -172,7 +176,7 @@ export default {
 }
 
 .video-section {
-  background: url("~/assets/images/videobg.jpg");
+  background: url("~/assets/images/videobg.webp");
   background-size: cover;
   background-position: center;
   padding: 50px;
@@ -195,7 +199,7 @@ export default {
   .solution-banner {
     margin-bottom: 30px;
     padding: 0 20px;
-    background: url("~/assets/images/about.jpg");
+    background: url("~/assets/images/stb.webp");
     .contain {
       margin-top: 150px;
       h1 {
@@ -248,7 +252,6 @@ export default {
   }
 
   .video-section {
-    background: url("~/assets/images/videobg.jpg");
     background-size: cover;
     background-position: center;
     padding: 20px 0px;

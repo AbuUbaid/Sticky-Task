@@ -15,7 +15,7 @@
       </div>
       <div class="logos">
         <div class="logo">
-          <img src="~/assets/logos/logos.jpg" alt="Client Logos" />
+          <img src="~/assets/logos/logos.webp" alt="Client Logos" />
         </div>
       </div>
     </div>

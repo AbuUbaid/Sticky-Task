@@ -18,7 +18,7 @@
       <h2 class="text-center">Embracing New Horizons</h2>
     </div>
     <use-case-card :UseCaseCard="UseCaseCard" />
-    <mission-globe />
+    <mission-globe :Footprint="Footprint" />
     <industry-counter :IndustryC="IndustryC" />
     <solution-cards :Cards="IndustryCards" />
   </div>
@@ -45,7 +45,7 @@ export default {
     return {
       bannerData: {
         top: "Insurance & Financial",
-        img: "financebanner.jpg",
+        img: "financebanner.webp",
         heading: "Strengthening Banking Experience And Innovation",
         url: "#",
       },
@@ -80,8 +80,8 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry2.jpg",
-        bgImg: "gradient2.jpg",
+        img: "industry2.webp",
+        bgImg: "gradient2.webp",
         heading: "Use Cases",
         listItems: [
           {
@@ -113,6 +113,10 @@ export default {
             value: "2670+",
           },
         ],
+      },
+
+      Footprint: {
+        heading: `Creating Successful Global Footprint In Leading Industry `,
       },
     };
   },

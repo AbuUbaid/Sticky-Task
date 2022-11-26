@@ -33,7 +33,7 @@
       <v-carousel-item>
         <div class="slide">
           <div class="image-area">
-            <img src="~/assets/images/works1.png" alt="How it works 1" />
+            <img src="~/assets/images/works1.webp" alt="How it works 1" />
           </div>
           <div class="text-area">
             <div class="innerText">
@@ -49,7 +49,7 @@
       <v-carousel-item>
         <div class="slide">
           <div class="image-area">
-            <img src="~/assets/images/works1.png" alt="How it works 1" />
+            <img src="~/assets/images/works1.webp" alt="How it works 1" />
           </div>
           <div class="text-area">
             <div class="innerText">

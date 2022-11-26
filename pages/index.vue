@@ -6,13 +6,15 @@
     <two-image-banner />
     <solution-cards />
     <case-study-slide />
-    <testimonial-slider />
+    <hardware-partners />
+    <!-- <testimonial-slider /> -->
   </div>
 </template>
 
 <script>
 import CaseStudySlide from "../components/CaseStudySlide.vue";
 import CounterArea from "../components/home/CounterArea.vue";
+import HardwarePartners from "../components/home/HardwarePartners.vue";
 import MainBanner from "../components/home/MainBanner.vue";
 import ServicesCard from "../components/home/ServicesCard.vue";
 import SolutionCards from "../components/home/SolutionCards.vue";
@@ -27,6 +29,7 @@ export default {
     SolutionCards,
     CaseStudySlide,
     TestimonialSlider,
+    HardwarePartners,
   },
   name: "IndexPage",
   data: () => {

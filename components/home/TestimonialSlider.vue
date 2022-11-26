@@ -1,10 +1,10 @@
 <template>
   <div class="home-container testi-slider">
     <v-carousel
-      :continuous="true"
+      :continuous="false"
       :cycle="false"
       :interval="5000"
-      :show-arrows="true"
+      :show-arrows="false"
       hide-delimiters
     >
       <template v-slot:prev="{ on, attrs }">
@@ -23,7 +23,7 @@
           alt="Next Slide"
         />
       </template>
-      <v-carousel-item>
+      <!-- <v-carousel-item>
         <div class="testi-slide">
           <div class="image-area">
             <img
@@ -47,7 +47,7 @@
             </div>
           </div>
         </div>
-      </v-carousel-item>
+      </v-carousel-item> -->
       <v-carousel-item>
         <div class="testi-slide">
           <div class="image-area">
@@ -59,16 +59,18 @@
           <div class="text-area">
             <div class="inner-wrap">
               <p class="title">Testimonial</p>
-              <h3>Your Words Motivate Us To Be Better!</h3>
+              <h3>Your Encouragement Drives Us to Excellence.</h3>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English
+                Silicon Networks did a great job exceeding our expectations with
+                the app they made. It has been my great pleasure to work with
+                such a professional and cooperative company. Their experts
+                accurately embodied the essence of project management in the app
+                development. By applying an agile model of work, they understood
+                our company’s expectations. It is not an exaggeration to say
+                Silicon Network went the extra mile to solidify our vision.
               </p>
-              <p class="client-name">John Doe</p>
-              <p>Co-Founder Of Salsoft</p>
+              <p class="client-name">Ahmad Hayat</p>
+              <p>CEO of StickyTask</p>
             </div>
           </div>
         </div>

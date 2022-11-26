@@ -82,7 +82,7 @@ export default {
   justify-content: center;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/msdb.jpg");
+  background: url("~/assets/images/msdb.webp");
   background-size: contain;
   background-position: center right;
   background-repeat: no-repeat;
@@ -154,7 +154,6 @@ export default {
     justify-content: center;
     flex-direction: column;
     margin-bottom: 50px;
-    background: url("~/assets/images/about.jpg");
     .contain {
       margin-left: 20px;
       h1 {

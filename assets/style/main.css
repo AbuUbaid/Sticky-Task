@@ -173,6 +173,9 @@ ul {
 .mss-banner a {
   color: white !important;
 }
+.mss-banner p {
+  color: white !important;
+}
 
 @media (min-width: 481px) and (max-width: 1024px) {
   .home-container {

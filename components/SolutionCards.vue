@@ -16,7 +16,7 @@
     <NuxtLink to="/industry/government" class="single-card"
       >Government</NuxtLink
     >
-    <NuxtLink to="/industry/e-commerce" class="single-card"
+    <NuxtLink to="/industry/footwear" class="single-card"
       >Apparel & Footwear</NuxtLink
     >
     <NuxtLink to="/industry/manufacturing" class="single-card"

@@ -5,12 +5,12 @@
       <p>Our Team</p>
       <h2>Orchestrating The Digital World</h2>
     </div>
-    <img src="~/assets/images/about1.jpg" alt="secpage-images" class="rec" />
-    <img src="~/assets/images/about2.jpg" alt="secpage-images" class="circle" />
-    <img src="~/assets/images/about3.jpg" alt="secpage-images" class="square" />
-    <img src="~/assets/images/about4.jpg" alt="secpage-images" class="circle" />
-    <img src="~/assets/images/about5.jpg" alt="secpage-images" class="rec" />
-    <img src="~/assets/images/about6.jpg" alt="secpage-images" class="square" />
+    <img src="~/assets/images/about1.webp" alt="secpage-images" class="rec" />
+    <img src="~/assets/images/about2.webp" alt="secpage-images" class="circle" />
+    <img src="~/assets/images/about3.webp" alt="secpage-images" class="square" />
+    <img src="~/assets/images/about4.webp" alt="secpage-images" class="circle" />
+    <img src="~/assets/images/about5.webp" alt="secpage-images" class="rec" />
+    <img src="~/assets/images/about6.webp" alt="secpage-images" class="square" />
   </div>
 </template>
 

@@ -39,7 +39,7 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "digital.jpg",
+        img: "digital.webp",
         heading: "Curating Top-Notch Brand, Product And Services",
         url: "#",
       },
@@ -83,7 +83,7 @@ landscape and triumph.`,
           ],
         },
         {
-          heading: "Consult & Strategy",
+          heading: "Integrations",
           url: "two.svg",
           text: `Our experts analyze the system switch keeping in check technical errors
 across applications, data and multiple processes. We work with the goal
@@ -97,7 +97,7 @@ employees.`,
           ],
         },
         {
-          heading: "Consult & Strategy",
+          heading: "Experience & Design",
           url: "three.svg",
           text: `Ideation expands into the visual sphere through comprehensive
 procedure. In the digital domain, design is not reduced to mere
@@ -112,7 +112,7 @@ methodology aspires to be holistically interactive and practical.`,
           ],
         },
         {
-          heading: "Experience & Design",
+          heading: "Digital Commerce",
           url: "four.svg",
           text: `We have analyzed market behavior for a long time to understand the
 highs and lows of it. In this way, we help businesses improve relevance
@@ -140,32 +140,35 @@ and commerce ecosystem with the simplicity of a simple sales process.`,
       Faqs: {
         title: "Our Process",
         heading: "Our Groundbreaking Work Sequence",
-        img: "faqs.jpg",
+        img: "faqs.webp",
         questions: [
           {
             title: "Plan",
-            answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+            answer: "Project conception, planning, and prioritization",
           },
           {
-            title: "Plan",
+            title: "Meet",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "Utilizing Scrum to align teams and stakeholders on features, utilizing user flow diagrams or UML diagrams to illustrate how new features must operate.",
           },
           {
-            title: "Plan",
+            title: "Iterate",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "On the basis of iteration requirements and evaluation, setting precise goals and delivering the agreed-upon working software.",
           },
           {
-            title: "Plan",
+            title: "Test",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "QA testing (feature-driven, test-driven, behavior-driven), creating documentation, and launching the iteration into production.",
           },
           {
-            title: "Plan",
+            title: "Develop",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "Constant maintenance and updates for the software release.",
+          },
+          {
+            title: "Retire",
+            answer: "EOL Activities.",
           },
         ],
       },

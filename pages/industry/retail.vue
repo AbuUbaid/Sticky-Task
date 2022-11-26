@@ -21,7 +21,7 @@
       <h2 class="text-center">Embracing New Horizons</h2>
     </div>
     <use-case-card :UseCaseCard="UseCaseCard" />
-    <mission-globe />
+    <mission-globe :Footprint="Footprint" />
     <industry-counter :IndustryC="IndustryC" />
     <solution-cards :Cards="IndustryCards" />
   </div>
@@ -48,9 +48,13 @@ export default {
     return {
       bannerData: {
         top: "Retail And CPG",
-        img: "retailbanner.jpg",
+        img: "retailbanner.webp",
         heading: "Equipping Customer With Digital Solution",
         url: "#",
+      },
+
+      Footprint: {
+        heading: `Creating Successful Global Footprint In Leading Industry `,
       },
       IndustryCards: [
         { title: "CPG & Retail", link: "" },
@@ -83,18 +87,21 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry4.jpg",
-        bgImg: "gradient4.jpg",
+        img: "industry4.webp",
+        bgImg: "gradient4.webp",
         heading: "Use Cases",
         listItems: [
-          {
-            title: "Precision Farming",
-          },
           {
             title: "Predictive Maintenance",
           },
           {
+            title: "Product Management",
+          },
+          {
             title: "Asset Tracking",
+          },
+          {
+            title: "Decision Analytics",
           },
         ],
       },

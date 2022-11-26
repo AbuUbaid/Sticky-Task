@@ -23,7 +23,7 @@
       <h2 class="text-center">Embracing New Horizons</h2>
     </div>
     <use-case-card :UseCaseCard="UseCaseCard" />
-    <mission-globe />
+    <mission-globe :Footprint="Footprint" />
     <industry-counter :IndustryC="IndustryC" />
     <solution-cards :Cards="IndustryCards" />
   </div>
@@ -50,9 +50,13 @@ export default {
     return {
       bannerData: {
         top: "Food & Beverages",
-        img: "food.jpg",
+        img: "food.webp",
         heading: "Create Custom Software Products With Ease",
         url: "#",
+      },
+
+      Footprint: {
+        heading: `Creating Successful Global Footprint In Leading Industry `,
       },
       IndustryCards: [
         { title: "CPG & Retail", link: "" },
@@ -69,7 +73,7 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Support",
+            heading: "Consulting",
             desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
           },
           {
@@ -85,18 +89,21 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry7.jpg",
-        bgImg: "gradient7.jpg",
+        img: "industry7.webp",
+        bgImg: "gradient7.webp",
         heading: "Use Cases",
         listItems: [
           {
-            title: "End-To-End Process Automation",
+            title: "Product Management",
           },
           {
-            title: "Computer Assisted Diagnosis (CAD)",
+            title: "End-to-End Process Automation",
           },
           {
-            title: "Data Analysis For Customer- Centric Growth",
+            title: "Data Analysis for Customer Centric Growth",
+          },
+          {
+            title: "Churn Prevention",
           },
         ],
       },

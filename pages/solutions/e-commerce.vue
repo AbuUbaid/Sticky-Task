@@ -16,7 +16,7 @@
     <div class="features">
       <div class="image-area">
         <h2>Keeping Retailers Current And Connected</h2>
-        <img src="~/assets/images/connected.jpg" alt="Features image" />
+        <img src="~/assets/images/connected.webp" alt="Features image" />
       </div>
       <div class="text-area">
         <div class="solution">
@@ -84,7 +84,7 @@ export default {
   justify-content: start;
   flex-direction: column;
   margin-bottom: 50px;
-  background: url("~/assets/images/ecom.jpg");
+  background: url("~/assets/images/ecom.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

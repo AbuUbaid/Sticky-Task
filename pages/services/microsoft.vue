@@ -39,7 +39,7 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "ms.jpg",
+        img: "ms.webp",
         heading: "Curating Top-Notch Brand, Product And Services",
         url: "#",
       },
@@ -101,32 +101,35 @@ Our team uses such cloud-based applications to integrate with other Microsoft so
       Faqs: {
         title: "Our Process",
         heading: "Our Groundbreaking Work Sequence",
-        img: "faqs.jpg",
+        img: "faqs.webp",
         questions: [
           {
             title: "Plan",
-            answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+            answer: "Project conception, planning, and prioritization",
           },
           {
-            title: "Plan",
+            title: "Meet",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "Utilizing Scrum to align teams and stakeholders on features, utilizing user flow diagrams or UML diagrams to illustrate how new features must operate.",
           },
           {
-            title: "Plan",
+            title: "Iterate",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "On the basis of iteration requirements and evaluation, setting precise goals and delivering the agreed-upon working software.",
           },
           {
-            title: "Plan",
+            title: "Test",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "QA testing (feature-driven, test-driven, behavior-driven), creating documentation, and launching the iteration into production.",
           },
           {
-            title: "Plan",
+            title: "Develop",
             answer:
-              "Prioritizing projects, envisioning them, and scoping them out",
+              "Constant maintenance and updates for the software release.",
+          },
+          {
+            title: "Retire",
+            answer: "EOL Activities.",
           },
         ],
       },
@@ -160,6 +163,6 @@ Our team uses such cloud-based applications to integrate with other Microsoft so
   color: white;
 }
 .mss-banner a {
-  color: white !important; 
+  color: white !important;
 }
 </style>

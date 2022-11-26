@@ -22,7 +22,7 @@ export default {
   name: "ImpactIcons",
   props: {
     Impact: {
-      type: Array,
+      type: Object,
     },
   },
   methods: {

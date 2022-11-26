@@ -28,7 +28,7 @@
     >
       <ul class="menu-side">
         <li class="menu-item-side">
-          <NuxtLink to="/industry/e-commerce">E-Commerce</NuxtLink>
+          <NuxtLink to="/industry/footwear">Footwear & Apparel</NuxtLink>
         </li>
         <li class="menu-item-side">
           <NuxtLink to="/industry/finance"
@@ -84,7 +84,7 @@
     <div class="header-body">
       <div class="logo">
         <NuxtLink to="/"
-          ><img src="~/assets/logos/snlogo.png" alt="Silicon Networks Logo"
+          ><img src="~/assets/logos/snlogo.webp" alt="Silicon Networks Logo"
         /></NuxtLink>
       </div>
       <div class="contact-links">
@@ -118,8 +118,11 @@
             <img src="~/assets/icons/right-arrow.svg" />
           </li>
           <li class="menu-item">
-            <NuxtLink to="/">Case Studies</NuxtLink>
+            <NuxtLink to="/team-augmentation">Team Augmentation</NuxtLink>
           </li>
+          <!-- <li class="menu-item">
+            <NuxtLink to="/">Case Studies</NuxtLink>
+          </li> -->
           <li @click="openSolution" class="menu-item sub-menu-item">
             <a>Solutions</a>
             <img src="~/assets/icons/right-arrow.svg" />

@@ -16,7 +16,7 @@ export default {
   name: "IndustryCounter",
   props: {
     IndustryC: {
-      type: Array,
+      type: Object,
     },
   },
 };

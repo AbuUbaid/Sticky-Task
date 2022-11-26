@@ -10,7 +10,9 @@
         </li>
       </ul>
     </div>
-    <div class="img-bg" :style="inlineStyle"></div>
+    <div class="img-bg" :style="inlineStyle">
+      <h2>{{ item.heading }}</h2>
+    </div>
   </div>
 </template>
 
@@ -82,6 +84,12 @@ export default {
   background-size: cover;
   background-position: center;
   height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    color: white;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -97,7 +105,6 @@ export default {
     flex-basis: 100%;
   }
 
-  
   .txt-area {
     display: flex;
     flex-direction: column;

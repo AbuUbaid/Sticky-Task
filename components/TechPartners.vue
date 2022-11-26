@@ -6,7 +6,7 @@
           <h2>TECHNOLOGY PLATFORMS</h2>
         </div>
         <div class="ei-two">
-          <img src="~/assets/logos/partnerLogo.jpg" alt="Partner Logos" />
+          <img src="~/assets/logos/partnerLogo.webp" alt="Partner Logos" />
         </div>
       </div>
     </div>

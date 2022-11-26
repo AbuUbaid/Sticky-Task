@@ -19,7 +19,7 @@
       <h2 class="text-center">Embracing New Horizons</h2>
     </div>
     <use-case-card :UseCaseCard="UseCaseCard" />
-    <mission-globe />
+    <mission-globe :Footprint="Footprint" />
     <industry-counter :IndustryC="IndustryC" />
     <solution-cards :Cards="IndustryCards" />
   </div>
@@ -44,9 +44,12 @@ export default {
   name: "Manufacturing",
   data: () => {
     return {
+      Footprint: {
+        heading: `Creating Successful Global Footprint In Leading Industry `,
+      },
       bannerData: {
         top: "Manufacturing And Distribution",
-        img: "manufacturing.jpg",
+        img: "manufacturing.webp",
         heading: "Enabling Seamless Logistical Flow",
         url: "#",
       },
@@ -81,13 +84,10 @@ export default {
         ],
       },
       UseCaseCard: {
-        img: "industry3.jpg",
-        bgImg: "gradient3.jpg",
+        img: "industry3.webp",
+        bgImg: "gradient3.webp",
         heading: "Use Cases",
         listItems: [
-          {
-            title: "Precision Farming",
-          },
           {
             title: "Predictive Maintenance",
           },
@@ -99,6 +99,9 @@ export default {
           },
           {
             title: "Product Management",
+          },
+          {
+            title: "Computer Assisted Diagnosis (CAD)",
           },
         ],
       },
@@ -130,5 +133,4 @@ export default {
     margin: 10px 0px;
   }
 }
-
 </style>

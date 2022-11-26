@@ -6,8 +6,7 @@
       transform them to stay relevant with the changing demands of the
       marketplace. Through strategy and delivery of technology and engineering.
     </p>
-    <img src="~/assets/logos/partners1.svg" alt="Partners Logo" />
-    <img src="~/assets/logos/partners2.svg" alt="Partners Logo" />
+    <img src="~/assets/logos/logos.webp" alt="Partners Logo" />
   </div>
 </template>
 

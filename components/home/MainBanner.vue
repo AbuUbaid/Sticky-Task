@@ -14,9 +14,11 @@
             <h1>
               Integrating High-End Software For Better Digital Infrastructure
             </h1>
-            <NuxtLink to="/solutions/stickytasks" class="explore-link">Explore More</NuxtLink>
+            <NuxtLink to="/solutions/stickytasks" class="explore-link"
+              >Explore More</NuxtLink
+            >
             <img
-              src="~/assets/logos/goldpartner.svg"
+              src="~/assets/logos/goldpartner.webp"
               alt="Microsoft Gold Partner"
             />
           </div>
@@ -27,9 +29,11 @@
         <div class="home-slide">
           <div class="text-area">
             <h1>Leading The Future Of Innovative Business</h1>
-            <NuxtLink to="/contact" class="explore-link">Let's get to work</NuxtLink>
+            <NuxtLink to="/contact" class="explore-link"
+              >Let's get to work</NuxtLink
+            >
             <img
-              src="~/assets/logos/goldpartner.svg"
+              src="~/assets/logos/goldpartner.webp"
               alt="Microsoft Gold Partner"
             />
           </div>
@@ -100,10 +104,10 @@ export default {
   background-size: cover;
 }
 .sideimg1 {
-  background: url("~/assets/images/STBanner.jpg");
+  background: url("~/assets/images/STBanner.webp");
 }
 .sideimg2 {
-  background: url("~/assets/images/secondbanner.jpg");
+  background: url("~/assets/images/secondbanner.webp");
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {

@@ -82,6 +82,7 @@ export default {
   box-shadow: 0px 12px 23px #00000017;
   z-index: 2;
   padding: 50px;
+  margin: 0 200px;
 }
 
 .third-text h2 {
@@ -176,6 +177,8 @@ export default {
   .third-text {
     flex-direction: column;
     padding: 30px 20px;
+
+    margin: 0 0;
   }
 
   .third-text h2 {
