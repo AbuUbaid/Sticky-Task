@@ -8,7 +8,7 @@
       </p>
     </div>
     <div class="values-four">
-      <div v-for="value in Values.cards" :key="value" class="t-four">
+      <div v-for="(value, i) in Values.cards" :key="i" class="t-four">
         <img :src="imgUrl(value.img)" alt="t-four" />
         <h4>{{ value.heading }}</h4>
         <p>
@@ -25,7 +25,7 @@ export default {
   name: "AboutValues",
   props: {
     Values: {
-      type: Array,
+      type: Object,
     },
   },
   methods: {

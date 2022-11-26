@@ -163,6 +163,30 @@ ul {
   width: 30px;
 }
 
+/* 
+method slider */
+
+.method-slider .v-window__prev {
+  left: 0;
+}
+
+.method-slider .v-window__next {
+  left: 40px;
+}
+
+.method-slider .v-window__prev,
+.method-slider .v-window__next {
+  background-color: transparent;
+  margin: 0;
+  top: unset !important;
+  bottom: 0 !important;
+  cursor: pointer;
+}
+.method-slider .v-window__prev img,
+.method-slider .v-window__next img {
+  width: 25px;
+}
+
 .v-navigation-drawer {
   width: 45vw !important;
 }
@@ -226,6 +250,10 @@ ul {
 
   p {
     font-size: 16px;
+  }
+
+  .method-slider .v-window__next {
+    left: 60px;
   }
 }
 

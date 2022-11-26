@@ -2,7 +2,7 @@
   <div id="second">
     <div class="home-container">
       <div class="three">
-        <div v-for="item in IndustryC.items" :key="item" class="count">
+        <div v-for="(item, i) in IndustryC.items" :key="i" class="count">
           <p>{{ item.heading }}S</p>
           <h4>{{ item.value }}</h4>
         </div>

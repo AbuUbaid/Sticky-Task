@@ -25,8 +25,8 @@
     <div class="values-four">
       <NuxtLink
         :to="'/services/' + value.link"
-        v-for="value in Values.cards"
-        :key="value"
+        v-for="(value, i) in Values.cards"
+        :key="i"
         class="t-four"
       >
         <img :src="imgUrl(value.img)" alt="t-four" />
@@ -45,7 +45,7 @@ export default {
   name: "ServiceValues",
   props: {
     Values: {
-      type: Array,
+      type: Object,
     },
   },
   methods: {

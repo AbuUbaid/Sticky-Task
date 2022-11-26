@@ -6,7 +6,7 @@
         {{ Metrics.desc }}
       </p>
       <div class="three">
-        <div v-for="icon in Metrics.icons" :key="icon" class="count">
+        <div v-for="(icon, i) in Metrics.icons" :key="i" class="count">
           <p>{{ icon.heading }}</p>
           <h4>{{ icon.value }}</h4>
         </div>
@@ -20,7 +20,7 @@ export default {
   name: "MetricsCounter",
   props: {
     Metrics: {
-      type: Array,
+      type: Object,
     },
   },
 };

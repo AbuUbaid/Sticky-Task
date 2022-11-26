@@ -22,7 +22,7 @@ export default {
   name: "SolutionFeatures",
   props: {
     Features: {
-      type: Array,
+      type: Object,
     },
   },
 };

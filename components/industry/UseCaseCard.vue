@@ -3,7 +3,7 @@
     <div class="text-area" :style="inlineStyle">
       <h2>{{ UseCaseCard.heading }}</h2>
       <ul>
-        <li v-for="item in UseCaseCard.listItems" :key="item">
+        <li v-for="(item, i) in UseCaseCard.listItems" :key="i">
           {{ item.title }}
         </li>
       </ul>

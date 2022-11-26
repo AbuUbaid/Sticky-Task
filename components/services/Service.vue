@@ -5,7 +5,7 @@
         {{ item.text }}
       </p>
       <ul>
-        <li :key="listItem" v-for="listItem in item.listItems">
+        <li  v-for="(listItem, i) in item.listItems" :key="i">
           {{ listItem }}
         </li>
       </ul>

@@ -5,7 +5,7 @@
       <h2 class="text-center">{{ Impact.heading }}</h2>
     </div>
     <div class="values-four">
-      <div v-for="icon in Impact.icons" :key="icon" class="t-four">
+      <div v-for="(icon, i) in Impact.icons" :key="i" class="t-four">
         <img :src="imgUrl(icon.img)" alt="t-four" />
         <h4>{{ icon.heading }}</h4>
         <p>
