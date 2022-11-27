@@ -38,35 +38,55 @@
     </div>
     <div class="contact-form">
       <template>
-        <v-form ref="form">
+        <v-form
+          @submit.prevent="checkFields"
+          ref="form"
+          method="post"
+          v-model="valid"
+        >
           <div class="form-group">
             <div>
               <v-text-field
-                v-model="name"
+                v-model="formData.fname"
                 placeholder="First Name"
+                required
+                :rules="nameRules"
               ></v-text-field>
             </div>
 
             <div>
               <v-text-field
-                v-model="lname"
+                v-model="formData.lname"
                 placeholder="Last Name"
               ></v-text-field>
             </div>
           </div>
           <div class="form-group">
             <div>
-              <v-text-field placeholder="Mail" v-model="name"></v-text-field>
+              <v-text-field
+                placeholder="Mail"
+                required
+                v-model="formData.email"
+                :rules="emailRules"
+              ></v-text-field>
             </div>
 
             <div>
-              <v-text-field v-model="email" placeholder="Phone"></v-text-field>
+              <v-text-field
+                v-model="formData.phone"
+                placeholder="Phone"
+              ></v-text-field>
             </div>
           </div>
           <div class="form-group">
-            <v-text-field v-model="name" placeholder="Message"></v-text-field>
+            <v-textarea
+              v-model="formData.message"
+              placeholder="Message"
+            ></v-textarea>
           </div>
-          <button class="m-btn">Send Message</button>
+          <button type="submit" class="m-btn">Send Message</button>
+
+          <p v-if="success" class="success">Thanks for getting in touch!</p>
         </v-form>
       </template>
     </div>
@@ -77,14 +97,43 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   name: "ContactForm",
   data() {
     return {
-      name: "",
-      lname: "",
-      email: "",
+      valid: true,
+      success: false,
+      formData: {
+        fname: "",
+        lname: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
+      nameRules: [(v) => !!v || "First name is required"],
+      emailRules: [
+        (v) => !!v || "E-mail is required",
+        (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      ],
     };
+  },
+  methods: {
+    checkFields(e) {
+      if (this.$refs.form.validate()) {
+        console.log(this.formData);
+        axios
+          .post("https://formspree.io/f/xlevkodl", this.formData)
+          .then((res) => {
+            if (res.status == 200) {
+              this.success = true;
+            }
+          });
+        e.preventDefault();
+      } else {
+        return false;
+      }
+    },
   },
 };
 </script>
@@ -92,6 +141,13 @@ export default {
 <style lang="scss" scoped>
 .contact-form-container {
   display: flex;
+}
+
+.success {
+  color: #e38601;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  margin-top: 30px;
 }
 .contact-info {
   position: relative;
