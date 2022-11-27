@@ -1,10 +1,12 @@
+import axios from "axios";
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "silicon-networks",
+    title: "Silicon Networks",
     htmlAttrs: {
       lang: "en",
     },
@@ -14,7 +16,7 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -28,6 +30,21 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: ["@nuxtjs/vuetify"],
+
+  generate: {
+    routes: () => {
+      return axios
+        .get("https://sn.softception.digital/wp-json/wp/v2/posts")
+        .then((res) => {
+          return res.data.map((post) => {
+            return {
+              route: "insights/" + post.slug,
+              payload: post,
+            };
+          });
+        });
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [],

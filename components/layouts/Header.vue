@@ -128,6 +128,9 @@
             <img src="~/assets/icons/right-arrow.svg" />
           </li>
           <li class="menu-item">
+            <NuxtLink to="/insights">Insights </NuxtLink>
+          </li>
+          <li class="menu-item">
             <NuxtLink to="/careers">Careers </NuxtLink>
           </li>
           <li class="menu-item">
