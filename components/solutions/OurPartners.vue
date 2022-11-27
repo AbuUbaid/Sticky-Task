@@ -6,7 +6,29 @@
       transform them to stay relevant with the changing demands of the
       marketplace. Through strategy and delivery of technology and engineering.
     </p>
-    <img src="~/assets/logos/logos.webp" alt="Partners Logo" />
+    <div class="logos">
+      <div class="logo">
+        <img src="~/assets/logos/p1.svg" alt="siemens logo" />
+      </div>
+      <div class="logo">
+        <img src="~/assets/logos/p2.svg" alt="nasa logo" />
+      </div>
+      <div class="logo">
+        <img src="~/assets/logos/p3.svg" alt="pepsico logo" />
+      </div>
+      <div class="logo">
+        <img src="~/assets/logos/p4.svg" alt="lockheed martin logo" />
+      </div>
+      <div class="logo">
+        <img src="~/assets/logos/p5.svg" alt="hp logo" />
+      </div>
+      <div class="logo">
+        <img src="~/assets/logos/p6.svg" alt="johnsons johnsons logo" />
+      </div>
+      <div class="logo">
+        <img src="~/assets/logos/p7.svg" alt="citrix logo" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -31,6 +53,18 @@ export default {
   }
 }
 
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  .logo {
+    img {
+      width: 100%;
+    }
+  }
+}
+
 @media (min-width: 481px) and (max-width: 1024px) {
 }
 
@@ -42,6 +76,10 @@ export default {
     img {
       width: 100%;
     }
+  }
+  .logos {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 </style>

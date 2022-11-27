@@ -24,7 +24,8 @@ export default {
 
 <style lang="scss" scoped>
 .hardware-container {
-  padding: 50px 0;
+  padding-top: 50px;
+  padding-bottom: 0px;
   h2 {
     margin-bottom: 10px;
   }

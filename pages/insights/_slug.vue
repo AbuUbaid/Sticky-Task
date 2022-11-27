@@ -22,13 +22,13 @@ export default {
   async asyncData({ params, payload }) {
     if (payload) {
       return {
-        post: res.data,
+        post: payload,
       };
     } else {
       return axios
         .get("https://sn.softception.digital/wp-json/wp/v2/posts/" + params.id)
         .then((res) => {
-          console.log(res);
+          //console.log(res);
           return {
             post: res.data,
           };

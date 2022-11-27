@@ -3,8 +3,10 @@
     <div class="image-ctas">
       <div class="f-left imageCard">
         <p>A-Team</p>
-        <h2>Give your Business a Robust Drive</h2>
-        <NuxtLink to="/team-augmentation" class="cta-black">Augment your Team</NuxtLink>
+        <h2>Hire top 1% global vetted engineers</h2>
+        <NuxtLink to="/team-augmentation" class="cta-black"
+          >Augment your Team</NuxtLink
+        >
       </div>
       <div class="f-right imageCard">
         <p>Blog</p>

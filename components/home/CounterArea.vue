@@ -15,7 +15,25 @@
       </div>
       <div class="logos">
         <div class="logo">
-          <img src="~/assets/logos/logos.webp" alt="Client Logos" />
+          <img src="~/assets/logos/p1.svg" alt="siemens logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p2.svg" alt="nasa logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p3.svg" alt="pepsico logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p4.svg" alt="lockheed martin logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p5.svg" alt="hp logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p6.svg" alt="johnsons johnsons logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p7.svg" alt="citrix logo" />
         </div>
       </div>
     </div>
@@ -33,7 +51,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 #second {
   background: #ecf5ff;
   text-align: center;
@@ -84,15 +102,18 @@ export default {
 }
 
 .logos {
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
-  align-items: center;
-  margin: 25px auto 0;
   justify-content: space-between;
-  width: 80%;
-}
-
-.logos img {
-  width: 100%;
+  align-items: center;
+  gap: 20px;
+  .logo {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -122,6 +143,13 @@ export default {
     border: 0;
     border-top: 0.5px solid #707070;
     border-bottom: 0.5px solid #707070;
+  }
+
+  .logos {
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 </style>

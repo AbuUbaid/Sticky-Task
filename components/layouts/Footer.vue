@@ -45,9 +45,16 @@
         </div>
         <h3 class="follow-us">Follow Us</h3>
         <div class="contact contact-icons">
-          <a href=""><img src="~/assets/icons/insta.svg" alt="Instagram" /></a>
-          <a href=""><img src="~/assets/icons/fb.svg" alt="Facebook" /></a>
-          <a href=""><img src="~/assets/icons/tw.svg" alt="Twitter" /></a>
+          <a
+            href="https://www.linkedin.com/company/siliconnetwork/"
+            target="_blank"
+            ><img src="~/assets/icons/ln.svg" alt="LinkedIn"
+          /></a>
+          <a
+            href="https://web.facebook.com/siliconnetworkofficial"
+            target="_blank"
+            ><img src="~/assets/icons/fb.svg" alt="Facebook"
+          /></a>
         </div>
       </div>
     </div>
