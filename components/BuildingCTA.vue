@@ -1,7 +1,7 @@
 <template>
   <div class="building-cta">
     <div class="text-area">
-      <h2>Next Starts Now</h2>
+      <h2>Let's Get Started</h2>
       <NuxtLink to="/contact" class="explore-link">Business Inquiries</NuxtLink>
       <NuxtLink to="/careers" class="explore-link">Job Openings</NuxtLink>
       <NuxtLink to="/contact" class="explore-link">Media Inquiries</NuxtLink>

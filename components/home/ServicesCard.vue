@@ -39,8 +39,8 @@
           <img src="~/assets/icons/bpaas.svg" alt="BPAAS Logo" />
           <h4>BPAAS</h4>
           <p>
-            We have industry professionals that have viable experience in
-            understanding and evaluating the BPAAS trends.
+            Automate, manage the caliber of talent by embracing multichannel
+            approaches, for digital transformation and expansion.
           </p>
         </NuxtLink>
       </div>

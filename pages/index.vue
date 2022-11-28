@@ -40,7 +40,7 @@ export default {
         counters: [
           {
             text: "ACTIVE CLIENTS",
-            number: "2.6k+",
+            number: "2.6K+",
           },
           {
             text: "HOURS OF EXPERIENCE",
@@ -48,7 +48,7 @@ export default {
           },
           {
             text: "PROJECTS COMPLETED",
-            number: "215k+",
+            number: "215K+",
           },
         ],
       },

@@ -7,10 +7,6 @@
         Simplifying Expert Food & Beverage App Solutions
       </h2>
       <p class="text-center">
-        In order to ensure quality and streamline dispatches, food and beverage
-        manufacturers should maintain compliance adherence, control temperature,
-        and control packaging methods.
-        <br />
         By creating custom software products for your food and beverage
         business, our leading software development company can help you meet
         compliance requirements, maintain quality, keep track of your
@@ -73,18 +69,18 @@ export default {
         icons: [
           {
             img: "consult.svg",
-            heading: "Consulting",
-            desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
+            heading: "Consultancy",
+            desc: "As your technology advisor, Silicon Network curates your digital footprint that is future-proofed for sustainable growth and profitability.",
           },
           {
             img: "implem.svg",
             heading: "Implementation",
-            desc: "Deploying fast paced strategy without compromising quality  Load-Testing for long-term scalability Balancing cost and hybrid innovation",
+            desc: "Through our implementation services, we help our clients reach their full potential. Our digital projects are run by business consultants, highly skilled technical teams, and digital accelerators who use credible methods and the best practices in their fields.",
           },
           {
             img: "supp.svg",
             heading: "Support",
-            desc: "Minimize the disruption via continuity plan. Match and strengthen your digital asset Provide responsive and effective technology",
+            desc: "In addition to staying at the cutting edge of digital enterprise technologies, Silicon Network's digital support professionals provide proactive and corrective support for the network, computing, storage, and network infrastructure, business applications, user accounts, and much more of our clients' needs.",
           },
         ],
       },

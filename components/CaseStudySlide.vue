@@ -1,7 +1,7 @@
 <template>
   <div class="casestudy-slider">
     <p class="text-center">Featured Work</p>
-    <h2 class="text-center">Discovering New Horizons Together</h2>
+    <h2 class="text-center">Exploring New Frontiers</h2>
     <div class="slideshow-container home-container testi-slider">
       <v-carousel
         :continuous="true"

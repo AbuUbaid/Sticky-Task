@@ -45,7 +45,7 @@ export default {
       },
       Metrics: {
         heading: "BPAAS",
-        desc: "We Contemplate Your Digital Strategy For Perfect Brand Experience By Curating Outstanding Content And Experimenting With Different Forms Of Media.",
+        desc: "Automate, manage the caliber of talent by embracing multichannel approaches, for digital transformation and expansion.",
         icons: [
           {
             heading: "Access Vetted Pool Of Trained Consultants",

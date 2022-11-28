@@ -32,16 +32,16 @@
         </li>
         <li class="menu-item-side">
           <NuxtLink to="/industry/finance"
-            >Financial Services Insurance</NuxtLink
+            >Finance & Insurance</NuxtLink
           >
         </li>
         <li class="menu-item-side">
           <NuxtLink to="/industry/manufacturing"
-            >Manufacturing & Beyond</NuxtLink
+            >Manufacturing & Distribution</NuxtLink
           >
         </li>
         <li class="menu-item-side">
-          <NuxtLink to="/industry/retail">Retail</NuxtLink>
+          <NuxtLink to="/industry/retail">CPG & Retail</NuxtLink>
         </li>
         <li class="menu-item-side">
           <NuxtLink to="/industry/pharma">Pharma</NuxtLink>

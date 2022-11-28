@@ -69,17 +69,17 @@ export default {
           {
             img: "consult.svg",
             heading: "Consultancy",
-            desc: "Assessing technological infrastructure and business objective  Ensure the IT-footprint offers best value Recommending the best solution",
+            desc: "As your technology advisor, Silicon Network curates your digital footprint that is future-proofed for sustainable growth and profitability.",
           },
           {
             img: "implem.svg",
             heading: "Implementation",
-            desc: "Deploying fast paced strategy without compromising quality  Load-Testing for long-term scalability Balancing cost and hybrid innovation",
+            desc: "Through our implementation services, we help our clients reach their full potential. Our digital projects are run by business consultants, highly skilled technical teams, and digital accelerators who use credible methods and the best practices in their fields.",
           },
           {
             img: "supp.svg",
             heading: "Support",
-            desc: "Minimize the disruption via continuity plan. Match and strengthen your digital asset Provide responsive and effective technology",
+            desc: "In addition to staying at the cutting edge of digital enterprise technologies, Silicon Network's digital support professionals provide proactive and corrective support for the network, computing, storage, and network infrastructure, business applications, user accounts, and much more of our clients' needs.",
           },
         ],
       },
@@ -99,9 +99,6 @@ export default {
           },
           {
             title: "Product Management",
-          },
-          {
-            title: "Computer Assisted Diagnosis (CAD)",
           },
         ],
       },

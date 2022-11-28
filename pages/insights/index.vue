@@ -45,11 +45,11 @@
         <v-tab-item>
           <div class="blog-cards">
             <blog-card
-              v-for="post in posts.slice(3)"
+              v-for="post in posts"
               :key="post.id"
               :BlogDetail="post"
             />
-            <blog-card :BlogDetail="posts[0]" />
+            <!-- <blog-card :BlogDetail="posts[0]" /> -->
             <!-- <blog-card />
             <blog-card />
             <blog-card />
@@ -92,7 +92,9 @@ export default {
 
   fetch({ store }) {
     return axios
-      .get("https://sn.softception.digital/wp-json/wp/v2/posts")
+      .get(
+        "https://sn.softception.digital/wp-json/wp/v2/posts?include[]=158&include[]=104&include[]=122"
+      )
       .then((res) => {
         console.log(res);
         store.commit("frontPagePosts", res.data);
@@ -127,6 +129,7 @@ export default {
   padding-right: 80px;
   display: flex;
   gap: 20px;
+  display: none;
   .featured-blog {
     color: black;
     flex-basis: 55%;
@@ -148,7 +151,8 @@ export default {
 }
 
 .resources-tab {
-  margin-top: 50px;
+  margin-top: -25vh;
+  // margin-top: 50px;
   > h2 {
   }
   > p.entry {
@@ -206,7 +210,8 @@ export default {
   }
 
   .resources-tab {
-    margin-top: 30px;
+    margin-top: -20vh;
+    // margin-top: 30px;
     > p.entry {
       width: 100%;
     }

@@ -40,12 +40,12 @@ export default {
     return {
       bannerData: {
         img: "ms.webp",
-        heading: "Curating Top-Notch Brand, Product And Services",
+        heading: "End-to-end quality-based Microsoft Services",
         url: "#",
       },
       Metrics: {
         heading: "Microsoft Services",
-        desc: `We make sure that these tools along with multiple productivity applications and artificial intelligence can be best subscribed to your business goals. From finance operation, marketing, project service automation, retails, sales, and talent acquisition, we refine these applications to get top-notch results.`,
+        desc: `From finance operation, marketing, project service automation, retails, sales, and talent acquisition, we refine these applications with intelligent microsoft softwares.`,
         icons: [
           {
             heading: "Foolproof And Interactive Websites Developed.",

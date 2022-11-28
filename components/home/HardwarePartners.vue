@@ -1,7 +1,7 @@
 <template>
   <div class="home-container hardware-container">
     <h2>Our Hardware Solutions</h2>
-    <p>The largest hardware & pc components supplier in the US</p>
+    <p>The largest hardware & PC components supplier in the US</p>
     <div class="companies">
       <a href="https://harddiskdirect.com/" target="_blank"
         ><img src="~/assets/logos/hddlogo.webp" alt="Hard Disk Direct logo"
