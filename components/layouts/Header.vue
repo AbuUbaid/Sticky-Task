@@ -31,9 +31,7 @@
           <NuxtLink to="/industry/footwear">Footwear & Apparel</NuxtLink>
         </li>
         <li class="menu-item-side">
-          <NuxtLink to="/industry/finance"
-            >Finance & Insurance</NuxtLink
-          >
+          <NuxtLink to="/industry/finance">Finance & Insurance</NuxtLink>
         </li>
         <li class="menu-item-side">
           <NuxtLink to="/industry/manufacturing"
@@ -201,7 +199,7 @@ export default {
 
 <style lang="scss" scoped>
 .main-header {
-  width: 44.55vw;
+  width: 45vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -243,11 +241,11 @@ export default {
 
 .menu-container {
   padding: 70px;
-  padding-top: 180px;
+  padding-top: 150px;
   .menu {
     list-style: none;
     .menu-item {
-      font-size: 40px;
+      font-size: 30px;
       margin-bottom: 25px;
       position: relative;
       a {
@@ -311,11 +309,11 @@ export default {
 }
 
 .mega-menu .menu-side li {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 .mega-menu a {
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {

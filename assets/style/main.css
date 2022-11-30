@@ -205,6 +205,10 @@ method slider */
   justify-content: center;
 }
 
+html {
+  width: 100vw;
+}
+
 @media (min-width: 481px) and (max-width: 1024px) {
   .home-container {
     padding: 0px 30px;

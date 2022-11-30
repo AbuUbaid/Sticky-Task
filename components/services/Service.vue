@@ -1,11 +1,9 @@
 <template>
   <div class="service-single">
     <div :class="isEven && 'f-order-1'" class="txt-area">
-      <p>
-        {{ item.text }}
-      </p>
+      <p v-html="item.text"></p>
       <ul>
-        <li  v-for="(listItem, i) in item.listItems" :key="i">
+        <li v-for="(listItem, i) in item.listItems" :key="i">
           {{ listItem }}
         </li>
       </ul>
