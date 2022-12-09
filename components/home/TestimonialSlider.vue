@@ -4,7 +4,7 @@
       :continuous="false"
       :cycle="false"
       :interval="5000"
-      :show-arrows="false"
+      :show-arrows="true"
       hide-delimiters
     >
       <template v-slot:prev="{ on, attrs }">
@@ -23,7 +23,7 @@
           alt="Next Slide"
         />
       </template>
-      <!-- <v-carousel-item>
+      <v-carousel-item>
         <div class="testi-slide">
           <div class="image-area">
             <img
@@ -33,21 +33,21 @@
           </div>
           <div class="text-area">
             <div class="inner-wrap">
-              <p class="title">Testimonial2</p>
+              <p class="title">Testimonial</p>
               <h3>Your Words Motivate Us To Be Better!</h3>
               <p>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English
+                We're satisfied with what Silicon Networks has done to help us
+                reach our digital marketing goals. The team has a great sense of
+                responsibility and work ethic. They are consistently ready to
+                respond to our inquiries and address our concerns. We recommend
+                Silicon Networks if you need help with a digital project.
               </p>
-              <p class="client-name">John Doe</p>
-              <p>Co-Founder Of Salsoft</p>
+              <p class="client-name">Eddie Walker</p>
+              <p>Salsoft Technologies</p>
             </div>
           </div>
         </div>
-      </v-carousel-item> -->
+      </v-carousel-item>
       <v-carousel-item>
         <div class="testi-slide">
           <div class="image-area">
@@ -61,16 +61,38 @@
               <p class="title">Testimonial</p>
               <h3>Your Encouragement Drives Us to Excellence.</h3>
               <p>
-                Silicon Networks did a great job exceeding our expectations with
-                the app they made. It has been my great pleasure to work with
-                such a professional and cooperative company. Their experts
-                accurately embodied the essence of project management in the app
-                development. By applying an agile model of work, they understood
-                our company’s expectations. It is not an exaggeration to say
-                Silicon Network went the extra mile to solidify our vision.
+                Silicon Network assisted us on-site with the creation of a CRM
+                system for one of our fastest-growing product lines. The SN team
+                has been extremely cooperative, and the project as a whole has
+                been a tremendous success.
+              </p>
+              <p class="client-name">Mike Ross</p>
+              <p>Half Price Packaging</p>
+            </div>
+          </div>
+        </div>
+      </v-carousel-item>
+      <v-carousel-item>
+        <div class="testi-slide">
+          <div class="image-area">
+            <img
+              src="~/assets/images/testi1.svg"
+              alt="Sticky Task Testimonial"
+            />
+          </div>
+          <div class="text-area">
+            <div class="inner-wrap">
+              <p class="title">Testimonial</p>
+              <h3>Your Encouragement Drives Us to Excellence.</h3>
+              <p>
+                We were looking for a partnership with an organization that goes
+                above and beyond to place qualified people on challenging
+                projects. We were able to avoid obstacles and guarantee
+                important customer deliverables by utilizing Silicon Network's
+                knowledge and engineering prowess.
               </p>
               <p class="client-name">Ahmad Hayat</p>
-              <p>CEO of StickyTask</p>
+              <p>Softception</p>
             </div>
           </div>
         </div>

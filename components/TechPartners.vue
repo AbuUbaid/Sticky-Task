@@ -26,6 +26,7 @@ export default {
   background: #f1f1f1;
   position: relative;
   margin: 50px 0;
+  margin-bottom: 0;
 }
 
 .partner-platforms h2 {

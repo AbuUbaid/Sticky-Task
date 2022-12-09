@@ -270,3 +270,12 @@ html {
 
 @media (max-width: 480px) {
 }
+
+.calendly-badge-widget {
+  right: auto !important;
+  left: 20px !important;
+}
+
+ul {
+  list-style-position: inside;
+}

@@ -1,20 +1,26 @@
 <template>
   <div>
     <main-banner />
+    <!-- <global-form /> -->
     <counter-area :counterData="counterData" />
     <services-card />
     <two-image-banner />
     <solution-cards />
     <case-study-slide />
     <hardware-partners />
-    <!-- <testimonial-slider /> -->
+    <testimonial-slider />
+    <!-- <logo-slider /> -->
+    <growth-hop />
   </div>
 </template>
 
 <script>
 import CaseStudySlide from "../components/CaseStudySlide.vue";
+import GlobalForm from "../components/GlobalForm.vue";
 import CounterArea from "../components/home/CounterArea.vue";
+import GrowthHop from "../components/home/GrowthHop.vue";
 import HardwarePartners from "../components/home/HardwarePartners.vue";
+import LogoSlider from "../components/home/LogoSlider.vue";
 import MainBanner from "../components/home/MainBanner.vue";
 import ServicesCard from "../components/home/ServicesCard.vue";
 import SolutionCards from "../components/home/SolutionCards.vue";
@@ -30,6 +36,9 @@ export default {
     CaseStudySlide,
     TestimonialSlider,
     HardwarePartners,
+    LogoSlider,
+    GrowthHop,
+    GlobalForm,
   },
   name: "IndexPage",
   data: () => {

@@ -37,61 +37,68 @@
       />
     </div>
     <div class="contact-form">
-      <template>
-        <v-form
-          @submit.prevent="checkFields"
-          ref="form"
-          method="post"
-          v-model="valid"
-        >
-          <div class="form-group">
-            <div>
-              <v-text-field
-                v-model="formData.fname"
-                placeholder="First Name"
-                required
-                :rules="nameRules"
-              ></v-text-field>
+      <v-app>
+        <template>
+          <v-form
+            @submit.prevent="checkFields"
+            ref="form"
+            method="post"
+            v-model="valid"
+          >
+            <div class="form-group">
+              <div>
+                <v-select
+                  v-model="formData.select"
+                  :items="items"
+                  :rules="[(v) => !!v || 'Item is required']"
+                  label="How can we help you?"
+                  required
+                ></v-select>
+              </div>
             </div>
-
-            <div>
-              <v-text-field
-                v-model="formData.lname"
-                placeholder="Last Name"
-              ></v-text-field>
+            <div class="form-group">
+              <div>
+                <v-text-field
+                  v-model="formData.fname"
+                  placeholder="First Name"
+                  required
+                  :rules="nameRules"
+                ></v-text-field>
+              </div>
+              <div>
+                <v-text-field
+                  placeholder="Mail"
+                  required
+                  v-model="formData.email"
+                  :rules="emailRules"
+                ></v-text-field>
+              </div>
             </div>
-          </div>
-          <div class="form-group">
-            <div>
-              <v-text-field
-                placeholder="Mail"
-                required
-                v-model="formData.email"
-                :rules="emailRules"
-              ></v-text-field>
+            <div class="form-group">
+              <div>
+                <v-text-field
+                  v-model="formData.lname"
+                  placeholder="Last Name"
+                ></v-text-field>
+              </div>
+              <div>
+                <v-text-field
+                  v-model="formData.phone"
+                  placeholder="Phone"
+                ></v-text-field>
+              </div>
             </div>
-
-            <div>
-              <v-text-field
-                v-model="formData.phone"
-                placeholder="Phone"
-              ></v-text-field>
+            <div class="form-group">
+              <v-textarea
+                v-model="formData.message"
+                placeholder="Message"
+              ></v-textarea>
             </div>
-          </div>
-          <div class="form-group">
-            <v-textarea
-              v-model="formData.message"
-              placeholder="Message"
-            ></v-textarea>
-          </div>
-          <button type="submit" class="m-btn">Send Message</button>
-
-          <p v-if="success" class="success">Thanks for getting in touch!</p>
-        </v-form>
-      </template>
-    </div>
-  </div>
-</template>
+            <button type="submit" class="m-btn">Send Message</button>
+            <p v-if="success" class="success">Thanks for getting in touch!</p>
+          </v-form>
+        </template>
+      </v-app>
     </div>
   </div>
 </template>
@@ -110,7 +117,22 @@ export default {
         email: "",
         phone: "",
         message: "",
+        select: null,
       },
+      items: [
+        "Mobile App Development",
+        "Enterprise Software Development",
+        "Web Development",
+        "Dedicated Teams",
+        "IT Consulting",
+        "Internet of Things",
+        "Blockchain",
+        "Augmented Reality",
+        "Artificial Intelligence",
+        "Cloud Computing",
+        "FinTech",
+        "Other",
+      ],
       nameRules: [(v) => !!v || "First name is required"],
       emailRules: [
         (v) => !!v || "E-mail is required",

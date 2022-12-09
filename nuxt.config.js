@@ -16,7 +16,31 @@ export default {
       { hid: "description", name: "description", content: "" },
       { name: "format-detection", content: "telephone=no" },
     ],
-    link: [{ rel: "icon", type: "image/png", href: "/favicon.png" }],
+    link: [
+      { rel: "icon", type: "image/png", href: "/favicon.png" },
+      {
+        rel: "stylesheet",
+        type: "text/css",
+        href: "https://assets.calendly.com/assets/external/widget.css",
+      },
+    ],
+    script: [
+      {
+        hid: "calendly",
+        src: "https://assets.calendly.com/assets/external/widget.js",
+        defer: true,
+      },
+      {
+        hid: "calendly-code",
+        src: "/js/main.js",
+        defer: true,
+      },
+      {
+        hid: "hs-script-loader",
+        src: "//js-na1.hs-scripts.com/21981248.js",
+        defer: true,
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

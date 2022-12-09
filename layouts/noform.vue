@@ -2,9 +2,6 @@
   <div>
     <header-main />
     <Nuxt />
-    <tech-partners />
-    <!-- <building-cta /> -->
-    <global-form />
     <footer-main />
   </div>
 </template>

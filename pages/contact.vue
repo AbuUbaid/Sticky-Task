@@ -12,7 +12,9 @@ import ServiceBanner from "../components/services/ServiceBanner.vue";
 import BuildingCta from "../components/BuildingCTA.vue";
 export default {
   components: { ContactForm, BuildingCta, ServiceBanner },
+  layout: 'noform',
   name: "ContactPage",
+
   data: () => {
     return {
       bannerData: {

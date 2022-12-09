@@ -93,7 +93,7 @@ export default {
   fetch({ store }) {
     return axios
       .get(
-        "https://sn.softception.digital/wp-json/wp/v2/posts?include[]=158&include[]=104&include[]=122"
+        "https://sn.softception.digital/wp-json/wp/v2/posts"
       )
       .then((res) => {
         console.log(res);
