@@ -70,8 +70,93 @@ export default {
     },
   },
 
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  // Modules: https://go.nuxtjs.dev/config-modulesmodules: [
+  modules: [
+    [
+      "nuxt-cookie-control",
+      {
+        //default css (true)
+        //if css is set to false, you will still be able to access
+        //your color variables (example. background-color: var(--cookie-control-barBackground))
+        css: true,
+
+        //enable or disable css variables polyfill
+        cssPolyfill: true,
+
+        //in case you have subdomains (shop.yourdomain.com)
+        domain: "yourdomain.com",
+
+        //if you want to tree-shake locales set locales you want to use
+        locales: ["en", "de"],
+
+        //modal opener (cookie control)
+        controlButton: true,
+
+        //block iframes to prevent them from adding additional cookies
+        blockIframe: true,
+
+        //or if you want to set initialState to false (default value for initialState is true)
+        blockIframe: {
+          initialState: false,
+        },
+
+        //position of cookie bar:
+        //'top-left', 'top-right', 'top-full',
+        //'bottom-left', 'bottom-right', 'bottom-full'
+        barPosition: "bottom-full",
+
+        dashInDescription: true,
+
+        //default colors
+        //if you want to disable colors set colors property to false
+        colors: {
+          barTextColor: "#fff",
+          modalOverlay: "#000",
+          barBackground: "#000",
+          barButtonColor: "#000",
+          modalTextColor: "#000",
+          modalBackground: "#fff",
+          modalOverlayOpacity: 0.8,
+          modalButtonColor: "#fff",
+          modalUnsavedColor: "#fff",
+          barButtonHoverColor: "#fff",
+          barButtonBackground: "#fff",
+          modalButtonHoverColor: "#fff",
+          modalButtonBackground: "#000",
+          controlButtonIconColor: "#000",
+          controlButtonBackground: "#fff",
+          barButtonHoverBackground: "#333",
+          checkboxActiveBackground: "#000",
+          checkboxInactiveBackground: "#000",
+          modalButtonHoverBackground: "#333",
+          checkboxDisabledBackground: "#ddd",
+          controlButtonIconHoverColor: "#fff",
+          controlButtonHoverBackground: "#000",
+          checkboxActiveCircleBackground: "#fff",
+          checkboxInactiveCircleBackground: "#fff",
+          checkboxDisabledCircleBackground: "#fff",
+        },
+
+        //default texts
+        text: {
+          barTitle: "Cookies",
+          barDescription:
+            "We use our own cookies and third-party cookies so that we can show you this website and better understand how you use it, with a view to improving the services we offer. If you continue browsing, we consider that you have accepted the cookies.",
+          acceptAll: "Accept all",
+          declineAll: "Delete all",
+          manageCookies: "Manage cookies",
+          unsaved: "You have unsaved settings",
+          close: "Close",
+          save: "Save",
+          necessary: "Necessary cookies",
+          optional: "Optional cookies",
+          functional: "Functional cookies",
+          blockedIframe: "To see this, please enable functional cookies",
+          here: "here",
+        },
+      },
+    ],
+  ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},

@@ -13,6 +13,7 @@
     "axios": "^0.21.1",
     "core-js": "^3.25.3",
     "nuxt": "^2.15.8",
+    "nuxt-cookie-control": "^1.9.93",
     "nuxt-video-player": "^1.0.17",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",

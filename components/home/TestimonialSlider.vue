@@ -27,7 +27,7 @@
         <div class="testi-slide">
           <div class="image-area">
             <img
-              src="~/assets/images/testi1.svg"
+              src="~/assets/logos/logo-salsoft.png"
               alt="Sticky Task Testimonial"
             />
           </div>
@@ -52,7 +52,7 @@
         <div class="testi-slide">
           <div class="image-area">
             <img
-              src="~/assets/images/testi1.svg"
+              src="~/assets/logos/logo-hpp.png"
               alt="Sticky Task Testimonial"
             />
           </div>
@@ -76,7 +76,7 @@
         <div class="testi-slide">
           <div class="image-area">
             <img
-              src="~/assets/images/testi1.svg"
+              src="~/assets/logos/logo-sc.png"
               alt="Sticky Task Testimonial"
             />
           </div>

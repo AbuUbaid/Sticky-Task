@@ -59,15 +59,15 @@
             <div class="form-group">
               <div>
                 <v-text-field
-                  v-model="formData.fname"
-                  placeholder="First Name"
+                  v-model="formData.name"
+                  placeholder="Name"
                   required
                   :rules="nameRules"
                 ></v-text-field>
               </div>
               <div>
                 <v-text-field
-                  placeholder="Mail"
+                  placeholder="Email"
                   required
                   v-model="formData.email"
                   :rules="emailRules"
@@ -77,14 +77,14 @@
             <div class="form-group">
               <div>
                 <v-text-field
-                  v-model="formData.lname"
-                  placeholder="Last Name"
+                  v-model="formData.phone"
+                  placeholder="Phone"
                 ></v-text-field>
               </div>
               <div>
                 <v-text-field
-                  v-model="formData.phone"
-                  placeholder="Phone"
+                  v-model="formData.organization"
+                  placeholder="Organization"
                 ></v-text-field>
               </div>
             </div>
@@ -112,8 +112,8 @@ export default {
       valid: true,
       success: false,
       formData: {
-        fname: "",
-        lname: "",
+        name: "",
+        organization: "",
         email: "",
         phone: "",
         message: "",

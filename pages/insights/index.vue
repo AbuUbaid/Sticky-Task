@@ -26,9 +26,8 @@
     <div class="home-container resources-tab">
       <h2 class="text-center">Resources</h2>
       <p class="entry text-center">
-        With our global connections, we can handle any challenge. Our
-        environment is conducive to bringing out bright ideas. Join us as we
-        innovate and develop solutions that matter.
+        Go through the power hub of knowledge and every latest news regarding
+        tech.
       </p>
       <v-tabs v-model="tab" align-with-title grow>
         <v-tabs-slider color="yellow"></v-tabs-slider>
@@ -92,9 +91,7 @@ export default {
 
   fetch({ store }) {
     return axios
-      .get(
-        "https://sn.softception.digital/wp-json/wp/v2/posts"
-      )
+      .get("https://sn.softception.digital/wp-json/wp/v2/posts")
       .then((res) => {
         console.log(res);
         store.commit("frontPagePosts", res.data);

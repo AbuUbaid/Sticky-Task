@@ -18,7 +18,7 @@
             Boost your team's momentum and expertise with capable engineers and
             talent.
           </p>
-          <a href="#!" class="cta-orange">Hire a Team</a>
+          <a href="#contact-form" class="cta-orange">Hire a Team</a>
           <div class="acknowledgements">
             <p>Acknowledgements</p>
             <div class="ack-logos">
@@ -149,7 +149,7 @@
         </div>
       </div>
       <div class="cta">
-        <a href="#!" class="cta-orange">Grow your Team Now!</a>
+        <a href="#contact-form" class="cta-orange">Grow your Team Now!</a>
       </div>
     </div>
     <div class="home-container robust-container">
@@ -336,15 +336,21 @@
         <li>Ionic Engineers</li>
         <li>Kotlin Engineers</li>
       </ul>
-      <a href="#!" class="explore-link text-center">Hire Top Talent Now!</a>
+      <a href="#contact-form" class="explore-link text-center"
+        >Hire Top Talent Now!</a
+      >
     </div>
+
+    <testimonial-slider />
 
     <FaqSection :Faqs="Faqs" />
   </div>
 </template>
 
 <script>
+import TestimonialSlider from "../components/home/TestimonialSlider.vue";
 export default {
+  components: { TestimonialSlider },
   name: "TeamAugmentation",
   data: () => {
     return {
