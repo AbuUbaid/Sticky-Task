@@ -848,7 +848,7 @@ export default {
           .ack-logos {
             margin-top: 20px;
             img {
-              width: 80px;
+              width: 50px;
               margin-right: 15px;
             }
           }
