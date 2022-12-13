@@ -62,7 +62,7 @@
                 ></v-textarea>
               </div>
               <button type="submit" class="m-btn">Send Message</button>
-              <p v-if="success" class="success">Thanks for getting in touch!</p>
+              <p v-if="success" class="successt">Thanks for getting in touch!</p>
             </v-form>
           </template>
         </v-app>
@@ -72,9 +72,9 @@
         <img src="~/assets/images/el-goodfirms.svg" alt="" />
         <hr />
         <div class="sales-team">
-          <h4>Laura Anderson</h4>
+          <h4>Minal Ehsan</h4>
           <p>Head of Sales</p>
-          <a href="mailto:laura@siliconnet.com">laura@siliconnet.com</a>
+          <a href="mailto:minal@siliconnet.com">minal@siliconnet.com</a>
           <div class="social-icons">
             <a
               href="https://www.linkedin.com/in/minal-a-b35364196/"
@@ -189,7 +189,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.success {
+.successt {
   color: #e38601;
   font-family: "Gilroy-Medium";
   font-weight: 500;
@@ -200,7 +200,7 @@ export default {
   .background {
     background-color: #eef5ff;
     width: 100%;
-    height: 550px;
+    height: 450px;
     margin-bottom: -350px;
   }
 
@@ -278,8 +278,8 @@ export default {
     .background {
       background-color: #eef5ff;
       width: 100%;
-      height: 350px;
-      margin-bottom: -150px;
+      height: 250px;
+      margin-bottom: -200px;
     }
 
     .form-parent {

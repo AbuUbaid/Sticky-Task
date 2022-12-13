@@ -19,12 +19,24 @@
             talent.
           </p>
           <a href="#contact-form" class="cta-orange">Hire a Team</a>
+          <a href="#contact-form" class="cta-orange">Free Consultation</a>
+          <div class="tech-logos">
+            <img src="~/assets/logos/js.svg" alt="Node Js" />
+            <img src="~/assets/logos/python.svg" alt="Python" />
+            <img src="~/assets/logos/laravel.svg" alt="Laravel" />
+            <img src="~/assets/logos/angular.svg" alt="Angular" />
+            <img src="~/assets/logos/react.svg" alt="React" />
+            <img src="~/assets/logos/net.svg" alt="Dot Net" />
+            <img src="~/assets/logos/django.svg" alt="Django" />
+            <img src="~/assets/logos/ruby.svg" alt="Ruby on rails" />
+          </div>
           <div class="acknowledgements">
             <p>Acknowledgements</p>
             <div class="ack-logos">
               <img src="~/assets/logos/pecb-certified.svg" />
 
               <img src="~/assets/logos/accelerance-certified.svg" />
+              <img src="~/assets/logos/trustpilot.png" />
             </div>
           </div>
         </div>
@@ -447,12 +459,25 @@ export default {
         margin-top: 20px;
         margin-bottom: 30px;
       }
+      .cta-orange {
+        margin-right: 15px;
+      }
+      .tech-logos {
+        margin-top: 25px;
+        display: flex;
+        gap: 15px;
+        img {
+          width: 30px;
+          height: 30px;
+          object-fit: contain;
+        }
+      }
       .acknowledgements {
         margin-top: 50px;
         .ack-logos {
           margin-top: 20px;
           img {
-            width: 80px;
+            width: 60px;
             margin-right: 15px;
           }
         }
@@ -803,6 +828,20 @@ export default {
           font-size: 24px;
           margin-top: 20px;
           margin-bottom: 30px;
+        }
+        .cta-orange {
+          margin-bottom: 15px;
+        }
+        .tech-logos {
+          margin-top: 25px;
+          display: flex;
+          overflow: hidden;
+          gap: 15px;
+          img {
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+          }
         }
         .acknowledgements {
           margin-top: 50px;

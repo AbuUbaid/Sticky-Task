@@ -53,6 +53,7 @@
                   :rules="[(v) => !!v || 'Item is required']"
                   label="How can we help you?"
                   required
+                  name="Service Type"
                 ></v-select>
               </div>
             </div>
@@ -95,7 +96,7 @@
               ></v-textarea>
             </div>
             <button type="submit" class="m-btn">Send Message</button>
-            <p v-if="success" class="success">Thanks for getting in touch!</p>
+            <p v-if="success" class="successt">Thanks for getting in touch!</p>
           </v-form>
         </template>
       </v-app>
@@ -165,7 +166,7 @@ export default {
   display: flex;
 }
 
-.success {
+.successt {
   color: #e38601;
   font-family: "Gilroy-Medium";
   font-weight: 500;
