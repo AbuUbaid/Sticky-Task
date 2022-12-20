@@ -77,8 +77,8 @@
         </v-app>
       </div>
       <div class="badges-container">
-        <img src="~/assets/images/sf-clutch--black.svg" alt="" />
-        <img src="~/assets/images/el-goodfirms.svg" alt="" />
+        <img src="~/assets/images/sf-clutch--black.svg" alt="Clutch" />
+        <img src="~/assets/images/el-goodfirms.svg" alt="Good firms" />
         <hr />
         <div class="sales-team">
           <h4>Minal Ehsan</h4>

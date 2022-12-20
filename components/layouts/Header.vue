@@ -79,182 +79,179 @@
       </ul>
     </div>
 
-    <div
-      id="services-menu"
-      class="services-model new-mega"
-      v-bind:class="{ newOpen: serviceOpenNew }"
-    >
-      <div class="engage-models">
-        <div data-v-8d2f7524="" class="logo engage-logo">
-          <a data-v-8d2f7524="" href="/" class="nuxt-link-active">
-            <img
-              data-v-8d2f7524=""
-              style="width: 75%; filter: invert(1)"
-              src="/_nuxt/assets/logos/snlogo.webp"
-              alt="Silicon Networks Logo"
-          /></a>
-          <p class="among-best">
-            “hhp Among Best<br />Salesforce Solution Providers”
-          </p>
-        </div>
-      </div>
-      <div class="mid-model">
-        <div>
-          <h2 class="sub-menu-head">Software Development</h2>
-          <ul class="menu-side">
-            <li class="menu-item-side">Custom Software Development</li>
-            <li class="menu-item-side">Web App Development</li>
-            <li class="menu-item-side">UI/UX Design</li>
-            <li class="menu-item-side">QA & Testing</li>
-            <li class="menu-item-side">Embedded Software</li>
-            <li class="menu-item-side">DevOps</li>
-            <li class="menu-item-side">Discovery Workshop</li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="sub-menu-head">Solutions</h2>
-          <ul class="menu-side">
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/microsoft-dynamics"
-                >Microsoft Dynamics</NuxtLink
-              >
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/hr-connect">HR Connect</NuxtLink>
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/e-commerce">E-Commerce</NuxtLink>
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/stickytasks">StickyTasks</NuxtLink>
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/enterprise-vpn">Enterprise VPN</NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="sub-menu-head">Digital Marketing</h2>
-          <ul class="menu-side">
-            <li class="menu-item-side mid-model-list">SEO</li>
-            <li class="menu-item-side mid-model-list">Paid Media</li>
-          </ul>
-        </div>
-      </div>
-      <div class="engage-models">
-        <h2 class="engagment-head">Engagement Models</h2>
-        <ul class="menu-side">
-          <li class="engage-list">
-            <NuxtLink class="engage-list" to="/team-augmentation"
-              >Build Your Dedicated Teams</NuxtLink
-            >
-          </li>
-          <li class="engage-list">Fixed Price Project</li>
-        </ul>
-      </div>
-    </div>
-
     <div class="header-body">
-      <div class="logo">
-        <NuxtLink to="/"
-          ><img src="~/assets/logos/snlogo.webp" alt="Silicon Networks Logo"
-        /></NuxtLink>
-      </div>
-      <div class="nav-ul desktop-header">
-        <ul class="nav-ul">
-          <li class="nav-li has-mega">
-            <a @click="openServiceNew"
-              >Services
-              <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
-            /></a>
-          </li>
-          <li class="nav-li has-child" style="position: relative">
-            <a
-              >Industries
-              <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
-            /></a>
-            <div class="dropdown-content">
-              <ul class="sub sub-menu-block">
-                <li>
-                  <NuxtLink to="/industry/footwear"
-                    >Footwear & Apparel</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink to="/industry/finance"
-                    >Finance & Insurance</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink to="/industry/manufacturing"
-                    >Manufacturing & Distribution</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink to="/industry/retail">CPG & Retail</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/industry/pharma">Pharma</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/industry/government">Government</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/industry/food">Food & Beverages</NuxtLink>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <!-- <li class="nav-li has-child" style="position: relative">
-            <a>Solutions</a>
-            <div class="dropdown-content">
-              <ul class="sub sub-menu-block">
-                <li>
-                  <NuxtLink to="/solutions/microsoft-dynamics"
-                    >Microsoft Dynamics</NuxtLink
-                  >
-                </li>
-                <li>
-                  <NuxtLink to="/solutions/hr-connect">HR Connect</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/solutions/e-commerce">E-Commerce</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/solutions/stickytasks">StickyTasks</NuxtLink>
-                </li>
-                <li>
-                  <NuxtLink to="/solutions/enterprise-vpn"
-                    >Enterprise VPN</NuxtLink
-                  >
-                </li>
-              </ul>
-            </div>
-          </li> -->
-          <li class="nav-li">
-            <NuxtLink class="nav-li-tag" to="/insights">Insights </NuxtLink>
-          </li>
-          <li class="nav-li">
-            <NuxtLink class="nav-li-tag" to="/careers">Careers </NuxtLink>
-          </li>
-          <li class="nav-li">
-            <NuxtLink class="nav-li-tag" to="/about">About</NuxtLink>
-          </li>
-          <li class="nav-li prominent">
-            <NuxtLink class="nav-li-tag" to="/contact">Contact</NuxtLink>
-          </li>
-        </ul>
-      </div>
-      <div class="contact-links">
-        <a href="mailto:sales@siliconnet.com">sales@siliconnet.com</a>
-        <a href="tel:855-904-4417">855-904-4417</a>
-      </div>
-      <div class="menu mobile-menu">
-        <img
-          @click.stop="drawer = !drawer"
-          src="~/assets/icons/menuicon.svg"
-          alt="Menu"
-        />
+      <div class="header-body-inner">
+        <div class="logo">
+          <NuxtLink to="/"
+            ><img src="~/assets/logos/snlogo.webp" alt="Silicon Networks Logo"
+          /></NuxtLink>
+        </div>
+        <div class="nav-ul desktop-header">
+          <ul class="nav-ul">
+            <li class="nav-li has-mega">
+              <a
+                >Services
+                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
+              /></a>
+
+              <div id="services-menu" class="services-model">
+                <div class="engage-models">
+                  <img src="~/assets/logos/clutch.webp" alt="Clutch" />
+                </div>
+                <div class="mid-model">
+                  <div>
+                    <h2 class="sub-menu-head">Software Development</h2>
+                    <ul class="menu-side">
+                      <li class="menu-item-side">
+                        Custom Software Development
+                      </li>
+                      <li class="menu-item-side">Web App Development</li>
+                      <li class="menu-item-side">UI/UX Design</li>
+                      <li class="menu-item-side">QA & Testing</li>
+                      <li class="menu-item-side">Embedded Software</li>
+                      <li class="menu-item-side">DevOps</li>
+                      <li class="menu-item-side">Discovery Workshop</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="sub-menu-head">Solutions</h2>
+                    <ul class="menu-side">
+                      <li class="menu-item-side">
+                        <NuxtLink to="/solutions/microsoft-dynamics"
+                          >Microsoft Dynamics</NuxtLink
+                        >
+                      </li>
+                      <li class="menu-item-side">
+                        <NuxtLink to="/solutions/hr-connect"
+                          >HR Connect</NuxtLink
+                        >
+                      </li>
+                      <li class="menu-item-side">
+                        <NuxtLink to="/solutions/e-commerce"
+                          >E-Commerce</NuxtLink
+                        >
+                      </li>
+                      <li class="menu-item-side">
+                        <NuxtLink to="/solutions/stickytasks"
+                          >StickyTasks</NuxtLink
+                        >
+                      </li>
+                      <li class="menu-item-side">
+                        <NuxtLink to="/solutions/enterprise-vpn"
+                          >Enterprise VPN</NuxtLink
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="sub-menu-head">Digital Marketing</h2>
+                    <ul class="menu-side">
+                      <li class="menu-item-side mid-model-list">SEO</li>
+                      <li class="menu-item-side mid-model-list">Paid Media</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="engage-models">
+                  <h2 class="engagment-head">Engagement Models</h2>
+                  <ul class="menu-side">
+                    <li class="engage-list">
+                      <NuxtLink class="engage-list" to="/team-augmentation"
+                        >Build Your Dedicated Teams</NuxtLink
+                      >
+                    </li>
+                    <li class="engage-list">Fixed Price Project</li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="nav-li has-child" style="position: relative">
+              <a
+                >Industries
+                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
+              /></a>
+              <div class="dropdown-content">
+                <ul class="sub sub-menu-block">
+                  <li>
+                    <NuxtLink to="/industry/footwear"
+                      >Footwear & Apparel</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <NuxtLink to="/industry/finance"
+                      >Finance & Insurance</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <NuxtLink to="/industry/manufacturing"
+                      >Manufacturing & Distribution</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <NuxtLink to="/industry/retail">CPG & Retail</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/industry/pharma">Pharma</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/industry/government">Government</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/industry/food">Food & Beverages</NuxtLink>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li class="nav-li has-child" style="position: relative">
+              <a>Solutions</a>
+              <div class="dropdown-content">
+                <ul class="sub sub-menu-block">
+                  <li>
+                    <NuxtLink to="/solutions/microsoft-dynamics"
+                      >Microsoft Dynamics</NuxtLink
+                    >
+                  </li>
+                  <li>
+                    <NuxtLink to="/solutions/hr-connect">HR Connect</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/solutions/e-commerce">E-Commerce</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/solutions/stickytasks">StickyTasks</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/solutions/enterprise-vpn"
+                      >Enterprise VPN</NuxtLink
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li> -->
+            <li class="nav-li">
+              <NuxtLink class="nav-li-tag" to="/insights">Insights </NuxtLink>
+            </li>
+            <li class="nav-li">
+              <NuxtLink class="nav-li-tag" to="/careers">Careers </NuxtLink>
+            </li>
+            <li class="nav-li">
+              <NuxtLink class="nav-li-tag" to="/about">About</NuxtLink>
+            </li>
+            <li class="nav-li prominent">
+              <NuxtLink class="nav-li-tag" to="/contact">Contact</NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:sales@siliconnet.com">sales@siliconnet.com</a>
+          <a href="tel:855-904-4417">855-904-4417</a>
+        </div>
+        <div class="menu mobile-menu">
+          <img
+            @click.stop="drawer = !drawer"
+            src="~/assets/icons/menuicon.svg"
+            alt="Menu"
+          />
+        </div>
       </div>
     </div>
 
@@ -388,23 +385,30 @@ export default {
   display: block;
   .arrow-icon {
     transform: rotate(90deg);
+    margin-left: 10px;
   }
   .nav-ul {
     li {
-      margin-right: 20px;
+      margin-right: 30px;
       &:hover {
         a {
           color: #091756;
         }
+      }
+      a {
+        padding: 0;
       }
     }
     .prominent {
       background: #091756;
       padding-left: 20px;
       padding-right: 20px;
+      padding-top: 8px;
+      padding-bottom: 8px;
       a {
         color: white;
       }
+
       &:hover {
         a {
           color: #fff;
@@ -420,37 +424,45 @@ export default {
   left: 0;
   z-index: 100;
   .header-body {
-    max-height: 100%;
     background: white;
-    padding: 0px 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    .logo {
-      img {
-        width: 150px;
-      }
-    }
-    .contact-links {
-      flex: 1;
-      text-align: right;
-      padding-right: 22px;
+    .header-body-inner {
+      max-height: 100%;
+      padding: 0px 70px;
       display: flex;
-      flex-direction: column;
-      display: none;
-      a {
-        color: #e38601;
-        font-size: 20px;
-        margin-bottom: 10px;
-        font-family: "Gilroy-Medium";
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      position: relative;
+      max-width: 1350px;
+      margin: 0 auto;
+      padding-left: 50px;
+      padding-right: 50px;
+
+      .logo {
+        img {
+          width: 150px;
+        }
       }
-    }
-    .menu {
-      img {
-        width: 40px;
-        cursor: pointer;
+      .contact-links {
+        flex: 1;
+        text-align: right;
+        padding-right: 22px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        a {
+          color: #e38601;
+          font-size: 20px;
+          margin-bottom: 10px;
+          font-family: "Gilroy-Medium";
+        }
+      }
+      .menu {
+        img {
+          width: 40px;
+          cursor: pointer;
+        }
       }
     }
   }
@@ -521,9 +533,10 @@ export default {
   transform: translateX(0);
 }
 
-.new-mega.newOpen {
-  transform: translateY(90px);
+.has-mega:hover .services-model {
+  transform: translateY(58px);
 }
+
 .dropdown-content {
   transition: height 0.7s cubic-bezier(0.32, 0.01, 0, 1);
   display: none;
@@ -567,10 +580,11 @@ export default {
   width: 100vw;
   height: 48vh;
   z-index: 111;
+  padding-top: 25px;
   position: fixed;
   top: 0;
   left: 0;
-  transition: transform 0.7s cubic-bezier(0.32, 0.01, 0, 1);
+  transition: transform 0.3s cubic-bezier(0.32, 0.01, 0, 1);
   transform: translateY(-100vh);
   z-index: 100;
   .menu-side {
@@ -613,9 +627,12 @@ export default {
   }
   .engage-models:nth-child(1) {
     display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-direction: column;
     align-items: center;
-    > * {
-      opacity: 0;
+    img {
+      width: 120px;
     }
   }
   .mid-model {
