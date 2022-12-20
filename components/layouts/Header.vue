@@ -79,17 +79,177 @@
       </ul>
     </div>
 
+    <div
+      id="services-menu"
+      class="services-model new-mega"
+      v-bind:class="{ newOpen: serviceOpenNew }"
+    >
+      <div class="engage-models">
+        <div data-v-8d2f7524="" class="logo engage-logo">
+          <a data-v-8d2f7524="" href="/" class="nuxt-link-active">
+            <img
+              data-v-8d2f7524=""
+              style="width: 75%; filter: invert(1)"
+              src="/_nuxt/assets/logos/snlogo.webp"
+              alt="Silicon Networks Logo"
+          /></a>
+          <p class="among-best">
+            “hhp Among Best<br />Salesforce Solution Providers”
+          </p>
+        </div>
+      </div>
+      <div class="mid-model">
+        <div>
+          <h2 class="sub-menu-head">Software Development</h2>
+          <ul class="menu-side">
+            <li class="menu-item-side">Custom Software Development</li>
+            <li class="menu-item-side">Web App Development</li>
+            <li class="menu-item-side">UI/UX Design</li>
+            <li class="menu-item-side">QA & Testing</li>
+            <li class="menu-item-side">Embedded Software</li>
+            <li class="menu-item-side">DevOps</li>
+            <li class="menu-item-side">Discovery Workshop</li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="sub-menu-head">Solutions</h2>
+          <ul class="menu-side">
+            <li class="menu-item-side">
+              <NuxtLink to="/solutions/microsoft-dynamics"
+                >Microsoft Dynamics</NuxtLink
+              >
+            </li>
+            <li class="menu-item-side">
+              <NuxtLink to="/solutions/hr-connect">HR Connect</NuxtLink>
+            </li>
+            <li class="menu-item-side">
+              <NuxtLink to="/solutions/e-commerce">E-Commerce</NuxtLink>
+            </li>
+            <li class="menu-item-side">
+              <NuxtLink to="/solutions/stickytasks">StickyTasks</NuxtLink>
+            </li>
+            <li class="menu-item-side">
+              <NuxtLink to="/solutions/enterprise-vpn">Enterprise VPN</NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2 class="sub-menu-head">Digital Marketing</h2>
+          <ul class="menu-side">
+            <li class="menu-item-side mid-model-list">SEO</li>
+            <li class="menu-item-side mid-model-list">Paid Media</li>
+          </ul>
+        </div>
+      </div>
+      <div class="engage-models">
+        <h2 class="engagment-head">Engagement Models</h2>
+        <ul class="menu-side">
+          <li class="engage-list">
+            <NuxtLink class="engage-list" to="/team-augmentation"
+              >Build Your Dedicated Teams</NuxtLink
+            >
+          </li>
+          <li class="engage-list">Fixed Price Project</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="header-body">
       <div class="logo">
         <NuxtLink to="/"
           ><img src="~/assets/logos/snlogo.webp" alt="Silicon Networks Logo"
         /></NuxtLink>
       </div>
+      <div class="nav-ul desktop-header">
+        <ul class="nav-ul">
+          <li class="nav-li has-mega">
+            <a @click="openServiceNew"
+              >Services
+              <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
+            /></a>
+          </li>
+          <li class="nav-li has-child" style="position: relative">
+            <a
+              >Industries
+              <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
+            /></a>
+            <div class="dropdown-content">
+              <ul class="sub sub-menu-block">
+                <li>
+                  <NuxtLink to="/industry/footwear"
+                    >Footwear & Apparel</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink to="/industry/finance"
+                    >Finance & Insurance</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink to="/industry/manufacturing"
+                    >Manufacturing & Distribution</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink to="/industry/retail">CPG & Retail</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/industry/pharma">Pharma</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/industry/government">Government</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/industry/food">Food & Beverages</NuxtLink>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- <li class="nav-li has-child" style="position: relative">
+            <a>Solutions</a>
+            <div class="dropdown-content">
+              <ul class="sub sub-menu-block">
+                <li>
+                  <NuxtLink to="/solutions/microsoft-dynamics"
+                    >Microsoft Dynamics</NuxtLink
+                  >
+                </li>
+                <li>
+                  <NuxtLink to="/solutions/hr-connect">HR Connect</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/solutions/e-commerce">E-Commerce</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/solutions/stickytasks">StickyTasks</NuxtLink>
+                </li>
+                <li>
+                  <NuxtLink to="/solutions/enterprise-vpn"
+                    >Enterprise VPN</NuxtLink
+                  >
+                </li>
+              </ul>
+            </div>
+          </li> -->
+          <li class="nav-li">
+            <NuxtLink class="nav-li-tag" to="/insights">Insights </NuxtLink>
+          </li>
+          <li class="nav-li">
+            <NuxtLink class="nav-li-tag" to="/careers">Careers </NuxtLink>
+          </li>
+          <li class="nav-li">
+            <NuxtLink class="nav-li-tag" to="/about">About</NuxtLink>
+          </li>
+          <li class="nav-li prominent">
+            <NuxtLink class="nav-li-tag" to="/contact">Contact</NuxtLink>
+          </li>
+        </ul>
+      </div>
       <div class="contact-links">
         <a href="mailto:sales@siliconnet.com">sales@siliconnet.com</a>
         <a href="tel:855-904-4417">855-904-4417</a>
       </div>
-      <div class="menu">
+      <div class="menu mobile-menu">
         <img
           @click.stop="drawer = !drawer"
           src="~/assets/icons/menuicon.svg"
@@ -111,7 +271,7 @@
             <NuxtLink to="/services">Services</NuxtLink>
             <img @click="openService" src="~/assets/icons/right-arrow.svg" />
           </li>
-          <li @click="openIndustry" class="menu-item sub-menu-item">
+          <li @click="openIndustryOpen" class="menu-item sub-menu-item">
             <a>Industries </a>
             <img src="~/assets/icons/right-arrow.svg" />
           </li>
@@ -155,24 +315,47 @@ export default {
       ],
       serviceOpen: false,
       solutionOpen: false,
+      solutionOpenNew: false,
       industryOpen: false,
+      industryOpennew: false,
+      serviceOpenNew: false,
     };
   },
   methods: {
     openService() {
+      (this.solutionOpen = false),
+        (this.industryOpen = false),
+        (this.industryOpennew = false),
+        (this.serviceOpenNew = false),
+        (this.serviceOpen = !this.serviceOpen);
+    },
+    openServiceNew() {
       this.solutionOpen = false;
       this.industryOpen = false;
-      this.serviceOpen = !this.serviceOpen;
+      this.serviceOpen = false;
+      this.serviceOpenNew = !this.serviceOpenNew;
     },
-    openIndustry() {
+    openIndustryOpen() {
       this.serviceOpen = false;
       this.solutionOpen = false;
       this.industryOpen = !this.industryOpen;
+    },
+    openIndustryOpenNew() {
+      this.serviceOpen = false;
+      this.solutionOpen = false;
+      this.solutionOpenNew = false;
+      this.industryOpennew = !this.industryOpennew;
     },
     openSolution() {
       this.serviceOpen = false;
       this.industryOpen = false;
       this.solutionOpen = !this.solutionOpen;
+    },
+    openSolutionNew() {
+      this.serviceOpen = false;
+      this.industryOpen = false;
+      this.industryOpennew = false;
+      this.solutionOpenNew = !this.solutionOpenNew;
     },
     checkDrawer() {
       if (this.drawer === false) {
@@ -198,22 +381,56 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.mobile-menu {
+  display: none;
+}
+.desktop-header {
+  display: block;
+  .arrow-icon {
+    transform: rotate(90deg);
+  }
+  .nav-ul {
+    li {
+      margin-right: 20px;
+      &:hover {
+        a {
+          color: #091756;
+        }
+      }
+    }
+    .prominent {
+      background: #091756;
+      padding-left: 20px;
+      padding-right: 20px;
+      a {
+        color: white;
+      }
+      &:hover {
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
 .main-header {
-  width: 45vw;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   .header-body {
-    height: 120px;
+    max-height: 100%;
     background: white;
     padding: 0px 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 12px;
+    padding-bottom: 12px;
     .logo {
       img {
-        width: 180px;
+        width: 150px;
       }
     }
     .contact-links {
@@ -243,7 +460,7 @@ export default {
   padding: 70px;
   padding-top: 150px;
   .menu {
-    list-style: none;
+    list-style-type: none;
     .menu-item {
       font-size: 30px;
       margin-bottom: 25px;
@@ -304,10 +521,32 @@ export default {
   transform: translateX(0);
 }
 
-.mega-menu .menu-side {
-  list-style: none;
+.new-mega.newOpen {
+  transform: translateY(90px);
+}
+.dropdown-content {
+  transition: height 0.7s cubic-bezier(0.32, 0.01, 0, 1);
+  display: none;
 }
 
+.indusnewopen {
+  transition: transform 0.7s cubic-bezier(0.32, 0.01, 0, 1);
+  opacity: 1;
+  pointer-events: none;
+}
+
+.solutionnewopen {
+  transition: transform 0.7s cubic-bezier(0.32, 0.01, 0, 1);
+  opacity: 1;
+  pointer-events: none;
+}
+
+.has-child:hover .dropdown-content {
+  display: block;
+}
+.menu-side {
+  list-style-type: none;
+}
 .mega-menu .menu-side li {
   margin-bottom: 25px;
 }
@@ -316,10 +555,182 @@ export default {
   font-size: 25px;
 }
 
+.nav-bar-list {
+  display: block;
+  padding: 8px;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+}
+.services-model {
+  display: flex;
+  width: 100vw;
+  height: 48vh;
+  z-index: 111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 0.7s cubic-bezier(0.32, 0.01, 0, 1);
+  transform: translateY(-100vh);
+  z-index: 100;
+  .menu-side {
+    list-style-position: outside !important;
+    list-style-type: none;
+    li {
+      margin-bottom: 10px;
+    }
+  }
+  .engage-models {
+    background: #091756;
+    height: 100%;
+    width: 20%;
+    flex-basis: 20%;
+    padding: 50px;
+
+    .engage-logo {
+      width: 100% !important;
+    }
+    .among-best {
+      font-size: 12px;
+      line-height: 1.5;
+      color: #fff;
+      padding-top: 20px;
+    }
+    .engagment-head {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: white;
+    }
+    .engage-list {
+      color: rgb(255 255 255 / 80%) !important;
+      padding-top: 12px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      transition: 0.3s all ease;
+    }
+  }
+  .engage-models:nth-child(1) {
+    display: flex;
+    align-items: center;
+    > * {
+      opacity: 0;
+    }
+  }
+  .mid-model {
+    background: white;
+    width: 60%;
+    flex-basis: 60%;
+    height: 100%;
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    > * {
+      flex: 1;
+    }
+    .sub-menu-head {
+      margin: 0 0 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #1b1b1b;
+    }
+    .mid-model-list {
+      border: none;
+      padding: 2px 0;
+      -webkit-transition: 0.3s all ease;
+      transition: 0.3s all ease;
+      font-weight: 400;
+      color: #000;
+    }
+  }
+}
+
+.v-navigation-drawer {
+  width: 85vw !important;
+}
+ul.nav-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-li {
+  float: left;
+}
+
+.nav-li a {
+  cursor: pointer;
+  display: block;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+}
+.nav-li-tag {
+  cursor: pointer;
+  display: block;
+  padding: 8px;
+  font-size: 16px;
+  font-family: "Gilroy-Medium";
+  font-weight: 500;
+  color: black;
+}
+.nav-li a img {
+  width: 7%;
+}
+.sub-menu-block {
+  list-style-type: none;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  min-width: 250px;
+  top: 100%;
+}
+
+.sub-menu-block li {
+  padding: 8px;
+  transition: 0.3s all ease;
+  border-bottom: 1px solid #ddd;
+  margin-right: 0 !important;
+}
+.sub-menu-block li:hover {
+  background: #091756;
+}
+.sub-menu-block li:hover a {
+  color: white !important;
+}
+.sub {
+  background-color: #fff;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  position: absolute;
+  display: grid;
+  max-width: 202px;
+  transition: all 0.3s ease;
+  width: 100%;
+  z-index: 11;
+  max-width: 302px;
+  // opacity: 0;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  // -webkit-transform: rotateX(90deg);
+  // transform: rotateX(90deg);
+  -webkit-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+}
 @media (min-width: 481px) and (max-width: 1024px) {
 }
 
 @media all and (max-width: 480px) {
+  .mobile-menu {
+    display: block;
+  }
+  .desktop-header {
+    display: none;
+  }
   .main-header {
     width: 100vw;
     position: fixed;
@@ -350,7 +761,7 @@ export default {
     padding: 20px;
     padding-top: 120px;
     .menu {
-      list-style: none;
+      list-style-type: none;
       .menu-item {
         font-size: 28px;
         margin-bottom: 25px;
@@ -406,16 +817,12 @@ export default {
     transform: translateX(0);
   }
 
-  .mega-menu .menu-side {
-    list-style: none;
-  }
-
-  .mega-menu .menu-side li {
-    margin-bottom: 35px;
-  }
   .mega-menu a {
     color: white;
     font-size: 20px;
+  }
+  .engage-models {
+    background: #091756;
   }
 
   .v-navigation-drawer {
