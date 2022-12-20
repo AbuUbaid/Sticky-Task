@@ -95,7 +95,14 @@
                 placeholder="Message"
               ></v-textarea>
             </div>
-            <button type="submit" class="m-btn">Send Message</button>
+            <button type="submit" class="m-btn" :disabled="loading == true">
+              Send Message
+            </button>
+            <v-progress-circular
+              indeterminate
+              color="#E38601"
+              v-if="loading == true"
+            ></v-progress-circular>
             <p v-if="success" class="successt">Thanks for getting in touch!</p>
           </v-form>
         </template>
@@ -110,6 +117,7 @@ export default {
   name: "ContactForm",
   data() {
     return {
+      loading: false,
       valid: true,
       success: false,
       formData: {
@@ -144,12 +152,22 @@ export default {
   methods: {
     checkFields(e) {
       if (this.$refs.form.validate()) {
-        console.log(this.formData);
+        //console.log(this.formData);
+        this.loading = true;
         axios
           .post("https://formspree.io/f/xlevkodl", this.formData)
           .then((res) => {
             if (res.status == 200) {
               this.success = true;
+              this.formData = {
+                name: "",
+                organization: "",
+                email: "",
+                phone: "",
+                message: "",
+                select: null,
+              };
+              this.loading = false;
             }
           });
         e.preventDefault();
@@ -228,6 +246,7 @@ export default {
   padding-bottom: 8px;
   font-size: 20px;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .social-links {
