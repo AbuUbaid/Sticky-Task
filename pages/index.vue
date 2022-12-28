@@ -6,7 +6,9 @@
     <services-card />
     <two-image-banner />
     <solution-cards />
-    <case-study-slide />
+    <top-rated-solutions/>
+    <!-- <case-study-slide /> -->
+    <our-clients />
     <hardware-partners />
     <testimonial-slider />
     <!-- <logo-slider /> -->
@@ -20,6 +22,8 @@ import GlobalForm from "../components/GlobalForm.vue";
 import CounterArea from "../components/home/CounterArea.vue";
 import GrowthHop from "../components/home/GrowthHop.vue";
 import HardwarePartners from "../components/home/HardwarePartners.vue";
+import OurClients from "../components/home/OurClients.vue";
+import TopRatedSolutions from "../components/home/TopRatedSolutions.vue";
 import LogoSlider from "../components/home/LogoSlider.vue";
 import MainBanner from "../components/home/MainBanner.vue";
 import ServicesCard from "../components/home/ServicesCard.vue";
@@ -36,6 +40,8 @@ export default {
     CaseStudySlide,
     TestimonialSlider,
     HardwarePartners,
+    OurClients,
+    TopRatedSolutions,
     LogoSlider,
     GrowthHop,
     GlobalForm,
@@ -43,6 +49,7 @@ export default {
   name: "IndexPage",
   data: () => {
     return {
+      tab: null,
       counterData: {
         heading: "Achieving Substantial Solutions Through Holistic Approach",
         subheading: "We Provide Best And Best Only",

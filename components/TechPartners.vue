@@ -3,7 +3,7 @@
     <div class="home-container">
       <div>
         <div class="ei-one">
-          <h2>TECHNOLOGY PLATFORMS</h2>
+          <h2>TECH PARTNERS</h2>
         </div>
         <div class="ei-two">
           <img src="~/assets/logos/partnerLogo.webp" alt="Partner Logos" />

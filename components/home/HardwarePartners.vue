@@ -24,6 +24,7 @@ export default {
 
 <style lang="scss" scoped>
 .hardware-container {
+  text-align: center;
   padding-top: 50px;
   padding-bottom: 0px;
   h2 {
@@ -35,9 +36,10 @@ export default {
     margin-top: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 90px;
     img {
-      width: 250px;
+      width: 200px;
     }
   }
 }

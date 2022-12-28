@@ -62,13 +62,40 @@
       <p>© 2022, Copyrights @ Silicon Networks</p>
       <p>All Right Reserved.</p>
     </div>
+    <div  v-if="show_notice" class="cookie-notice-container" style="color:#fff;">
+      <span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span>
+      <span id="cn-notice-buttons" class="cn-buttons-container">
+        <a href="#!" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok" style="background-color:#00a99d;" @click="closeNotice()">Ok</a>
+      </span>
+      <span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No" @click="closeNotice"></span>
+    </div>
   </div>
+  
 </template>
 
 <script>
+
 export default {
   name: "FooterMain",
+  data: () => {
+    return {
+      show_notice: true
+    }
+  },
+
+  created: function(){
+    setTimeout(function() {
+     this.show_notice = true;
+    }, 2000);
+  },
+  methods:{
+      closeNotice(){
+        this.show_notice = false;
+      }
+  }
 };
+
+
 </script>
 
 <style scoped>
@@ -78,7 +105,57 @@ export default {
   padding-left: 80px;
   padding-right: 80px;
 }
-
+.cookie-notice-container{
+  padding: 15px 30px;
+  text-align: center;
+  width: 100%;
+  animation-name: fadeIn;
+  background-color: #000;
+}
+.cn-text-container{
+  margin: 0 0 6px 0;
+  display: inline-block;
+}
+.cn-buttons-container{
+  display: inline-block;
+}
+.cn-button{
+    font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,"Helvetica Neue",sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: .25px;
+    line-height: 20px;
+    line-height: 1;
+    margin: 0 0 0 10px;
+    text-align: center;
+    text-transform: none;
+    display: inline-block;
+    cursor: pointer;
+    touch-action: manipulation;
+    white-space: nowrap;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 8.5px 10px;
+    color: inherit;
+}
+.cn-close-notice{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+  opacity: .5;
+  padding: 10px;
+  outline: none;
+  cursor: pointer;
+}
 #footer {
   background: #f9f9f9 0% 0% no-repeat padding-box;
 }

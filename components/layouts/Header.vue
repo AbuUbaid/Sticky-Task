@@ -114,6 +114,20 @@
                     </ul>
                   </div>
                   <div>
+                    <h2 class="sub-menu-head">Emerging Tech</h2>
+                    <ul class="menu-side">
+                      <li class="menu-item-side">Blockchain</li>
+                      <li class="menu-item-side">Web 3.0</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h2 class="sub-menu-head">Digital Marketing</h2>
+                    <ul class="menu-side">
+                      <li class="menu-item-side mid-model-list">SEO</li>
+                      <li class="menu-item-side mid-model-list">Paid Media</li>
+                    </ul>
+                  </div>
+                  <div>
                     <h2 class="sub-menu-head">Solutions</h2>
                     <ul class="menu-side">
                       <li class="menu-item-side">
@@ -141,13 +155,6 @@
                           >Enterprise VPN</NuxtLink
                         >
                       </li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h2 class="sub-menu-head">Digital Marketing</h2>
-                    <ul class="menu-side">
-                      <li class="menu-item-side mid-model-list">SEO</li>
-                      <li class="menu-item-side mid-model-list">Paid Media</li>
                     </ul>
                   </div>
                 </div>
@@ -642,7 +649,7 @@ export default {
     height: 100%;
     display: flex;
     padding: 50px;
-    gap: 50px;
+    gap: 30px;
     > * {
       flex: 1;
     }
@@ -703,6 +710,7 @@ ul.nav-ul {
   border-bottom-left-radius: 4px;
   min-width: 250px;
   top: 100%;
+  padding-top: 12px !important;
 }
 
 .sub-menu-block li {
@@ -744,6 +752,7 @@ ul.nav-ul {
 @media all and (max-width: 480px) {
   .mobile-menu {
     display: block;
+    margin-left: 150px;
   }
   .desktop-header {
     display: none;
@@ -761,6 +770,45 @@ ul.nav-ul {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      .header-body-inner {
+      max-height: 100%;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      position: relative;
+      max-width: 1350px;
+      margin: 0 auto;
+      padding-right: 170px;
+
+      .logo {
+        img {
+          width: 150px;
+        }
+      }
+      .contact-links {
+        flex: 1;
+        text-align: right;
+        padding-right: 22px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+        a {
+          color: #e38601;
+          font-size: 20px;
+          margin-bottom: 10px;
+          font-family: "Gilroy-Medium";
+        }
+      }
+      .menu {
+        img {
+          width: 40px;
+          cursor: pointer;
+        }
+      }
+    }
       .logo {
         img {
           width: 100px;

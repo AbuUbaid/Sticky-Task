@@ -1,11 +1,11 @@
 <template>
   <div class="banner-container home-slides">
     <v-carousel
-      :continuous="true"
-      :cycle="true"
+      :continuous="false"
+      :cycle="false"
       :interval="5000"
       :show-arrows="false"
-      hide-delimiter-background
+      hide-delimiters
       height="100vh"
     >
       <v-carousel-item>
@@ -25,7 +25,7 @@
           <div class="image-area side-img sideimg1"></div>
         </div>
       </v-carousel-item>
-      <v-carousel-item>
+      <!-- <v-carousel-item>
         <div class="home-slide">
           <div class="text-area">
             <h1>Leading The Future Of Innovative Business</h1>
@@ -39,7 +39,7 @@
           </div>
           <div class="image-area side-img sideimg2"></div>
         </div>
-      </v-carousel-item>
+      </v-carousel-item> -->
     </v-carousel>
   </div>
 </template>
