@@ -91,7 +91,10 @@
             <li class="nav-li has-mega">
               <a
                 >Services
-                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
+                <img
+                  class="arrow-icon"
+                  style="margin-right: -15px"
+                  src="~/assets/icons/right-arrow.svg"
               /></a>
 
               <div id="services-menu" class="services-model">
@@ -174,7 +177,10 @@
             <li class="nav-li has-child" style="position: relative">
               <a
                 >Industries
-                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
+                <img
+                  class="arrow-icon"
+                  style="margin-right: -15px"
+                  src="~/assets/icons/right-arrow.svg"
               /></a>
               <div class="dropdown-content">
                 <ul class="sub sub-menu-block">
@@ -396,7 +402,7 @@ export default {
   }
   .nav-ul {
     li {
-      margin-right: 30px;
+      margin-right: 40px;
       &:hover {
         a {
           color: #091756;
@@ -585,7 +591,7 @@ export default {
 .services-model {
   display: flex;
   width: 100vw;
-  height: 48vh;
+  height: 60vh;
   z-index: 111;
   padding-top: 25px;
   position: fixed;
@@ -771,44 +777,44 @@ ul.nav-ul {
       align-items: center;
       justify-content: space-between;
       .header-body-inner {
-      max-height: 100%;
-      padding: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      position: relative;
-      max-width: 1350px;
-      margin: 0 auto;
-      padding-right: 170px;
-
-      .logo {
-        img {
-          width: 150px;
-        }
-      }
-      .contact-links {
-        flex: 1;
-        text-align: right;
-        padding-right: 22px;
+        max-height: 100%;
+        padding: 12px;
         display: flex;
-        flex-direction: column;
-        display: none;
-        a {
-          color: #e38601;
-          font-size: 20px;
-          margin-bottom: 10px;
-          font-family: "Gilroy-Medium";
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        position: relative;
+        max-width: 1350px;
+        margin: 0 auto;
+        padding-right: 170px;
+
+        .logo {
+          img {
+            width: 150px;
+          }
+        }
+        .contact-links {
+          flex: 1;
+          text-align: right;
+          padding-right: 22px;
+          display: flex;
+          flex-direction: column;
+          display: none;
+          a {
+            color: #e38601;
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-family: "Gilroy-Medium";
+          }
+        }
+        .menu {
+          img {
+            width: 40px;
+            cursor: pointer;
+          }
         }
       }
-      .menu {
-        img {
-          width: 40px;
-          cursor: pointer;
-        }
-      }
-    }
       .logo {
         img {
           width: 100px;
