@@ -9,10 +9,10 @@
     <solution-cards />
     <!-- <case-study-slide /> -->
     <our-clients />
+    <growth-hop />
     <testimonial-slider />
     <hardware-partners />
     <!-- <logo-slider /> -->
-    <growth-hop />
   </div>
 </template>
 

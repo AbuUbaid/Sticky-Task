@@ -127,6 +127,10 @@ export default {
     p {
       text-align: center;
     }
+      .mid-model {
+      flex-direction: column !important;
+      gap: 50px !important;
+      }
 
   }
 }
