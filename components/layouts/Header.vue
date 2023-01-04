@@ -179,7 +179,10 @@
             <li class="nav-li has-child" style="position: relative">
               <a
                 >Industries
-                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
+                <img
+                  class="arrow-icon"
+                  style="margin-right: -15px"
+                  src="~/assets/icons/right-arrow.svg"
               /></a>
               <div class="dropdown-content">
                 <ul class="sub sub-menu-block">
@@ -410,7 +413,7 @@ export default {
   }
   .nav-ul {
     li {
-      margin-right: 30px;
+      margin-right: 40px;
       &:hover {
         a {
           color: #091756;
@@ -599,7 +602,7 @@ export default {
 .services-model {
   display: flex;
   width: 100vw;
-  height: 48vh;
+  height: 60vh;
   z-index: 111;
   padding-top: 25px;
   position: fixed;

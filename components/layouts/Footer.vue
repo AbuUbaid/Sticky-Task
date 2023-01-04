@@ -62,13 +62,13 @@
       <p>© 2022, Copyrights @ Silicon Networks</p>
       <p>All Right Reserved.</p>
     </div>
-    <div  v-if="show_notice" class="cookie-notice-container" style="color:#fff;">
+    <!-- <div  v-if="show_notice" class="cookie-notice-container" style="color:#fff;">
       <span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span>
       <span id="cn-notice-buttons" class="cn-buttons-container">
         <a href="#!" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok" style="background-color:#00a99d;" @click="closeNotice()">Ok</a>
       </span>
       <span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No" @click="closeNotice"></span>
-    </div>
+    </div> -->
   </div>
   
 </template>
