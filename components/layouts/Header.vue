@@ -88,88 +88,93 @@
         </div>
         <div class="nav-ul desktop-header">
           <ul class="nav-ul">
-            <li class="nav-li has-mega">
-              <a
+            <li class="nav-li">
+              <a class="has-mega"
                 >Services
-                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg"
-              /></a>
-
-              <div id="services-menu" class="services-model">
-                <div class="engage-models">
-                  <img src="~/assets/logos/clutch.webp" alt="Clutch" />
-                </div>
-                <div class="mid-model">
-                  <div>
-                    <h2 class="sub-menu-head">Software Development</h2>
+                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg" />
+                <div id="services-menu" class="services-model">
+                  <div class="engage-models">
+                    <img src="~/assets/logos/clutch.webp" alt="Clutch" />
+                  </div>
+                  <div class="mid-model">
+                    <div>
+                      <h2 class="sub-menu-head">Software Development</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/custom-software"
+                      >Custom Software Development</NuxtLink>
+                        </li>
+                        <li class="menu-item-side"><NuxtLink to="/services/mobile-development"
+                      >Web App Development</NuxtLink></li>
+                        <li class="menu-item-side">UI/UX Design</li>
+                        <li class="menu-item-side"><NuxtLink to="/services/qa-testing"
+                      >QA & Testing</NuxtLink></li>
+                        <li class="menu-item-side">Embedded Software</li>
+                        <li class="menu-item-side"><NuxtLink to="/services/devops-new"
+                      >DevOps</NuxtLink></li>
+                        <li class="menu-item-side">Discovery Workshop</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="sub-menu-head">Emerging Tech</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side">Blockchain</li>
+                        <li class="menu-item-side">Web 3.0</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="sub-menu-head">Digital Marketing</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side mid-model-list">SEO</li>
+                        <li class="menu-item-side mid-model-list">
+                          Paid Media
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="sub-menu-head">Solutions</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/microsoft-dynamics"
+                            >Microsoft Dynamics</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/hr-connect"
+                            >HR Connect</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/e-commerce"
+                            >E-Commerce</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/stickytasks"
+                            >StickyTasks</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/enterprise-vpn"
+                            >Enterprise VPN</NuxtLink
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="engage-models">
+                    <h2 class="engagment-head">Engagement Models</h2>
                     <ul class="menu-side">
-                      <li class="menu-item-side">
-                        Custom Software Development
+                      <li class="engage-list">
+                        <NuxtLink class="engage-list" to="/team-augmentation"
+                          >Build Your Dedicated Teams</NuxtLink
+                        >
                       </li>
-                      <li class="menu-item-side">Web App Development</li>
-                      <li class="menu-item-side">UI/UX Design</li>
-                      <li class="menu-item-side">QA & Testing</li>
-                      <li class="menu-item-side">Embedded Software</li>
-                      <li class="menu-item-side">DevOps</li>
-                      <li class="menu-item-side">Discovery Workshop</li>
+                      <li class="engage-list">Fixed Price Project</li>
                     </ul>
                   </div>
-                  <div>
-                    <h2 class="sub-menu-head">Emerging Tech</h2>
-                    <ul class="menu-side">
-                      <li class="menu-item-side">Blockchain</li>
-                      <li class="menu-item-side">Web 3.0</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h2 class="sub-menu-head">Digital Marketing</h2>
-                    <ul class="menu-side">
-                      <li class="menu-item-side mid-model-list">SEO</li>
-                      <li class="menu-item-side mid-model-list">Paid Media</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h2 class="sub-menu-head">Solutions</h2>
-                    <ul class="menu-side">
-                      <li class="menu-item-side">
-                        <NuxtLink to="/solutions/microsoft-dynamics"
-                          >Microsoft Dynamics</NuxtLink
-                        >
-                      </li>
-                      <li class="menu-item-side">
-                        <NuxtLink to="/solutions/hr-connect"
-                          >HR Connect</NuxtLink
-                        >
-                      </li>
-                      <li class="menu-item-side">
-                        <NuxtLink to="/solutions/e-commerce"
-                          >E-Commerce</NuxtLink
-                        >
-                      </li>
-                      <li class="menu-item-side">
-                        <NuxtLink to="/solutions/stickytasks"
-                          >StickyTasks</NuxtLink
-                        >
-                      </li>
-                      <li class="menu-item-side">
-                        <NuxtLink to="/solutions/enterprise-vpn"
-                          >Enterprise VPN</NuxtLink
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="engage-models">
-                  <h2 class="engagment-head">Engagement Models</h2>
-                  <ul class="menu-side">
-                    <li class="engage-list">
-                      <NuxtLink class="engage-list" to="/team-augmentation"
-                        >Build Your Dedicated Teams</NuxtLink
-                      >
-                    </li>
-                    <li class="engage-list">Fixed Price Project</li>
-                  </ul>
-                </div>
-              </div>
+                </div></a
+              >
             </li>
             <li class="nav-li has-child" style="position: relative">
               <a
@@ -324,6 +329,15 @@ export default {
       industryOpennew: false,
       serviceOpenNew: false,
     };
+  },
+  created: function () {
+    if (this.$cookies.get('notice') == undefined) {
+        this.$cookies.set("notice", true, {
+        path: "/",
+        maxAge: 60 * 60 * 24 * 7,
+        });
+    }
+    
   },
   methods: {
     openService() {
@@ -771,44 +785,44 @@ ul.nav-ul {
       align-items: center;
       justify-content: space-between;
       .header-body-inner {
-      max-height: 100%;
-      padding: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 12px;
-      padding-bottom: 12px;
-      position: relative;
-      max-width: 1350px;
-      margin: 0 auto;
-      padding-right: 170px;
-
-      .logo {
-        img {
-          width: 150px;
-        }
-      }
-      .contact-links {
-        flex: 1;
-        text-align: right;
-        padding-right: 22px;
+        max-height: 100%;
+        padding: 12px;
         display: flex;
-        flex-direction: column;
-        display: none;
-        a {
-          color: #e38601;
-          font-size: 20px;
-          margin-bottom: 10px;
-          font-family: "Gilroy-Medium";
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        position: relative;
+        max-width: 1350px;
+        margin: 0 auto;
+        padding-right: 170px;
+
+        .logo {
+          img {
+            width: 150px;
+          }
+        }
+        .contact-links {
+          flex: 1;
+          text-align: right;
+          padding-right: 22px;
+          display: flex;
+          flex-direction: column;
+          display: none;
+          a {
+            color: #e38601;
+            font-size: 20px;
+            margin-bottom: 10px;
+            font-family: "Gilroy-Medium";
+          }
+        }
+        .menu {
+          img {
+            width: 40px;
+            cursor: pointer;
+          }
         }
       }
-      .menu {
-        img {
-          width: 40px;
-          cursor: pointer;
-        }
-      }
-    }
       .logo {
         img {
           width: 100px;

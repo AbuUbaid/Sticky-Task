@@ -84,13 +84,16 @@ export default {
   },
 
   created: function(){
-    setTimeout(function() {
-     this.show_notice = true;
-    }, 2000);
+    this.show_notice = this.$cookies.get('notice');
   },
   methods:{
       closeNotice(){
+        this.$cookies.set("notice", false, {
+          path: "/",
+          maxAge: 60 * 60 * 24 * 7,
+        });
         this.show_notice = false;
+        console.log("show notice", this.$cookies.get('notice'));
       }
   }
 };
@@ -111,6 +114,10 @@ export default {
   width: 100%;
   animation-name: fadeIn;
   background-color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
 }
 .cn-text-container{
   margin: 0 0 6px 0;

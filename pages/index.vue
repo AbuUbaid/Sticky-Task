@@ -4,13 +4,13 @@
     <!-- <global-form /> -->
     <counter-area :counterData="counterData" />
     <services-card />
+    <top-rated-solutions/>
     <two-image-banner />
     <solution-cards />
-    <top-rated-solutions/>
     <!-- <case-study-slide /> -->
     <our-clients />
-    <hardware-partners />
     <testimonial-slider />
+    <hardware-partners />
     <!-- <logo-slider /> -->
     <growth-hop />
   </div>

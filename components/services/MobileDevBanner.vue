@@ -34,7 +34,7 @@ export default {
 
 <style  scoped>
 .about-banner {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -48,6 +48,7 @@ export default {
 .desc{
   margin-bottom: 30px;
   max-width: 40%;
+  color: white;
 }
 
 .contain {
@@ -57,9 +58,11 @@ export default {
 .about-banner h1 {
   width: 600px;
   margin-bottom: 30px;
+  margin-top: 290px;
+  color: white;
 }
 .about-banner a {
-  color: black;
+  color: white;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
