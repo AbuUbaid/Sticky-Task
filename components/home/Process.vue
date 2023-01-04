@@ -1,44 +1,42 @@
 <template>
-  <div class="end-container">
-    <h2>End to End Software Development Methodologies</h2>
+  <div class="process-container">
+    <h2>OUR PROCESS</h2>
+    <p>Our 3 Step Formula For Building Great Products</p>
     <div  class="services-model">
       <div data-v-c26da7d8="" class="logos">
         <div data-v-c26da7d8="" class="logo">
-          <img data-v-c26da7d8="" src="/_nuxt/assets/images/customlogo.jpg" alt="siemens logo">
+          <img data-v-c26da7d8="" src="/_nuxt/assets/images/process.svg" alt="siemens logo">
+        </div>
+        <div data-v-c26da7d8="" class="logo">
+          <img data-v-c26da7d8="" src="/_nuxt/assets/images/process1.svg" alt="siemens logo">
+        </div>
+        <div data-v-c26da7d8="" class="logo">
+          <img data-v-c26da7d8="" src="/_nuxt/assets/images/process2.svg" alt="siemens logo">
         </div>
       </div> 
       <div class="mid-model">
         <div>
           <ul class="menu-side">
-          <h2 class="sub-menu-head">Requirements Gathering</h2>
-            <li class="menu-item-side">Work Breakdown Structure</li>
-            <li class="menu-item-side">Project Plan</li>
-            <li class="menu-item-side">Project Budget</li>
-            <li class="menu-item-side">Requirements Docs</li>
+          <h2 class="sub-menu-head">Explore Together</h2>
+            <li class="menu-item-side">Identifying major pain points</li>
+            <li class="menu-item-side">Goals to be achieved</li>
+            <li class="menu-item-side">Competitor analysis</li>
+          </ul>
+        </div>
+        <div>
+          <ul class="menu-side">
+          <h2 class="sub-menu-head">Define Strategy</h2>
+            <li class="menu-item-side">Design Strategy</li>
             <li class="menu-item-side">Use Cases</li>
-            <li class="menu-item-side">User Stories</li>
+            <li class="menu-item-side">Paper Wireframes</li>
           </ul>
         </div>
         <div>
           <ul class="menu-side">
-          <h2 class="sub-menu-head">Design & Development</h2>
-            <li class="menu-item-side mid-model-list">Low-Fi Design</li>
-            <li class="menu-item-side mid-model-list">Hi-FI Design</li>
-            <li class="menu-item-side mid-model-list">User Experience Design</li>
-            <li class="menu-item-side mid-model-list">Source Code</li>
-            <li class="menu-item-side mid-model-list">Compiled Code</li>
-            <li class="menu-item-side mid-model-list">Code Documentation</li>
-          </ul>
-        </div>
-        <div>
-          <ul class="menu-side">
-          <h2 class="sub-menu-head">Delivery & Support</h2>
-            <li class="menu-item-side">Release Management</li>
-            <li class="menu-item-side">Change Management</li>
-            <li class="menu-item-side">User Docs and Training</li>
-            <li class="menu-item-side">Scheduled Maintenance</li>
-            <li class="menu-item-side">Adaptive Maintenance</li>
-            <li class="menu-item-side">Software Roadmap</li>
+          <h2 class="sub-menu-head">Build & Iterate</h2>
+            <li class="menu-item-side">Interactive Prototype</li>
+            <li class="menu-item-side">System Assets & Specs</li>
+            <li class="menu-item-side">UI Style Guide</li>
           </ul>
         </div>
       </div>
@@ -56,8 +54,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.end-container {
-  background-color: #ECF0FF;
+.process-container {
+  background-color: #FFF;
   text-align: center;
   padding-top: 50px;
   padding-bottom: 0px;
@@ -87,6 +85,7 @@ export default {
   margin-right: 50px;
   width: 100%;
   display: flex;
+  gap: 300px;
   justify-content: center;
   .logo {
     img {
@@ -97,9 +96,9 @@ export default {
   .mid-model {
     width:100%;
     display: flex;
-    justify-content: center;
     padding: 50px;
-    gap: 200px;
+    gap: 300px;
+    justify-content: center;
     .sub-menu-head {
       margin: 0 0 10px;
       font-size: 18px;
@@ -118,7 +117,7 @@ export default {
 }
 
   @media (max-width: 480px) {
-  .end-container {
+  .process-container {
     padding: 30px 20px;
     h2 {
       margin-bottom: 10px;

@@ -122,12 +122,9 @@ export default {
   .mid-model {
     width:100%;
     display: flex;
-    flex:1;
     padding: 50px;
-    gap: 20px;
-    > * {
-      flex: 1;
-    }
+    gap: 300px;
+    justify-content: center;
     .sub-menu-head {
       margin: 0 0 10px;
       font-size: 18px;

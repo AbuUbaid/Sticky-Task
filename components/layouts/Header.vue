@@ -106,7 +106,8 @@
                         </li>
                         <li class="menu-item-side"><NuxtLink to="/services/mobile-development"
                       >Web App Development</NuxtLink></li>
-                        <li class="menu-item-side">UI/UX Design</li>
+                        <li class="menu-item-side"><NuxtLink to="/services/uiux-design"
+                      >UI/UX Design</NuxtLink></li>
                         <li class="menu-item-side"><NuxtLink to="/services/qa-testing"
                       >QA & Testing</NuxtLink></li>
                         <li class="menu-item-side">Embedded Software</li>
