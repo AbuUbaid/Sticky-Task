@@ -1,53 +1,44 @@
 <template>
-  <div class="top-notch-container">
-    <h2>Turn the requirements of your company into a top-notch software product.</h2>
+  <div class="end-container">
+    <h2>End to End Software Development Methodologies</h2>
     <div  class="services-model">
-      <div data-v-c26da7d8="" class="logos"><div data-v-c26da7d8="" class="logo"><img data-v-c26da7d8="" src="/_nuxt/assets/logos/p1.svg" alt="siemens logo"></div> <div data-v-c26da7d8="" class="logo"><img data-v-c26da7d8="" src="/_nuxt/assets/logos/p2.svg" alt="nasa logo"></div> <div data-v-c26da7d8="" class="logo"><img data-v-c26da7d8="" src="/_nuxt/assets/logos/p3.svg" alt="pepsico logo"></div> <div data-v-c26da7d8="" class="logo"><img data-v-c26da7d8="" src="/_nuxt/assets/logos/p4.svg" alt="lockheed martin logo"></div> <div data-v-c26da7d8="" class="logo"><img data-v-c26da7d8="" src="/_nuxt/assets/logos/p5.svg" alt="hp logo"></div> <div data-v-c26da7d8="" class="logo"><img data-v-c26da7d8="" src="/_nuxt/assets/logos/p6.svg" alt="johnsons johnsons logo"></div> <div data-v-c26da7d8="" class="logo"><img data-v-c26da7d8="" src="/_nuxt/assets/logos/p7.svg" alt="citrix logo"></div></div>
+      <div data-v-c26da7d8="" class="logos">
+        <div data-v-c26da7d8="" class="logo">
+          <img data-v-c26da7d8="" src="/_nuxt/assets/images/customlogo.jpg" alt="siemens logo">
+        </div>
+      </div> 
       <div class="mid-model">
         <div>
-          <h2 class="sub-menu-head">Emerging Tech</h2>
           <ul class="menu-side">
-            <li class="menu-item-side">Blockchain</li>
-            <li class="menu-item-side">Web 3.0</li>
+          <h2 class="sub-menu-head">Requirements Gathering</h2>
+            <li class="menu-item-side">Work Breakdown Structure</li>
+            <li class="menu-item-side">Project Plan</li>
+            <li class="menu-item-side">Project Budget</li>
+            <li class="menu-item-side">Requirements Docs</li>
+            <li class="menu-item-side">Use Cases</li>
+            <li class="menu-item-side">User Stories</li>
           </ul>
         </div>
         <div>
-          <h2 class="sub-menu-head">Digital Marketing</h2>
           <ul class="menu-side">
-            <li class="menu-item-side mid-model-list">SEO</li>
-            <li class="menu-item-side mid-model-list">
-              Paid Media
-            </li>
+          <h2 class="sub-menu-head">Design & Development</h2>
+            <li class="menu-item-side mid-model-list">Low-Fi Design</li>
+            <li class="menu-item-side mid-model-list">Hi-FI Design</li>
+            <li class="menu-item-side mid-model-list">User Experience Design</li>
+            <li class="menu-item-side mid-model-list">Source Code</li>
+            <li class="menu-item-side mid-model-list">Compiled Code</li>
+            <li class="menu-item-side mid-model-list">Code Documentation</li>
           </ul>
         </div>
         <div>
-          <h2 class="sub-menu-head">Solutions</h2>
           <ul class="menu-side">
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/microsoft-dynamics"
-                >Microsoft Dynamics</NuxtLink
-              >
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/hr-connect"
-                >HR Connect</NuxtLink
-              >
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/e-commerce"
-                >E-Commerce</NuxtLink
-              >
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/stickytasks"
-                >StickyTasks</NuxtLink
-              >
-            </li>
-            <li class="menu-item-side">
-              <NuxtLink to="/solutions/enterprise-vpn"
-                >Enterprise VPN</NuxtLink
-              >
-            </li>
+          <h2 class="sub-menu-head">Delivery & Support</h2>
+            <li class="menu-item-side">Release Management</li>
+            <li class="menu-item-side">Change Management</li>
+            <li class="menu-item-side">User Docs and Training</li>
+            <li class="menu-item-side">Scheduled Maintenance</li>
+            <li class="menu-item-side">Adaptive Maintenance</li>
+            <li class="menu-item-side">Software Roadmap</li>
           </ul>
         </div>
       </div>
@@ -65,7 +56,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.top-notch-container {
+.end-container {
   background-color: #ECF0FF;
   text-align: center;
   padding-top: 50px;
@@ -84,7 +75,9 @@ export default {
   z-index: 111;
   z-index: 100;
   .menu-side {
+    text-align: left;
     li {
+      list-style-type: circle;
       margin-bottom: 10px;
     }
   }
@@ -92,11 +85,9 @@ export default {
   margin-top: 30px;
   margin-left: 50px;
   margin-right: 50px;
-  width: 80%;
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  justify-content: center;
   .logo {
     img {
       width: 100%;
@@ -130,7 +121,7 @@ export default {
 }
 
   @media (max-width: 480px) {
-  .top-notch-container {
+  .end-container {
     padding: 30px 20px;
     h2 {
       margin-bottom: 10px;
