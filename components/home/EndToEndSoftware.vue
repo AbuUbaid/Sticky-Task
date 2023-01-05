@@ -8,7 +8,7 @@
         </div>
       </div> 
       <div class="mid-model">
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
           <h2 class="sub-menu-head">Requirements Gathering</h2>
             <li class="menu-item-side">Work Breakdown Structure</li>
@@ -18,19 +18,19 @@
             <li class="menu-item-side">Use Cases</li>
             <li class="menu-item-side">User Stories</li>
           </ul>
-        </div>
-        <div>
+      </div>
+        <div class="text-area">
           <ul class="menu-side">
           <h2 class="sub-menu-head">Design & Development</h2>
-            <li class="menu-item-side mid-model-list">Low-Fi Design</li>
-            <li class="menu-item-side mid-model-list">Hi-FI Design</li>
-            <li class="menu-item-side mid-model-list">User Experience Design</li>
-            <li class="menu-item-side mid-model-list">Source Code</li>
-            <li class="menu-item-side mid-model-list">Compiled Code</li>
-            <li class="menu-item-side mid-model-list">Code Documentation</li>
+            <li class="menu-item-side">Low-Fi Design</li>
+            <li class="menu-item-side">Hi-FI Design</li>
+            <li class="menu-item-side">User Experience Design</li>
+            <li class="menu-item-side">Source Code</li>
+            <li class="menu-item-side">Compiled Code</li>
+            <li class="menu-item-side">Code Documentation</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
           <h2 class="sub-menu-head">Delivery & Support</h2>
             <li class="menu-item-side">Release Management</li>
@@ -77,7 +77,7 @@ export default {
   .menu-side {
     text-align: left;
     li {
-      list-style-type: circle;
+      list-style: none;
       margin-bottom: 10px;
     }
   }
@@ -100,6 +100,29 @@ export default {
     justify-content: center;
     padding: 50px;
     gap: 200px;
+
+    .text-area {
+    h2 {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      list-style-position: inside;
+      li {
+        font-family: "Gilroy-Regular";
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+      li::before {
+        content: "◯";
+        color: #ef861d; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-right: 15px;
+      }
+    }
+  }
     .sub-menu-head {
       margin: 0 0 10px;
       font-size: 18px;
@@ -127,10 +150,31 @@ export default {
     p {
       text-align: center;
     }
+    
+    .services-model{
       .mid-model {
       flex-direction: column !important;
       gap: 50px !important;
+
+      .text-area {
+      flex-basis: 100%;
+      width: 100%;
+      padding-right: 20px;
+      padding-left: 20px;
+      h2 {
+        margin-bottom: 20px;
       }
+      ul {
+        li {
+          font-family: "Gilroy-Regular";
+          margin-bottom: 20px;
+          font-size: 18px;
+        }
+      }
+    }
+      }
+    }
+     
 
   }
 }

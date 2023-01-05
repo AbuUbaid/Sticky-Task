@@ -15,7 +15,7 @@
         </div>
       </div> 
       <div class="mid-model">
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
           <h2 class="sub-menu-head">Explore Together</h2>
             <li class="menu-item-side">Identifying major pain points</li>
@@ -23,7 +23,7 @@
             <li class="menu-item-side">Competitor analysis</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
           <h2 class="sub-menu-head">Define Strategy</h2>
             <li class="menu-item-side">Design Strategy</li>
@@ -31,7 +31,7 @@
             <li class="menu-item-side">Paper Wireframes</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
           <h2 class="sub-menu-head">Build & Iterate</h2>
             <li class="menu-item-side">Interactive Prototype</li>
@@ -74,10 +74,7 @@ export default {
   z-index: 100;
   .menu-side {
     text-align: left;
-    li {
-      list-style-type: circle;
-      margin-bottom: 10px;
-    }
+   
   }
   .logos {
   margin-top: 30px;
@@ -99,12 +96,36 @@ export default {
     padding: 50px;
     gap: 300px;
     justify-content: center;
+
+    .text-area {
+    h2 {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: none;
+      list-style-position: inside;
+      li {
+        font-family: "Gilroy-Regular";
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+      li::before {
+        content: "◯";
+        color: #ef861d; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-right: 15px;
+      }
+    }
+  }
     .sub-menu-head {
       margin: 0 0 10px;
       font-size: 18px;
       font-weight: 700;
       color: #1b1b1b;
     }
+
     .mid-model-list {
       border: none;
       padding: 2px 0;
