@@ -162,8 +162,8 @@ export default {
     }
   }
 }
-
-  @media (max-width: 480px) {
+}
+@media (max-width: 480px) {
   .top-notch-container {
     padding: 30px 20px;
     h2 {
@@ -175,6 +175,5 @@ export default {
     }
 
   }
-}
 }
 </style>

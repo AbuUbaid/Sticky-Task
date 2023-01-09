@@ -4,7 +4,7 @@
     <impact-icons :Impact="Impact" />
     <verification :Impact="Impact1" />
     <domains />
-    <next-starts />
+    <!-- <next-starts /> -->
   </div>
 </template>
 
