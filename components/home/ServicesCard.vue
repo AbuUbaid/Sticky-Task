@@ -81,8 +81,8 @@ export default {
   background-color: white;
   box-shadow: 0px 12px 23px #00000017;
   z-index: 2;
-  padding: 50px;
-  margin: 0 200px;
+  padding: 30px;
+  margin: 0 250px;
 }
 
 .third-text h2 {

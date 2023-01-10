@@ -1,5 +1,5 @@
 <template>
-  <div class="home-container">
+  <div class="home-container growth-containter">
     <div class="growth">
       <div class="video">
         <a href="https://www.youtube.com/watch?v=hXO-Cad2iss" target="_blank"
@@ -37,6 +37,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.growth-containter{
+  padding-top: 50px;
+}
 .growth {
   display: flex;
   gap: 50px;

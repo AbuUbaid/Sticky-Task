@@ -16,6 +16,16 @@
       </div>
       <div class="footer-texts">
         <div class="footer-text">
+          <h3>USA</h3>
+          <p>4288 Fremont Blvd Fremont, CA 94538</p>
+          <a href="tel:855-904-4417">855-904-4417</a>
+          <a href="mailto:info@siliconnet.com">info@siliconnet.com</a>
+        </div>
+        <div class="footer-text">
+          <h3>Dubai</h3>
+          <p>Office 403, Bay Square Building 3 - Dubai - UAE</p>
+        </div>
+        <div class="footer-text">
           <h3>Karachi Office</h3>
           <p>47 Street No 6،, Darul Aman Society PECHS, Karachi, Pakistan</p>
         </div>
@@ -25,16 +35,6 @@
             30 Khayaban-e-Iqbal, Sector XX DHA Phase 3, Lahore, Pakistan <br />
             +92 (423) 544 5651-2
           </p>
-        </div>
-        <div class="footer-text">
-          <h3>USA</h3>
-          <p>4288 Fremont Blvd Fremont, CA 94538</p>
-          <a href="tel:855-904-4417">855-904-4417</a>
-          <a href="mailto:info@siliconnet.com">info@siliconnet.com</a>
-        </div>
-        <div class="footer-text">
-          <h3>Dubai</h3>
-          <p>Office 403, Bay Square Building 3 - Dubai - UAE</p>
         </div>
       </div>
       <div class="footer-subscribe">
@@ -84,13 +84,16 @@ export default {
   },
 
   created: function(){
-    setTimeout(function() {
-     this.show_notice = true;
-    }, 2000);
+    this.show_notice = this.$cookies.get('notice');
   },
   methods:{
       closeNotice(){
+        this.$cookies.set("notice", false, {
+          path: "/",
+          maxAge: 60 * 60 * 24 * 7,
+        });
         this.show_notice = false;
+        console.log("show notice", this.$cookies.get('notice'));
       }
   }
 };
@@ -111,6 +114,10 @@ export default {
   width: 100%;
   animation-name: fadeIn;
   background-color: #000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
 }
 .cn-text-container{
   margin: 0 0 6px 0;

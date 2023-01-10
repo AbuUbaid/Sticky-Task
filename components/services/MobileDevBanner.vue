@@ -1,5 +1,5 @@
 <template>
-  <div :class=" BannerData?.process == 'process' ?  'banner-container p-banner' : 'banner-container about-banner'" :style="inlineStyle">
+  <div class="banner-container about-banner" :style="inlineStyle">
     <div class="contain">
       <p class="top">{{ BannerData.top }}</p>
       <h1>{{ BannerData.heading }}</h1>
@@ -34,7 +34,7 @@ export default {
 
 <style  scoped>
 .about-banner {
-  height: 100vh;
+  height: 95vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -44,31 +44,11 @@ export default {
   flex-direction: column;
   margin-bottom: 50px;
 }
-.p-banner {
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: start;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
- .p-banner contain{
-  color:white !important;
- }
- .p-banner a{
-  color:white !important;
- }
- .p-banner h1 {
-  width: 600px;
-  margin-bottom: 30px;
-  color: white;
-}
+
 .desc{
   margin-bottom: 30px;
   max-width: 40%;
+  color: white;
 }
 
 .contain {
@@ -78,9 +58,11 @@ export default {
 .about-banner h1 {
   width: 600px;
   margin-bottom: 30px;
+  margin-top: 290px;
+  color: white;
 }
 .about-banner a {
-  color: black;
+  color: white;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -92,9 +74,6 @@ export default {
   }
 
   .about-banner h1 {
-    width: 100%;
-  }
-  .p-banner h1 {
     width: 100%;
   }
 }

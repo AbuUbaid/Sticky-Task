@@ -1,46 +1,39 @@
 <template>
-  <div class="partner-platforms">
+  <div class="tech-partner-platforms">
     <div class="home-container">
       <div>
         <div class="ei-one">
-          <h2>TECHNOLOGY PARTNERS</h2>
+          <h2>Tech Stacks For Effective & Up-To-Date Web Apps</h2>
         </div>
         <div class="ei-two">
-          <img src="~/assets/logos/partnerLogo.webp" alt="Partner Logos" />
+          <img src="~/assets/logos/techstack.jpg" alt="Partner Logos" />
         </div>
       </div>
     </div>
-    <img src="~/assets/images/shape4.svg" alt="Shape" class="yellow" />
   </div>
 </template>
 
 <script>
 export default {
-  name: "TechPartners",
+  name: "TechStacks",
 };
 </script>
 
 <style scoped>
-.partner-platforms {
+.tech-partner-platforms {
   padding: 50px 0;
-  background: #f1f1f1;
+  background: #FBFBFB;
   position: relative;
-  margin: 50px 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
-.partner-platforms h2 {
+.tech-partner-platforms h2 {
   margin-bottom: 40px;
   font-size: 35px;
   color: #091756;
 }
 
-.yellow {
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-  width: 50px;
-}
 
 .ei-two img {
   width: 100%;
@@ -50,15 +43,11 @@ export default {
 }
 
 @media (max-width: 480px) {
-  .partner-platforms{
+  .tech-partner-platforms{
     padding: 30px 0px;
   }
-  .partner-platforms h2 {
+  .tech-partner-platforms h2 {
     font-size: 30px;
-  }
-
-  .yellow {
-    width: 15px;
   }
 }
 </style>

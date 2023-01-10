@@ -40,7 +40,7 @@ export default {
     return {
       bannerData: {
         img: "cloud.webp",
-        heading: "Ensuring Continuous Delivery, Deployment, And Integration",
+        heading: "Improve The Efficiency Of Your IT Staff With Devops",
         url: "#",
       },
       Metrics: {
