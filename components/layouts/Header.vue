@@ -116,12 +116,88 @@
                       <li class="menu-item-side">Discovery Workshop</li>
                     </ul>
                   </div>
+<<<<<<< Updated upstream
                   <div>
                     <h2 class="sub-menu-head">Emerging Tech</h2>
                     <ul class="menu-side">
                       <li class="menu-item-side">Blockchain</li>
                       <li class="menu-item-side">Web 3.0</li>
                     </ul>
+=======
+                  <div class="mid-model">
+                    <div>
+                      <h2 class="sub-menu-head">Software Development</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/custom-software"
+                            >Custom Software Development</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/mobile-development"
+                            >Web App Development</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">UI/UX Design</li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/qa-testing"
+                            >QA & Testing</NuxtLink
+                          >
+                        </li>
+                        <!-- <li class="menu-item-side">Embedded Software</li> -->
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/devops-new">DevOps</NuxtLink>
+                        </li>
+                        <!-- <li class="menu-item-side">Discovery Workshop</li> -->
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="sub-menu-head">Emerging Tech</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side">Blockchain</li>
+                        <li class="menu-item-side">Web 3.0</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="sub-menu-head">Digital Marketing</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side mid-model-list">SEO</li>
+                        <li class="menu-item-side mid-model-list">
+                          Paid Media
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h2 class="sub-menu-head">Solutions</h2>
+                      <ul class="menu-side">
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/microsoft-dynamics"
+                            >Microsoft Dynamics</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/hr-connect"
+                            >HR Connect</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/e-commerce"
+                            >E-Commerce</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/stickytasks"
+                            >StickyTasks</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/solutions/enterprise-vpn"
+                            >Enterprise VPN</NuxtLink
+                          >
+                        </li>
+                      </ul>
+                    </div>
+>>>>>>> Stashed changes
                   </div>
                   <div>
                     <h2 class="sub-menu-head">Digital Marketing</h2>
@@ -331,6 +407,17 @@ export default {
       serviceOpenNew: false,
     };
   },
+<<<<<<< Updated upstream
+=======
+  created: function () {
+    if (this.$cookies.get("notice") == undefined) {
+      this.$cookies.set("notice", true, {
+        path: "/",
+        maxAge: 60 * 60 * 24 * 7,
+      });
+    }
+  },
+>>>>>>> Stashed changes
   methods: {
     openService() {
       (this.solutionOpen = false),
