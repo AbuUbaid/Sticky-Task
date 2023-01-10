@@ -3,7 +3,6 @@
     <service-banner :BannerData="bannerData" />
     <impact-icons :Impact="Impact" />
     <process />
-    <!-- <next-starts /> -->
   </div>
 </template>
 

@@ -4,7 +4,6 @@
     <impact-icons :Impact="Impact" />
     <mobile-how />
     <tech-stacks />
-    <!-- <next-starts /> -->
   </div>
 </template>
 

@@ -4,7 +4,6 @@
     <impact-icons :Impact="Impact" />
     <dev-tools />
     <impact-icons :Impact="Impact1" />
-    <!-- <next-starts /> -->
   </div>
 </template>
 

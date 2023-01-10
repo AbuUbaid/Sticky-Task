@@ -3,7 +3,6 @@
     <service-banner :BannerData="bannerData" />
     <top-notch-software />
     <end-to-end-software />
-    <!-- <next-starts /> -->
     <case-study-slide />
   </div>
 </template>
