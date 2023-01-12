@@ -14,9 +14,6 @@
         </div>
       </div>
       <div class="logos">
-        <!-- <div class="logo">
-          <img src="~/assets/logos/sephora.svg"  alt="sephora logo" />
-        </div> -->
         <div class="logo">
           <img src="~/assets/logos/netflix.svg" alt="netflix logo" />
         </div>

@@ -7,28 +7,22 @@
       marketplace. Through strategy and delivery of technology and engineering.
     </p>
     <div class="logos">
-      <div class="logo">
-        <img src="~/assets/logos/p1.svg" alt="siemens logo" />
+        <div class="logo">
+          <img src="~/assets/logos/netflix.svg" alt="netflix logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p3.svg" alt="pepsico logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p5.svg" alt="hp logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/samsung.svg" alt="samsung logo" />
+        </div>
+        <div class="logo">
+          <img src="~/assets/logos/p7.svg" alt="citrix logo" />
+        </div>
       </div>
-      <div class="logo">
-        <img src="~/assets/logos/p2.svg" alt="nasa logo" />
-      </div>
-      <div class="logo">
-        <img src="~/assets/logos/p3.svg" alt="pepsico logo" />
-      </div>
-      <div class="logo">
-        <img src="~/assets/logos/p4.svg" alt="lockheed martin logo" />
-      </div>
-      <div class="logo">
-        <img src="~/assets/logos/p5.svg" alt="hp logo" />
-      </div>
-      <div class="logo">
-        <img src="~/assets/logos/p6.svg" alt="johnsons johnsons logo" />
-      </div>
-      <div class="logo">
-        <img src="~/assets/logos/p7.svg" alt="citrix logo" />
-      </div>
-    </div>
   </div>
 </template>
 
