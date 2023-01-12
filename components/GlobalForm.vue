@@ -297,11 +297,13 @@ export default {
       .form-container {
         flex-basis: 100%;
         width: 100%;
+        text-align: center;
       }
       .badges-container {
         flex-basis: 100%;
         width: 100%;
         gap: 30px;
+        align-items: center;
         > img {
           width: 50%;
         }

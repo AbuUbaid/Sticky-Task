@@ -210,7 +210,8 @@ export default {
       text-align: center;
     }
     .top-tabs{
-    margin-top: 50px;
+      margin-top: 50px;
+      margin-left: -40px;
     }
     .icons{
     display: flex;

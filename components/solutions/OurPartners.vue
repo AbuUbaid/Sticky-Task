@@ -74,6 +74,7 @@ export default {
   .logos {
     flex-wrap: wrap;
     justify-content: center;
+    
   }
 }
 </style>

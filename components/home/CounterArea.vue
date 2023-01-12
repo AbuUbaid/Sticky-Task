@@ -96,13 +96,10 @@ export default {
 }
 
 .logos {
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 90px;
+  gap: 20px;
   .logo {
     img {
       width: 100%;
@@ -140,9 +137,8 @@ export default {
   }
 
   .logos {
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
   }
 }
 </style>
