@@ -114,7 +114,10 @@
                             >Web App Development</NuxtLink
                           >
                         </li>
-                        <li class="menu-item-side">UI/UX Design</li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/uiux-design"
+                            >UI/UX Design</NuxtLink
+                          ></li>
                         <li class="menu-item-side">
                           <NuxtLink to="/services/qa-testing"
                             >QA & Testing</NuxtLink
@@ -260,8 +263,24 @@
             <li class="nav-li">
               <NuxtLink class="nav-li-tag" to="/careers">Careers </NuxtLink>
             </li>
-            <li class="nav-li">
-              <NuxtLink class="nav-li-tag" to="/about">About</NuxtLink>
+            <li class="nav-li has-child" style="position: relative">
+              <a
+                >About
+                <img
+                  class="arrow-icon"
+                  style="margin-right: -15px"
+                  src="~/assets/icons/right-arrow.svg"
+              /></a>
+              <div class="dropdown-content">
+                <ul class="sub sub-menu-block">
+                  <li>
+                    <a class="about-link">Life at Silicon</a>
+                  </li>
+                  <li>
+                    <a class="about-link">Initiative</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-li prominent">
               <NuxtLink class="nav-li-tag" to="/contact">Contact</NuxtLink>
@@ -746,6 +765,11 @@ ul.nav-ul {
   transition: 0.3s all ease;
   border-bottom: 1px solid #ddd;
   margin-right: 0 !important;
+  .about-link{
+    font-size: 16px;
+    font-family: "Gilroy-Medium";
+    font-weight: 500;
+  }
 }
 .sub-menu-block li:hover {
   background: #091756;
