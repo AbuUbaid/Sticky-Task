@@ -5,7 +5,7 @@
       <div class="mid-model">
         <div class="text-area">
           <ul class="menu-side">
-            <h2>Desktop</h2>
+            <h2 class="sub-menu-head">Desktop</h2>
             <li class="menu-item-side">VS coded UI test</li>
             <li class="menu-item-side">HP UFT</li>
             <li class="menu-item-side">Sikuli Script</li>
@@ -14,7 +14,7 @@
         </div>
         <div class="text-area">
           <ul class="menu-side">
-            <h2>Performance</h2>
+            <h2 class="sub-menu-head">Performance</h2>
             <li class="menu-item-side">Apache JMeter</li>
             <li class="menu-item-side">BlazeMeter</li>
             <li class="menu-item-side">Gatling</li>
@@ -23,7 +23,7 @@
         </div>
         <div class="text-area">
           <ul class="menu-side">
-            <h2>Mobile</h2>
+            <h2 class="sub-menu-head">Mobile</h2>
             <li class="menu-item-side">Appium</li>
             <li class="menu-item-side">Robotium</li>
             <li class="menu-item-side">Silk Test</li>
@@ -32,7 +32,7 @@
         </div>
         <div class="text-area">
           <ul class="menu-side">
-            <h2>Web Services</h2>
+            <h2 class="sub-menu-head">Web Services</h2>
             <li class="menu-item-side">Selenium</li>
             <li class="menu-item-side">Protractor</li>
             <li class="menu-item-side">Serenity</li>
@@ -167,7 +167,9 @@ export default {
   }
 }
 
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
   .domain-container {
     padding: 30px 20px;
     h2 {
@@ -178,7 +180,29 @@ export default {
       text-align: center;
     }
 
+    .services-model{
+
+
+      .mid-model{
+        gap: 20px;
+        flex-direction: column;
+        // margin-left: 42px;
+        
+        .text-area{
+        .menu-side{
+
+          .sub-menu-head{
+            text-align: left;
+          }
+          // .menu-item-side{
+          //   font-size: 16px;
+          // }
+        }
+
+        }
+      }
+    }
+
   }
-}
 }
 </style>

@@ -86,11 +86,7 @@ export default {
     }
     .logos {
       margin-top: 30px;
-      margin-left: 50px;
-      margin-right: 50px;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+      justify-content: right;
       .logo {
         img {
           width: 100%;
@@ -159,18 +155,21 @@ export default {
 
       .logos {
       .logo {
+        margin-left: -60px;
+        width: 100%;
         img {
-          width: 20%;
+          width: 100%;
         }
       }
     }
       .mid-model {
-        flex-wrap: wrap;
         flex-direction: column;
-        gap: 50px;
+        gap: 20px;
+        align-items: center;
         .text-area {
           h2 {
             margin-bottom: 20px;
+            text-align: left;
           }
           ul {
             li {

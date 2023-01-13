@@ -69,6 +69,14 @@ export default {
 }
 
 @media (max-width: 480px) {
+
+  .about-banner{
+    height: 80vh;
+    background-position: left;
+  }
+  .text-center{
+    text-align: left;
+  }
   .contain {
     margin-left: 20px;
   }

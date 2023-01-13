@@ -18,6 +18,29 @@
         <li class="menu-item-side">
           <NuxtLink to="/services/microsoft">Microsoft Services</NuxtLink>
         </li>
+        <li class="menu-item-side">
+        <NuxtLink to="/services/custom-software"
+          >Custom Software Development</NuxtLink
+        >
+      </li>
+      <li class="menu-item-side">
+        <NuxtLink to="/services/mobile-development"
+          >Web App Development</NuxtLink
+        >
+      </li>
+      <li class="menu-item-side">
+        <NuxtLink to="/services/uiux-design"
+          >UI/UX Design</NuxtLink
+        ></li>
+      <li class="menu-item-side">
+        <NuxtLink to="/services/qa-testing"
+          >QA & Testing</NuxtLink
+        >
+      </li>
+      <!-- <li class="menu-item-side">Embedded Software</li> -->
+      <!-- <li class="menu-item-side">
+        <NuxtLink to="/services/devops-new">DevOps</NuxtLink>
+      </li> -->
       </ul>
     </div>
 
@@ -75,6 +98,20 @@
         </li>
         <li class="menu-item-side">
           <NuxtLink to="/solutions/enterprise-vpn">Enterprise VPN</NuxtLink>
+        </li>
+      </ul>
+    </div>
+    <div
+      id="about-menu"
+      class="mega-menu"
+      v-bind:class="{ open: aboutOpen }"
+    >
+      <ul class="menu-side">
+        <li class="menu-item-side">
+          <a href="">Life at Silicon</a>
+        </li>
+        <li class="menu-item-side">
+          <a href="">Initiative</a>
         </li>
       </ul>
     </div>
@@ -334,8 +371,9 @@
           <li class="menu-item">
             <NuxtLink to="/careers">Careers </NuxtLink>
           </li>
-          <li class="menu-item">
+          <li class="menu-item sub-menu-item">
             <NuxtLink to="/about">About</NuxtLink>
+            <img @click="openAbout" src="~/assets/icons/right-arrow.svg" />
           </li>
           <li class="menu-item">
             <NuxtLink to="/contact">Contact</NuxtLink>
@@ -357,6 +395,7 @@ export default {
         { title: "About", icon: "mdi-forum" },
       ],
       serviceOpen: false,
+      aboutOpen: false,
       solutionOpen: false,
       solutionOpenNew: false,
       industryOpen: false,
@@ -379,6 +418,13 @@ export default {
         (this.industryOpennew = false),
         (this.serviceOpenNew = false),
         (this.serviceOpen = !this.serviceOpen);
+    },
+    openAbout() {
+      this.solutionOpen = false;
+      this.industryOpen = false;
+      this.serviceOpen = false;
+      this.serviceOpenNew = false;
+      this.aboutOpen = !this.aboutOpen;
     },
     openServiceNew() {
       this.solutionOpen = false;

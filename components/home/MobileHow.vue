@@ -174,6 +174,21 @@ export default {
       text-align: center;
     }
 
+    .mid-count{
+      gap: 8px;
+    }
+    .services-model{
+      .mid-model{
+      flex-direction: column;
+      gap: 20px;
+      }
+      .menu-side{
+        .menu-item-side{
+          font-size: 14px !important;
+        }
+      }
+    }
+
   }
 }
 </style>

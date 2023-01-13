@@ -95,6 +95,9 @@ export default {
   .about-banner h1 {
     width: 100%;
   }
+  .image-size{
+  background-position: center left;
+}
   .image-size h1 {
     width: 100%;
   }

@@ -137,7 +137,9 @@ export default {
   }
 }
 
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
   .process-container {
     padding: 30px 20px;
     h2 {
@@ -148,7 +150,34 @@ export default {
       text-align: center;
     }
 
+    .services-model{
+      .logos{
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 50px;
+        justify-content: center;
+      }
+      .mid-model{
+        gap: 20px;
+        flex-direction: column;
+        margin-left: 42px;
+
+        .text-area{
+
+          .menu-side{
+
+            .sub-menu-head{
+              text-align: left;
+            }
+            .menu-item-side{
+              font-size: 16px;
+            }
+          }
+
+        }
+      }
+    }
+
   }
-}
 }
 </style>
