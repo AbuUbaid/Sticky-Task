@@ -3,12 +3,13 @@
     <dev-ops-bunner :BannerData="bannerData" />
     <impact-icons :Impact="Impact" />
     <dev-tools />
-    <impact-icons :Impact="Impact1" />
+    <verification :Impact="Impact1" />
   </div>
 </template>
 
 <script>
 import DevOpsBunner from "../../components/services/DevOpsBunner.vue";
+import Verification from "../../components/home/Verification.vue";
 import TopNotchSoftware from "../../components/home/TopNotchSoftware.vue";
 import EndToEndSoftware from "../../components/home/EndToEndSoftware.vue";
 import DevTools from "../../components/home/DevTools.vue";
@@ -27,6 +28,7 @@ export default {
     DevTools,
     NextStarts,
     ImpactIcons,
+    Verification,
     DevOpsBunner
   },
   name: "DevOpsNew",
