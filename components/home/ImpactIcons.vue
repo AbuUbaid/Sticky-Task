@@ -16,7 +16,7 @@
 </template>
 
 <script>
-var images = require.context("../../assets/icons/", false, /\.svg$/);
+var images = require.context("../../assets/icons/", false, /\.png$/);
 export default {
   name: "ImpactIcons",
   props: {
@@ -45,9 +45,10 @@ export default {
 .values-four {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 95px;
   margin-top: 45px;
-  justify-content: space-between;
+  margin-left: 12%;
+  justify-content: start;
 }
 
 .values-four .t-four {

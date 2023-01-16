@@ -47,27 +47,27 @@ export default {
         heading: "DESIGN SERVICES",
         icons: [
           {
-            img: "training.svg",
+            img: "user-search.png",
             heading: "User Research",
             desc: "We conduct in-depth research to create your user personas and map the entire customer journey for your product before we get our hands dirty.",
           },
           {
-            img: "medical.svg",
+            img: "rapid-pro.png",
             heading: "Rapid Prototyping",
             desc: "We design prototypes and run user tests on our concepts. This will allow us to learn more about how well-designed your upcoming product will be.",
           },
           {
-            img: "pto.svg",
+            img: "ux-design.png",
             heading: "UX Design",
             desc: "We combine expert user experience design with cutting-edge technology to create compelling experiences that solve business problems and make people happy.",
           },
           {
-            img: "medical.svg",
+            img: "dev.png",
             heading: "Development",
             desc: "Our software engineers work alongside designers to ensure that the products we deliver to our clients are flawless in terms of experience, design, and technology.",
           },
           {
-            img: "pto.svg",
+            img: "usability-test.png",
             heading: "Usability Testing",
             desc: "We collaborate with our clients to develop products that meet genuine user requirements. This emphasis on user-centered design ensures that the products we create provide engaging experiences.",
           },

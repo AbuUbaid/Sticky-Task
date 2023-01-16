@@ -51,27 +51,27 @@ export default {
         heading: "Services We Offer",
         icons: [
           {
-            img: "training.svg",
+            img: "test-auto.png",
             heading: "Test Automation",
             desc: "Time is saved and productivity is increased with smarter testing.",
           },
           {
-            img: "medical.svg",
+            img: "perform-test.png",
             heading: "Performance Testing",
             desc: "To determine how well your software will perform under heavy load.",
           },
           {
-            img: "pto.svg",
+            img: "security-test.png",
             heading: "Security Testing",
             desc: "Utilizing stringent cybersecurity procedures to guarantee the security of your data.",
           },
           {
-            img: "medical.svg",
+            img: "mob-testing.png",
             heading: "Mobile Testing",
             desc: "Keeping speed and responsiveness as top priorities.",
           },
           {
-            img: "pto.svg",
+            img: "manual-test.png",
             heading: "Manual Testing",
             desc: "Without a human touch, our testing process is insufficient.",
           },
@@ -81,22 +81,22 @@ export default {
         heading: "Our Verification & Validation Process",
         icons: [
           {
-            img: "training.svg",
+            img: "planning.png",
             heading: "Reduced Market Time",
             desc: "Cut time to market by up to 50% through streamlined software delivery.",
           },
           {
-            img: "medical.svg",
+            img: "curve.png",
             heading: "High Performance",
             desc: "Boost team output and accelerate the delivery of new functionality.",
           },
           {
-            img: "pto.svg",
+            img: "process.png",
             heading: "Low Risk",
             desc: "Early detection of quality issues can reduce defects by 30% throughout the lifestyle.",
           },
           {
-            img: "pto.svg",
+            img: "report.png",
             heading: "High Adaptability",
             desc: "The operational state is more stable and secure, and changes are auditable in a systematic manner.",
           },

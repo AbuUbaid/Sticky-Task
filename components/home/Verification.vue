@@ -16,7 +16,7 @@
 </template>
 
 <script>
-var images = require.context("../../assets/icons/", false, /\.svg$/);
+var images = require.context("../../assets/icons/", false, /\.png$/);
 export default {
   name: "ImpactIcons",
   props: {

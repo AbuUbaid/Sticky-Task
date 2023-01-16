@@ -1,25 +1,8 @@
 <template>
   <div class="home-container hardware-container">
-    <h2>Devops Tools We Leverage</h2>
-    <div class="companies">
-      <a  target="_blank"
-        ><img src="~/assets/logos/jenkins.jpg"
-      /></a>
-      <a target="_blank"
-        ><img src="~/assets/logos/selenium.jpg"
-      /></a>
-      <a  target="_blank"
-        ><img src="~/assets/logos/docker.jpg"
-      /></a>
-      <a  target="_blank"
-        ><img src="~/assets/logos/puppet.jpg"
-      /></a>
-      <a target="_blank"
-        ><img src="~/assets/logos/azure.jpg"
-      /></a>
-      <a  target="_blank"
-        ><img src="~/assets/logos/kubernetes.jpg"
-      /></a>
+    <div class="digital-solutions">
+      <h2 class="text-center">Devops Tools We Leverage</h2>
+      <img src="~/assets/icons/tools1.svg" alt="Ecommerce Solutions" />
     </div>
   </div>
 </template>
@@ -50,6 +33,17 @@ export default {
       width: 110px;
     }
   }
+  .digital-solutions {
+  padding: 50px;
+  text-align: center;
+  h2 {
+    color: black;
+    margin-bottom: 50px;
+  }
+  img {
+    width: 90%;
+  }
+}
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -80,6 +74,17 @@ export default {
         }
       }
     }
+    .digital-solutions {
+    padding: 20px;
+    text-align: center;
+    h2 {
+      color: black;
+      margin-bottom: 20px;
+    }
+    img {
+      width: 100%;
+    }
+  }
   }
 }
 </style>
