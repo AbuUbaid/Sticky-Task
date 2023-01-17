@@ -1,6 +1,6 @@
 <template>
   <div class="home-container top-rated-container">
-    <h2>Top-Rated Solutions Stack</h2>
+    <h2>Top-Rated Solutions Stack </h2>
     <p>Using the most up-to-date and current technology, we create effective solutions for businesses ranging from startups to Fortune 1000.</p>
     
     <v-tabs v-model="tab" align-with-title grow class="top-tabs">
