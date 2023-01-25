@@ -12,16 +12,22 @@
       </p>
     </div>
     <technical-training />
+    <plantation />
+    <blood-donation />
   </div>
 </template>
 
 <script>
 import ServiceBanner from "../components/services/ServiceBanner.vue";
-import TechnicalTraining from "../components/home/TechnicalTraining.vue"
+import TechnicalTraining from "../components/home/TechnicalTraining.vue";
+import Plantation from "../components/home/Plantation.vue";
+import BloodDonation from "../components/home/BloodDonation.vue";
 export default {
   components: {
     ServiceBanner,
-    TechnicalTraining
+    TechnicalTraining,
+    Plantation,
+    BloodDonation
   },
   name: "Initiative",
   data: () => {
