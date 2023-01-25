@@ -40,6 +40,7 @@ export default {
     return {
       bannerData: {
         img: "ms.webp",
+        name:"Microsoft",
         heading: "End-to-end quality-based Microsoft Services",
         url: "#",
       },

@@ -39,6 +39,7 @@ export default {
     return {
       bannerData: {
         img: "processbanner.png",
+        name: "UI / UX Design",
         heading: "We Design And Launch Great Digital Products.",
         process: "process",
         url: "#contact-form",

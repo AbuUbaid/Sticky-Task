@@ -2,7 +2,7 @@
   <div class="footer-container" id="footer">
     <div class="footer-detail">
       <p>Reaching</p>
-      <h2>To New Horizons</h2>
+      <h2>To New Heights</h2>
       <NuxtLink to="/contact" class="cta-orange">Contact Us</NuxtLink>
     </div>
     <hr />

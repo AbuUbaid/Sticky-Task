@@ -1,6 +1,7 @@
 <template>
   <div :class=" BannerData?.process == 'process' ?  'banner-container p-banner' : 'banner-container about-banner'" :style="inlineStyle">
     <div class="contain">
+      <p class="name">{{ BannerData?.name }}</p>
       <p class="top">{{ BannerData.top }}</p>
       <h1>{{ BannerData.heading }}</h1>
       <p class="desc">{{ BannerData?.description }}</p>
@@ -58,6 +59,9 @@ export default {
  .p-banner contain{
   color:white !important;
  }
+ .p-banner p{
+  color:white !important;
+ }
  .p-banner a{
   color:white !important;
  }
@@ -66,6 +70,9 @@ export default {
   margin-bottom: 30px;
   color: white;
 }
+.name{
+  margin-bottom: 30px;
+}
 .desc{
   margin-bottom: 30px;
   max-width: 40%;
@@ -73,6 +80,11 @@ export default {
 
 .contain {
   margin-left: 80px;
+}
+
+.explore-link{
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .about-banner h1 {

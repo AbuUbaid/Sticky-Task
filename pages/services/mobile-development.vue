@@ -25,7 +25,7 @@ export default {
     MobileHow,
     TechStacks
   },
-  name: "DevOpsNew",
+  name: "MobileDevelopment",
 
   methods: {
     isEven(index) {
@@ -36,6 +36,7 @@ export default {
     return {  
       bannerData: {
         img: "mobile.jpg",
+        name: "Mobile Development",
         heading: "We Don't Create Apps. We Create Experiences",
         description: "We use the latest technology tools and industry standards to make high-performance apps that help your business grow.",
         url: "#contact-form",

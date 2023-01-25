@@ -40,6 +40,7 @@ export default {
     return {
       bannerData: {
         img: "digital.webp",
+        name:"Digital",
         heading: "Curating Top-Notch Brand, Product And Services",
         url: "#",
       },

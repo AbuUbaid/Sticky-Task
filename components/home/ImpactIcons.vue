@@ -45,7 +45,7 @@ export default {
 .values-four {
   display: flex;
   flex-wrap: wrap;
-  gap: 95px;
+  gap: 70px;
   margin-top: 45px;
   margin-left: 12%;
   justify-content: start;

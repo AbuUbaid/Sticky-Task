@@ -37,6 +37,15 @@
           >QA & Testing</NuxtLink
         >
       </li>
+      <li class="menu-item-side">
+      <NuxtLink class="nav-li-tag" to="/services/blockchain">Blockchain</NuxtLink>
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink class="nav-li-tag" to="/services/data-science-and-ai">Data Science & AI</NuxtLink>
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink class="nav-li-tag" to="/services/iot">IOT</NuxtLink>
+      </li>
       <!-- <li class="menu-item-side">Embedded Software</li> -->
       <!-- <li class="menu-item-side">
         <NuxtLink to="/services/devops-new">DevOps</NuxtLink>
@@ -107,12 +116,13 @@
       v-bind:class="{ open: aboutOpen }"
     >
       <ul class="menu-side">
-        <li class="menu-item-side">
+        <!-- <li class="menu-item-side">
           <a href="">Life at Silicon</a>
-        </li>
+        </li> -->
         <li class="menu-item-side">
           <a href="">Initiative</a>
         </li>
+        
       </ul>
     </div>
 
@@ -170,8 +180,15 @@
                     <div>
                       <h2 class="sub-menu-head">Emerging Tech</h2>
                       <ul class="menu-side">
-                        <li class="menu-item-side">Blockchain</li>
-                        <li class="menu-item-side">Web 3.0</li>
+                        <li class="menu-item-side">
+                        <NuxtLink class="nav-li-tag" to="/services/blockchain">Blockchain</NuxtLink>
+                        </li>
+                        <li class="menu-item-side">
+                        <NuxtLink class="nav-li-tag" to="/services/data-science-and-ai">Data Science & AI</NuxtLink>
+                        </li>
+                        <li class="menu-item-side">
+                        <NuxtLink class="nav-li-tag" to="/services/iot">IOT</NuxtLink>
+                        </li>
                       </ul>
                     </div>
                     <div>
@@ -310,11 +327,11 @@
               /></a>
               <div class="dropdown-content">
                 <ul class="sub sub-menu-block">
-                  <li>
+                  <!-- <li>
                     <a class="about-link">Life at Silicon</a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a class="about-link">Initiative</a>
+                  <NuxtLink to="/initiative">Initiative</NuxtLink>
                   </li>
                 </ul>
               </div>

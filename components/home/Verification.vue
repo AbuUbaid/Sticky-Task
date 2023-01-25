@@ -18,7 +18,7 @@
 <script>
 var images = require.context("../../assets/icons/", false, /\.png$/);
 export default {
-  name: "ImpactIcons",
+  name: "Verification",
   props: {
     Impact: {
       type: Object,

@@ -42,6 +42,7 @@ export default {
     return {  
       bannerData: {
         img: "devops.jpg",
+        name: "DevOps",
         heading: "Improve The Efficiency Of Your IT Staff With Devops",
         description: "By automating inefficiencies, DevOps solutions raise the caliber and security of software. Businesses can improve the performance of their IT teams with the aid of Silicon Networks' DevOps consulting services.",
         url: "#",

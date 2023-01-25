@@ -42,6 +42,7 @@ export default {
     return {
       bannerData: {
         img: "qatesting.jpg",
+        name: "QA Testing",
         heading: "Lets Make Your Product Rebust And Reliable",
         description:
           "Enhancing the software's quality while maintaing the timeline for delivery.",

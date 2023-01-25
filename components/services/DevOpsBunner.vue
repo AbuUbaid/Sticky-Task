@@ -1,6 +1,7 @@
 <template>
   <div :class="BannerData.url == '#' ? 'banner-container about-banner' : 'banner-container image-size'" :style="inlineStyle">
     <div class="contain">
+      <p class="desc">{{ BannerData.name }}</p>
       <p class="top">{{ BannerData.top }}</p>
       <h1>{{ BannerData.heading }}</h1>
       <p class="desc">{{ BannerData?.description }}</p>
@@ -65,12 +66,12 @@ export default {
 
 .contain {
   margin-left: 80px;
+  margin-top: 50px;
 }
 
 .about-banner h1 {
   width: 600px;
   margin-bottom: 30px;
-  margin-top: 290px;
 }
 .about-banner a {
   color: black;
@@ -79,7 +80,6 @@ export default {
 .image-size h1 {
   width: 600px;
   margin-bottom: 30px;
-  margin-top: 290px;
 }
 .image-size a {
   color: black;
