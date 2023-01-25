@@ -3,13 +3,13 @@
     <dev-ops-bunner :BannerData="bannerData" />
     <impact-icons :Impact="Impact" />
     <dev-tools />
-    <impact-icons :Impact="Impact1" />
-    <next-starts />
+    <verification :Impact="Impact1" />
   </div>
 </template>
 
 <script>
 import DevOpsBunner from "../../components/services/DevOpsBunner.vue";
+import Verification from "../../components/home/Verification.vue";
 import TopNotchSoftware from "../../components/home/TopNotchSoftware.vue";
 import EndToEndSoftware from "../../components/home/EndToEndSoftware.vue";
 import DevTools from "../../components/home/DevTools.vue";
@@ -28,6 +28,7 @@ export default {
     DevTools,
     NextStarts,
     ImpactIcons,
+    Verification,
     DevOpsBunner
   },
   name: "DevOpsNew",
@@ -41,6 +42,7 @@ export default {
     return {  
       bannerData: {
         img: "devops.jpg",
+        name: "DevOps",
         heading: "Improve The Efficiency Of Your IT Staff With Devops",
         description: "By automating inefficiencies, DevOps solutions raise the caliber and security of software. Businesses can improve the performance of their IT teams with the aid of Silicon Networks' DevOps consulting services.",
         url: "#",
@@ -49,17 +51,17 @@ export default {
         heading: "Our DevOps Services",
         icons: [
           {
-            img: "training.svg",
+            img: "devops-assment.png",
             heading: "Devops Assessment",
             desc: "In order to automate deployment cycles across your delivery infrastructure, our DevOps engineer examines the key points, creates a road map, and makes recommendations for tools and procedures.",
           },
           {
-            img: "medical.svg",
+            img: "devops-auto.png",
             heading: "Devops Automation",
             desc: "We automate the entire delivery cycle, ensuring that deployments and rollbacks are completed with a single click, mitigating risks and boosting productivity.",
           },
           {
-            img: "pto.svg",
+            img: "devops-manage.png",
             heading: "Devops Management",
             desc: "We support your core team in ensuring that the delivery pipeline automation cycle operates in a fully integrated manner and in adjusting your automated deployment cycle to changes.",
           },
@@ -67,24 +69,25 @@ export default {
       },
       Impact1: {
         heading: "What Will You Receive",
+        url:'#',
         icons: [
           {
-            img: "training.svg",
+            img: "rmt.png",
             heading: "Reduced Market Time",
             desc: "Cut time to market by up to 50% through streamlined software delivery.",
           },
           {
-            img: "medical.svg",
+            img: "hperform.png",
             heading: "High Performance",
             desc: "Boost team output and accelerate the delivery of new functionality.",
           },
           {
-            img: "pto.svg",
+            img: "low-risk.png",
             heading: "Low Risk",
             desc: "Early detection of quality issues can reduce defects by 30% throughout the lifestyle.",
           },
           {
-            img: "pto.svg",
+            img: "hadapt.png",
             heading: "High Adaptability",
             desc: "The operational state is more stable and secure, and changes are auditable in a systematic manner.",
           },

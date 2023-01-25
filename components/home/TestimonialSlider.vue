@@ -182,11 +182,15 @@ export default {
     margin-bottom: 5px;
     margin-top: 10px;
   }
-
+  
   .testi-slide .text-area {
     width: 100%;
     flex: 1;
   }
+   
+  .testi-slide .text-area .inner-wrap {
+  text-align: center;
+}
 
   .testi-slide .image-area {
     width: 100%;

@@ -1,7 +1,7 @@
 <template>
-  <div class="verify-secpage-values">
+  <div :class=" Impact?.url == '#' ?  'verify-secpage-devops' : 'verify-secpage-values'">
     <div class="intro-text">
-      <h2 class="text-center">{{ Impact ? Impact.heading : ''}}</h2>
+      <h2 class="text-center">{{ Impact ? Impact.heading : ''}} {{ icon?.url }}</h2>
     </div>
     <div class="values-four">
       <div v-for="(icon, i) in (Impact ? Impact.icons : [])" :key="i" class="t-four">
@@ -16,9 +16,9 @@
 </template>
 
 <script>
-var images = require.context("../../assets/icons/", false, /\.svg$/);
+var images = require.context("../../assets/icons/", false, /\.png$/);
 export default {
-  name: "ImpactIcons",
+  name: "Verification",
   props: {
     Impact: {
       type: Object,
@@ -35,6 +35,10 @@ export default {
 <style scoped>
 .verify-secpage-values {
   background-color: #ECF0FF;
+  padding: 50px;
+}
+.verify-secpage-devops{
+  background-color: #fff;
   padding: 50px;
 }
 
@@ -71,6 +75,9 @@ export default {
 
 @media (max-width: 480px) {
   .verify-secpage-values {
+    margin: 30px auto;
+  }
+  .verify-secpage-devops{
     margin: 30px auto;
   }
 

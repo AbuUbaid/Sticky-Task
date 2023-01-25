@@ -15,22 +15,16 @@
       </div>
       <div class="logos">
         <div class="logo">
-          <img src="~/assets/logos/p1.svg" alt="siemens logo" />
-        </div>
-        <div class="logo">
-          <img src="~/assets/logos/p2.svg" alt="nasa logo" />
+          <img src="~/assets/logos/netflix.svg" alt="netflix logo" />
         </div>
         <div class="logo">
           <img src="~/assets/logos/p3.svg" alt="pepsico logo" />
         </div>
         <div class="logo">
-          <img src="~/assets/logos/p4.svg" alt="lockheed martin logo" />
-        </div>
-        <div class="logo">
           <img src="~/assets/logos/p5.svg" alt="hp logo" />
         </div>
         <div class="logo">
-          <img src="~/assets/logos/p6.svg" alt="johnsons johnsons logo" />
+          <img src="~/assets/logos/samsung.svg" alt="samsung logo" />
         </div>
         <div class="logo">
           <img src="~/assets/logos/p7.svg" alt="citrix logo" />
@@ -102,9 +96,6 @@ export default {
 }
 
 .logos {
-  margin-top: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -146,8 +137,6 @@ export default {
   }
 
   .logos {
-    margin-left: 20px;
-    margin-right: 20px;
     flex-wrap: wrap;
     justify-content: center;
   }

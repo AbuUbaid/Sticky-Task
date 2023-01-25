@@ -1,5 +1,5 @@
 <template>
-  <div class="secpage-values">
+  <div class="secpage-values home-container">
     <div class="intro-text">
       <h2 class="text-center">{{ Impact ? Impact.heading : ''}}</h2>
     </div>
@@ -16,7 +16,7 @@
 </template>
 
 <script>
-var images = require.context("../../assets/icons/", false, /\.svg$/);
+var images = require.context("../../assets/icons/", false, /\.png$/);
 export default {
   name: "ImpactIcons",
   props: {
@@ -35,7 +35,6 @@ export default {
 <style scoped>
 .secpage-values {
   margin-top: 50px;
-  margin-left: 15%;
 }
 
 .intro-text h2 {
@@ -46,8 +45,10 @@ export default {
 .values-four {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 70px;
   margin-top: 45px;
+  margin-left: 12%;
+  justify-content: start;
 }
 
 .values-four .t-four {

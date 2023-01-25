@@ -40,6 +40,7 @@ export default {
     return {
       bannerData: {
         img: "cloud.webp",
+        name:"DevOps",
         heading: "Improve The Efficiency Of Your IT Staff With Devops",
         url: "#",
       },

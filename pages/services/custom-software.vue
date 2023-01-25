@@ -3,7 +3,6 @@
     <service-banner :BannerData="bannerData" />
     <top-notch-software />
     <end-to-end-software />
-    <next-starts />
     <case-study-slide />
   </div>
 </template>
@@ -39,6 +38,7 @@ export default {
     return {
       bannerData: {
         img: "digital.webp",
+        name: "Custom Software Solutions",
         heading: "Custom Software Solutions For Your Company",
         description: "We Are Your One-Stop Shop, Whether You Have A New Product In Development Or An Already Established One. Engage Us For Any Stage, Or The Entire Lifecycle, Of Your Software Development.",
         url: "#contact-form",

@@ -82,7 +82,7 @@ export default {
   box-shadow: 0px 12px 23px #00000017;
   z-index: 2;
   padding: 30px;
-  margin: 0 250px;
+  margin: 0 150px;
 }
 
 .third-text h2 {

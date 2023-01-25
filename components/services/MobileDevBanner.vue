@@ -1,6 +1,7 @@
 <template>
   <div class="banner-container about-banner" :style="inlineStyle">
     <div class="contain">
+      <p class="desc">{{ BannerData.name }}</p>
       <p class="top">{{ BannerData.top }}</p>
       <h1>{{ BannerData.heading }}</h1>
       <p class="desc">{{ BannerData?.description }}</p>
@@ -13,7 +14,7 @@
 
 <script>
 export default {
-  name: "ServiceBanner",
+  name: "MobileDevBanner",
   props: {
     BannerData: {
       type: Object,
@@ -53,12 +54,12 @@ export default {
 
 .contain {
   margin-left: 80px;
+  margin-top: 50px;
 }
 
 .about-banner h1 {
   width: 600px;
   margin-bottom: 30px;
-  margin-top: 290px;
   color: white;
 }
 .about-banner a {
@@ -69,6 +70,14 @@ export default {
 }
 
 @media (max-width: 480px) {
+
+  .about-banner{
+    height: 80vh;
+    background-position: left;
+  }
+  .text-center{
+    text-align: left;
+  }
   .contain {
     margin-left: 20px;
   }

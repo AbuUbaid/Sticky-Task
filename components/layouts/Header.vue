@@ -18,6 +18,38 @@
         <li class="menu-item-side">
           <NuxtLink to="/services/microsoft">Microsoft Services</NuxtLink>
         </li>
+        <li class="menu-item-side">
+        <NuxtLink to="/services/custom-software"
+          >Custom Software Development</NuxtLink
+        >
+      </li>
+      <li class="menu-item-side">
+        <NuxtLink to="/services/mobile-development"
+          >Web App Development</NuxtLink
+        >
+      </li>
+      <li class="menu-item-side">
+        <NuxtLink to="/services/uiux-design"
+          >UI/UX Design</NuxtLink
+        ></li>
+      <li class="menu-item-side">
+        <NuxtLink to="/services/qa-testing"
+          >QA & Testing</NuxtLink
+        >
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink class="nav-li-tag" to="/services/blockchain">Blockchain</NuxtLink>
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink class="nav-li-tag" to="/services/data-science-and-ai">Data Science & AI</NuxtLink>
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink class="nav-li-tag" to="/services/iot">IOT</NuxtLink>
+      </li>
+      <!-- <li class="menu-item-side">Embedded Software</li> -->
+      <!-- <li class="menu-item-side">
+        <NuxtLink to="/services/devops-new">DevOps</NuxtLink>
+      </li> -->
       </ul>
     </div>
 
@@ -78,6 +110,21 @@
         </li>
       </ul>
     </div>
+    <div
+      id="about-menu"
+      class="mega-menu"
+      v-bind:class="{ open: aboutOpen }"
+    >
+      <ul class="menu-side">
+        <!-- <li class="menu-item-side">
+          <a href="">Life at Silicon</a>
+        </li> -->
+        <li class="menu-item-side">
+          <a href="">Initiative</a>
+        </li>
+        
+      </ul>
+    </div>
 
     <div class="header-body">
       <div class="header-body-inner">
@@ -91,7 +138,11 @@
             <li class="nav-li">
               <a class="has-mega"
                 >Services
-                <img class="arrow-icon" src="~/assets/icons/right-arrow.svg" />
+                <img
+                  class="arrow-icon"
+                  style="margin-right: -15px"
+                  src="~/assets/icons/right-arrow.svg"
+                />
                 <div id="services-menu" class="services-model">
                   <div class="engage-models">
                     <img src="~/assets/logos/clutch.webp" alt="Clutch" />
@@ -102,24 +153,42 @@
                       <ul class="menu-side">
                         <li class="menu-item-side">
                           <NuxtLink to="/services/custom-software"
-                      >Custom Software Development</NuxtLink>
+                            >Custom Software Development</NuxtLink
+                          >
                         </li>
-                        <li class="menu-item-side"><NuxtLink to="/services/mobile-development"
-                      >Web App Development</NuxtLink></li>
-                        <li class="menu-item-side">UI/UX Design</li>
-                        <li class="menu-item-side"><NuxtLink to="/services/qa-testing"
-                      >QA & Testing</NuxtLink></li>
-                        <li class="menu-item-side">Embedded Software</li>
-                        <li class="menu-item-side"><NuxtLink to="/services/devops-new"
-                      >DevOps</NuxtLink></li>
-                        <li class="menu-item-side">Discovery Workshop</li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/mobile-development"
+                            >Web App Development</NuxtLink
+                          >
+                        </li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/uiux-design"
+                            >UI/UX Design</NuxtLink
+                          ></li>
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/qa-testing"
+                            >QA & Testing</NuxtLink
+                          >
+                        </li>
+                        <!-- <li class="menu-item-side">Embedded Software</li> -->
+                        <li class="menu-item-side">
+                          <NuxtLink to="/services/devops-new">DevOps</NuxtLink>
+                        </li>
+                        <!-- <li class="menu-item-side">Discovery Workshop</li> -->
                       </ul>
                     </div>
                     <div>
                       <h2 class="sub-menu-head">Emerging Tech</h2>
                       <ul class="menu-side">
-                        <li class="menu-item-side">Blockchain</li>
-                        <li class="menu-item-side">Web 3.0</li>
+                        <li class="menu-item-side">
+                        <NuxtLink class="nav-li-tag" to="/services/blockchain">Blockchain</NuxtLink>
+                        </li>
+                        <li class="menu-item-side">
+                        <NuxtLink class="nav-li-tag" to="/services/data-science-and-ai">Data Science & AI</NuxtLink>
+                        </li>
+                        <li class="menu-item-side">
+                        <NuxtLink class="nav-li-tag" to="/services/iot">IOT</NuxtLink>
+                        </li>
                       </ul>
                     </div>
                     <div>
@@ -248,8 +317,24 @@
             <li class="nav-li">
               <NuxtLink class="nav-li-tag" to="/careers">Careers </NuxtLink>
             </li>
-            <li class="nav-li">
-              <NuxtLink class="nav-li-tag" to="/about">About</NuxtLink>
+            <li class="nav-li has-child" style="position: relative">
+              <a
+                >About
+                <img
+                  class="arrow-icon"
+                  style="margin-right: -15px"
+                  src="~/assets/icons/right-arrow.svg"
+              /></a>
+              <div class="dropdown-content">
+                <ul class="sub sub-menu-block">
+                  <!-- <li>
+                    <a class="about-link">Life at Silicon</a>
+                  </li> -->
+                  <li>
+                  <NuxtLink to="/initiative">Initiative</NuxtLink>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-li prominent">
               <NuxtLink class="nav-li-tag" to="/contact">Contact</NuxtLink>
@@ -303,8 +388,9 @@
           <li class="menu-item">
             <NuxtLink to="/careers">Careers </NuxtLink>
           </li>
-          <li class="menu-item">
+          <li class="menu-item sub-menu-item">
             <NuxtLink to="/about">About</NuxtLink>
+            <img @click="openAbout" src="~/assets/icons/right-arrow.svg" />
           </li>
           <li class="menu-item">
             <NuxtLink to="/contact">Contact</NuxtLink>
@@ -326,6 +412,7 @@ export default {
         { title: "About", icon: "mdi-forum" },
       ],
       serviceOpen: false,
+      aboutOpen: false,
       solutionOpen: false,
       solutionOpenNew: false,
       industryOpen: false,
@@ -334,13 +421,12 @@ export default {
     };
   },
   created: function () {
-    if (this.$cookies.get('notice') == undefined) {
-        this.$cookies.set("notice", true, {
+    if (this.$cookies.get("notice") == undefined) {
+      this.$cookies.set("notice", true, {
         path: "/",
         maxAge: 60 * 60 * 24 * 7,
-        });
+      });
     }
-    
   },
   methods: {
     openService() {
@@ -349,6 +435,13 @@ export default {
         (this.industryOpennew = false),
         (this.serviceOpenNew = false),
         (this.serviceOpen = !this.serviceOpen);
+    },
+    openAbout() {
+      this.solutionOpen = false;
+      this.industryOpen = false;
+      this.serviceOpen = false;
+      this.serviceOpenNew = false;
+      this.aboutOpen = !this.aboutOpen;
     },
     openServiceNew() {
       this.solutionOpen = false;
@@ -735,6 +828,11 @@ ul.nav-ul {
   transition: 0.3s all ease;
   border-bottom: 1px solid #ddd;
   margin-right: 0 !important;
+  .about-link{
+    font-size: 16px;
+    font-family: "Gilroy-Medium";
+    font-weight: 500;
+  }
 }
 .sub-menu-block li:hover {
   background: #091756;

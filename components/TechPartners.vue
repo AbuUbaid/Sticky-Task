@@ -57,6 +57,14 @@ export default {
     font-size: 30px;
   }
 
+  .ei-one{
+    text-align: center;
+  }
+
+  .ei-one h2{
+    font-size: 24px;
+  }
+
   .yellow {
     width: 15px;
   }

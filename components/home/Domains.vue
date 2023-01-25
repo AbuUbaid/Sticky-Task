@@ -3,36 +3,36 @@
     <h2>Domains And Technologies</h2>
     <div  class="services-model">
       <div class="mid-model">
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
-            <h2>Desktop</h2>
+            <h2 class="sub-menu-head">Desktop</h2>
             <li class="menu-item-side">VS coded UI test</li>
             <li class="menu-item-side">HP UFT</li>
             <li class="menu-item-side">Sikuli Script</li>
             <li class="menu-item-side">Ranorex</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
-            <h2>Performance</h2>
+            <h2 class="sub-menu-head">Performance</h2>
             <li class="menu-item-side">Apache JMeter</li>
             <li class="menu-item-side">BlazeMeter</li>
             <li class="menu-item-side">Gatling</li>
             <li class="menu-item-side">Load Runner</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
-            <h2>Mobile</h2>
+            <h2 class="sub-menu-head">Mobile</h2>
             <li class="menu-item-side">Appium</li>
             <li class="menu-item-side">Robotium</li>
             <li class="menu-item-side">Silk Test</li>
             <li class="menu-item-side">On-going Support</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
-            <h2>Web Services</h2>
+            <h2 class="sub-menu-head">Web Services</h2>
             <li class="menu-item-side">Selenium</li>
             <li class="menu-item-side">Protractor</li>
             <li class="menu-item-side">Serenity</li>
@@ -99,11 +99,6 @@ export default {
   z-index: 111;
   z-index: 100;
   .menu-side {
-    text-align: left;
-    li {
-      margin-bottom: 10px;
-      list-style-type: circle;
-    }
     li list-style-type{
       background-color: #EF861D;
     }
@@ -126,12 +121,35 @@ export default {
   .mid-model {
     width:100%;
     display: flex;
-    flex:1;
+    justify-content: center;
     padding: 50px;
-    gap: 20px;
-    > * {
-      flex: 1;
+    gap:140px;
+    .text-area {
+    h2 {
+      margin-bottom: 20px;
+      font-size: 18px !important;
+      font-weight: 700 !important;
+      color: #1b1b1b !important;
     }
+    ul {
+      text-align: left;
+      list-style-type: none;
+      list-style-position: inside;
+      li {
+        font-family: "Gilroy-Regular";
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+      li::before {
+        content: "◯";
+        color: #ef861d; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-right: 15px;
+      }
+    }
+  }
     .sub-menu-head {
       margin: 0 0 10px;
       font-size: 18px;
@@ -149,7 +167,9 @@ export default {
   }
 }
 
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
   .domain-container {
     padding: 30px 20px;
     h2 {
@@ -160,7 +180,29 @@ export default {
       text-align: center;
     }
 
+    .services-model{
+
+
+      .mid-model{
+        gap: 20px;
+        flex-direction: column;
+        // margin-left: 42px;
+        
+        .text-area{
+        .menu-side{
+
+          .sub-menu-head{
+            text-align: left;
+          }
+          // .menu-item-side{
+          //   font-size: 16px;
+          // }
+        }
+
+        }
+      }
+    }
+
   }
-}
 }
 </style>

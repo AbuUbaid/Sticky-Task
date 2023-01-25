@@ -4,7 +4,6 @@
     <impact-icons :Impact="Impact" />
     <mobile-how />
     <tech-stacks />
-    <next-starts />
   </div>
 </template>
 
@@ -26,7 +25,7 @@ export default {
     MobileHow,
     TechStacks
   },
-  name: "DevOpsNew",
+  name: "MobileDevelopment",
 
   methods: {
     isEven(index) {
@@ -37,6 +36,7 @@ export default {
     return {  
       bannerData: {
         img: "mobile.jpg",
+        name: "Mobile Development",
         heading: "We Don't Create Apps. We Create Experiences",
         description: "We use the latest technology tools and industry standards to make high-performance apps that help your business grow.",
         url: "#contact-form",
@@ -45,32 +45,32 @@ export default {
         heading: "Our Mobile App Services",
         icons: [
           {
-            img: "training.svg",
+            img: "UX.png",
             heading: "Experience Design",
             desc: "Because we have a lot of experience with front-end development and UI/UX design, we can make online apps with great user experiences.",
           },
           {
-            img: "medical.svg",
+            img: "App-dev.png",
             heading: "App Development",
             desc: "We've been making high-performance mobile apps with lots of features for the last ten years that will go above and beyond what you expect.",
           },
           {
-            img: "pto.svg",
+            img: "Backend-dev.png",
             heading: "Backend Development",
             desc: "We make back-end solutions for mobile, web, and desktop platforms that can be scaled up or down depending on your needs.",
           },
           {
-            img: "training.svg",
+            img: "full-stack-dev.png",
             heading: "Full Stack Development",
             desc: "We offer expert software engineering for all kinds of technologies, from simple front-end prototyping to highly effective back-ends.",
           },
           {
-            img: "medical.svg",
+            img: "qa-testing.png",
             heading: "QA Testing",
             desc: "There are a lot of independent software QA and testing services that follow the strictest security guidelines and benchmarks.",
           },
           {
-            img: "pto.svg",
+            img: "support.png",
             heading: "Support",
             desc: "We offer a variety of SLA-based maintenance subscriptions to keep your app up and running, handle feature updates, and fix bugs.",
           },

@@ -124,6 +124,13 @@ export default {
         width: 100%;
         flex-direction: column;
         gap: 25px;
+        align-items: center;
+
+        .client-description{
+        p{
+          padding-right: 0px;
+        }
+      }
       }
       .client-logo{
         margin-right: 0px;

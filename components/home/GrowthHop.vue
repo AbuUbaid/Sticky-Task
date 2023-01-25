@@ -85,7 +85,7 @@ export default {
     .video {
       flex-basis: 100%;
       width: 100%;
-      justify-content: start;
+      justify-content: center;
       img {
         width: 100%;
         height: auto;
@@ -96,10 +96,12 @@ export default {
     .content {
       flex-basis: 100%;
       width: 100%;
+      text-align: center;
     }
     .cta {
       flex-basis: 100%;
       width: 100%;
+      justify-content: center;
     }
   }
 }

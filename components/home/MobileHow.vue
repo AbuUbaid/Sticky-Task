@@ -11,7 +11,7 @@
     </div>
     <div  class="services-model">
       <div class="mid-model">
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
             <li class="menu-item-side">Requirements Definition</li>
             <li class="menu-item-side">Analyzing the requirements</li>
@@ -19,7 +19,7 @@
             <li class="menu-item-side">Provide initial design</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
             <li class="menu-item-side mid-model-list">Frontend & backend development</li>
             <li class="menu-item-side mid-model-list">Weekly Client Feedback (SCRUM)</li>
@@ -27,7 +27,7 @@
             <li class="menu-item-side mid-model-list">Deployment</li>
           </ul>
         </div>
-        <div>
+        <div class="text-area">
           <ul class="menu-side">
             <li class="menu-item-side">SLA Based Support</li>
             <li class="menu-item-side">L3 and Production Support Services</li>
@@ -95,10 +95,15 @@ export default {
   z-index: 111;
   z-index: 100;
   .menu-side {
-    text-align: left;
+
+    .menu-item-side{
+      text-align: left;
+      font-size: 17px !important;
+    }
+
     li {
       margin-bottom: 10px;
-      list-style-type: circle;
+      list-style: none;
     }
     li list-style-type{
       background-color: #EF861D;
@@ -122,30 +127,43 @@ export default {
   .mid-model {
     width:100%;
     display: flex;
-    flex:1;
     padding: 50px;
-    gap: 20px;
-    > * {
-      flex: 1;
+    gap: 200px;
+    justify-content: center;
+
+    .text-area {
+    h2 {
+      margin-bottom: 20px;
     }
+    ul {
+      list-style-type: none;
+      list-style-position: inside;
+      li {
+        font-family: "Gilroy-Regular";
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+      li::before {
+        content: "◯";
+        color: #ef861d; /* Change the color */
+        font-weight: bold; /* If you want it to be bold */
+        display: inline-block; /* Needed to add space between the bullet and the text */
+        width: 1em; /* Also needed for space (tweak if needed) */
+        margin-right: 15px;
+      }
+    }
+  }
     .sub-menu-head {
       margin: 0 0 10px;
       font-size: 18px;
       font-weight: 700;
       color: #1b1b1b;
-    }
-    .mid-model-list {
-      border: none;
-      padding: 2px 0;
-      -webkit-transition: 0.3s all ease;
-      transition: 0.3s all ease;
-      font-weight: 400;
-      color: #000;
+      text-align: left;
     }
   }
 }
-
-  @media (max-width: 480px) {
+}
+@media (max-width: 480px) {
   .top-notch-container {
     padding: 30px 20px;
     h2 {
@@ -156,7 +174,21 @@ export default {
       text-align: center;
     }
 
+    .mid-count{
+      gap: 8px;
+    }
+    .services-model{
+      .mid-model{
+      flex-direction: column;
+      gap: 20px;
+      }
+      .menu-side{
+        .menu-item-side{
+          font-size: 14px !important;
+        }
+      }
+    }
+
   }
-}
 }
 </style>
