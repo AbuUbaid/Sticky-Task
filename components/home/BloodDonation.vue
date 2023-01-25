@@ -64,8 +64,7 @@ export default {
 }
 
 @media (max-width: 480px) {
-  .blockchain-banner {
-  }
+  
 
   .features {
     flex-wrap: wrap;
