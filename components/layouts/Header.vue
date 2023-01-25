@@ -239,7 +239,11 @@
                           >Build Your Dedicated Teams</NuxtLink
                         >
                       </li>
-                      <li class="engage-list">Fixed Price Project</li>
+                      <li class="engage-list">
+                        <NuxtLink class="engage-list" to="/fixed-price"
+                          >Fixed Price Project</NuxtLink
+                        >
+                      </li>
                     </ul>
                   </div>
                 </div></a
