@@ -128,6 +128,7 @@ export default {
     .image-area {
       flex-basis: 100%;
       width: 100%;
+      margin-left: -88px;
     }
     .text-area {
       flex-basis: 100%;
@@ -141,7 +142,7 @@ export default {
         li {
           font-family: "Gilroy-Regular";
           margin-bottom: 20px;
-          font-size: 18px;
+          font-size: 10px;
         }
       }
     }

@@ -50,7 +50,7 @@ export default {
     padding-right: 70px;
     margin-top: 145px;
     p{
-      text-align: left !important;
+      text-align: left;
     }
     h2 {
       margin-bottom: 20px;
@@ -65,7 +65,9 @@ export default {
 
 @media (max-width: 480px) {
   
-
+  .blockchain-banner {
+    padding: 0px
+  }
   .features {
     flex-wrap: wrap;
     margin-top: 30px;
@@ -73,14 +75,19 @@ export default {
     .image-area {
       flex-basis: 100%;
       width: 100%;
+      text-align: center;
     }
     .text-area {
       flex-basis: 100%;
       width: 100%;
-      padding-right: 20px;
-      padding-left: 20px;
+      padding: 20px;
+      margin-top: 0px;
       h2 {
         margin-bottom: 20px;
+        text-align: center;
+      }
+      p{
+        text-align: center;
       }
     }
   }

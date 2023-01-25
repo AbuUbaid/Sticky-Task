@@ -14,6 +14,7 @@
     <technical-training />
     <plantation />
     <blood-donation />
+    <a-wasia />
   </div>
 </template>
 
@@ -22,12 +23,14 @@ import ServiceBanner from "../components/services/ServiceBanner.vue";
 import TechnicalTraining from "../components/home/TechnicalTraining.vue";
 import Plantation from "../components/home/Plantation.vue";
 import BloodDonation from "../components/home/BloodDonation.vue";
+import AWasia from "../components/home/AWasia.vue";
 export default {
   components: {
     ServiceBanner,
     TechnicalTraining,
     Plantation,
-    BloodDonation
+    BloodDonation,
+    AWasia
   },
   name: "Initiative",
   data: () => {

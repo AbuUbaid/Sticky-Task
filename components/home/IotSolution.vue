@@ -48,25 +48,33 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 5px;
   margin-top: 45px;
   
 }
 
 .values-four .t-four {
-  width: 17%;
+  width: 16%;
   margin-top: 10px;
   margin-bottom: 40px;
-  padding: 50px;
+  padding: 40px;
   align-items: left;
   text-align: center;
   background: transparent linear-gradient(180deg, #CCD2EB 0%, #939CC4 100%) 0% 0% no-repeat padding-box;
   border-radius: 40px;
   opacity: 1;
 }
+.values-four .t-four:nth-child(even){
+  align-self: flex-end;
+  margin-top: 75px;
+}
+.values-four .t-four:nth-child(odd){
+  align-self: flex-start;
+}
 
 .values-four h4 {
   margin: 10px 0px;
+  font-size: 18px;
 }
 
 .values-four .t-four img {
@@ -102,9 +110,17 @@ export default {
     margin-top: 10px;
     margin-bottom: 20px;
   }
+  .values-four .t-four:nth-child(even){
+  align-self: flex-end;
+  margin-top: 0px;
+}
+.values-four .t-four:nth-child(odd){
+  align-self: flex-start;
+}
 
   .values-four h4 {
     margin: 10px 0px;
+    font-size: 12px;
   }
 
   .values-four .t-four img {

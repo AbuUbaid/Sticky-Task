@@ -3,6 +3,7 @@
     <service-banner :BannerData="bannerData" />
     <verification :Impact="Impact" />
     <iot-solution :Impact="Impact1" />
+    <passion-project />
     <tech-stacks />
   </div>
 </template>
@@ -12,16 +13,14 @@ import ServiceBanner from "../../components/services/ServiceBanner.vue";
 import TechStacks from "../../components/home/TechStacks.vue";
 import Verification from "../../components/home/Verification.vue";
 import IotSolution from "../../components/home/IotSolution.vue";
-import Service from "../../components/services/Service.vue";
-import FaqSection from "../../components/FaqSection.vue";
+import PassionProject from "../../components/home/PassionProject.vue";
 export default {
   components: {
-    Service,
-    FaqSection,
     ServiceBanner,
     TechStacks,
     Verification,
-    IotSolution
+    IotSolution,
+    PassionProject
   },
   name: "BlockChain",
 
@@ -44,27 +43,27 @@ export default {
         url:'#',
         icons: [
           {
-            img:"UX.png",
+            img:"airport.png",
             heading: "AVIATION",
           },
           {
-            img:"UX.png",
+            img:"agriculture.png",
             heading: "AGRICULTURE",
           },
           {
-            img:"UX.png",
+            img:"app-development.png",
             heading: "SMART HOMES",
           },
           {
-            img:"UX.png",
+            img:"healthcare.png",
             heading: "HEALTH CARE",
           },
           {
-            img:"UX.png",
+            img:"electric-vehicle.png",
             heading: "AUTOMOTIVES",
           },
           {
-            img:"UX.png",
+            img:"store.png",
             heading: "RETAIL",
           },
         ],

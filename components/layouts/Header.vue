@@ -318,8 +318,7 @@
               <NuxtLink class="nav-li-tag" to="/careers">Careers </NuxtLink>
             </li>
             <li class="nav-li has-child" style="position: relative">
-              <a
-                >About
+              <a>About
                 <img
                   class="arrow-icon"
                   style="margin-right: -15px"
@@ -327,9 +326,9 @@
               /></a>
               <div class="dropdown-content">
                 <ul class="sub sub-menu-block">
-                  <!-- <li>
-                    <a class="about-link">Life at Silicon</a>
-                  </li> -->
+                  <li>
+                    <NuxtLink to="/about">About</NuxtLink>
+                  </li>
                   <li>
                   <NuxtLink to="/initiative">Initiative</NuxtLink>
                   </li>
