@@ -1,11 +1,11 @@
 <template>
   <div>
     <div class="post-banner">
-      <img :src="post.fimg_url" :alt="post.title.rendered + ' image'" />
+      <img :src="post.fimg_url" :alt="post.title?.rendered + ' image'" />
     </div>
     <div class="home-container post-content">
-      <h1>{{ post.title.rendered }}</h1>
-      <div v-html="post.content.rendered"></div>
+      <h1>{{ post.title?.rendered }}</h1>
+      <div v-html="post.content?.rendered"></div>
     </div>
   </div>
 </template>
@@ -49,8 +49,6 @@ export default {
   > div {
     margin-top: 30px;
     ::v-deep {
-      h2 {
-      }
       p {
         margin: 15px 0px;
         line-height: 1.4rem;
