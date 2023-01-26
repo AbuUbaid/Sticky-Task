@@ -64,8 +64,6 @@ export default {
   h2 {
     margin-bottom: 10px;
   }
-  p {
-  }
   
   .mid-count{
     display: flex;
@@ -147,7 +145,7 @@ export default {
       li {
         font-family: "Gilroy-Regular";
         margin-bottom: 20px;
-        font-size: 20px;
+        font-size: 18px;
       }
       li::before {
         content: "◯";

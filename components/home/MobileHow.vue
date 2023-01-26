@@ -58,8 +58,6 @@ export default {
   h2 {
     margin-bottom: 10px;
   }
-  p {
-  }
   
   .mid-count{
     display: flex;

@@ -331,7 +331,7 @@
               <div class="dropdown-content">
                 <ul class="sub sub-menu-block">
                   <li>
-                    <NuxtLink to="/about">About</NuxtLink>
+                    <NuxtLink to="/about">Life At Silicon</NuxtLink>
                   </li>
                   <li>
                   <NuxtLink to="/initiative">Initiative</NuxtLink>
@@ -525,6 +525,7 @@ export default {
       padding-right: 20px;
       padding-top: 8px;
       padding-bottom: 8px;
+      border-radius: 4px;
       a {
         color: white;
       }

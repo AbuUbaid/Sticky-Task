@@ -113,9 +113,6 @@ export default {
 }
 
 @media (max-width: 480px) {
-  .blockchain-banner {
-  }
-
   .entry-text {
     margin: 30px auto;
     width: 100%;

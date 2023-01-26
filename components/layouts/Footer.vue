@@ -65,9 +65,9 @@
     <div  v-if="show_notice" class="cookie-notice-container" style="color:#fff;">
       <span id="cn-notice-text" class="cn-text-container">We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you are happy with it.</span>
       <span id="cn-notice-buttons" class="cn-buttons-container">
-        <a href="#!" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok" style="background-color:#00a99d;" @click="closeNotice()">Ok</a>
+        <a href="javascript:void(0)" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok"  @click="closeNotice()">Accept</a>
+        <a href="javascript:void(0)" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok" style="margin-left:12px"  @click="closeNotice()">Cancel</a>
       </span>
-      <span id="cn-close-notice" data-cookie-set="accept" class="cn-close-icon" title="No" @click="closeNotice"></span>
     </div>
   </div>
   
@@ -109,11 +109,15 @@ export default {
   padding-right: 80px;
 }
 .cookie-notice-container{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
   padding: 15px 30px;
   text-align: center;
   width: 100%;
   animation-name: fadeIn;
-  background-color: #000;
+  background-color: #091756;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -126,6 +130,9 @@ export default {
 .cn-buttons-container{
   display: inline-block;
 }
+.cn-button:hover{
+  background-color: #000;
+}
 .cn-button{
     font-family: -apple-system,BlinkMacSystemFont,Arial,Roboto,"Helvetica Neue",sans-serif;
     font-weight: 400;
@@ -133,7 +140,8 @@ export default {
     letter-spacing: .25px;
     line-height: 20px;
     line-height: 1;
-    margin: 0 0 0 25px;
+    width: 10%;
+    background-color: #ef861d;
     text-align: center;
     text-transform: none;
     display: inline-block;

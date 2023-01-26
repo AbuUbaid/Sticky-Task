@@ -2,16 +2,18 @@
   <div class="banner-container">
     <div class="image-ctas">
       <div class="f-left imageCard">
-        <p>A-Team</p>
+        <p>Build Your Dedicated Teams</p>
         <h2>Hire top 1% global vetted engineers</h2>
         <NuxtLink to="/team-augmentation" class="cta-black"
           >Augment your Team</NuxtLink
         >
       </div>
       <div class="f-right imageCard">
-        <p>Blog</p>
-        <h2>A Lean Approach and Scrum Framework to Develop Projects</h2>
-        <a class="cta-black">Learn More</a>
+        <p>Fixed Price Project</p>
+        <h2>Get a comprehensive product development with reduced development costs.</h2>
+        <NuxtLink to="/fixed-price" class="cta-black"
+          >DEVELOP YOUR PRODUCT</NuxtLink
+        >
       </div>
     </div>
   </div>
