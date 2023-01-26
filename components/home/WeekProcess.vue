@@ -127,6 +127,7 @@ export default {
         margin-left: 24px;
         margin-top: 12px;
         align-items: normal;
+        
         .icon {
           p {
             margin-left: 0px;
