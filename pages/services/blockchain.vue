@@ -36,7 +36,7 @@ export default {
   data: () => {
     return {  
       bannerData: {
-        img: "blockbunner.png",
+        img: "blockbunner.webp",
         name: "BlockChain",
         heading: "Delivering Decentralized Software Systems",
         description: "Providing assistance in boosting your safety, performance, and productivity respectively.",

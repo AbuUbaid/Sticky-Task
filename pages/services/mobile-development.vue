@@ -35,7 +35,7 @@ export default {
   data: () => {
     return {  
       bannerData: {
-        img: "mobile.jpg",
+        img: "mobile.webp",
         name: "Mobile Development",
         heading: "We Don't Create Apps. We Create Experiences",
         description: "We use the latest technology tools and industry standards to make high-performance apps that help your business grow.",

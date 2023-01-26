@@ -11,7 +11,7 @@ export default {
   name: "PassionProject",
   computed: {
     bgImage() {
-      return require("@/assets/images/" + "AW.png");
+      return require("@/assets/images/" + "AW.webp");
     },
     inlineStyle() {
       return {

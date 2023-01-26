@@ -14,7 +14,7 @@
         </ul>
       </div>
       <div class="image-area">
-        <img src="~/assets/images/how-blockchain.jpg" alt="Features image" />
+        <img src="~/assets/images/how-blockchain.webp" alt="Features image" />
       </div>
     </div>
   </div>

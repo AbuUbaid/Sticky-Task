@@ -37,7 +37,7 @@ export default {
     return {
       bannerData: {
         top: "",
-        img: "main-initiative.png",
+        img: "main-initiative.webp",
         heading: "",
         url: "#",
       },

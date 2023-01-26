@@ -36,7 +36,7 @@ export default {
   data: () => {
     return {  
       bannerData: {
-        img: "AI.png",
+        img: "AI.webp",
         name: "Data Science & AI",
         heading: "Utilizing Data Science To Motivate Strategic Business Decisions",
         description: "Using data science, you can make important business decisions and plan, design, and build your AI transformation projects.",

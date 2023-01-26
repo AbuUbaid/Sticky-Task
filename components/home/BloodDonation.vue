@@ -7,7 +7,7 @@
         <p>Silicon Network hosted a successful blood drive. Employees and community members donated blood at the company's headquarters. A local hospital organized the blood drive, which helped the needy. People could save lives and give back at the event. Blood donors felt proud and fulfilled. The organizers thank everyone who made the event a success and hope to hold more drives like it in the future.</p>
       </div>
       <div class="image-area">
-        <img src="~/assets/images/blooddonation.png" alt="Features image" />
+        <img src="~/assets/images/blooddonation.webp" alt="Features image" />
       </div>
     </div>
   </div>

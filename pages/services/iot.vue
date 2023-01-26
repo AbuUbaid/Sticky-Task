@@ -32,7 +32,7 @@ export default {
   data: () => {
     return {  
       bannerData: {
-        img: "iot.png",
+        img: "iot.webp",
         name: "Internet Of Things",
         heading: "Your IoT Partner From Concept To Implementation And Beyond",
         description: "We work with you to provide full IoT development, deployment, and management.",

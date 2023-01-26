@@ -38,7 +38,7 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "processbanner.png",
+        img: "processbanner.webp",
         name: "UI / UX Design",
         heading: "We Design And Launch Great Digital Products.",
         process: "process",

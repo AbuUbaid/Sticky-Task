@@ -23,7 +23,7 @@ export default {
   data: () => {
     return {
       bannerData: {
-        img: "fixed-price.png",
+        img: "fixed-price.webp",
         name: "Fix Price Project",
         heading: "We Help Bring Ideas To Life",
         description: "Our tech experts help reduce development costs while upholding high standards of quality.",

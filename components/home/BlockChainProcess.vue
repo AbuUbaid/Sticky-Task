@@ -5,7 +5,7 @@
     <h1>We Use Cutting-Edge Methods To Ensure Project Success</h1>
     <div class="features">
       <div class="image-area">
-        <img src="~/assets/images/sticky.png" alt="Features image" />
+        <img src="~/assets/images/sticky.webp" alt="Features image" />
       </div>
       <div class="text-area">
         <ul class="m-d expand-list">

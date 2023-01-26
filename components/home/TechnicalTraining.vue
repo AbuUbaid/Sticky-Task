@@ -7,7 +7,7 @@
         <p>Silicon Networks takes great pride in establishing an IT-wide knowledge base for its employees. We teach the most up-to-date skills, technologies, and tools developed by industry leaders. The offered courses are instructed by industry experts and technology specialists to help you advance your knowledge.</p>
       </div>
       <div class="image-area">
-        <img src="~/assets/images/campaign.png" alt="Features image" />
+        <img src="~/assets/images/campaign.webp" alt="Features image" />
       </div>
     </div>
   </div>

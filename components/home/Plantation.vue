@@ -3,7 +3,7 @@
     <div class="blockchain-banner">
     <div class="features">
       <div class="image-area">
-        <img src="~/assets/images/plantation.png" alt="Features image" />
+        <img src="~/assets/images/plantation.webp" alt="Features image" />
       </div>
       <div class="text-area">
         <h2>Plantation Drive</h2>
