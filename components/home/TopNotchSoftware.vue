@@ -7,10 +7,10 @@
           <img src="~/assets/images/topnotch1.jpg" class="img-fluid">
         </div>
         <div class="client-description">
-          <h2>Digital businesses</h2>
+          <h2>Website App Development</h2>
         </div>
         <div class="client-description">
-          <p>We help digital businesses develop new designs by blurring the digital and physical worlds and using technological advances to create new business models.</p>
+          <p>We use the latest technologies and platforms to make new web products with strong backends and easy-to-use front ends.</p>
         </div>
       </div>
       <div class="clients-card">
@@ -18,10 +18,10 @@
           <img src="~/assets/images/topnotch2.jpg" class="img-fluid">
         </div>
         <div class="client-description">
-          <h2>Digital businesses</h2>
+          <h2>Mobile App Development</h2>
         </div>
         <div class="client-description">
-          <p>We help digital businesses develop new designs by blurring the digital and physical worlds and using technological advances to create new business models.</p>
+          <p>Our engineers work to develop the greatest business solution by utilizing the ideal SDLC tools and processes, whether it is native or cross-platform software.</p>
         </div>
       </div>
     </div>

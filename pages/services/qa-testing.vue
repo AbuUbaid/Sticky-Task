@@ -67,7 +67,7 @@ export default {
             desc: "Utilizing stringent cybersecurity procedures to guarantee the security of your data.",
           },
           {
-            img: "mob-testing.webp",
+            img: "mob-testing.png",
             heading: "Mobile Testing",
             desc: "Keeping speed and responsiveness as top priorities.",
           },

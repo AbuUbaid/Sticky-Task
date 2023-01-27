@@ -152,27 +152,27 @@
                       <h2 class="sub-menu-head">Software Development</h2>
                       <ul class="menu-side">
                         <li class="menu-item-side">
-                          <NuxtLink to="/services/custom-software"
-                            >Custom Software Development</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/services/custom-software">Custom Software Development</a>
+
                         </li>
                         <li class="menu-item-side">
-                          <NuxtLink to="/services/mobile-development"
-                            >Web App Development</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/services/mobile-development">Mobile Development</a>
+
                         </li>
                         <li class="menu-item-side">
-                          <NuxtLink to="/services/uiux-design"
-                            >UI/UX Design</NuxtLink
-                          ></li>
+                          <a class="nav-li-tag" href="/services/web-development">Web Development</a>
+
+                        </li>
                         <li class="menu-item-side">
-                          <NuxtLink to="/services/qa-testing"
-                            >QA & Testing</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/services/uiux-design">UI/UX Design</a>
+
+                        </li>
+                        <li class="menu-item-side">
+                          <a class="nav-li-tag" href="/services/qa-testing">QA & Testing</a>
                         </li>
                         <!-- <li class="menu-item-side">Embedded Software</li> -->
                         <li class="menu-item-side">
-                          <NuxtLink to="/services/devops-new">DevOps</NuxtLink>
+                          <a class="nav-li-tag" href="/services/devops-new">DevOps</a>
                         </li>
                         <!-- <li class="menu-item-side">Discovery Workshop</li> -->
                       </ul>
@@ -181,22 +181,24 @@
                       <h2 class="sub-menu-head">Emerging Tech</h2>
                       <ul class="menu-side">
                         <li class="menu-item-side">
-                        <NuxtLink class="nav-li-tag" to="/services/blockchain">Blockchain</NuxtLink>
+                          <a class="nav-li-tag" href="/services/blockchain">Blockchain</a>
                         </li>
                         <li class="menu-item-side">
-                        <NuxtLink class="nav-li-tag" to="/services/data-science-and-ai">Data Science & AI</NuxtLink>
+                          <a class="nav-li-tag" href="/services/data-science-and-ai">Data Science & AI</a>
                         </li>
                         <li class="menu-item-side">
-                        <NuxtLink class="nav-li-tag" to="/services/iot">IOT</NuxtLink>
+                          <a class="nav-li-tag" href="/services/iot">IoT</a>
                         </li>
                       </ul>
                     </div>
                     <div>
                       <h2 class="sub-menu-head">Digital Marketing</h2>
                       <ul class="menu-side">
-                        <li class="menu-item-side mid-model-list">SEO</li>
                         <li class="menu-item-side mid-model-list">
-                          Paid Media
+                          <a class="nav-li-tag" href="/services/digital">SEO</a>
+                        </li>
+                        <li class="menu-item-side mid-model-list">
+                          <a class="nav-li-tag" href="/services/digital">Paid Media</a>
                         </li>
                       </ul>
                     </div>
@@ -204,29 +206,21 @@
                       <h2 class="sub-menu-head">Solutions</h2>
                       <ul class="menu-side">
                         <li class="menu-item-side">
-                          <NuxtLink to="/solutions/microsoft-dynamics"
-                            >Microsoft Dynamics</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/solutions/microsoft-dynamics">Microsoft Dynamics</a>
+
                         </li>
                         <li class="menu-item-side">
-                          <NuxtLink to="/solutions/hr-connect"
-                            >HR Connect</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/solutions/hr-connect">HR Connect</a>
+
                         </li>
                         <li class="menu-item-side">
-                          <NuxtLink to="/solutions/e-commerce"
-                            >E-Commerce</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/solutions/e-commerce">E-Commerce</a>
                         </li>
                         <li class="menu-item-side">
-                          <NuxtLink to="/solutions/stickytasks"
-                            >StickyTasks</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/solutions/stickytasks">StickyTasks</a>
                         </li>
                         <li class="menu-item-side">
-                          <NuxtLink to="/solutions/enterprise-vpn"
-                            >Enterprise VPN</NuxtLink
-                          >
+                          <a class="nav-li-tag" href="/solutions/enterprise-vpn">Enterprise VPN</a>
                         </li>
                       </ul>
                     </div>
@@ -235,14 +229,11 @@
                     <h2 class="engagment-head">Engagement Models</h2>
                     <ul class="menu-side">
                       <li class="engage-list">
-                        <NuxtLink class="engage-list" to="/team-augmentation"
-                          >Build Your Dedicated Teams</NuxtLink
-                        >
+                        <a class="engage-list" href="/team-augmentation">Build Your Dedicated Teams</a>
+
                       </li>
                       <li class="engage-list">
-                        <NuxtLink class="engage-list" to="/fixed-price"
-                          >Fixed Price Project</NuxtLink
-                        >
+                        <a class="engage-list" href="/fixed-price">Fixed Price Project</a>
                       </li>
                     </ul>
                   </div>
@@ -432,6 +423,7 @@ export default {
     }
   },
   methods: {
+
     openService() {
       (this.solutionOpen = false),
         (this.industryOpen = false),
