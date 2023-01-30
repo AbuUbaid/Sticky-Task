@@ -2,12 +2,10 @@
   <div class="end-container">
     <h2>End to End Software Development Methodologies</h2>
     <div class="services-model">
-      <div data-v-c26da7d8="" class="logos">
-        <div data-v-c26da7d8="" class="logo">
+      <div class="logos">
+        <div  class="logo">
           <img
-            data-v-c26da7d8=""
-            src="/_nuxt/assets/images/customlogo.jpg"
-            alt="siemens logo"
+            src="/_nuxt/assets/images/customlogo.webp"
           />
         </div>
       </div>
@@ -86,7 +84,7 @@ export default {
     }
     .logos {
       margin-top: 30px;
-      justify-content: right;
+      justify-content: center;
       .logo {
         img {
           width: 100%;

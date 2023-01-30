@@ -41,6 +41,7 @@ export default {
         img: "processbanner.webp",
         name: "UI / UX Design",
         heading: "We Design And Launch Great Digital Products.",
+        description: "Our company specializes in offering outstanding UI/UX services to improve customer experience and the overall quality of your digital products.",
         process: "process",
         url: "#contact-form",
       },

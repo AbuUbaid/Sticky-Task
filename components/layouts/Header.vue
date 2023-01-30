@@ -135,15 +135,17 @@
         </div>
         <div class="nav-ul desktop-header">
           <ul class="nav-ul">
-            <li class="nav-li">
-              <a class="has-mega"
+            <li class="nav-li has-mega">
+              <a class=""
                 >Services
                 <img
                   class="arrow-icon"
                   style="margin-right: -15px"
                   src="~/assets/icons/right-arrow.svg"
                 />
-                <div id="services-menu" class="services-model">
+               </a
+              >
+              <div id="services-menu" class="services-model">
                   <div class="engage-models">
                     <img src="~/assets/logos/clutch.webp" alt="Clutch" />
                   </div>
@@ -237,8 +239,7 @@
                       </li>
                     </ul>
                   </div>
-                </div></a
-              >
+                </div>
             </li>
             <li class="nav-li has-child" style="position: relative">
               <a
@@ -647,7 +648,7 @@ export default {
 }
 
 .has-mega:hover .services-model {
-  transform: translateY(58px);
+  transform: rotateX(0);
 }
 
 .dropdown-content {
@@ -694,12 +695,25 @@ export default {
   height: 60vh;
   z-index: 111;
   padding-top: 25px;
-  position: fixed;
-  top: 0;
+  // position: fixed;
+  // top: 0;
   left: 0;
-  transition: transform 0.3s cubic-bezier(0.32, 0.01, 0, 1);
-  transform: translateY(-100vh);
-  z-index: 100;
+  // transition: transform 0.3s cubic-bezier(0.32, 0.01, 0, 1);
+  // transform: translateY(-100vh);
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: -103px;
+    top: 100%;
+    border-bottom-left-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    -webkit-transition: all .4s ease 0s;
+    transition: all .4s ease 0s;
+    -webkit-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: top center;
+    transform-origin: top center;
   .menu-side {
     list-style-position: outside !important;
     list-style-type: none;

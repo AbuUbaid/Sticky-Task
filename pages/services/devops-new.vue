@@ -52,17 +52,17 @@ export default {
         icons: [
           {
             img: "devops-assment.png",
-            heading: "Devops Assessment",
+            heading: "DevOps Assessment",
             desc: "In order to automate deployment cycles across your delivery infrastructure, our DevOps engineer examines the key points, creates a road map, and makes recommendations for tools and procedures.",
           },
           {
             img: "devops-auto.png",
-            heading: "Devops Automation",
+            heading: "DevOps Automation",
             desc: "We automate the entire delivery cycle, ensuring that deployments and rollbacks are completed with a single click, mitigating risks and boosting productivity.",
           },
           {
             img: "devops-manage.png",
-            heading: "Devops Management",
+            heading: "DevOps Management",
             desc: "We support your core team in ensuring that the delivery pipeline automation cycle operates in a fully integrated manner and in adjusting your automated deployment cycle to changes.",
           },
         ],

@@ -61,7 +61,7 @@ export default {
 
 .desc{
   margin-bottom: 30px;
-  max-width: 40%;
+  max-width: 55%;
 }
 
 .contain {

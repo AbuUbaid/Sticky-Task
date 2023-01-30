@@ -3,15 +3,15 @@
     <h2>OUR PROCESS</h2>
     <p>Our 3 Step Formula For Building Great Products</p>
     <div  class="services-model">
-      <div data-v-c26da7d8="" class="logos">
-        <div data-v-c26da7d8="" class="logo">
-          <img data-v-c26da7d8="" src="/_nuxt/assets/images/process.svg" alt="siemens logo">
+      <div class="logos">
+        <div class="logo">
+          <img src="/_nuxt/assets/images/process.svg">
         </div>
-        <div data-v-c26da7d8="" class="logo">
-          <img data-v-c26da7d8="" src="/_nuxt/assets/images/process1.svg" alt="siemens logo">
+        <div class="logo">
+          <img src="/_nuxt/assets/images/process1.svg">
         </div>
-        <div data-v-c26da7d8="" class="logo">
-          <img data-v-c26da7d8="" src="/_nuxt/assets/images/process2.svg" alt="siemens logo">
+        <div class="logo">
+          <img src="/_nuxt/assets/images/process2.svg">
         </div>
       </div> 
       <div class="mid-model">

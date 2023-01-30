@@ -41,10 +41,7 @@ export default {
   padding-bottom: 0px;
   h2 {
     margin-bottom: 10px;
-  }
-  p {
-  }
-  .clients {
+  }  .clients {
     margin-top: 50px;
     flex-wrap: wrap;
     display: flex;
