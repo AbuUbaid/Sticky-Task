@@ -84,12 +84,14 @@ export default {
     justify-content: space-between;
     gap: 5%;
     margin-top: 25px;
+    margin-left: 0;
   }
 
   .values-four .t-four {
     width: 47%;
     margin-top: 10px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .values-four h4 {

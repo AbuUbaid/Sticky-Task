@@ -61,7 +61,7 @@ export default {
     width: 100%;
   }
   .contain  p{
-    margin-top: 100%;
+    margin-top: 80%;
     max-width: 98%;
   }
 }

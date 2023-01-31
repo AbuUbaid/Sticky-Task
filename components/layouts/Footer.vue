@@ -113,7 +113,7 @@ export default {
   flex-direction: column;
   gap: 3px;
   justify-content: center;
-  padding: 15px 30px;
+  padding: 15px;
   text-align: center;
   width: 100%;
   animation-name: fadeIn;
@@ -128,7 +128,10 @@ export default {
   display: inline-block;
 }
 .cn-buttons-container{
-  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  justify-content: center;
 }
 .cn-button:hover{
   background-color: #000;
@@ -140,7 +143,7 @@ export default {
     letter-spacing: .25px;
     line-height: 20px;
     line-height: 1;
-    width: 10%;
+    width: 15%;
     background-color: #ef861d;
     text-align: center;
     text-transform: none;
@@ -325,6 +328,9 @@ export default {
   }
   .footer-subscribe {
     width: 100%;
+  }
+  .cn-button{
+    width: 30%;
   }
 }
 </style>

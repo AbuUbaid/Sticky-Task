@@ -2,22 +2,11 @@
   <div class="main-header">
     <div
       id="services-menu"
-      class="mega-menu"
+      class="mega-menu mobile-services-menue"
       v-bind:class="{ open: serviceOpen }"
     >
       <ul class="menu-side">
-        <li class="menu-item-side">
-          <NuxtLink to="/services/digital">Digital</NuxtLink>
-        </li>
-        <li class="menu-item-side">
-          <NuxtLink to="/services/devops">DevOps and Cloud</NuxtLink>
-        </li>
-        <li class="menu-item-side">
-          <NuxtLink to="/services/bpo">BPO</NuxtLink>
-        </li>
-        <li class="menu-item-side">
-          <NuxtLink to="/services/microsoft">Microsoft Services</NuxtLink>
-        </li>
+        <h2>Software Development</h2>
         <li class="menu-item-side">
         <NuxtLink to="/services/custom-software"
           >Custom Software Development</NuxtLink
@@ -25,7 +14,12 @@
       </li>
       <li class="menu-item-side">
         <NuxtLink to="/services/mobile-development"
-          >Web App Development</NuxtLink
+          >Mobile Development</NuxtLink
+        >
+      </li>
+      <li class="menu-item-side">
+        <NuxtLink to="/services/web-development"
+          >Web Development</NuxtLink
         >
       </li>
       <li class="menu-item-side">
@@ -38,19 +32,32 @@
         >
       </li>
       <li class="menu-item-side">
-      <NuxtLink class="nav-li-tag" to="/services/blockchain">Blockchain</NuxtLink>
+        <NuxtLink to="/services/devops-new"
+          >DevOps</NuxtLink
+        >
       </li>
-      <li class="menu-item-side">
-      <NuxtLink class="nav-li-tag" to="/services/data-science-and-ai">Data Science & AI</NuxtLink>
-      </li>
-      <li class="menu-item-side">
-      <NuxtLink class="nav-li-tag" to="/services/iot">IOT</NuxtLink>
-      </li>
-      <!-- <li class="menu-item-side">Embedded Software</li> -->
-      <!-- <li class="menu-item-side">
-        <NuxtLink to="/services/devops-new">DevOps</NuxtLink>
-      </li> -->
       </ul>
+      <ul class="menu-side">
+        <h2>Emerging Tech</h2>
+      <li class="menu-item-side">
+      <NuxtLink  to="/services/blockchain">Blockchain</NuxtLink>
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink  to="/services/data-science-and-ai">Data Science & AI</NuxtLink>
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink  to="/services/iot">IOT</NuxtLink>
+      </li>
+      </ul>
+      <ul class="menu-side">
+        <h2>Digital Marketing</h2>
+      <li class="menu-item-side">
+      <NuxtLink  to="/services/digital">SEO</NuxtLink>
+      </li>
+      <li class="menu-item-side">
+      <NuxtLink  to="/services/digital">Paid Media</NuxtLink>
+      </li>
+      </ul> 
     </div>
 
     <div
@@ -116,13 +123,12 @@
       v-bind:class="{ open: aboutOpen }"
     >
       <ul class="menu-side">
-        <!-- <li class="menu-item-side">
-          <a href="">Life at Silicon</a>
-        </li> -->
         <li class="menu-item-side">
-          <a href="">Initiative</a>
+          <NuxtLink to="/about">Life at Silicon</NuxtLink>
         </li>
-        
+        <li class="menu-item-side">
+          <NuxtLink to="/initiative">Initiative</NuxtLink>
+        </li>
       </ul>
     </div>
 
@@ -383,9 +389,9 @@
           <li class="menu-item">
             <NuxtLink to="/careers">Careers </NuxtLink>
           </li>
-          <li class="menu-item sub-menu-item">
-            <NuxtLink to="/about">About</NuxtLink>
-            <img @click="openAbout" src="~/assets/icons/right-arrow.svg" />
+          <li @click="openAbout" class="menu-item sub-menu-item">
+            <a>About</a>
+            <img  src="~/assets/icons/right-arrow.svg" />
           </li>
           <li class="menu-item">
             <NuxtLink to="/contact">Contact</NuxtLink>
@@ -472,6 +478,7 @@ export default {
         this.serviceOpen = false;
         this.solutionOpen = false;
         this.industryOpen = false;
+        this.aboutOpen = false;
       }
     },
     closeMega() {
@@ -479,11 +486,13 @@ export default {
       if (
         this.serviceOpen == true ||
         this.solutionOpen == true ||
+        this.aboutOpen == true ||
         this.industryOpen == true
       ) {
         this.serviceOpen = false;
         this.solutionOpen = false;
         this.industryOpen = false;
+        this.aboutOpen = false;
       }
     },
   },
@@ -946,6 +955,27 @@ ul.nav-ul {
         }
       }
     }
+    .mobile-services-menue{
+      display: flex;
+      flex-direction: column;
+      grid-template: 20px;
+      overflow: auto;
+
+      h2{
+        color: #fff;
+        font-size: 20px;
+        margin-bottom: 25px;
+
+      }
+      ul li a{
+        font-size: 15px;
+
+      }
+      ul li a:hover{
+        color: #000;
+
+      }
+    }
   }
   .menu-container {
     padding: 20px;
@@ -954,7 +984,7 @@ ul.nav-ul {
       list-style-type: none;
       .menu-item {
         font-size: 28px;
-        margin-bottom: 25px;
+        margin-bottom: 15px;
         position: relative;
         a {
           color: black;

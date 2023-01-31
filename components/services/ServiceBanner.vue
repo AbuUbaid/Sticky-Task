@@ -109,5 +109,8 @@ export default {
   .p-banner h1 {
     width: 100%;
   }
+  .desc{
+  max-width: 90%;
+}
 }
 </style>
