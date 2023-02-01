@@ -12,11 +12,12 @@
         <div class="home-slide">
           <div class="text-area">
             <h1>
-              Integrating High-End Software For Better Digital Infrastructure
+              We Ideate,
+              Innovate, & Inspire Technology Solutions
             </h1>
-            <NuxtLink to="/solutions/stickytasks" class="explore-link"
-              >Explore More</NuxtLink
-            >
+            <p>Enterprises . Growth Companies . Startups</p>
+            <a href="#contact-form" class="explore-link"
+              >Let's Talk</a>
             <img
               src="~/assets/logos/goldpartner.webp"
               alt="Microsoft Gold Partner"
@@ -78,8 +79,13 @@ export default {
 
 .home-slides .home-slide .text-area h1 {
   color: white;
-  max-width: 400px;
+  max-width: 571px;
   line-height: 1.5em;
+}
+
+.home-slides .home-slide .text-area p {
+  color: white;
+  margin-top: 14px;
 }
 
 .home-slides .home-slide .text-area .explore-link {
@@ -94,8 +100,8 @@ export default {
 }
 
 .home-slides .home-slide .image-area {
-  width: 55vw;
-  flex-basis: 55vw;
+  width: 51vw;
+  flex-basis: 51vw;
 }
 
 .home-slides .home-slide .side-img.image-area {
@@ -104,7 +110,7 @@ export default {
   background-size: cover;
 }
 .sideimg1 {
-  background: url("~/assets/images/STBanner.webp");
+  background: url("~/assets/images/main-page.webp");
 }
 .sideimg2 {
   background: url("~/assets/images/secondbanner.webp");
