@@ -364,6 +364,16 @@ import TestimonialSlider from "../components/home/TestimonialSlider.vue";
 export default {
   components: { TestimonialSlider },
   name: "TeamAugmentation",
+  head: {
+    title: 'Team Augmentation Services | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Maximize your team's potential with our top-notch Staff Augmentation services. Benefit from the expertise of seasoned professionals to achieve your business goals."
+      }
+    ],
+  },
   data: () => {
     return {
       Faqs: {

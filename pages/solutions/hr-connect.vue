@@ -101,6 +101,16 @@ import SolutionFeatures from "../../components/solutions/SolutionFeatures.vue";
 export default {
   components: { SolutionFeatures, OurPartners },
   name: "HrConnect",
+  head: {
+    title: 'HR Connect Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Simplify HR processes with HR Connect Solutions. Manage employee information, track performance, and improve HR operations. Get a demo and see it for yourself."
+      }
+    ],
+  },
   data: () => {
     return {
       Features: {

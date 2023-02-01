@@ -83,6 +83,16 @@ import BlogCard from "../../components/blog/BlogCard.vue";
 export default {
   components: { CardHorizontal, BlogCard },
   name: "InsightsPage",
+  head: {
+    title: 'Insights and Resources | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Our thought leadership and industry knowledge help you stay informed on the latest trends and best practices in technology and innovation. Explore our insights!"
+      }
+    ],
+  },
   data: () => {
     return {
       tab: null,

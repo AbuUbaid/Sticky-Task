@@ -30,7 +30,16 @@ export default {
     MetricsCounter,
   },
   name: "Microsoft",
-
+  head: {
+    title: 'Microsoft Services | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: 'Maximize the potential of Microsoft technologies with Microsoft Services. From migration to deployment and support, we have you covered. Get in touch with us today.'
+      }
+    ],
+  },
   methods: {
     isEven(index) {
       return (index + 1) % 2 == 0;

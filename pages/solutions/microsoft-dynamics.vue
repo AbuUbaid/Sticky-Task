@@ -67,6 +67,16 @@
 export default {
   components: {},
   name: "MicrosoftDynamics",
+  head: {
+    title: 'Microsoft Dynamics Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Transform your business operations with Microsoft Dynamics Solutions. Streamline processes, gain insights, and drive growth. Get in touch for better results now."
+      }
+    ],
+  },
   data: () => {
     return {};
   },

@@ -77,6 +77,16 @@ require("nuxt-video-player/src/assets/css/main.css");
 export default {
   components: { SolutionFeatures, OurPartners, VideoPlayer },
   name: "StickyTasks",
+  head: {
+    title: 'StickyTasks Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Streamline your task management with our StickyTasks Solutions. Get organized, prioritize, and increase efficiency. Start improving today with this amazing tool."
+      }
+    ],
+  },
   data: () => {
     return {
       Features: {

@@ -46,6 +46,16 @@ export default {
     IndustryCounter,
   },
   name: "Pharma",
+  head: {
+    title: 'Pharma Industry Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Revolutionize the pharmaceutical industry with our tailored solutions. From clinical trial management to supply chain optimization, we have got you all covered."
+      }
+    ],
+  },
   data: () => {
     return {
       bannerData: {

@@ -67,6 +67,16 @@ import SolutionFeatures from "../../components/solutions/SolutionFeatures.vue";
 export default {
   components: { SolutionFeatures, OurPartners, HowItWorks },
   name: "ECom",
+  head: {
+    title: 'E-Commerce Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Boost your e-commerce business with our top-notch E-Commerce Solutions. Improve customer experience, increase sales, and drive growth. Get the demo from us now."
+      }
+    ],
+  },
   data: () => {
     return {};
   },

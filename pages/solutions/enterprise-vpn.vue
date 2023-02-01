@@ -70,6 +70,16 @@ import SolutionFeatures from "../../components/solutions/SolutionFeatures.vue";
 export default {
   components: { SolutionFeatures, OurPartners },
   name: "EnterpriseVpn",
+  head: {
+    title: 'Enterprise VPN Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Secure your business with our Enterprise VPN Solutions. Keep your data private, protect against cyber threats and improve productivity. Tryit today now."
+      }
+    ],
+  },
   data: () => {
     return {
       Features: {

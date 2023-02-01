@@ -42,6 +42,16 @@ export default {
     IndustryCounter,
   },
   name: "Manufacturing",
+  head: {
+    title: 'Manufacturing Industry Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Streamline your manufacturing operations, from digital twinning to predictive maintenance, we provide innovative solutions to help you stay ahead. Contact us today!"
+      }
+    ],
+  },
   data: () => {
     return {
       Footprint: {

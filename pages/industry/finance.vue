@@ -41,6 +41,16 @@ export default {
     IndustryCounter,
   },
   name: "Finance",
+  head: {
+    title: 'Finance Industry Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Optimize financial operations with our industry solutions. From regulatory compliance to risk management, we provide innovative solutions to meet your needs."
+      }
+    ],
+  },
   data: () => {
     return {
       bannerData: {

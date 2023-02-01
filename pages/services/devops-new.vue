@@ -32,7 +32,16 @@ export default {
     DevOpsBunner
   },
   name: "DevOpsNew",
-
+  head: {
+    title: 'Accelerate Your Business with Our DevOps Services | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: 'Accelerate your digital transformation with our DevOps Services. Our team of experts provides reliable and innovative solutions to stay ahead of the competition.'
+      }
+    ],
+  },
   methods: {
     isEven(index) {
       return (index + 1) % 2 == 0;

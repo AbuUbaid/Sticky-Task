@@ -39,6 +39,16 @@ export default {
     IndustryCounter,
   },
   name: "ECommerce",
+  head: {
+    title: 'Footwear Industry Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Stay ahead of the game in the footwear industry with our tailored solutions. From supply chain optimization to omnichannel retail strategies, we have you covered."
+      }
+    ],
+  },
   data: () => {
     return {
       bannerData: {

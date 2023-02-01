@@ -30,7 +30,16 @@ export default {
     MetricsCounter,
   },
   name: "BPO",
-
+  head: {
+    title: 'Business Process Outsourcing Services | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: 'Streamline your business operations and increase efficiency with BPO Services. Trust us to handle your non-core processes while you focus on growth. Contact us today.'
+      }
+    ],
+  },
   methods: {
     isEven(index) {
       return (index + 1) % 2 == 0;

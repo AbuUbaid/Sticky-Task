@@ -42,6 +42,16 @@ export default {
     IndustryCounter,
   },
   name: "Government",
+  head: {
+    title: 'Government Industry Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Simplify government operations with our industry solutions. From citizen engagement to process automation, we provide innovative solutions to meet your needs."
+      }
+    ],
+  },
   data: () => {
     return {
       bannerData: {

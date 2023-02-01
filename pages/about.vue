@@ -26,6 +26,16 @@ export default {
     AboutPurpose,
   },
   name: "AboutPage",
+  head: {
+    title: 'About Us | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Discover the story behind Silicon Networks, a leading provider of innovative networking solutions. Learn about our mission, values, and the team behind our success."
+      }
+    ],
+  },
   data: () => {
     return {
       IndustryCards: [

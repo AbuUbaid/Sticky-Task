@@ -42,6 +42,16 @@ export default {
     IndustryCounter,
   },
   name: "Retail",
+  head: {
+    title: 'Retail Industry Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Elevate your retail business with Silicon Network's tailored industry solutions. From omnichannel strategies to customer experience management, we have you covered."
+      }
+    ],
+  },
   data: () => {
     return {
       bannerData: {

@@ -42,6 +42,16 @@ export default {
     IndustryCounter,
   },
   name: "Food",
+  head: {
+    title: 'Food Industry Solutions | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Transform the way you do business in the food industry with our industry solutions. From farm-to-table traceability to food safety management, we have you covered."
+      }
+    ],
+  },
   data: () => {
     return {
       bannerData: {

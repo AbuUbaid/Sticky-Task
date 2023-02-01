@@ -14,7 +14,16 @@ export default {
   components: { ContactForm, BuildingCta, ServiceBanner },
   layout: 'noform',
   name: "ContactPage",
-
+  head: {
+    title: 'Contact Us | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "We're always here for you. Contact us today and receive a quick response from our friendly and knowledgeable customer support team. Get the support you need!"
+      }
+    ],
+  },
   data: () => {
     return {
       bannerData: {

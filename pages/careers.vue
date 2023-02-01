@@ -44,6 +44,16 @@ import Values from "../components/careers/Values.vue";
 import ImpactIcons from "../components/industry/ImpactIcons.vue";
 export default {
   name: "CareersPage",
+  head: {
+    title: 'Careers | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Advance your career and make a difference at Silicon Networks. Check out our job openings and be part of a company driving innovation in the industry. Apply today!"
+      }
+    ],
+  },
   components: {
     CareersBanner,
     Values,

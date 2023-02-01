@@ -30,7 +30,16 @@ export default {
     MetricsCounter,
   },
   name: "Digital",
-
+  head: {
+    title: 'Digital Services | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: "Transform your digital presence with Digital Services. From website design and development to digital marketing, we'll help you stand out online. Contact us today."
+      }
+    ],
+  },
   methods: {
     isEven(index) {
       return (index + 1) % 2 == 0;
