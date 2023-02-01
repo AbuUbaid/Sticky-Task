@@ -1,3 +1,4 @@
+
 <template>
   <div>
     <main-banner />
@@ -45,6 +46,16 @@ export default {
     LogoSlider,
     GrowthHop,
     GlobalForm,
+  },
+  head: {
+    title: 'Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: 'Our cutting-edge technology provides reliable and fast internet solutions for businesses and individuals. Join us today and revolutionize your online experience.'
+      }
+    ],
   },
   name: "IndexPage",
   data: () => {

@@ -110,7 +110,7 @@ export default {
   background-size: cover;
 }
 .sideimg1 {
-  background: url("~/assets/images/main-page.webp");
+  background: url("~/assets/images/STBanner.webp");
 }
 .sideimg2 {
   background: url("~/assets/images/secondbanner.webp");

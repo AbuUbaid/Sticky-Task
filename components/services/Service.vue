@@ -24,6 +24,16 @@ export default {
       type: Object,
     },
   },
+  head: {
+    title: 'Customized Solutions for Your Unique Needs | Silicon Networks',
+    meta: [
+      {
+        // hid: 'description',
+        name: 'description',
+        content: 'From digital transformation to email protection and cloud services, we got you all covered. Choose the right solution for you and elevate your online experience.'
+      }
+    ],
+  },
   computed: {
     bgImage() {
       return require("@/assets/images/" + this.item.url);
