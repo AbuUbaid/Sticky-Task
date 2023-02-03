@@ -117,6 +117,9 @@ export default {
         h2{
           text-align: center;
         }
+        p{
+          text-align: center;
+        }
       }
       .icons-area {
         flex-basis: 100%;
@@ -131,6 +134,10 @@ export default {
         .icon {
           p {
             margin-left: 0px;
+            text-align: center;
+          }
+          h2{
+            text-align: center;
           }
           img{
             margin-right: 0px;

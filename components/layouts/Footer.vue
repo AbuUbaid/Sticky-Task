@@ -17,7 +17,7 @@
       <div class="footer-texts">
         <div class="footer-text">
           <h3>USA</h3>
-          <p>4288 Fremont Blvd Fremont, CA 94538</p>
+          <p>44288 Fremont Blvd Fremont, CA 94538</p>
           <a href="tel:855-904-4417">855-904-4417</a>
           <a href="mailto:info@siliconnet.com">info@siliconnet.com</a>
         </div>

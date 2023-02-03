@@ -101,5 +101,9 @@ export default {
   .image-size h1 {
     width: 100%;
   }
+  .desc{
+  margin-bottom: 22px;
+  max-width: 75%;
+  }
 }
 </style>

@@ -50,7 +50,7 @@ export default {
   background: #ecf5ff;
   text-align: center;
   color: #091756;
-  padding: 50px 0px;
+  padding: 50px 0px 0px 0px;
   width: 100%;
 }
 
@@ -97,9 +97,10 @@ export default {
 
 .logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 126px;
+  margin-top: 35px;
   .logo {
     img {
       width: 100%;

@@ -111,6 +111,7 @@ export default {
   }
   .desc{
   max-width: 90%;
+  margin-bottom: 22px;
 }
 }
 </style>

@@ -84,6 +84,7 @@ export default {
 
   .desc{
     max-width: 90% !important;
+    margin-bottom: 22px;
   }
   .about-banner h1 {
     width: 100%;

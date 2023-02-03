@@ -58,6 +58,15 @@
       <NuxtLink  to="/services/digital">Paid Media</NuxtLink>
       </li>
       </ul> 
+      <ul class="menu-side">
+        <h2>Engagement Models</h2>
+      <li class="menu-item-side">
+        <a class="engage-list" href="/team-augmentation">Build Your Dedicated Teams</a>
+      </li>
+      <li class="menu-item-side">
+        <a class="engage-list" href="/fixed-price">Fixed Price Project</a>
+      </li>
+      </ul> 
     </div>
 
     <div
@@ -1022,7 +1031,7 @@ ul.nav-ul {
     height: 100vh;
     background-color: #091756;
     position: fixed;
-    width: 70vw;
+    width: 85vw;
     left: 0vw;
     top: 0;
     display: flex;
