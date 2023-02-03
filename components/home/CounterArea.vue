@@ -30,6 +30,11 @@
           <img src="~/assets/logos/p7.svg" alt="citrix logo" />
         </div>
       </div>
+      <div class="brand-mobile-logo">
+        <div class="logo">
+          <img src="~/assets/logos/brandlogo.webp" alt="brand logo" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -72,6 +77,9 @@ export default {
   justify-content: space-around;
 }
 
+.brand-mobile-logo{
+  display: none;
+}
 .count {
   padding: 1% 6%;
   margin-top: 2%;
@@ -138,8 +146,11 @@ export default {
   }
 
   .logos {
-    flex-wrap: wrap;
-    justify-content: center;
+    display: none;
+  }
+  .brand-mobile-logo{
+    display: flex;
+    margin-top: 3%;
   }
 }
 </style>
