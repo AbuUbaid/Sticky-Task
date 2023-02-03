@@ -151,6 +151,10 @@ export default {
   .brand-mobile-logo{
     display: flex;
     margin-top: 3%;
+
+    img{
+      width: 100vw;
+    }
   }
 }
 </style>
