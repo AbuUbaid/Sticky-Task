@@ -651,7 +651,7 @@ export default {
   background-color: #091756;
   position: fixed;
   width: 35vw;
-  left: 44vw;
+  left: 32vw;
   top: 0;
   display: flex;
   padding: 50px;
