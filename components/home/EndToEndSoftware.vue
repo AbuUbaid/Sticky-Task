@@ -2,10 +2,10 @@
   <div class="end-container">
     <h2>End to End Software Development Methodologies</h2>
     <div class="services-model">
-      <div class="logos">
+      <div class="end-logos">
         <div  class="logo">
           <img
-            src="/_nuxt/assets/images/customlogo.webp"
+            src="~/assets/images/customlogo.webp"
           />
         </div>
       </div>
@@ -82,7 +82,7 @@ export default {
         margin-bottom: 10px;
       }
     }
-    .logos {
+    .end-logos {
       margin-top: 30px;
       justify-content: center;
       .logo {
@@ -151,9 +151,9 @@ export default {
 
     .services-model {
 
-      .logos {
+      .end-logos {
       .logo {
-        margin-left: -60px;
+        margin-left: 11px;
         width: 100%;
         img {
           width: 100%;

@@ -5,13 +5,13 @@
     <div  class="services-model">
       <div class="logos">
         <div class="logo">
-          <img src="/_nuxt/assets/images/process.svg">
+          <img src="~/assets/images/process.svg">
         </div>
         <div class="logo">
-          <img src="/_nuxt/assets/images/process1.svg">
+          <img src="~/assets/images/process1.svg">
         </div>
         <div class="logo">
-          <img src="/_nuxt/assets/images/process2.svg">
+          <img src="~/assets/images/process2.svg">
         </div>
       </div> 
       <div class="mid-model">
