@@ -654,7 +654,7 @@ export default {
   left: 32vw;
   top: 0;
   display: flex;
-  padding: 50px;
+  padding: 30px;
   padding-top: 180px;
   transition: transform 0.7s cubic-bezier(0.32, 0.01, 0, 1);
   transform: translateX(-100vw);
