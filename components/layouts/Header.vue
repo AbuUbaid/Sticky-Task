@@ -382,9 +382,6 @@
             <a>Industries </a>
             <img src="~/assets/icons/right-arrow.svg" />
           </li>
-          <li class="menu-item">
-            <NuxtLink to="/team-augmentation">Team Augmentation</NuxtLink>
-          </li>
           <!-- <li class="menu-item">
             <NuxtLink to="/">Case Studies</NuxtLink>
           </li> -->
