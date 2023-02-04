@@ -66,6 +66,9 @@
       <li class="menu-item-side">
         <a class="engage-list" href="/fixed-price">Fixed Price Project</a>
       </li>
+      <li class="menu-item-side">
+        <a class="engage-list" style="color:#091756 !important; margin-top:2px" href="/fixed-price">Fixed Price Project</a>
+      </li>
       </ul> 
     </div>
 
