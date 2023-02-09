@@ -12,7 +12,7 @@
 
             <div class="logo">
 
-                <img src="~/assets/images/logo.svg" alt="" srcset="">
+                <img src="~/assets/images/snlogo.e8022ac.webp" alt="" srcset="">
             </div>
 
             <div class="request-quote-btn-ctn">
@@ -64,31 +64,46 @@
 
                     <h2>Book a Free Consultation</h2>
 
-                    <form style="padding:12px;">
+                    <form v-on:submit="checkFields"
+                        ref="form"
+                        style="padding:12px;">
                         <div style="padding:4px;" class="form-group">
                             <label for="fullName">Full Name*</label>
                             <br>
-                            <input type="text" id="fullName" required>
+                            <input v-model="formData.name"
+                            :rules="nameRules" type="text" id="fullName" required>
                         </div>
                         <div style="padding:4px;" class="form-group">
                             <label for="workEmail">Work Email*</label>
                             <br>
 
-                            <input type="email" id="workEmail" required>
+                            <input v-model="formData.email"
+                            :rules="emailRules" placeholder="name@gmail.com" type="email" id="workEmail" required>
                         </div>
                         <div style="padding:4px;" class="form-group">
                             <label for="phoneNumber">Phone Number*</label>
                             <br>
 
-                            <input type="tel" id="phoneNumber" required>
+                            <input v-model="formData.phone"
+                            :rules="phoneRules" type="tel" id="phoneNumber" required>
                         </div>
                         <div style="padding:4px;" class="form-group">
                             <label for="message">Message*</label>
                             <br>
 
-                            <textarea id="message" rows="5" required></textarea>
+                            <textarea v-model="formData.message"
+                            :rules="messageRules" id="message" rows="5" required></textarea>
                         </div>
                         <button type="submit" class="lets-connect">LET'S CONNECT!</button>
+                        <v-progress-circular
+                          text-align="center"
+                          indeterminate
+                          color="#E38601"
+                          v-if="loading == true"
+                        ></v-progress-circular>
+                        <p v-if="success" class="successt">
+                          Thanks for getting in touch!
+                        </p>
                     </form>
 
                 </div>
@@ -458,13 +473,24 @@
             <div class="moving-box" id="movingBox">
 
                 <div class="log1">
-                    <img src="" alt="" srcset="">
+                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
                 </div>
-                <div class="log1">logo2</div>
-                <div class="log1">logo3</div>
-                <div class="log1">logo4</div>
-                <div class="log1">logo5</div>
-                <div class="log1">logo6</div>
+                <div class="log1">                    
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                </div>
+                <div class="log1">                    
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                </div>
             </div>
         </marquee>
 
@@ -555,31 +581,46 @@
             <h2>Book a Free Consultation
             </h2>
 
-            <form id="free-consult">
+            <form v-on:submit="checkFields"
+              ref="form"
+              id="free-consult">
                 <div class="form-group">
                     <label for="fullName">Full Name*</label>
                     <br>
-                    <input type="text" id="fullName" required>
+                    <input v-model="formData.name"
+                            :rules="nameRules" type="text" id="fullName" required>
                 </div>
                 <div class="form-group">
                     <label for="workEmail">Work Email*</label>
                     <br>
 
-                    <input type="email" id="workEmail" required>
+                    <input v-model="formData.email"
+                            :rules="emailRules" type="email" id="workEmail" required>
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber">Phone Number*</label>
                     <br>
 
-                    <input type="tel" id="phoneNumber" required>
+                    <input v-model="formData.phone"
+                            :rules="phoneRules" type="tel" id="phoneNumber" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message*</label>
                     <br>
 
-                    <textarea id="message" rows="5" required></textarea>
+                    <textarea v-model="formData.message"
+                            :rules="messageRules"  id="message" rows="5" required></textarea>
                 </div>
                 <button type="submit" class="lets-connect">LET'S CONNECT!</button>
+                <v-progress-circular
+                indeterminate
+                color="#E38601"
+                text-align="center"
+                v-if="loading == true"
+              ></v-progress-circular>
+              <p v-if="success" class="successt">
+                Thanks for getting in touch!
+              </p>
             </form>
 
         </div>
@@ -613,12 +654,53 @@
 
 
 <script>
+import axios from "axios";  
 export default {
   layout: 'ad',
   name: "FreeConsultation",
   data: () => {
     return {
+      loading: false,
+      valid: true,
+      success: false,
+      formData: {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
+      nameRules: [(v) => !!v || "Name is required"],
+      emailRules: [
+        (v) => !!v || "E-mail is required",
+        (v) => /.+@.+\..+/.test(v) || "E-mail must be valid",
+      ],
+      phoneRules: [(v) => !!v || "Phone is required"],
+      messageRules: [
+        (v) => !!v || "Message is required"
+      ],
     };
+  },
+  methods: {
+    checkFields(e) {
+      e.preventDefault();
+      console.log("form data", this.formData);
+      this.loading = true;
+        axios
+          .post("https://formspree.io/f/mbjegoag", this.formData)
+          .then((res) => {
+            console.log("djfksdjf", res);
+            if (res.status == 200) {
+              this.success = true;
+              this.formData = {
+                name: "",
+                email: "",
+                phone: "",
+                message: "",
+              };
+              this.loading = false;
+            }
+          });
+    },
   },
 };
 </script>
@@ -629,6 +711,13 @@ export default {
 body {
   margin: 0px;
   padding: 0px;
+}
+.successt{
+  color:#3D048F !important;
+  font-weight: bold;
+  text-align:center;
+  margin-top: 20px;
+
 }
 
 .button-blue {
@@ -672,7 +761,8 @@ body {
   justify-content: space-between;
 }
 .header-ctn .header-ctn-inner .header .logo img {
-  width: 100%;
+  width: 35%;
+  filter: invert();
 }
 .header-ctn .header-ctn-inner .header .request-quote-btn-ctn {
   display: flex;
@@ -726,7 +816,7 @@ body {
   width: 100%;
 }
 .header-ctn .hero-content .right .form-ctn form .lets-connect {
-  border: 2px solid blue;
+  border: 2px solid #3D048F;
   font-size: 25px;
   padding: 10px 20px;
   border-radius: 10px;
@@ -955,7 +1045,9 @@ body {
 }
 .client-section-ctn .client-section-ctn-inner .moving-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .rating-and-reviews-section {
@@ -1047,7 +1139,7 @@ body {
   margin-top: 2rem;
 }
 .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .lets-connect {
-  border: 2px solid blue;
+  border: 2px solid #3D048F;
   font-size: 25px;
   padding: 10px 20px;
   border-radius: 10px;
@@ -1075,5 +1167,159 @@ body {
 }
 .ready-to-hire-ctn .ready-to-hire-ctn-inner .right-section p {
   color: #54595F;
+}/*# sourceMappingURL=style.css.map */
+@media (max-width: 480px) {
+  .header-ctn {
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .button-blue{
+    margin: 12px auto;
+    display: block;
+  }
+  .ready-to-hire-ctn{
+    padding: 42px;
+  }
+  .rating-and-reviews-section .rating-and-reviews-section-inner .right .review-box{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+  .rating-and-reviews-section .rating-and-reviews-section-inner .right .review-box .person-heading-text{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .about-best-dev-ctn .about-best-dev-ctn-inner .right .why-choose h2{
+    font-size: 22px;
+  }
+  .about-best-dev-ctn .about-best-dev-ctn-inner .right .three-column-section .col1{
+    width: 100%;
+  }
+  .about-best-dev-ctn .about-best-dev-ctn-inner .right .three-column-section .col2{
+    width: 100%;
+  }
+  .about-best-dev-ctn .about-best-dev-ctn-inner .right .three-column-section .col3{
+    width: 100%;
+  }
+  
+  .header-ctn .hero-content h2{
+    margin-bottom: 40px;
+  }
+  .header-ctn .hero-content h1{
+    margin-bottom: 25px !important;
+    margin-top: 25px !important;
+  }
+  .free-consult{
+    flex-direction: column;
+    gap: 0px;
+    align-items: center;
+    width: 71%;
+    margin-left: 50px;
+
+  }
+  .header-ctn .hero-content .right .form-ctn{
+    width: 100% !important;
+  }
+  .header-ctn .hero-content p{
+    margin-bottom: 25px;
+  }
+  .quote-button{
+    display: none;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section h2{
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .header-ctn .header-ctn-inner {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+  .header-ctn .header-ctn-inner .header {
+    flex-direction: column;
+  }
+  .header-ctn .hero-content {
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
+  .header-ctn .hero-content .right {
+    justify-content: flex-start;
+  }
+  .header-ctn .hero-content .right .form-ctn form .lets-connect {
+    font-size: 16px;
+  }
+  .awards-ctn {
+    display: none;
+  }
+  .get-touch-ctn .get-in-touch-ctn-inner {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr;
+  }
+  .hiring-model-ctn {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hiring-model-ctn .hiring-model-ctn-inner {
+    width: 100%;
+  }
+  .hiring-model-ctn .hiring-model-ctn-inner .three-column-section {
+    grid-template-columns: 1fr;
+  }
+  .best-dev-online-ctn {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-best-dev-ctn {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about-best-dev-ctn .about-best-dev-ctn-inner {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .about-best-dev-ctn .about-best-dev-ctn-inner .right .three-column-section {
+    grid-template-columns: 1fr;
+  }
+  .rating-and-reviews-section .rating-and-reviews-section-inner {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form{
+    padding: 0px;
+  }
+  .button-blue1{
+    margin-bottom: 40px;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner .right-section{
+    padding: 12px;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .lets-connect {
+    width: 100%;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .lets-connect:hover {
+      width: 100%;
+      font-size: 19px;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .lets-connect {
+      font-size: 19px;
+  }
+  .header-ctn .hero-content .right .form-ctn form .lets-connect{
+    font-size: 19px;
+  }
+  .header-ctn .hero-content .right .form-ctn form .lets-connect:hover{
+    font-size: 19px;
+  }
 }/*# sourceMappingURL=style.css.map */
 </style>
