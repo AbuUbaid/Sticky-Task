@@ -44,7 +44,7 @@
                 <h1>Hire the Top 1% Tech Talent Remotely & Build Your Dream Team
                 </h1>
 
-                <p>Best Developers Online’s IT Staff Augmentation Services are designed to enable your organization
+                <p>Silicon Newtworks’s IT Staff Augmentation Services are designed to enable your organization
                     to
                     accomplish its short and long-term development goals by boosting your projects. Hire the top 1%
                     tech
@@ -161,7 +161,7 @@
                 </li>
 
                 <li>Urgent requirements for new talents or redundancy are the two situations that haunt modern
-                    businesses. Still, Best Developers Online IT staffing services allow them to have the top IT
+                    businesses. Still, Silicon Newtworks IT staffing services allow them to have the top IT
                     talent work for them, having experience, professional excellence, and everything that your team
                     needs, that too in reasonable IT staff augmentation cost, keeping it all in your budget.
                 </li>
@@ -321,10 +321,10 @@
 
     <div class="best-dev-online-ctn-right">
 
-        <h2>Why Best Developers Online Is The Best Choice For IT Staff Augmentation Services?
+        <h2>Why Silicon Newtworks Is The Best Choice For IT Staff Augmentation Services?
         </h2>
 
-        <p>Best Developers Online works for some of the biggest names in the industry and assists them in achieving
+        <p>Silicon Newtworks works for some of the biggest names in the industry and assists them in achieving
             their organizational goals. From impactful startups to SMBs to Fortune 500 companies and other
             enterprise-scale organizations – our workforce enables all of them to stay ahead of the curve.
         </p>
@@ -351,7 +351,7 @@
                 </h3>
                 <ul>
 
-                    <li>Best Developers Online is a Microsoft Certified Gold Partner
+                    <li>Silicon Newtworks is a Microsoft Certified Gold Partner
                     </li>
 
                     <li>Microsoft Certified Developers
@@ -400,7 +400,7 @@
 
 <div class="about-best-dev-ctn">
 
-    <h2>ABOUT BEST DEVELOPERS ONLINE
+    <h2>ABOUT SILICON NETWORKS
     </h2>
 
 
@@ -448,7 +448,7 @@
                 <h2>Why Choose Siliconn Networks?
                 </h2>
 
-                <p>Best Developers Online is a modern-day technology firm serving Fortune 500 and enterprise-scale
+                <p>Silicon Newtworks is a modern-day technology firm serving Fortune 500 and enterprise-scale
                     organizations all over the world. Our focus is to deliver technology-aided convenience to
                     consumers and use it for the betterment and improvement of the world. Our IT staffing services
                     enable them to meet their short-term and long-term objectives.
@@ -468,11 +468,8 @@
 <!-- client section -->
 
 <div class="client-section-ctn">
-
-    <h2>Clients</h2>
-
     <div class="client-section-ctn-inner">
-
+      <h2>Clients</h2>
         <marquee behavior="" direction="">
 
             <div class="moving-box" id="movingBox">
@@ -498,15 +495,8 @@
                 </div>
             </div>
         </marquee>
-
-
-
-
     </div>
-</div>
-
-
-<!-- rating and reviews -->
+    <!-- rating and reviews -->
 
 <div class="rating-and-reviews-section">
     <h2>Ratings & Reviews
@@ -565,6 +555,7 @@
 
 
     </div>
+</div>
 </div>
 
 <!-- Ready to hire -->
@@ -640,12 +631,12 @@
             <p>Sales Director
             </p>
 
-            <p style="margin-top:0px !important;">sales@bestdevelopersonline.com
+            <p style="margin-top:0px !important;">sales@siliconnet.com
 
             </p>
 
-            <button  class="button-blue1">Headquarter
-                (650) 276-3961
+            <button  class="button-blue1">Headquarter:
+                  855-904-4417
                 </button>
 
 
@@ -893,19 +884,20 @@ body {
 .hiring-model-ctn {
   width: 100%;
   background-color: white;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding: 4rem;
 }
 .hiring-model-ctn .hiring-model-ctn-inner {
-  width: 1240px;
-  margin: auto;
+  /* width: 1240px;
+  margin: auto; */
 }
 .hiring-model-ctn .hiring-model-ctn-inner h2 {
   color: #3D048F;
+  margin-bottom: 12px;
 }
 .hiring-model-ctn .hiring-model-ctn-inner .three-column-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 .hiring-model-ctn .hiring-model-ctn-inner .three-column-section .dedicated-team {
   display: flex;
@@ -1044,10 +1036,18 @@ body {
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  display: flex;
+  gap: 50px;
 }
 .client-section-ctn .client-section-ctn-inner {
-  width: 1240px;
-  margin: auto;
+  flex-basis: 40%;
+  color: #3D048F;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+}
+.client-section-ctn .client-section-ctn-inner h2{
+  color: #3D048F;
+  margin-bottom: 4rem;
 }
 .client-section-ctn .client-section-ctn-inner .moving-box {
   display: flex;
@@ -1057,7 +1057,7 @@ body {
 }
 
 .rating-and-reviews-section {
-  width: 100%;
+  flex-basis: 50%;
   text-align: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1067,26 +1067,37 @@ body {
   margin-bottom: 4rem;
 }
 .rating-and-reviews-section .rating-and-reviews-section-inner {
-  width: 900px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  gap: 50px;
 }
 .rating-and-reviews-section .rating-and-reviews-section-inner .left {
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 2rem;
   text-align: center;
+  align-items: center;
+  gap: 10px;
 }
 .rating-and-reviews-section .rating-and-reviews-section-inner .right .review-box {
   box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.2);
   padding: 2rem;
-  text-align: left;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:10px;
 }
 .rating-and-reviews-section .rating-and-reviews-section-inner .right .review-box .person-heading-text {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:10px;
+  text-align: center;
 }
 
 .free-consult{
@@ -1178,6 +1189,9 @@ body {
   .header-ctn {
     height: -moz-max-content;
     height: max-content;
+  }
+  .client-section-ctn{
+    flex-direction: column;
   }
   .button-blue{
     margin: 12px auto;
@@ -1294,8 +1308,10 @@ body {
     grid-template-columns: 1fr;
   }
   .rating-and-reviews-section .rating-and-reviews-section-inner {
-    width: 100%;
-    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+  .client-section-ctn .client-section-ctn-inner{
+    margin-bottom: 0rem;
   }
   .ready-to-hire-ctn .ready-to-hire-ctn-inner {
     width: 100%;
