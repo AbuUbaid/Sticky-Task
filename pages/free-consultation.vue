@@ -44,7 +44,7 @@
                 <h1>Hire the Top 1% Tech Talent Remotely & Build Your Dream Team
                 </h1>
 
-                <p>Silicon Newtworks’s IT Staff Augmentation Services are designed to enable your organization
+                <p>Silicon Networks’s IT Staff Augmentation Services are designed to enable your organization
                     to
                     accomplish its short and long-term development goals by boosting your projects. Hire the top 1%
                     tech
@@ -101,9 +101,6 @@
                           color="#E38601"
                           v-if="loading == true"
                         ></v-progress-circular>
-                        <p v-if="success" class="successt">
-                          Thanks for getting in touch!
-                        </p>
                     </form>
 
                 </div>
@@ -161,7 +158,7 @@
                 </li>
 
                 <li>Urgent requirements for new talents or redundancy are the two situations that haunt modern
-                    businesses. Still, Silicon Newtworks IT staffing services allow them to have the top IT
+                    businesses. Still, Silicon Networks IT staffing services allow them to have the top IT
                     talent work for them, having experience, professional excellence, and everything that your team
                     needs, that too in reasonable IT staff augmentation cost, keeping it all in your budget.
                 </li>
@@ -321,10 +318,10 @@
 
     <div class="best-dev-online-ctn-right">
 
-        <h2>Why Silicon Newtworks Is The Best Choice For IT Staff Augmentation Services?
+        <h2>Why Silicon Networks Is The Best Choice For IT Staff Augmentation Services?
         </h2>
 
-        <p>Silicon Newtworks works for some of the biggest names in the industry and assists them in achieving
+        <p>Silicon Networks works for some of the biggest names in the industry and assists them in achieving
             their organizational goals. From impactful startups to SMBs to Fortune 500 companies and other
             enterprise-scale organizations – our workforce enables all of them to stay ahead of the curve.
         </p>
@@ -351,7 +348,7 @@
                 </h3>
                 <ul>
 
-                    <li>Silicon Newtworks is a Microsoft Certified Gold Partner
+                    <li>Silicon Networks is a Microsoft Certified Gold Partner
                     </li>
 
                     <li>Microsoft Certified Developers
@@ -448,7 +445,7 @@
                 <h2>Why Choose Siliconn Networks?
                 </h2>
 
-                <p>Silicon Newtworks is a modern-day technology firm serving Fortune 500 and enterprise-scale
+                <p>Silicon Networks is a modern-day technology firm serving Fortune 500 and enterprise-scale
                     organizations all over the world. Our focus is to deliver technology-aided convenience to
                     consumers and use it for the betterment and improvement of the world. Our IT staffing services
                     enable them to meet their short-term and long-term objectives.
@@ -614,9 +611,6 @@
                 text-align="center"
                 v-if="loading == true"
               ></v-progress-circular>
-              <p v-if="success" class="successt">
-                Thanks for getting in touch!
-              </p>
             </form>
 
         </div>
@@ -694,6 +688,7 @@ export default {
                 message: "",
               };
               this.loading = false;
+              this.$router.push('/thankyou');
             }
           });
     },

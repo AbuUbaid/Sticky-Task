@@ -120,9 +120,6 @@
                           color="#E38601"
                           v-if="loading == true"
                         ></v-progress-circular>
-                        <p v-if="success" class="successt">
-                          Thanks for getting in touch!
-                        </p>
                     </form>
 
                 </div>
@@ -482,10 +479,11 @@ export default {
               this.formData = {
                 name: "",
                 email: "",
-                phone: "",
+                phone: "", 
                 message: "",
               };
               this.loading = false;
+              this.$router.push('/thankyou');
             }
           });
     },
