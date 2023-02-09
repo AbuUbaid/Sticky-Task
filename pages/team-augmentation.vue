@@ -72,7 +72,8 @@
         business.
       </p>
       <div class="two-col">
-        <p>
+        <div class="left">
+          <p>
           As you diversify your team, make the most of the experience and
           expertise available in the depth of tribal knowledge. Whether you want
           to expand your in-house development team with a strategic partner or
@@ -81,13 +82,51 @@
           a solid team and ensuring complete transparency and open
           communication.
         </p>
-        <p>
-          In order to help you scale your business with the appropriate
-          resources, we not only bring knowledge to the table but also bring our
-          A-game. We offer you solutions that go beyond the limitations of a
-          unified thought process and fully engage with you to provide you with
-          a business solution that would produce a steady stream of profit.
-        </p>
+        </div>
+        <div class="right">
+          <div class="form-ctn">
+
+                    <h2>Book a Free Consultation</h2>
+
+                    <form v-on:submit="checkFields"
+                        ref="form">
+                        <div style="padding:4px;" class="form-group">
+                            <label for="fullName">Full Name*</label>
+                            <br>
+                            <input v-model="formData.name" type="text" id="fullName" required>
+                        </div>
+                        <div style="padding:4px;" class="form-group">
+                            <label for="workEmail">Work Email*</label>
+                            <br>
+
+                            <input v-model="formData.email" placeholder="name@gmail.com" type="email" id="workEmail" required>
+                        </div>
+                        <div style="padding:4px;" class="form-group">
+                            <label for="phoneNumber">Phone Number*</label>
+                            <br>
+
+                            <input v-model="formData.phone" type="tel" id="phoneNumber" required>
+                        </div>
+                        <div style="padding:4px;" class="form-group">
+                            <label for="message">Message*</label>
+                            <br>
+
+                            <textarea v-model="formData.message" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="lets-connect">LET'S CONNECT!</button>
+                        <v-progress-circular
+                          text-align="center"
+                          indeterminate
+                          color="#E38601"
+                          v-if="loading == true"
+                        ></v-progress-circular>
+                        <p v-if="success" class="successt">
+                          Thanks for getting in touch!
+                        </p>
+                    </form>
+
+                </div>
+        </div>
       </div>
     </div>
     <!-- <div class="dedicated-container">
@@ -360,15 +399,18 @@
 </template>
 
 <script>
+import axios from "axios";  
 import TestimonialSlider from "../components/home/TestimonialSlider.vue";
 export default {
   components: { TestimonialSlider },
   name: "TeamAugmentation",
+  layout: 'teamaug',
   head: {
     title: 'Team Augmentation Services | Silicon Networks',
     meta: [
       {
         // hid: 'description',
+
         name: 'description',
         content: "Maximize your team's potential with our top-notch Staff Augmentation services. Benefit from the expertise of seasoned professionals to achieve your business goals."
       }
@@ -376,6 +418,15 @@ export default {
   },
   data: () => {
     return {
+      loading: false,
+      valid: true,
+      success: false,
+      formData: {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      },
       Faqs: {
         title: "",
         heading: "Frequently Asked Questions",
@@ -416,6 +467,28 @@ export default {
         ],
       },
     };
+  },
+  methods: {
+    checkFields(e) {
+      e.preventDefault();
+      console.log("form data", this.formData);
+      this.loading = true;
+        axios
+          .post("https://formspree.io/f/mbjegoag", this.formData)
+          .then((res) => {
+            console.log("djfksdjf", res);
+            if (res.status == 200) {
+              this.success = true;
+              this.formData = {
+                name: "",
+                email: "",
+                phone: "",
+                message: "",
+              };
+              this.loading = false;
+            }
+          });
+    },
   },
 };
 </script>
@@ -550,7 +623,7 @@ export default {
 }
 
 .manage-container {
-  margin-top: 80px;
+  margin-top: 8px;
   margin-bottom: 50px;
   h2 {
     width: 60%;
@@ -566,10 +639,87 @@ export default {
   }
   .two-col {
     display: flex;
-    gap: 40px;
-    p {
+    gap: 20px;
+    
+    .left{
       flex-basis: 50%;
+
+      p{
+        margin-top: 195px;
+      }
     }
+    .right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-basis: 50%;
+            box-shadow: 0 6px 18px rgb(0 0 0 / 10%);
+
+            .form-ctn {
+                background-color: white;
+                padding: 2rem;
+                border-radius: 15px;
+                width: 100%;
+
+                h2 {
+                  color: #091756;
+                  width: 100%;
+                  font-size: 31px;
+                  margin-bottom: 25px;
+                  text-align: center;
+                }
+
+                form {
+
+                    input {
+                        border: none;
+                        margin-top: 2rem;
+                        border-bottom: 1px solid gray;
+                        width: 100%;
+                    }
+
+                    textarea {
+                        border: none;
+                        border-bottom: 1px solid gray;
+                        width: 100%;
+
+                    }
+
+                    .lets-connect {
+                        background-color: #e38601;
+                        color: #fff;
+                        font-size: 19px;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                        margin-top: 2rem;
+                        cursor: pointer;
+                        width: 100%;
+
+
+
+                    }
+
+                    .lets-connect:hover {
+                        font-size: 19px;
+                        padding: 10px 20px;
+                        border-radius: 10px;
+                        margin-top: 2rem;
+                        cursor: pointer;
+                        width: 100%;
+                        background-color: #000;
+                        color: white;
+                    }
+                    p{
+                      text-align: center;
+                      margin: 25px;
+                      font-weight: 600;
+                      color: #091756;
+                    }
+                }
+
+
+            }
+        }
   }
 }
 
@@ -825,7 +975,7 @@ export default {
   // }
 
   .new-banner {
-    margin-top: 120px;
+    margin-top: 25px;
     .first-content {
       flex-wrap: wrap;
 
@@ -892,10 +1042,23 @@ export default {
       font-size: 18px;
     }
     .two-col {
-      flex-wrap: wrap;
+      flex-direction: column;
       gap: 15px;
-      p {
-        flex-basis: 100%;
+      justify-content: center;
+      align-items: center;
+      .left{
+
+        p{
+          margin-top: 0px;
+        }
+      }
+
+      .right{
+        .form-ctn{
+          h2{
+            font-size: 25px;
+          }
+        }
       }
     }
   }

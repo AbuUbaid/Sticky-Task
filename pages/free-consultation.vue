@@ -243,16 +243,16 @@
                 <ul>
                     <li>
                         <img src="~/assets/images/circle.png" alt="" srcset="">
-                        <p>For large Projects</p>
+                        <p>Full time Dedicated Member</p>
                     </li>
                     <li>
                         <img src="~/assets/images/circle.png" alt="" srcset="">
-                        <p>Evolutionary Enhancements
+                        <p>For Remote team augmentation
                         </p>
                     </li>
                     <li>
                         <img src="~/assets/images/circle.png" alt="" srcset="">
-                        <p>Full time dedicated set of resources
+                        <p>Project Management handled by you
                         </p>
                     </li>
                     <li>
@@ -278,21 +278,26 @@
                 <ul>
                     <li>
                         <img src="~/assets/images/circle.png" alt="" srcset="">
-                        <p>For large Projects</p>
-                    </li>
-                    <li>
-                        <img src="~/assets/images/circle.png" alt="" srcset="">
-                        <p>Evolutionary Enhancements
+                        <p>Pre-Defined Projects
+
                         </p>
                     </li>
                     <li>
                         <img src="~/assets/images/circle.png" alt="" srcset="">
-                        <p>Full time dedicated set of resources
+                        <p>Milestone Based Payment
+                        </p>
+                    </li>
+                    <li>
+                        <img src="~/assets/images/circle.png" alt="" srcset="">
+                        <p>Project Management by Us
+
                         </p>
                     </li>
                     <li>
                         <img src="~/assets/images/circle.png" alt="" srcset="">
                         <p>No Hidden Cost
+
+
                         </p>
                     </li>
                 </ul>
@@ -440,7 +445,7 @@
 
             <div class="why-choose">
 
-                <h2>Why Choose Best Developers Online?
+                <h2>Why Choose Siliconn Networks?
                 </h2>
 
                 <p>Best Developers Online is a modern-day technology firm serving Fortune 500 and enterprise-scale
@@ -627,7 +632,7 @@
 
         <div class="right-section">
 
-            <img style="width:25%" src="~/assets/images/person.png" alt="" srcset="">
+            <img style="width:25%; border-radius: 50%;" src="~/assets/images/chris.png" alt="" srcset="">
 
             <h5 style="margin-top:12px;">Chris Johnson
             </h5>
@@ -916,7 +921,8 @@ body {
 .hiring-model-ctn .hiring-model-ctn-inner .three-column-section ul li {
   display: flex;
   align-items: center;
-  color: #54599D;
+  color: #54595f;
+  margin-top: 12px;
 }
 .hiring-model-ctn .hiring-model-ctn-inner .three-column-section ul li img {
   width: 8%;
