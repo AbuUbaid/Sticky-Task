@@ -70,7 +70,7 @@ export default {
 }
 
 @media (max-width: 480px) {
-
+  
   .about-banner{
     height: 80vh;
     background-position: left;

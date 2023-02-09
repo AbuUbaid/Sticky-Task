@@ -76,7 +76,7 @@ export default {
     'cookie-universal-nuxt',
   ],
   gtm: {
-    id: 'GTM-WJSV6KD'
+    id: 'GTM-T84VFRN'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
