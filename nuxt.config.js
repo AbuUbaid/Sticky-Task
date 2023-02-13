@@ -40,6 +40,11 @@ export default {
         src: "//js-na1.hs-scripts.com/21981248.js",
         defer: true,
       },
+      {
+        hid: "tawk.to",
+        src: "https://embed.tawk.to/63ea565347425128791314d9/1gp5m2egt",
+        defer: true,
+      },
     ],
   },
 
@@ -71,12 +76,9 @@ export default {
   },
 
   // Modules: https://go.nuxtjs.dev/config-modulesmodules: [
-  modules: [
-    '@nuxtjs/gtm',
-    'cookie-universal-nuxt',
-  ],
+  modules: ["@nuxtjs/gtm", "cookie-universal-nuxt"],
   gtm: {
-    id: 'GTM-T84VFRN'
+    id: "GTM-T84VFRN",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

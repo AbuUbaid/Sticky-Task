@@ -57,7 +57,7 @@
                   <img src="~/assets/images/icon_1.png" alt="clutch" />
                   <img src="~/assets/images/icon_2.png" alt="inc" />
                   <img src="~/assets/images/icon_3.png" alt="clutch" />
-                  <img src="~/assets/images/trustpilot.png" alt="microsoft" />
+                  <img style="width:100px; height:100px; filter:grayscale(1)" src="~/assets/images/trustpilot.png" alt="microsoft" />
                 </div>
           <div class="acknowledgements">
             <p>Partners</p>
@@ -611,6 +611,7 @@ body {
   display: flex;
   overflow: hidden;
   gap: 50px;
+  align-items: center;
   img {
     width: 60px;
     height: 60px;
