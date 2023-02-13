@@ -102,7 +102,7 @@
         flex-direction: column;
         gap: 20px;
         box-shadow: 0 2.8125rem 3.75rem 0 rgb(34 34 34 / 10%);
-        padding: 1rem !important;
+        padding: 6px;
         background: white;
         p {
           text-align: center;
@@ -117,7 +117,6 @@
       flex-basis: 50%;
       flex-direction: column;
       gap: 20px;
-      padding: 50px;
       h2 {
         font-size: 35px;
         color: #091756;

@@ -50,14 +50,14 @@
                 </p>
 
                 <div class="free-consult">
-                  <button class="button-blue">Book a Free Consultation</button>
-                  <button class="button-blue">Live Chat</button>
+                  <a href="#free-consult" class="button-blue">Book a Free Consultation</a>
+                  <!-- <button class="button-blue">Live Chat</button> -->
                 </div>
                 <div class="tech-logos">
                   <img src="~/assets/images/icon_1.png" alt="clutch" />
                   <img src="~/assets/images/icon_2.png" alt="inc" />
                   <img src="~/assets/images/icon_3.png" alt="clutch" />
-                  <img src="~/assets/images/PngItem_274930-1-1.png" alt="microsoft" />
+                  <img src="~/assets/images/trustpilot.png" alt="microsoft" />
                 </div>
           <div class="acknowledgements">
             <p>Partners</p>
@@ -377,7 +377,7 @@
 
 <div class="about-best-dev-ctn">
 
-    <h2>ABOUT SILICON NETWORKS
+    <h2>About Silicon Networks
     </h2>
 
 
@@ -499,21 +499,35 @@
 
         <div class="right-section">
 
-            <img style="width:25%; border-radius: 50%;" src="~/assets/images/chris.png" alt="" srcset="">
+          <div class="sn-benifits">
+            <h2>Benefits With Silicon NetWorks</h2>
+          <ul>
+              <li>Dedicated Developers
+              </li>
+              <li>160 Working Hours/Month with Flexible Hiring Models
 
-            <h5 style="margin-top:12px;">Chris Johnson
-            </h5>
+              </li>
+              <li>Simple & Transparent Pricing
 
-            <p>Sales Director
-            </p>
-
-            <p style="margin-top:0px !important;">sales@siliconnet.com
-
-            </p>
-
+              </li>
+              <li>Agile Methodology
+              </li>
+              <li>15 Days Risk-Free Trial
+              </li>
+              <li>Strict NDA Signed for Complete Privacy
+              </li>
+              <li>Faster Resource Accessibility
+              </li>
+              <li>Focus on Your Core Business
+              </li>
+              <li>Large Technical Pool with wider Technology Stack
+              </li>
+          </ul>
+        </div>
             <button  class="button-blue1">Headquarter:
-                  855-904-4417
-                </button>
+            855-904-4417
+            </button>
+            <p style="margin-top:12px !important;">sales@siliconnet.com</p>
 
 
         </div>
@@ -699,8 +713,8 @@ body {
 .header-ctn .hero-content .right .form-ctn {
   background-color: white;
   padding: 1rem;
-  /* border-radius: 15px; */
-  width: 90%;
+  border-radius: 15px;
+  width: 80%;
 }
 .header-ctn .hero-content .right .form-ctn h2 {
   color: #3D048F;
@@ -854,14 +868,19 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 2rem;
 }
-.best-dev-online-ctn .best-dev-online-ctn-right .two-column-section .col1 ul {
+.sn-benifits ul {
   list-style-type: "✓ ";
-  color: #3D048F;
+  color: #54595F;
+  margin-top: 85px;
 }
-.best-dev-online-ctn .best-dev-online-ctn-right .two-column-section .col1 ul li {
+.sn-benifits h2 {
+  color: #000 !important;
+}
+.sn-benifits ul li {
   margin-top: 1rem;
   font-size: 16px;
   color: black;
+  text-align: left;
 }
 .best-dev-online-ctn .best-dev-online-ctn-right .two-column-section .col2 ul {
   list-style-type: "✓ ";
@@ -1107,6 +1126,13 @@ body {
     width: 50px;
   }
   } 
+  .sn-benifits ul{
+    margin-top: 30px;
+  }
+  .ready-to-hire-ctn .ready-to-hire-ctn-inner .right-section p{
+    margin-top: -22px;
+    margin-bottom: 12px;
+  }
   .header-ctn {
     height: -moz-max-content;
     height: max-content;
