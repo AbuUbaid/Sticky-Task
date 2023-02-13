@@ -11,36 +11,32 @@
         <div class="header">
 
             <div class="logo">
-
-                <img src="~/assets/images/snlogo.e8022ac.webp" alt="" srcset="">
+              <NuxtLink to="/">
+                <img src="~/assets/logos/snlogo.webp" alt="Silicon Networks Logo"
+              /></NuxtLink>
             </div>
 
             <div class="request-quote-btn-ctn">
 
                 <div class="phone-icon">
-
                     <div class="circle">
                         <i class="phone-icon fas fa-phone"></i>
                     </div>
-
                 </div>
 
                 <div class="quote-button ">
-
-                    <a href="#free-consult" class="button-blue">Request a Quote</a>
+                    <a href="#free-consult" class="button-blue">START 15 Days Risk Free Trial</a>
+                </div>
+                <div class="quote-button ">
+                <a href="#free-consult" class="button-blue">Request a Quote</a>
                 </div>
             </div>
 
         </div>
         <!-- hero section -->
-
-
         <div class="hero-content">
 
             <div class="left">
-                <h2>Leading IT Staff Augmentation Company</h2>
-                <div class="hr"></div>
-
                 <h1>Hire the Top 1% Tech Talent Remotely & Build Your Dream Team
                 </h1>
 
@@ -57,6 +53,21 @@
                   <button class="button-blue">Book a Free Consultation</button>
                   <button class="button-blue">Live Chat</button>
                 </div>
+                <div class="tech-logos">
+                  <img src="~/assets/images/icon_1.png" alt="clutch" />
+                  <img src="~/assets/images/icon_2.png" alt="inc" />
+                  <img src="~/assets/images/icon_3.png" alt="clutch" />
+                  <img src="~/assets/images/PngItem_274930-1-1.png" alt="microsoft" />
+                </div>
+          <div class="acknowledgements">
+            <p>Partners</p>
+            <div class="ack-logos">
+              <img
+              src="~/assets/logos/goldpartner.webp"
+              alt="Microsoft Gold Partner"
+            />
+            </div>
+          </div>
             </div>
             <div class="right">
 
@@ -70,7 +81,7 @@
                         <div style="padding:4px;" class="form-group">
                             <label for="fullName">Full Name*</label>
                             <br>
-                            <input v-model="formData.name"
+                            <input v-model="formData.name" placeholder="Name"
                             :rules="nameRules" type="text" id="fullName" required>
                         </div>
                         <div style="padding:4px;" class="form-group">
@@ -85,16 +96,17 @@
                             <br>
 
                             <input v-model="formData.phone"
+                            placeholder="Phone"
                             :rules="phoneRules" type="tel" id="phoneNumber" required>
                         </div>
                         <div style="padding:4px;" class="form-group">
-                            <label for="message">Message*</label>
+                            <label for="message">Message</label>
                             <br>
 
                             <textarea v-model="formData.message"
-                            :rules="messageRules" id="message" rows="5" required></textarea>
+                            :rules="messageRules" id="message" rows="5"></textarea>
                         </div>
-                        <button type="submit" class="lets-connect">LET'S CONNECT!</button>
+                        <button type="submit" class="lets-connect">INQUIRE NOW</button>
                         <v-progress-circular
                           text-align="center"
                           indeterminate
@@ -110,72 +122,39 @@
     </div>
 </div>
 
-<!-- Awards -->
+<!-- Clients slider -->
+<div class="client-section-ctn-inner">
+        <marquee behavior="" direction="">
 
-<div class="awards-ctn">
+            <div class="moving-box" id="movingBox">
 
-
-    <div class="awards-ctn-inner">
-
-        <div class="awards-section-left">
-
-            <div class="heading"> Awards:</div>
-            <div class="award-logo"><img src="~/assets/images/icon_1.png" alt="" srcset=""></div>
-            <div class="award-logo"><img src="~/assets/images/icon_2.png" alt="" srcset=""></div>
-            <div class="award-logo"><img src="~/assets/images/icon_3.png" alt="" srcset=""></div>
-        </div>
-        <div class="awards-section-right">
-
-            <div class="microsoft-logo">
-                <img src="~/assets/images/PngItem_274930-1-1.png" alt="" srcset="">
+                <div class="log1">
+                  <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                  <img src="~/assets/images/clientc.webp" alt="" srcset="">
+                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
+                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
+                </div>
             </div>
-        </div>
+        </marquee>
     </div>
-</div>
+  <!-- Top Experts-->
 
-
-<!-- get in touch -->
-
-
-<div class="get-touch-ctn">
-
-
-    <div class="get-in-touch-ctn-inner">
-
-        <div class="get-in-touch-left">
-            <img src="~/assets/images/MicrosoftTeams-image-16-1.png" alt="" srcset="">
-        </div>
-
-        <div class="get-in-touch-right">
-            <h2>Increase Your Chances of Success & Expedite Your Projects with IT Staff Augmentation Services
-            </h2>
-
-            <ul>
-
-                <li>Progressing in today’s technology-dependent world is not easy. Among many factors, having the
-                    right technology talent in your talent is critical. But managing and retaining a team of
-                    technology experts often turns out to be a more significant issue.
-                </li>
-
-                <li>Urgent requirements for new talents or redundancy are the two situations that haunt modern
-                    businesses. Still, Silicon Networks IT staffing services allow them to have the top IT
-                    talent work for them, having experience, professional excellence, and everything that your team
-                    needs, that too in reasonable IT staff augmentation cost, keeping it all in your budget.
-                </li>
-
-                <li>Our IT staff augmentation services are designed to help organizations boost their projects and
-                    acquire the right technology talent on time with no hassle. In all your needs, your extended
-                    engineering team seamlessly fits into your process, reports to your managers, and follows your
-                    delivery methods to uphold the quality that you need.
-                </li>
-            </ul>
-
-            <button class="button-blue">GET IN TOUCH</button>
-        </div>
-    </div>
-</div>
-
-<!-- Hiring Model -->
+  <top-experts />
+  <!-- Hiring Model -->
 
 <div class="hiring-model-ctn">
 
@@ -300,8 +279,9 @@
                 </ul>
             </div>
         </div>
-
-
+        <div class="quote-button-trial">
+            <a href="#free-consult" class="button-blue">START 15 Days Risk Free Trial</a>
+        </div>
     </div>
 </div>
 
@@ -340,7 +320,7 @@
             </li>
         </ul>
 
-        <div class="two-column-section">
+        <!-- <div class="two-column-section">
 
             <div class="col1">
 
@@ -386,7 +366,7 @@
                 </ul>
             </div>
 
-        </div>
+        </div> -->
     </div>
 
 </div>
@@ -442,119 +422,21 @@
 
             <div class="why-choose">
 
-                <h2>Why Choose Siliconn Networks?
+                <h2>Why Choose Silicon Networks?
                 </h2>
 
                 <p>Silicon Networks is a modern-day technology firm serving Fortune 500 and enterprise-scale
                     organizations all over the world. Our focus is to deliver technology-aided convenience to
                     consumers and use it for the betterment and improvement of the world. Our IT staffing services
                     enable them to meet their short-term and long-term objectives.
-
                 </p>
-                <p> We have worked with the world’s leading organizations and brands to deliver unmatched technology
-                    consulting services through IT staff augmentation, providing them a chance to excel in this
-                    ever-competitive world and leveraging the power of digital. Excellence is our top priority, with
-                    no compromise on quality.</p>
             </div>
         </div>
 
 
     </div>
 </div>
-
-<!-- client section -->
-
-<div class="client-section-ctn">
-    <div class="client-section-ctn-inner">
-      <h2>Clients</h2>
-        <marquee behavior="" direction="">
-
-            <div class="moving-box" id="movingBox">
-
-                <div class="log1">
-                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
-                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
-                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
-                    <img src="~/assets/images/clientc.webp" alt="" srcset="">
-                </div>
-                <div class="log1">                    
-                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
-                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
-                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
-                  <img src="~/assets/images/gridb-1.webp" alt="" srcset="">
-                </div>
-                <div class="log1">                    
-                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
-                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
-                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
-                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
-                  <img src="~/assets/images/grid1.webp" alt="" srcset="">
-                </div>
-            </div>
-        </marquee>
-    </div>
-    <!-- rating and reviews -->
-
-<div class="rating-and-reviews-section">
-    <h2>Ratings & Reviews
-    </h2>
-
-    <div class="rating-and-reviews-section-inner">
-
-
-        <div class="left">
-
-            <div class="img"><img src="~/assets/images/inc.png" alt="" srcset=""></div>
-            <div class="img"><img src="~/assets/images/clutch.png" alt="" srcset=""></div>
-            <div class="img"><img src="~/assets/images/trophy.png" alt="" srcset=""></div>
-            <div class="img"><img src="~/assets/images/top-ai.png" alt="" srcset=""></div>
-            <div class="img"><img src="~/assets/images/image-573.png" alt="" srcset=""></div>
-            <div class="img"><img src="~/assets/images/good-girms.png" alt="" srcset=""></div>
-        </div>
-
-        <div class="right">
-
-
-            <div class="review-box">
-
-                <div class="person-heading-text">
-
-                    <div class="img">
-
-                        <img src="~/assets/images/person.png" alt="" srcset="">
-                    </div>
-                    <div class="name-desc">
-
-                        <p><b>Alberto Miedes
-                            </b></p>
-
-                        <p>Senior Technology Consultant, Iqvia
-
-                        </p>
-
-
-                    </div>
-
-                </div>
-                <p>“I would highlight their professionalism, high level of support, and commitment. They did
-                    their best to provide deliverables on time and adapted their work schedule based on the
-                    project milestones. There was a fluent collaboration with them. Different channels were
-                    used depending on the circumstances and criticality of the topics, from the usual Jira &
-                    Confluence tools, Slack for more immediate matters, to email or telco when needed.
-                    Thanks to their efforts, knowledge and excellent work, they conducted the transition to
-                    an internal service team in my company without issues and transparently.”
-
-                </p>
-
-
-            </div>
-        </div>
-
-
-    </div>
-</div>
-</div>
-
+    <testimonial-slider/>
 <!-- Ready to hire -->
 
 <div class="ready-to-hire-ctn">
@@ -580,31 +462,31 @@
                 <div class="form-group">
                     <label for="fullName">Full Name*</label>
                     <br>
-                    <input v-model="formData.name"
+                    <input v-model="formData.name" placeholder="Name"
                             :rules="nameRules" type="text" id="fullName" required>
                 </div>
                 <div class="form-group">
                     <label for="workEmail">Work Email*</label>
                     <br>
 
-                    <input v-model="formData.email"
+                    <input v-model="formData.email" placeholder="name@gmail.com"
                             :rules="emailRules" type="email" id="workEmail" required>
                 </div>
                 <div class="form-group">
                     <label for="phoneNumber">Phone Number*</label>
                     <br>
 
-                    <input v-model="formData.phone"
+                    <input v-model="formData.phone" placeholder="Phone"
                             :rules="phoneRules" type="tel" id="phoneNumber" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message*</label>
+                    <label for="message">Message</label>
                     <br>
 
                     <textarea v-model="formData.message"
-                            :rules="messageRules"  id="message" rows="5" required></textarea>
+                            :rules="messageRules"  id="message" rows="5"></textarea>
                 </div>
-                <button type="submit" class="lets-connect">LET'S CONNECT!</button>
+                <button type="submit" class="lets-connect">INQUIRE NOW</button>
                 <v-progress-circular
                 indeterminate
                 color="#E38601"
@@ -644,6 +526,8 @@
 
 
 <script>
+import TestimonialSlider from "../components/home/TestimonialSlider.vue";
+import TopExperts from "../components/home/TopExperts.vue";
 import axios from "axios";  
 export default {
   layout: 'ad',
@@ -653,6 +537,7 @@ export default {
       loading: false,
       valid: true,
       success: false,
+      title: "Rating & Reviews",
       formData: {
         name: "",
         email: "",
@@ -669,6 +554,10 @@ export default {
         (v) => !!v || "Message is required"
       ],
     };
+  },
+  components: {
+    TestimonialSlider,
+    TopExperts
   },
   methods: {
     checkFields(e) {
@@ -697,11 +586,32 @@ export default {
 </script>
 
 
-<style scoped>
+<style lang="scss" scoped>
 
 body {
   margin: 0px;
   padding: 0px;
+}
+.tech-logos {
+  margin-top: 25px;
+  display: flex;
+  overflow: hidden;
+  gap: 50px;
+  img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+}
+.acknowledgements {
+  margin-top: 50px;
+  .ack-logos {
+    margin-top: 30px;
+    img {
+      width: 300px;
+      margin-right: 15px;
+    }
+  }
 }
 .successt{
   color:#3D048F !important;
@@ -752,12 +662,13 @@ body {
   justify-content: space-between;
 }
 .header-ctn .header-ctn-inner .header .logo img {
-  width: 35%;
-  filter: invert();
+  width: 20%;
+  filter: invert(100);
 }
 .header-ctn .header-ctn-inner .header .request-quote-btn-ctn {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 .header-ctn .hero-content {
   margin-top: 5rem;
@@ -770,6 +681,7 @@ body {
 }
 .header-ctn .hero-content h1 {
   color: white;
+  margin-bottom: 16px;
 }
 .header-ctn .hero-content p {
   color: white;
@@ -786,9 +698,9 @@ body {
 }
 .header-ctn .hero-content .right .form-ctn {
   background-color: white;
-  padding: 2rem;
-  border-radius: 15px;
-  width: 70%;
+  padding: 1rem;
+  /* border-radius: 15px; */
+  width: 90%;
 }
 .header-ctn .hero-content .right .form-ctn h2 {
   color: #3D048F;
@@ -797,9 +709,13 @@ body {
 }
 .header-ctn .hero-content .right .form-ctn form input {
   border: none;
-  margin-top: 2rem;
   border-bottom: 1px solid gray;
   width: 100%;
+  min-height: 40px;
+  margin-top: 5px;
+}
+.header-ctn .hero-content .right .form-ctn form input:focus{
+  outline: none;
 }
 .header-ctn .hero-content .right .form-ctn form textarea {
   border: none;
@@ -808,7 +724,7 @@ body {
 }
 .header-ctn .hero-content .right .form-ctn form .lets-connect {
   border: 2px solid #3D048F;
-  font-size: 25px;
+  font-size: 19px;
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 2rem;
@@ -816,7 +732,7 @@ body {
   width: 100%;
 }
 .header-ctn .hero-content .right .form-ctn form .lets-connect:hover {
-  font-size: 25px;
+  font-size: 19px;
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 2rem;
@@ -881,18 +797,16 @@ body {
   background-color: white;
   padding: 4rem;
 }
-.hiring-model-ctn .hiring-model-ctn-inner {
-  /* width: 1240px;
-  margin: auto; */
-}
 .hiring-model-ctn .hiring-model-ctn-inner h2 {
   color: #3D048F;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .hiring-model-ctn .hiring-model-ctn-inner .three-column-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  align-items: center;
 }
 .hiring-model-ctn .hiring-model-ctn-inner .three-column-section .dedicated-team {
   display: flex;
@@ -926,6 +840,9 @@ body {
 .best-dev-online-ctn .best-dev-online-ctn-right ul {
   padding: 30px;
   list-style: none;
+}
+.best-dev-online-ctn-right h2{
+  margin-bottom: 14px;
 }
 .best-dev-online-ctn .best-dev-online-ctn-right ul li {
   margin-top: 2rem;
@@ -1034,15 +951,9 @@ body {
   display: flex;
   gap: 50px;
 }
-.client-section-ctn .client-section-ctn-inner {
+.client-section-ctn-inner {
   flex-basis: 40%;
   color: #3D048F;
-  padding-top: 2rem;
-  margin-bottom: 4rem;
-}
-.client-section-ctn .client-section-ctn-inner h2{
-  color: #3D048F;
-  margin-bottom: 4rem;
 }
 .client-section-ctn .client-section-ctn-inner .moving-box {
   display: flex;
@@ -1141,8 +1052,12 @@ body {
   border: none;
   border-bottom: 2px solid #3D048F;
   text-align: left;
-  margin-top: 2rem;
+  margin-top: 5px;
   margin-bottom: 1rem;
+  min-height: 40px;
+}
+.ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .form-group input:focus {
+  outline: none;
 }
 .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .form-group textarea {
   width: 100%;
@@ -1152,7 +1067,7 @@ body {
 }
 .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .lets-connect {
   border: 2px solid #3D048F;
-  font-size: 25px;
+  font-size: 19px;
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 2rem;
@@ -1161,7 +1076,7 @@ body {
   background-color: transparent;
 }
 .ready-to-hire-ctn .ready-to-hire-ctn-inner .book-free-cons-section form .lets-connect:hover {
-  font-size: 25px;
+  font-size: 19px;
   padding: 10px 20px;
   border-radius: 10px;
   margin-top: 2rem;
@@ -1177,10 +1092,21 @@ body {
   align-items: center;
   justify-content: center;
 }
+.quote-button-trial{
+  margin-top: 30px;
+  text-align: center;
+}
 .ready-to-hire-ctn .ready-to-hire-ctn-inner .right-section p {
   color: #54595F;
 }/*# sourceMappingURL=style.css.map */
 @media (max-width: 480px) {
+   
+  .tech-logos {
+    gap: 30px;
+    img {
+    width: 50px;
+  }
+  } 
   .header-ctn {
     height: -moz-max-content;
     height: max-content;

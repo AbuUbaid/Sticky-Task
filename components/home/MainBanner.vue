@@ -12,12 +12,10 @@
         <div class="home-slide">
           <div class="text-area">
             <h1>
-              We Ideate,
-              Innovate, & Inspire Technology Solutions
+              Let’s whip you up an engineering team.
             </h1>
-            <p>Enterprises . Growth Companies . Startups</p>
             <a href="#contact-form" class="explore-link"
-              >Let's Talk</a>
+              >Let's Build</a>
             <img
               src="~/assets/logos/goldpartner.webp"
               alt="Microsoft Gold Partner"

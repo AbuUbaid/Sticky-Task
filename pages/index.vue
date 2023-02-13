@@ -5,12 +5,12 @@
     <!-- <global-form /> -->
     <counter-area :counterData="counterData" />
     <services-card />
-    <top-rated-solutions/>
     <two-image-banner />
     <solution-cards />
     <!-- <case-study-slide /> -->
     <our-clients />
-    <growth-hop />
+    <!-- <growth-hop /> -->
+    <top-rated-solutions/>
     <testimonial-slider />
     <hardware-partners />
     <!-- <logo-slider /> -->
@@ -61,6 +61,7 @@ export default {
   data: () => {
     return {
       tab: null,
+      titleName:'Testimonial',
       counterData: {
         heading: "Achieving Substantial Solutions Through Holistic Approach",
         subheading: "We Provide Best And Best Only",
