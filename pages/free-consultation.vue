@@ -500,7 +500,7 @@
         <div class="right-section">
 
           <div class="sn-benifits">
-            <h2>Benefits With Silicon NetWorks</h2>
+            <h2>Benefits With Silicon Networks</h2>
           <ul>
               <li>Dedicated Developers
               </li>
