@@ -59,7 +59,7 @@
       </div>
     </div>
     <div class="copyright">
-      <p>© 2022, Copyrights @ Silicon Networks</p>
+      <p>© 2023, Copyrights @ Silicon Networks</p>
       <p>All Right Reserved.</p>
     </div>
     <div  v-if="show_notice" class="cookie-notice-container" style="color:#fff;">
