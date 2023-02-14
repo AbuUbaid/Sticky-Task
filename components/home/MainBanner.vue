@@ -1,19 +1,19 @@
 <template>
   <div class="banner-container home-slides">
     <v-carousel
-      :continuous="false"
+      :continuous="true"
       :cycle="false"
       :interval="5000"
       :show-arrows="false"
-      hide-delimiters
       height="100vh"
     >
       <v-carousel-item>
         <div class="home-slide">
           <div class="text-area">
             <h1>
-              Let’s whip you up an engineering team.
+              We Ideate, Innovate, & Inspire Technology Solutions
             </h1>
+            <p>Enterprises . Growth Companies . Startups</p>
             <a href="#contact-form" class="explore-link"
               >Let's Build</a>
             <img
@@ -24,12 +24,12 @@
           <div class="image-area side-img sideimg1"></div>
         </div>
       </v-carousel-item>
-      <!-- <v-carousel-item>
+      <v-carousel-item>
         <div class="home-slide">
           <div class="text-area">
-            <h1>Leading The Future Of Innovative Business</h1>
+            <h1>Let’s whip you up an engineering team.</h1>
             <NuxtLink to="/contact" class="explore-link"
-              >Let's get to work</NuxtLink
+              >Let's Build</NuxtLink
             >
             <img
               src="~/assets/logos/goldpartner.webp"
@@ -38,7 +38,7 @@
           </div>
           <div class="image-area side-img sideimg2"></div>
         </div>
-      </v-carousel-item> -->
+      </v-carousel-item>
     </v-carousel>
   </div>
 </template>
@@ -99,7 +99,7 @@ export default {
 
 .home-slides .home-slide .image-area {
   width: 51vw;
-  flex-basis: 51vw;
+  flex-basis: 53vw;
 }
 
 .home-slides .home-slide .side-img.image-area {
@@ -111,7 +111,7 @@ export default {
   background: url("~/assets/images/STBanner.webp");
 }
 .sideimg2 {
-  background: url("~/assets/images/secondbanner.webp");
+  background: url("~/assets/images/main-page.webp");
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {

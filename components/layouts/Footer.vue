@@ -25,7 +25,7 @@
           <h3>Dubai</h3>
           <p>Office 403, Bay Square Building 3 - Dubai - UAE</p>
         </div>
-        <div class="footer-text">
+        <!-- <div class="footer-text">
           <h3>Karachi Office</h3>
           <p>47 Street No 6،, Darul Aman Society PECHS, Karachi, Pakistan</p>
         </div>
@@ -35,7 +35,7 @@
             30 Khayaban-e-Iqbal, Sector XX DHA Phase 3, Lahore, Pakistan <br />
             +92 (423) 544 5651-2
           </p>
-        </div>
+        </div> -->
       </div>
       <div class="footer-subscribe">
         <h3>Stay In Touch</h3>

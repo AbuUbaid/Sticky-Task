@@ -18,8 +18,8 @@
             Boost your team's momentum and expertise with capable engineers and
             talent.
           </p>
-          <a href="#contact-form" class="cta-orange">Hire a Team</a>
           <a href="#contact-form" class="cta-orange">Free Consultation</a>
+          <a href="#contact-form" class="cta-orange">Hire a Team</a>
           <div class="tech-logos">
             <img src="~/assets/logos/js.svg" alt="Node Js" />
             <img src="~/assets/logos/python.svg" alt="Python" />
@@ -62,17 +62,18 @@
       </div>
     </div>
     <div class="home-container manage-container">
-      <h2>
+      <div class="two-col">
+        
+        <div class="left">
+          <h2>
         Manage Development Using the Agile Process and Achieve Business
         Objectives As A Team
       </h2>
-      <p class="tagline">
+          <p class="tagline">
         Our guiding principle: If you succeed, we succeed. Thus, our teams
         provide custom-tailored solutions to meet the requirements of your
         business.
       </p>
-      <div class="two-col">
-        <div class="left">
           <p>
           As you diversify your team, make the most of the experience and
           expertise available in the depth of tribal knowledge. Whether you want
@@ -623,28 +624,21 @@ export default {
 .manage-container {
   margin-top: 8px;
   margin-bottom: 50px;
-  h2 {
-    width: 60%;
-  }
-  p.tagline {
-    width: 70%;
-    margin-top: 30px;
-
-    margin-bottom: 15px;
-    font-size: 20px;
-    font-family: "Gilroy-Medium";
-    color: #ef861d;
-  }
   .two-col {
     display: flex;
     gap: 20px;
+    margin-top: 50px;
     
     .left{
       flex-basis: 50%;
+      p.tagline {
+      margin-top: 35px;
 
-      p{
-        margin-top: 195px;
-      }
+      margin-bottom: 40px;
+      font-size: 20px;
+      font-family: "Gilroy-Medium";
+      color: #ef861d;
+    }
     }
     .right {
             display: flex;
@@ -1034,11 +1028,7 @@ export default {
     h2 {
       width: 100%;
     }
-    p.tagline {
-      width: 100%;
-      margin-top: 15px;
-      font-size: 18px;
-    }
+    
     .two-col {
       flex-direction: column;
       gap: 15px;
@@ -1046,9 +1036,11 @@ export default {
       align-items: center;
       .left{
 
-        p{
-          margin-top: 0px;
-        }
+        p.tagline {
+      width: 100%;
+      margin-top: 15px;
+      font-size: 18px;
+      }
       }
 
       .right{
