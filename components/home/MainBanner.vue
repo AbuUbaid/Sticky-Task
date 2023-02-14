@@ -79,6 +79,7 @@ export default {
   color: white;
   max-width: 571px;
   line-height: 1.5em;
+  font-size: 37px;
 }
 
 .home-slides .home-slide .text-area p {
