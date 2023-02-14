@@ -11,9 +11,9 @@
         <div class="header">
 
             <div class="logo">
-              <NuxtLink to="/">
+              <a href="/">
                 <img src="~/assets/logos/snlogo.webp" alt="Silicon Networks Logo"
-              /></NuxtLink>
+              /></a>
             </div>
 
             <div class="request-quote-btn-ctn">

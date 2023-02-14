@@ -4,10 +4,7 @@
      <div class="overlay"></div>
      <div class="header">
 
-      <div class="logo">
-
-      <img src="~/assets/images/snlogo.e8022ac.webp" alt="" srcset="">
-      </div>
+      <div class="logo"> <a href="/"><img src="~/assets/images/snlogo.e8022ac.webp" alt="" srcset=""/></a>      </div>
 
       <div class="request-quote-btn-ctn">
         Toll Free 855-904-4417
@@ -15,7 +12,8 @@
       </div>
 
       </div>
-      <div class="thanks">
+      <div class="inner-section">
+        <div class="thanks">
         <div>
           <h2>Thank you for considering Siliconn Netwroks</h2>
         </div>
@@ -25,9 +23,7 @@
         <div>
           <p>We look forward to working with you.</p>
         </div>
-        <div>
-          <p>Please check your inbox and spam (junk) folder for payment confirmation email.</p>
-        </div>
+      </div>
       </div>
       <div class="footer">
          <p>Copyright © 2023 Silicon Networks - All Rights Reserved</p>
@@ -53,19 +49,20 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #181e2a;
+  background: #fff;
   padding: 8px 50px;
   .logo{
     img{
-      width: 35%;
-      filter: invert(100);
+      width: 20%;
     }
   }
   .request-quote-btn-ctn {
   display: flex;
   justify-content: space-between;
-  color: #fff;
   }
+}
+.inner-section{
+  background: #ecf5ff;
 }
 .thanks{
   display: flex;
@@ -73,19 +70,19 @@ export default {
   justify-content: center;
   gap: 25px;
   text-align: center;
-  margin-top: 90px;
+  padding: 50px;
 }
 .footer{
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: #181e2a;
+  background: #f9f9f9;
   padding:50px;
   margin-top: 80px;
-  border-top: 6px solid #c00f01;;
+  border-top: 6px solid #081653;
   p{
-    color: #fff;
+    color: #000;
   }
 }
 
