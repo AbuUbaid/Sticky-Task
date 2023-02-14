@@ -154,6 +154,7 @@
   <!-- Top Experts-->
 
   <top-experts />
+
   <!-- Hiring Model -->
 
 <div class="hiring-model-ctn">
@@ -286,92 +287,8 @@
 </div>
 
 
-<!-- Best Developer Online -->
-
-
-<div class="best-dev-online-ctn">
-
-    <div class="best-dev-online-ctn-left">
-        <img src="~/assets/images/shutterstock_1716024505-1.jpg" alt="" srcset="">
-
-    </div>
-
-    <div class="best-dev-online-ctn-right">
-
-        <h2>Why Silicon Networks Is The Best Choice For IT Staff Augmentation Services?
-        </h2>
-
-        <p>Silicon Networks works for some of the biggest names in the industry and assists them in achieving
-            their organizational goals. From impactful startups to SMBs to Fortune 500 companies and other
-            enterprise-scale organizations – our workforce enables all of them to stay ahead of the curve.
-        </p>
-
-        <ul>
-
-            <li>
-                Expert Developers With 10+ Years of Experience
-
-            </li>
-
-            <li>108 Worldwide Clients (Mostly Fortune 500 Companies)
-            </li>
-
-            <li> 200+ Silicon Valley-Caliber Developers
-            </li>
-        </ul>
-
-        <!-- <div class="two-column-section">
-
-            <div class="col1">
-
-                <h3>Certifications & Partner
-                </h3>
-                <ul>
-
-                    <li>Silicon Networks is a Microsoft Certified Gold Partner
-                    </li>
-
-                    <li>Microsoft Certified Developers
-                    </li>
-                    <li>Seamless Communication Channels
-                    </li>
-                    <li>360 Development Methodology
-                    </li>
-                    <li>In-Depth Knowledge of Development Tools & Framework
-                    </li>
-                    <li>Clearly Defined Steps & Procedures
-                    </li>
-                    <li>Strict Quality Testing Process
-                    </li>
-                </ul>
-            </div>
-            <div class="col2">
-
-                <h3>Experience & Skills
-                </h3>
-                <ul>
-
-                    <li>15+ Years of Development Experience
-                    </li>
-                    <li>Numerous Successful Projects Delivered for Various Industries
-                    </li>
-                    <li>Reasonably Priced Development Solutions
-                    </li>
-                    <li>Top Rated Developers
-                    </li>
-                    <li>Round The Clock Support & Maintenance
-                    </li>
-                    <li>Experienced Developers with Extensive Knowledge
-                    </li>
-                </ul>
-            </div>
-
-        </div> -->
-    </div>
-
-</div>
-
-
+<!-- Technical Stack -->
+<technical-stack />
 <!-- about best developer -->
 
 
@@ -436,7 +353,48 @@
 
     </div>
 </div>
-    <testimonial-slider/>
+
+   <div class="testi-section">
+    <div class="sec1">
+      <h2>Why Silicon Networks Is The Best Choice For IT Staff Augmentation Services?
+        </h2>
+        <!-- Best Developer Online -->
+      <div class="best-dev-online-ctn">
+      <div class="best-dev-online-ctn-left">
+          <img src="~/assets/images/shutterstock_1716024505-1.jpg" alt="" srcset="">
+
+      </div>
+
+      <div class="best-dev-online-ctn-right">
+
+          <p>Silicon Networks works for some of the biggest names in the industry and assists them in achieving
+              their organizational goals. From impactful startups to SMBs to Fortune 500 companies and other
+              enterprise-scale organizations – our workforce enables all of them to stay ahead of the curve.
+          </p>
+      </div>
+
+      </div>
+      <!-- <ul>
+
+        <li>
+            Expert Developers With 10+ Years of Experience
+
+        </li>
+
+        <li>108 Worldwide Clients (Mostly Fortune 500 Companies)
+        </li>
+
+        <li> 200+ Silicon Valley-Caliber Developers
+        </li>
+        </ul> -->
+    </div>
+    <div class="sec2">
+        <!-- Testimonials -->
+        <testimonial-slider/>
+    </div>
+   </div>
+ 
+
 <!-- Ready to hire -->
 
 <div class="ready-to-hire-ctn">
@@ -542,6 +500,7 @@
 <script>
 import TestimonialSlider from "../components/home/TestimonialSlider.vue";
 import TopExperts from "../components/home/TopExperts.vue";
+import TechnicalStack from "../components/home/TechnicalStack.vue";
 import axios from "axios";  
 export default {
   layout: 'ad',
@@ -571,7 +530,8 @@ export default {
   },
   components: {
     TestimonialSlider,
-    TopExperts
+    TopExperts,
+    TechnicalStack
   },
   methods: {
     checkFields(e) {
@@ -636,6 +596,20 @@ body {
 
 }
 
+.testi-section{
+  display: flex;
+  gap: 20px;
+}
+.testi-section .sec1{
+  flex-basis: 70%;
+}
+.testi-section .sec1 h2{
+  text-align: center;
+  margin-top: 50px;
+}
+.testi-section .sec2{
+  flex-basis: 30%;
+}
 .button-blue {
   background-color: #3D048F;
   color: white;
@@ -847,27 +821,24 @@ body {
 .best-dev-online-ctn {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 3rem;
+  grid-gap: 2rem;
+  align-items: center;
+  padding: 30px;
 }
 .best-dev-online-ctn .best-dev-online-ctn-left img {
   width: 100%;
 }
-.best-dev-online-ctn .best-dev-online-ctn-right ul {
+.testi-section .sec1  ul {
   padding: 30px;
   list-style: none;
 }
 .best-dev-online-ctn-right h2{
   margin-bottom: 14px;
 }
-.best-dev-online-ctn .best-dev-online-ctn-right ul li {
+.testi-section .sec1 ul li {
   margin-top: 2rem;
   color: #3D048F;
   font-size: 22px;
-}
-.best-dev-online-ctn .best-dev-online-ctn-right .two-column-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
 }
 .sn-benifits ul {
   list-style-type: "✓ ";
@@ -1290,6 +1261,10 @@ body {
   }
   .header-ctn .hero-content .right .form-ctn form .lets-connect:hover{
     font-size: 19px;
+  }
+
+  .testi-section{
+    flex-direction: column;
   }
 }/*# sourceMappingURL=style.css.map */
 </style>
