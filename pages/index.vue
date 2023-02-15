@@ -29,7 +29,7 @@ import LogoSlider from "../components/home/LogoSlider.vue";
 import MainBanner from "../components/home/MainBanner.vue";
 import ServicesCard from "../components/home/ServicesCard.vue";
 import SolutionCards from "../components/home/SolutionCards.vue";
-import TestimonialSlider from "../components/home/TestimonialSlider.vue";
+import TestimonialSlider from "../components/home/TestimonialSliderHome.vue";
 import TwoImageBanner from "../components/home/TwoImageBanner.vue";
 export default {
   components: {

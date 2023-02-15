@@ -72,14 +72,14 @@ export default {
   justify-content: end;
   background-color: #091756;
   padding-left: 70px;
-  padding-bottom: 80px;
+  padding-bottom: 202px;
 }
 
 .home-slides .home-slide .text-area h1 {
   color: white;
   max-width: 571px;
   line-height: 1.5em;
-  font-size: 37px;
+  font-size: 40px;
 }
 
 .home-slides .home-slide .text-area p {

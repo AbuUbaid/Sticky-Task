@@ -127,9 +127,10 @@ ul {
 }
 
 .home-slides .v-carousel__controls {
-  justify-content: center !important;
-  /* left: 64px !important;
-  bottom: 10px; */
+  justify-content: start !important;
+  left: 64px !important;
+  bottom: 10px;
+  background: none !important;
 }
 
 .home-slides .v-carousel__controls__item.v-btn {
