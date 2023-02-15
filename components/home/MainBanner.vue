@@ -2,8 +2,7 @@
   <div class="banner-container home-slides">
     <v-carousel
       :continuous="true"
-      :cycle="false"
-      :interval="5000"
+      :cycle="true"
       :show-arrows="false"
       height="100vh"
     >
