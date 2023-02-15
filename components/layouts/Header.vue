@@ -59,9 +59,15 @@
       </li>
       </ul> 
       <ul class="menu-side">
-        <h2>Engagement Models</h2>
+        <h2>Team Augmentation</h2>
       <li class="menu-item-side">
-        <a class="engage-list" href="/team-augmentation">Build Your Dedicated Teams</a>
+        <a class="engage-list" href="/team-augmentation">Remote Staffing</a>
+      </li>
+      <li class="menu-item-side">
+        <a class="engage-list" href="/team-augmentation">Recruitment Process Outsourcing </a>
+      </li>
+      <li class="menu-item-side">
+        <a class="engage-list" href="/solutions/hr-connect">HR Consulting  </a>
       </li>
       <li class="menu-item-side">
         <a class="engage-list" href="/fixed-price">Fixed Price Project</a>
@@ -246,11 +252,16 @@
                     </div>
                   </div>
                   <div class="engage-models">
-                    <h2 class="engagment-head">Engagement Models</h2>
+                    <h2 class="engagment-head">Team Augmentation</h2>
                     <ul class="menu-side">
                       <li class="engage-list">
-                        <a class="engage-list" href="/team-augmentation">Build Your Dedicated Teams</a>
-
+                        <a class="engage-list" href="/team-augmentation">Remote Staffing</a>
+                      </li>
+                      <li class="engage-list">
+                        <a class="engage-list" href="/team-augmentation">Recruitment Process Outsourcing </a>
+                      </li>
+                      <li class="engage-list">
+                        <a class="engage-list" href="/solutions/hr-connect">HR Consulting </a>
                       </li>
                       <li class="engage-list">
                         <a class="engage-list" href="/fixed-price">Fixed Price Project</a>
