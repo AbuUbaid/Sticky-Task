@@ -56,6 +56,21 @@
           </div>
         </div>
       </div>
+      <div class="testi-slide mobile-slider" >
+          <div class="text-area" >
+            <div class="inner-wrap" style="padding: 0.9rem 1.9rem 2rem;">
+              <!-- <p class="title">Testimonial</p> -->
+              <p>
+                We're satisfied with what Silicon Networks has done to help us
+                reach our digital marketing goals. We recommend Silicon Networks if you need help with a digital project.
+              </p>
+            </div>
+            <div class="client-inner-wrap">
+              <p class="client-name">Eddie Walker</p>
+              <p>Salsoft Technologies</p>
+            </div>
+          </div>
+        </div>
       </v-carousel-item>
       <v-carousel-item>
         <div class="testi-monial-slider">
@@ -87,6 +102,19 @@
           </div>
         </div>
       </div>
+      <div class="testi-slide mobile-slider">
+          <div class="text-area">
+            <div class="inner-wrap">
+              <p>
+                I don’t even know where to begin - Silicon Networks added a level of simplicity to our remote hiring process, that we didn’t know even existed.
+              </p>
+            </div>
+            <div class="client-inner-wrap">
+              <p class="client-name">Vaani Gupta</p>
+              <p>People Psyence®</p>
+            </div>
+          </div>
+        </div>
       </v-carousel-item>
       <v-carousel-item>
         <div class="testi-monial-slider">
@@ -119,7 +147,21 @@
             </div>
           </div>
         </div>
-      </div>
+        </div>
+      <div class="testi-slide mobile-slider">
+          <div class="text-area">
+            <div class="inner-wrap">
+              <!-- <p class="title">Testimonial</p> -->
+              <p>
+                It’s a really big deal to offer what Silicon Networks claimed. 5 months in and the operational ease we’re experiencing is indescribable.
+              </p>
+            </div>
+            <div class="client-inner-wrap">
+              <p class="client-name">Cristopher Kummer</p>
+              <p>IMAA</p>
+            </div>
+          </div>
+        </div>
       </v-carousel-item>
     </v-carousel>
   </div>
@@ -136,7 +178,9 @@ export default {
   text-align: center;
   margin-top: 50px;
 }
-
+.mobile-slider{
+  display: none !important;
+}
 .testi-monial-slider{
   display: flex;
   gap: 20px;
@@ -216,6 +260,12 @@ export default {
   .testi-slide {
     flex-wrap: wrap;
     padding: 20px 0px;
+  }
+  .testi-monial-slider{
+    display: none !important;
+  }
+  .mobile-slider{
+    display: flex !important;
   }
   .testi-slide .text-area h3 {
     font-size: 24px;
