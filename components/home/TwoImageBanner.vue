@@ -12,7 +12,7 @@
         <!-- <p>Fixed Price Project</p> -->
         <h2>Let’s Build You A Team Of Quality-Assured Tech Pros Remotely</h2>
         <NuxtLink to="/contact" class="cta-black"
-          >DEVELOP YOUR PRODUCT</NuxtLink
+          >Build your Remote Team</NuxtLink
         >
       </div>
     </div>

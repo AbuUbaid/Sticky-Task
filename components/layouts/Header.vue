@@ -59,7 +59,7 @@
       </li>
       </ul> 
       <ul class="menu-side">
-        <h2>Team Augmentation</h2>
+        <h2>Engagement Models</h2>
       <li class="menu-item-side">
         <a class="engage-list" href="/team-augmentation">Remote Staffing</a>
       </li>
@@ -252,7 +252,7 @@
                     </div>
                   </div>
                   <div class="engage-models">
-                    <h2 class="engagment-head">Team Augmentation</h2>
+                    <h2 class="engagment-head">Engagement Models</h2>
                     <ul class="menu-side">
                       <li class="engage-list">
                         <a class="engage-list" href="/team-augmentation">Remote Staffing</a>
