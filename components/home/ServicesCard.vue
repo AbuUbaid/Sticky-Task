@@ -13,10 +13,9 @@
       <div class="t-right values-four">
         <NuxtLink to="/services/digital" class="t-four">
           <img src="~/assets/icons/digital.svg" alt="Digital Logo" />
-          <h4>Digital</h4>
+          <h4>Emerging Tech</h4>
           <p>
-            Create digital Infrastructures, Design websites and make an online
-            impact.
+            Businesses may find it difficult to keep up with the risks and opportunities that powerful new technologies present. Learn more about the market impact of new technology and how it can affect businesses in the short and long term.
           </p>
         </NuxtLink>
         <NuxtLink to="/services/devops" class="t-four">
@@ -28,9 +27,9 @@
         </NuxtLink>
         <NuxtLink to="/services/microsoft" class="t-four">
           <img src="~/assets/icons/ms.svg" alt="Microsoft Logo" />
-          <h4>Emerging Tech</h4>
+          <h4>Microsoft Services</h4>
           <p>
-            Businesses may find it difficult to keep up with the risks and opportunities that powerful new technologies present. Learn more about the market impact of new technology and how it can affect businesses in the short and long term.
+            Assessing technological framework and business objective with Microsoft Azure and Dynamics.
           </p>
         </NuxtLink>
         <NuxtLink to="/services/bpo" class="t-four">
