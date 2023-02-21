@@ -8,7 +8,7 @@
         <p id="head">Our Services</p>
         <h2>Let's Level Up Your Business Together</h2>
         <p>We create effective road-map for your success</p>
-        <NuxtLink to="/contact" class="cta-orange">Let's Talk</NuxtLink>
+        <NuxtLink to="/contact" class="cta-orange">Discover More</NuxtLink>
       </div>
       <div class="t-right values-four">
         <NuxtLink to="/services/digital" class="t-four">
@@ -21,18 +21,16 @@
         </NuxtLink>
         <NuxtLink to="/services/devops" class="t-four">
           <img src="~/assets/icons/devops.svg" alt="Dev Ops" />
-          <h4>Dev-Ops And Cloud</h4>
+          <h4>Custom Software Development</h4>
           <p>
-            Best Cloud Services, Cloud consult, transformation, security service
-            and management.
+            Our skilled software developers offer great custom software development services that are used by some of the best businesses and organizations in the world. We have a matrix structure that makes sure the delivery processes are consistent, flexible, and up to the required quality standards.
           </p>
         </NuxtLink>
         <NuxtLink to="/services/microsoft" class="t-four">
           <img src="~/assets/icons/ms.svg" alt="Microsoft Logo" />
-          <h4>Microsoft Services</h4>
+          <h4>Emerging Tech</h4>
           <p>
-            Assessing technological framework and business objective with
-            Microsoft Azure and Dynamics.
+            Businesses may find it difficult to keep up with the risks and opportunities that powerful new technologies present. Learn more about the market impact of new technology and how it can affect businesses in the short and long term.
           </p>
         </NuxtLink>
         <NuxtLink to="/services/bpo" class="t-four">

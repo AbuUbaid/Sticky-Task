@@ -1,11 +1,12 @@
 <template>
   <div class="home-container globe-container">
     <div class="intro-text">
-      <p class="text-center">Mission</p>
+      <p v-if="Footprint?.url != '#'" class="text-center">Mission</p>
       <h2 class="text-center">{{Footprint.heading}}</h2>
     </div>
     <div class="globe-image">
-      <img src="~/assets/images/globe.webp" alt="Globe image" />
+      <img  v-if="Footprint?.url == '#'" src="~/assets/images/footprint1.webp" alt="Globe image" />
+      <img  v-else src="~/assets/images/globe.webp" alt="Globe image" />
     </div>
   </div>
 </template>

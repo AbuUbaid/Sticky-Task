@@ -14,7 +14,7 @@
             </h1>
             <p>Enterprises . Growth Companies . Startups</p>
             <a href="#contact-form" class="explore-link"
-              >Let's Build</a>
+              >Build The Best Now</a>
             <img
               src="~/assets/logos/goldpartner.webp"
               alt="Microsoft Gold Partner"
@@ -28,7 +28,7 @@
           <div class="text-area">
             <h1>Let’s whip you up an engineering team.</h1>
             <NuxtLink to="/contact" class="explore-link"
-              >Let's Build</NuxtLink
+              >Book An Appointment   </NuxtLink
             >
             <img
               src="~/assets/logos/goldpartner.webp"
@@ -114,9 +114,6 @@ export default {
   background: url("~/assets/images/main-page.webp");
 }
 
-@media (min-width: 481px) and (max-width: 1024px) {
-}
-
 @media (max-width: 480px) {
   .home-slides {
     height: 80vh;
@@ -139,6 +136,9 @@ export default {
     padding-bottom: 50px;
     order: 1;
   }
+  .home-slides .home-slide .text-area h1 {
+  font-size: 20px !important;
+}
 
   .home-slides .home-slide .image-area {
     height: 90vw;

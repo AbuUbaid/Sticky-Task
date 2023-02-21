@@ -64,10 +64,10 @@
         <a class="engage-list" href="/team-augmentation">Remote Staffing</a>
       </li>
       <li class="menu-item-side">
-        <a class="engage-list" href="/team-augmentation">Recruitment Process Outsourcing </a>
+        <a class="engage-list" href="/recruitment">Recruitment Process Outsourcing </a>
       </li>
       <li class="menu-item-side">
-        <a class="engage-list" href="/solutions/hr-connect">HR Consulting  </a>
+        <a class="engage-list" href="hr-support">HR Consulting  </a>
       </li>
       <li class="menu-item-side">
         <a class="engage-list" href="/fixed-price">Fixed Price Project</a>
@@ -146,6 +146,20 @@
         </li>
         <li class="menu-item-side">
           <NuxtLink to="/initiative">Initiative</NuxtLink>
+        </li>
+      </ul>
+    </div>
+    <div
+      id="insight-menu"
+      class="mega-menu"
+      v-bind:class="{ open: insightOpen }"
+    >
+      <ul class="menu-side">
+        <li class="menu-item-side">
+          <NuxtLink to="/insights">Blog</NuxtLink>
+        </li>
+        <li class="menu-item-side">
+          <NuxtLink to="/insights">Media</NuxtLink>
         </li>
       </ul>
     </div>
@@ -258,10 +272,10 @@
                         <a class="engage-list" href="/team-augmentation">Remote Staffing</a>
                       </li>
                       <li class="engage-list">
-                        <a class="engage-list" href="/team-augmentation">Recruitment Process Outsourcing </a>
+                        <a class="engage-list" href="/recruitment">Recruitment Process Outsourcing </a>
                       </li>
                       <li class="engage-list">
-                        <a class="engage-list" href="/solutions/hr-connect">HR Consulting </a>
+                        <a class="engage-list" href="/hr-support">HR Consulting </a>
                       </li>
                       <li class="engage-list">
                         <a class="engage-list" href="/fixed-price">Fixed Price Project</a>
@@ -336,8 +350,23 @@
                 </ul>
               </div>
             </li> -->
-            <li class="nav-li">
-              <NuxtLink class="nav-li-tag" to="/insights">Insights </NuxtLink>
+            <li class="nav-li has-child" style="position: relative">
+              <a>Resources
+                <img
+                  class="arrow-icon"
+                  style="margin-right: -15px"
+                  src="~/assets/icons/right-arrow.svg"
+              /></a>
+              <div class="dropdown-content">
+                <ul class="sub sub-menu-block">
+                  <li>
+                    <NuxtLink to="/insights">Blog</NuxtLink>
+                  </li>
+                  <li>
+                  <NuxtLink to="/insights">Media</NuxtLink>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="nav-li">
               <NuxtLink class="nav-li-tag" to="/careers">Careers </NuxtLink>
@@ -403,8 +432,9 @@
             <a>Solutions</a>
             <img src="~/assets/icons/right-arrow.svg" />
           </li>
-          <li class="menu-item">
-            <NuxtLink to="/insights">Insights </NuxtLink>
+          <li @click="openInsight" class="menu-item sub-menu-item">
+            <a>Resources</a>
+            <img  src="~/assets/icons/right-arrow.svg" />
           </li>
           <li class="menu-item">
             <NuxtLink to="/careers">Careers </NuxtLink>
@@ -440,6 +470,7 @@ export default {
       ],
       serviceOpen: false,
       aboutOpen: false,
+      insightOpen: false,
       solutionOpen: false,
       solutionOpenNew: false,
       industryOpen: false,
@@ -470,6 +501,14 @@ export default {
       this.serviceOpen = false;
       this.serviceOpenNew = false;
       this.aboutOpen = !this.aboutOpen;
+    },
+    openInsight() {
+      this.solutionOpen = false;
+      this.industryOpen = false;
+      this.serviceOpen = false;
+      this.serviceOpenNew = false;
+      this.aboutOpen = false;
+      this.insightOpen = !this.insightOpen;
     },
     openServiceNew() {
       this.solutionOpen = false;
@@ -505,6 +544,7 @@ export default {
         this.solutionOpen = false;
         this.industryOpen = false;
         this.aboutOpen = false;
+        this.insightOpen = false;
       }
     },
     closeMega() {
