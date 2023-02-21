@@ -25,6 +25,9 @@ import Plantation from "../components/home/Plantation.vue";
 import BloodDonation from "../components/home/BloodDonation.vue";
 import AWasia from "../components/home/AWasia.vue";
 export default {
+  head: {
+    title: 'Initiative', // Other meta information
+  },
   components: {
     ServiceBanner,
     TechnicalTraining,

@@ -13,7 +13,10 @@ import Verification from "../components/home/Verification.vue";
 import FixedPriceProcess from "../components/home/FixedPriceProcess.vue";
 import WeekProcess from "../components/home/WeekProcess.vue";
 export default {
-  name: "CareersPage",
+  name: "FixedPrice",
+  head: {
+    title: 'Fixed Price Peoject', // Other meta information
+  },
   components: {
     ServiceBanner,
     Verification,

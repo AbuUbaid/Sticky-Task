@@ -505,6 +505,9 @@ import axios from "axios";
 export default {
   layout: 'ad',
   name: "FreeConsultation",
+  head: {
+    title: 'Free Consultation', // Other meta information
+  },
   data: () => {
     return {
       loading: false,

@@ -13,13 +13,16 @@ import Network from "../components/home/SNNetwrok.vue";
 import Employ from "../components/home/EmployBussiness.vue";
 import Support from "../components/home/HrSupport.vue";
 export default {
+  head: {
+    title: 'HR Support', // Other meta information
+  },
   components: {
     ServiceBanner,
     Employ,
     Network,
     Support
   },
-  name: "PRO",
+  name: "HRSupport",
   data: () => {
     return {
       bannerData: {

@@ -32,6 +32,9 @@ import ImpactIcons from "../components/home/ImpactIcons.vue";
 import MissionGlobe from "../components/industry/MissionGlobe.vue";
 var images = require.context("../assets/icons/", false, /\.png$/);
 export default {
+  head: {
+    title: 'Recruitment Process Outsourcing ', // Other meta information
+  },
   components: {
     ServiceBanner,
     Network,
