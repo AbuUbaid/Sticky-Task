@@ -506,7 +506,7 @@ export default {
   layout: 'ad',
   name: "FreeConsultation",
   head: {
-    title: 'Free Consultation', // Other meta information
+    title: 'Book A Free Consultation', // Other meta information
   },
   data: () => {
     return {

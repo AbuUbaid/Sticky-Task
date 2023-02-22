@@ -15,7 +15,7 @@
         <div class="right">
           <div class="form-ctn">
 
-                    <h2>Book a Free Consultation</h2>
+                    <h2>{{ List.fromHeading ? List.fromHeading : "Book a Free Consultation" }}</h2>
 
                     <form v-on:submit="checkFields"
                         ref="form">

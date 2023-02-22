@@ -2,6 +2,7 @@
   <div :class=" Impact?.url == '#' ?  'verify-secpage-devops' : 'verify-secpage-values'">
     <div class="intro-text">
       <h2 class="text-center">{{ Impact ? Impact.heading : ''}} {{ icon?.url }}</h2>
+      <P class="text-center subtext">{{ Impact ? (Impact.text ? Impact.text : '') : ''}}</P>
     </div>
     <div class="values-four">
       <div v-for="(icon, i) in (Impact ? Impact.icons : [])" :key="i" class="t-four">
@@ -32,7 +33,24 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+.hire-dev{
+  h2{
+  width:50%;
+  margin:auto !important;
+  margin-bottom: 14px !important;
+  }
+.subtext{
+  width:50%;
+  margin:auto;
+}
+.values-four {
+  display: flex;
+  justify-content: center !important;
+  gap: 40px;
+  margin-top: 45px;
+}
+}
 .verify-secpage-values {
   background-color: #ECF0FF;
   padding: 50px;
@@ -74,6 +92,17 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .hire-dev{
+  h2{
+  width:100%;
+  }
+.subtext{
+  width:100%;
+}
+.values-four {
+  justify-content: center !important;
+}
+}
   .verify-secpage-values {
     margin: 30px auto;
   }

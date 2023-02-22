@@ -1,0 +1,330 @@
+<template>
+  <div class="techstack-ctn">
+
+
+<div class="techstack-ctn-inner">
+
+    <div class="heading-section">
+
+        <div class="left-section">
+            <h2>Some of the Tech Stacks We Hire For
+            </h2>
+        </div>
+        <div class="right-section">
+            <p>At Remotebase, we hire remote software developers for a wide range of tech stacks. We can surely
+                find the right fit for you!
+
+            </p>
+        </div>
+    </div>
+
+    <div class="slider-container" style="overflow: hidden; width: 100%">
+        <div class="slider" style="display: flex;">
+            <div class="slider-item item1">
+                <img src="~/assets/images/android.svg" alt="Slide 1">
+                <p>Android</p>
+
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/angular.svg" alt="Slide 2">
+                <p>Angular</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/backend.svg" alt="Slide 3">
+                <P>Backend</P>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/blockchain.svg" alt="Slide 4">
+                <p>Blockchain</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/devops.svg" alt="Slide 5">
+                <p>Devops</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/dot-net.svg" alt="Slide 6">
+                <p>Dot-net</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/front-end.svg" alt="Slide 7">
+                <p>Front end</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="slider-container" style="overflow: hidden; width: 100%">
+        <div class="slider" style="display: flex;">
+            <div class="slider-item item1">
+                <img src="~/assets/images/qa.svg" alt="Slide 1">
+                <p>QA</p>
+
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/react-native.svg" alt="Slide 2">
+                <p>React Native</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/reactjs.svg" alt="Slide 3">
+                <P>Reactjs</P>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/blockchain.svg" alt="Slide 4">
+                <p>Blockchain</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/ruby.svg" alt="Slide 5">
+                <p>Ruby</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/stack.svg" alt="Slide 6">
+                <p>Stack</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/swift.svg" alt="Slide 7">
+                <p>Swift</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="slider-container" style="overflow: hidden; width: 100%">
+        <div class="slider" style="display: flex;">
+            <div class="slider-item item1">
+                <img src="~/assets/images/graphql.svg" alt="Slide 1">
+                <p>Graphql</p>
+
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/ios.svg" alt="Slide 2">
+                <p>ios</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/java.svg" alt="Slide 3">
+                <P>Java</P>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/mobile.svg" alt="Slide 4">
+                <p>Mobile</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/nodejs.svg" alt="Slide 5">
+                <p>Node JS</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/php.svg" alt="Slide 6">
+                <p>Php</p>
+            </div>
+            <div class="slider-item">
+                <img src="~/assets/images/python.svg" alt="Slide 7">
+                <p>Python</p>
+            </div>
+        </div>
+    </div>
+
+    <a href="#free-consult" class="hite-talent">Hire Talent</a>
+
+
+
+
+
+</div>
+</div>
+</template>
+
+<script>
+export default {
+  name: "TopTechStack",
+};
+</script>
+
+<stlye lang="scss" sccoped>
+.techstack-ctn {
+    background-color: #3617BA;
+    height: 100vh;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+
+    .techstack-ctn-inner {
+        text-align: left;
+
+        .heading-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+
+            .left-section {
+                h2 {
+                    color: white;
+                    width: 50%;
+                }
+            }
+
+            .right-section {
+                p {
+                    color: white;
+                    width: 82%;
+                }
+            }
+        }
+
+
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 2rem;
+          }
+          
+          .slider {
+            display: flex;
+            width: 200%;
+            animation: slide 10s linear infinite;
+            justify-content: space-between;
+          }
+          
+          .slider-item {
+            width: 10%;
+            height: 70px;
+            background-color: #4023BE;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 1rem;
+            text-align: center;
+            border-radius: 15px;
+
+            p{
+                color: white;
+                font-size: 18px;
+            }
+          }
+
+       
+          
+          @keyframes slide {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          
+          .slider:hover {
+            animation-play-state: paused;
+          }
+
+          .hite-talent{
+            border: none;
+            padding: 15px 40px 15px 40px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 4rem;
+            margin-left: 32rem;
+            background:#fff;
+            display: block;
+            width: fit-content;
+
+          }
+
+          .hite-talent:hover{
+            background-color: #312A50;
+            color: white;
+            cursor: pointer;
+          }
+          
+
+    }
+}
+
+@media (max-width: 480px) {
+    .techstack-ctn {
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 70vh;
+
+    .techstack-ctn-inner {
+        text-align: left;
+
+        .heading-section {
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            gap:20px;
+
+            .left-section {
+                h2 {
+                    color: white;
+                    width: 70%;
+                  text-align: center;
+                  margin: auto;
+                }
+            }
+
+            .right-section {
+                p {
+                    color: white;
+                    width: 70%;
+                  text-align: center;
+                  margin: auto;
+                }
+            }
+        }
+
+
+        .slider-container {
+            overflow: hidden;
+            width: 100%;
+            margin-top: 2rem;
+          }
+          
+          .slider {
+            width: 100%;
+            gap: 20px;
+          }
+          
+          .slider-item {
+            width: 100%; font-size: 18px;
+            }
+          }
+
+       
+          
+          @keyframes slide {
+            0% {
+              transform: translateX(0%);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+          
+          .slider:hover {
+            animation-play-state: paused;
+          }
+
+          .hite-talent{
+            border: none;
+            padding: 15px 40px 15px 40px;
+            border-radius: 15px;
+            cursor: pointer;
+            margin-top: 4rem;
+            margin-left: 32rem;
+            background:#fff;
+
+          }
+
+          .hite-talent:hover{
+            background-color: #312A50;
+            color: white;
+            cursor: pointer;
+          }
+          
+
+    }
+}
+</stlye>

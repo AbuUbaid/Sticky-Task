@@ -455,12 +455,12 @@
 <script>
 export default {
   name: "HeaderMain",
-  head: {
-    title: 'My awesome project', // Other meta information
-    script: [
-      { hid: 'stripe', src: 'https://js.stripe.com/v3/', defer: true }
-    ]
-  },
+  // head: {
+  //   // title: 'My awesome project', // Other meta information
+  //   script: [
+  //     { hid: 'stripe', src: 'https://js.stripe.com/v3/', defer: true }
+  //   ]
+  // },
   data: () => {
     return {
       drawer: null,

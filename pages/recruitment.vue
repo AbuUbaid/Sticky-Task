@@ -151,7 +151,7 @@ export default {
       flex-basis:50%;
     }
   }
-  .values-four {
+.values-four {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
