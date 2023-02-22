@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="post-banner">
-      <img :src="post.fimg_url" :alt="post.title?.rendered + ' image'" />
+      <img :src="post.fimg_url ? post.fimg_url : 'https://sn.softception.digital/wp-content/uploads/2023/02/image5.png' " :alt="post.title?.rendered + ' image'" />
     </div>
     <div class="home-container post-content">
       <h1>{{ post.title?.rendered }}</h1>

@@ -103,7 +103,7 @@ export default {
     return axios
       .get("https://sn.softception.digital/wp-json/wp/v2/posts")
       .then((res) => {
-        console.log(res);
+        console.log("res of blogs", res);
         store.commit("frontPagePosts", res.data);
       })
       .catch((error) => {
