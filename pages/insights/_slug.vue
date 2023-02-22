@@ -25,12 +25,13 @@ export default {
         post: payload,
       };
     } else {
+      console.log("params in blos", params.slug)
       return axios
-        .get("https://sn.softception.digital/wp-json/wp/v2/posts/" + params.id)
+        .get("https://sn.softception.digital/wp-json/wp/v2/posts?slug=" + params.slug)
         .then((res) => {
-          //console.log(res);
+          console.log("imag eurl", res.data[0].fimg_url);
           return {
-            post: res.data,
+            post: res.data[0],
           };
         });
     }
@@ -40,8 +41,11 @@ export default {
 
 <style lang="scss" scoped>
 .post-banner {
+  margin-top: 100px;
+  text-align: center;
   img {
     width: 100%;
+    max-width: 700px;
   }
 }
 .post-content {
