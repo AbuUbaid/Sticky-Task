@@ -93,6 +93,7 @@ export default {
 
 @media (max-width: 480px) {
   .hire-dev{
+    margin: 0px;
   h2{
   width:100%;
   }

@@ -42,7 +42,7 @@
 
                             <textarea v-model="formData.message" id="message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="lets-connect">LET'S CONNECT!</button>
+                        <button type="submit" class="lets-connect">{{ List.fromButton ? List.fromButton : "LET'S CONNECT!" }}</button>
                         <v-progress-circular
                           text-align="center"
                           indeterminate

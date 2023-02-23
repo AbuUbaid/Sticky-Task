@@ -19,11 +19,11 @@
 
             <div class="request-quote-btn-ctn">
 
-                <div class="quote-button">
+                <!-- <div class="quote-button">
                     <a href="#free-consult" class="button-blue">START 15 Days Risk Free Trial</a>
-                </div>
+                </div> -->
                 <div class="quote-button ">
-                <a href="#free-consult" class="button-blue">Hire Now</a>
+                <a href="#free-consult" class="button-blue">Hire Engineers</a>
                 </div>
             </div>
 
@@ -38,7 +38,7 @@
 
                 <div class="free-consult">
                   <a href="#free-consult" class="button-blue">Hire Talent Now </a>
-                  <a href="#free-consult"  class="button-blue">START 15 Days Risk Free Trial</a>
+                  <!-- <a href="#free-consult"  class="button-blue">START 15 Days Risk Free Trial</a> -->
                 </div>
                 <div class="tech-logos">
                   <img src="~/assets/images/icon_1.png" alt="clutch" />
@@ -89,7 +89,7 @@
 <!-- why org choose remote -->
 <div class="remote">
   <h2>Why Organizations Choose Silicon Networks</h2>
-  <p>Here are some reasons why global companies prefer Silicon Networks for hiring remote developers:</p>
+  <p class="subtext">Here are some reasons why global companies prefer Silicon Networks for hiring remote developers:</p>
   <div class="part">
       <div class="part1">
         <img src="~/assets/images/choose.webp" alt="" srcset="">
@@ -107,6 +107,9 @@
       </div>
     </div>
 </div>
+
+<!-- Forbes section -->
+<Forbes />
 <!-- Ready to hire -->
 <div class="ready-to-hire-ctn">
 
@@ -215,6 +218,7 @@ import CounterArea from "../components/home/CounterArea.vue";
 import MissionGlobe from "../components/industry/MissionGlobe.vue";
 import Verification from "../components/home/Verification.vue";
 import TopTechStack from "../components/home/TopTechStack.vue";
+import Forbes from "../components/home/Forbes.vue";
 import IndustryCounter from "../components/industry/IndustryCounter.vue";
 
 var images = require.context("../assets/icons/", false, /\.png$/);
@@ -223,14 +227,13 @@ export default {
   layout: 'ad',
   name: "Hire Remote Developers",
   head: {
-    title: 'Hire Remote Developers', // Other meta information
+    title: 'Hire Best Remote Engineers', // Other meta information
   },
   data: () => {
     return {
       loading: false,
       valid: true,
       success: false,
-      title: "Rating & Reviews",
       formData: {
         name: "",
         email: "",
@@ -239,7 +242,8 @@ export default {
       },
       list : {
         heading:"Supercharged for unicorn startups?",
-        fromHeading:"15-Days Risk Free Trail",
+        fromHeading:"Build Remote Engineering Teams In 48 Hours",
+        fromButton:"CONNECT ME WITH TALENT",
         item: [
             {
               text:"Hassle free hiring"
@@ -250,11 +254,21 @@ export default {
             {
               text:"Dedicated teams"
             },
+            {
+              text:"Receive candidates in next 24 hours"
+            },
+            {
+              text:"Interview Candidates"
+            },
+            {
+              text:"Hire them"
+            },
       ],
         
       },
       Footprint: {
-        heading: `We Are Global`,
+        heading: `Hire the top Talent developers around the globe`,
+        img:'global.webp',
         url:"#"
       },
       IndustryC: {
@@ -335,7 +349,8 @@ export default {
     MissionGlobe,
     CounterArea,
     Verification,
-    TopTechStack
+    TopTechStack,
+    Forbes
   },
   methods: {
     imgUrl: function (path) {
@@ -427,7 +442,7 @@ body {
 }
 .header-ctn .header-ctn-inner .header .logo img {
   width: 20%;
-  filter: invert(100);
+  filter: brightness(0) invert(1);
 }
 .header-ctn .header-ctn-inner .header .request-quote-btn-ctn {
   display: flex;
@@ -723,6 +738,15 @@ body {
   }
   
   .remote {
+
+    h2{
+      margin:14px auto;
+      width:77%
+    }
+    .subtext{
+      width: 80%;
+      margin: 14px auto;
+    }
     .part{
     flex-direction:column;
     gap: 50px;

@@ -5,7 +5,7 @@
       <h2 class="text-center">{{Footprint.heading}}</h2>
     </div>
     <div class="globe-image">
-      <img  v-if="Footprint?.url == '#'" src="~/assets/images/footprint1.webp" alt="Globe image" />
+      <img  v-if="Footprint.url == '#'" src="~/assets/images/global.webp" alt="Globe image" />
       <img  v-else src="~/assets/images/globe.webp" alt="Globe image" />
     </div>
   </div>

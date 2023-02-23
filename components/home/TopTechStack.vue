@@ -11,13 +11,13 @@
             </h2>
         </div>
         <div class="right-section">
-            <p>At Remotebase, we hire remote software developers for a wide range of tech stacks. We can surely
+            <p>At Silicon Networks, we hire remote software developers for a wide range of tech stacks. We can surely
                 find the right fit for you!
 
             </p>
         </div>
     </div>
-
+   <div class="main-slider">
     <div class="slider-container" style="overflow: hidden; width: 100%">
         <div class="slider" style="display: flex;">
             <div class="slider-item item1">
@@ -126,6 +126,8 @@
 
     <a href="#free-consult" class="hite-talent">Hire Talent</a>
 
+  </div>
+
 
 
 
@@ -153,21 +155,24 @@ export default {
         text-align: left;
 
         .heading-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-direction:column;
             align-items: center;
 
             .left-section {
                 h2 {
-                    color: white;
-                    width: 50%;
+                  color: white;
+                  margin: auto;
+                  text-align:center;
                 }
             }
 
             .right-section {
                 p {
                     color: white;
-                    width: 82%;
+                    width: 63%;
+                    margin:14px auto;
+                    text-align:center;
                 }
             }
         }
@@ -245,7 +250,7 @@ export default {
     .techstack-ctn {
     padding-left: 0px;
     padding-right: 0px;
-    height: 70vh;
+    height: 130vh;
 
     .techstack-ctn-inner {
         text-align: left;
@@ -274,8 +279,12 @@ export default {
                 }
             }
         }
-
-
+        .main-slider{
+          display: flex;
+          flex-direction:column;
+          align-items: center;
+          gap:20px;
+        
         .slider-container {
             overflow: hidden;
             width: 100%;
@@ -290,40 +299,13 @@ export default {
           .slider-item {
             width: 100%; font-size: 18px;
             }
-          }
+            .hite-talent{
+            margin-left: 0rem;
 
-       
-          
-          @keyframes slide {
-            0% {
-              transform: translateX(0%);
-            }
-            100% {
-              transform: translateX(-50%);
             }
           }
-          
-          .slider:hover {
-            animation-play-state: paused;
-          }
-
-          .hite-talent{
-            border: none;
-            padding: 15px 40px 15px 40px;
-            border-radius: 15px;
-            cursor: pointer;
-            margin-top: 4rem;
-            margin-left: 32rem;
-            background:#fff;
-
-          }
-
-          .hite-talent:hover{
-            background-color: #312A50;
-            color: white;
-            cursor: pointer;
-          }
-          
+        
+        }  
 
     }
 }
