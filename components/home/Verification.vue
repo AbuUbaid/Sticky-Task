@@ -93,7 +93,8 @@ export default {
 
 @media (max-width: 480px) {
   .hire-dev{
-    margin: 0px;
+    margin: 0px !important;
+    padding: 22px !important;
   h2{
   width:100%;
   }
@@ -125,7 +126,7 @@ export default {
   }
 
   .values-four .t-four {
-    width: 47%;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 20px;
   }

@@ -20,6 +20,7 @@
     "react-helmet": "^6.1.0",
     "vue": "^2.7.10",
     "vue-server-renderer": "^2.7.10",
+    "vue-slick-carousel": "^1.0.6",
     "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
