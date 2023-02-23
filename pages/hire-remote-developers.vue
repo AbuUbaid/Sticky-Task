@@ -83,9 +83,7 @@
  
 <network :List="list" />
 <verification :Impact="Impact1"  class="hire-dev" />
-<TopTechStack />
-<mission-globe :Footprint="Footprint" />
-<industry-counter :IndustryC="IndustryC" />
+<TopTechStack :topTech="topTech"/>
 <!-- why org choose remote -->
 <div class="remote">
   <h2>Why Organizations Choose Silicon Networks</h2>
@@ -109,6 +107,8 @@
 </div>
 
 <!-- Forbes section -->
+<mission-globe :Footprint="Footprint" />
+<industry-counter :IndustryC="IndustryC" />
 <Forbes />
 <!-- Ready to hire -->
 <div class="ready-to-hire-ctn">
@@ -239,6 +239,10 @@ export default {
         email: "",
         phone: "",
         message: "",
+      },
+      topTech:{
+        heading: "Some of the Tech Stacks We Hire For", 
+        description: "At Silicon Networks, we hire remote software developers for a wide range of tech stacks. We can surelyfind the right fit for you!",
       },
       list : {
         heading:"Supercharged for unicorn startups?",

@@ -11,7 +11,7 @@
     <our-clients />
     <!-- <growth-hop /> -->
     <!-- <top-rated-solutions/> -->
-    <TopTechStack />
+    <TopTechStack :topTech="topTech" class="home-toptech"/>
     <testimonial-slider />
     <hardware-partners />
     <!-- <logo-slider /> -->
@@ -89,6 +89,10 @@ export default {
         { title: "Government", link: "" },
         { title: "Apparel & Footwear", link: "" },
       ],
+      topTech:{
+        heading: "Top-Rated Solutions Stack", 
+        description: "Using the most up-to-date and current technology, we create effective solutions for businesses ranging from startups to Fortune 1000.",
+      },
     };
   },
 };

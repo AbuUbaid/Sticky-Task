@@ -7,20 +7,47 @@
     <div class="heading-section">
 
         <div class="left-section">
-            <h2>Some of the Tech Stacks We Hire For
-            </h2>
+            <h2>{{ topTech.heading }}</h2>
         </div>
         <div class="right-section">
-            <p>At Silicon Networks, we hire remote software developers for a wide range of tech stacks. We can surely
-                find the right fit for you!
-
+            <p>
+              {{ topTech.description }}
             </p>
         </div>
     </div>
    <div class="main-slider">
     <div class="slider-container" style="overflow: hidden; width: 100%">
         <div class="slider" style="display: flex;">
-          <div class="slider-item item1">
+          <div class="slider-item mobile-hide item1">
+                <img src="~/assets/images/android.svg" alt="Slide 1">
+                <p>Android</p>
+
+            </div>
+            <div class="slider-item mobile-hide">
+                <img src="~/assets/images/angular.svg" alt="Slide 2">
+                <p>Angular</p>
+            </div>
+            <div class="slider-item mobile-hide">
+                <img src="~/assets/images/backend.svg" alt="Slide 3">
+                <P>Backend</P>
+            </div>
+            <div class="slider-item mobile-hide">
+                <img src="~/assets/images/blockchain.svg" alt="Slide 4">
+                <p>Blockchain</p>
+            </div>
+            <div class="slider-item mobile-hide">
+                <img src="~/assets/images/devops.svg" alt="Slide 5">
+                <p>Devops</p>
+            </div>
+            <div class="slider-item mobile-hide">
+                <img src="~/assets/images/dot-net.svg" alt="Slide 6">
+                <p>Dot-net</p>
+            </div>
+            <div class="slider-item mobile-hide">
+                <img src="~/assets/images/front-end.svg" alt="Slide 7">
+                <p>Front end</p>
+            </div>
+          <div class="slider-item mobile-hide item1">
                 <img src="~/assets/images/android.svg" alt="Slide 1">
                 <p>Android</p>
 
@@ -56,126 +83,32 @@
 
     <div class="slider-container" style="overflow: hidden; width: 100%">
         <div class="slider" style="display: flex;">
-          <div class="slider-item item1">
+            <div class="slider-item mobile-hide item1">
                 <img src="~/assets/images/qa.svg" alt="Slide 1">
                 <p>QA</p>
 
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/react-native.svg" alt="Slide 2">
                 <p>React Native</p>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/reactjs.svg" alt="Slide 3">
                 <P>Reactjs</P>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/blockchain.svg" alt="Slide 4">
                 <p>Blockchain</p>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/ruby.svg" alt="Slide 5">
                 <p>Ruby</p>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/stack.svg" alt="Slide 6">
                 <p>Stack</p>
             </div>
-            <div class="slider-item">
-                <img src="~/assets/images/swift.svg" alt="Slide 7">
-                <p>Swift</p>
-            </div>
-            <div class="slider-item item1">
-                <img src="~/assets/images/qa.svg" alt="Slide 1">
-                <p>QA</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/react-native.svg" alt="Slide 2">
-                <p>React Native</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/reactjs.svg" alt="Slide 3">
-                <P>Reactjs</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/blockchain.svg" alt="Slide 4">
-                <p>Blockchain</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ruby.svg" alt="Slide 5">
-                <p>Ruby</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/stack.svg" alt="Slide 6">
-                <p>Stack</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/swift.svg" alt="Slide 7">
-                <p>Swift</p>
-            </div>
-            <div class="slider-item item1">
-                <img src="~/assets/images/android.svg" alt="Slide 1">
-                <p>Android</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/angular.svg" alt="Slide 2">
-                <p>Angular</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/backend.svg" alt="Slide 3">
-                <P>Backend</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/blockchain.svg" alt="Slide 4">
-                <p>Blockchain</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/devops.svg" alt="Slide 5">
-                <p>Devops</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/dot-net.svg" alt="Slide 6">
-                <p>Dot-net</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/front-end.svg" alt="Slide 7">
-                <p>Front end</p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="slider-container" style="overflow: hidden; width: 100%">
-        <div class="slider" style="display: flex;">
-          <div class="slider-item item1">
-                <img src="~/assets/images/qa.svg" alt="Slide 1">
-                <p>QA</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/react-native.svg" alt="Slide 2">
-                <p>React Native</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/reactjs.svg" alt="Slide 3">
-                <P>Reactjs</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/blockchain.svg" alt="Slide 4">
-                <p>Blockchain</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ruby.svg" alt="Slide 5">
-                <p>Ruby</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/stack.svg" alt="Slide 6">
-                <p>Stack</p>
-            </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/swift.svg" alt="Slide 7">
                 <p>Swift</p>
             </div>
@@ -215,211 +148,37 @@
 
     <div class="slider-container" style="overflow: hidden; width: 100%">
         <div class="slider" style="display: flex;">
-          <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
+            <div class="slider-item mobile-hide item1">
+                <img style="width: 20%;" src="~/assets/images/graphql.svg" alt="Slide 1">
                 <p>Graphql</p>
 
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/ios.svg" alt="Slide 2">
                 <p>ios</p>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/java.svg" alt="Slide 3">
                 <P>Java</P>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/mobile.svg" alt="Slide 4">
                 <p>Mobile</p>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/nodejs.svg" alt="Slide 5">
                 <p>Node JS</p>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/php.svg" alt="Slide 6">
                 <p>Php</p>
             </div>
-            <div class="slider-item">
+            <div class="slider-item mobile-hide">
                 <img src="~/assets/images/python.svg" alt="Slide 7">
                 <p>Python</p>
             </div>
-            <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
-                <p>Graphql</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ios.svg" alt="Slide 2">
-                <p>ios</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/java.svg" alt="Slide 3">
-                <P>Java</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/mobile.svg" alt="Slide 4">
-                <p>Mobile</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/nodejs.svg" alt="Slide 5">
-                <p>Node JS</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/php.svg" alt="Slide 6">
-                <p>Php</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/python.svg" alt="Slide 7">
-                <p>Python</p>
-            </div>
-          <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
-                <p>Graphql</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ios.svg" alt="Slide 2">
-                <p>ios</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/java.svg" alt="Slide 3">
-                <P>Java</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/mobile.svg" alt="Slide 4">
-                <p>Mobile</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/nodejs.svg" alt="Slide 5">
-                <p>Node JS</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/php.svg" alt="Slide 6">
-                <p>Php</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/python.svg" alt="Slide 7">
-                <p>Python</p>
-            </div>
-            <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
-                <p>Graphql</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ios.svg" alt="Slide 2">
-                <p>ios</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/java.svg" alt="Slide 3">
-                <P>Java</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/mobile.svg" alt="Slide 4">
-                <p>Mobile</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/nodejs.svg" alt="Slide 5">
-                <p>Node JS</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/php.svg" alt="Slide 6">
-                <p>Php</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/python.svg" alt="Slide 7">
-                <p>Python</p>
-            </div>
-          <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
-                <p>Graphql</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ios.svg" alt="Slide 2">
-                <p>ios</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/java.svg" alt="Slide 3">
-                <P>Java</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/mobile.svg" alt="Slide 4">
-                <p>Mobile</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/nodejs.svg" alt="Slide 5">
-                <p>Node JS</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/php.svg" alt="Slide 6">
-                <p>Php</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/python.svg" alt="Slide 7">
-                <p>Python</p>
-            </div>
-            <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
-                <p>Graphql</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ios.svg" alt="Slide 2">
-                <p>ios</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/java.svg" alt="Slide 3">
-                <P>Java</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/mobile.svg" alt="Slide 4">
-                <p>Mobile</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/nodejs.svg" alt="Slide 5">
-                <p>Node JS</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/php.svg" alt="Slide 6">
-                <p>Php</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/python.svg" alt="Slide 7">
-                <p>Python</p>
-            </div>
-          <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
-                <p>Graphql</p>
-
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/ios.svg" alt="Slide 2">
-                <p>ios</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/java.svg" alt="Slide 3">
-                <P>Java</P>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/mobile.svg" alt="Slide 4">
-                <p>Mobile</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/nodejs.svg" alt="Slide 5">
-                <p>Node JS</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/php.svg" alt="Slide 6">
-                <p>Php</p>
-            </div>
-            <div class="slider-item">
-                <img src="~/assets/images/python.svg" alt="Slide 7">
-                <p>Python</p>
-            </div>
-            <div class="slider-item item1">
-                <img style="width:100%" src="~/assets/images/graphql.svg" alt="Slide 1">
+            <div class="slider-item mobile-hide item1">
+                <img style="width: 20%;" src="~/assets/images/graphql.svg" alt="Slide 1">
                 <p>Graphql</p>
 
             </div>
@@ -465,10 +224,14 @@
 <script>
 export default {
   name: "TopTechStack",
+  props:['topTech']
 };
 </script>
 
 <stlye lang="scss" sccoped>
+  .home-toptech{
+    background-color: #091756 !important;
+  }
 .techstack-ctn {
     background-color: #3617BA;
     height: 100vh;
@@ -540,7 +303,7 @@ export default {
               transform: translateX(0%);
             }
             100% {
-              transform: translateX(-50%);
+              transform: translateX(-20%);
             }
           }
           
@@ -553,8 +316,7 @@ export default {
             padding: 15px 40px 15px 40px;
             border-radius: 15px;
             cursor: pointer;
-            margin-top: 4rem;
-            margin-left: 32rem;
+            margin: 4rem auto;
             background:#fff;
             display: block;
             width: fit-content;
@@ -608,7 +370,7 @@ export default {
           display: flex;
           flex-direction:column;
           align-items: center;
-          gap:20px;
+          gap:0px;
         
         .slider-container {
             overflow: hidden;
@@ -618,15 +380,14 @@ export default {
           
           .slider {
             width: 100%;
-            gap: 20px;
+            gap: 10px;
           }
           
           .slider-item {
-            width: 100%; font-size: 18px;
-            }
-            .hite-talent{
-            margin-left: 0rem;
-
+            width: 100%; 
+            font-size: 18px;
+            gap: 20px;
+            padding: 35px;
             }
           }
         
