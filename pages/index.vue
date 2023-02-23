@@ -10,7 +10,8 @@
     <!-- <case-study-slide /> -->
     <our-clients />
     <!-- <growth-hop /> -->
-    <top-rated-solutions/>
+    <!-- <top-rated-solutions/> -->
+    <TopTechStack />
     <testimonial-slider />
     <hardware-partners />
     <!-- <logo-slider /> -->
@@ -25,6 +26,7 @@ import GrowthHop from "../components/home/GrowthHop.vue";
 import HardwarePartners from "../components/home/HardwarePartners.vue";
 import OurClients from "../components/home/OurClients.vue";
 import TopRatedSolutions from "../components/home/TopRatedSolutions.vue";
+import TopTechStack from "../components/home/TopTechStack.vue";
 import LogoSlider from "../components/home/LogoSlider.vue";
 import MainBanner from "../components/home/MainBanner.vue";
 import ServicesCard from "../components/home/ServicesCard.vue";
@@ -43,6 +45,7 @@ export default {
     HardwarePartners,
     OurClients,
     TopRatedSolutions,
+    TopTechStack,
     LogoSlider,
     GrowthHop,
     GlobalForm,
