@@ -526,11 +526,11 @@ body {
 .header-ctn {
   background-color: #0b092f;
   width: 100%;
-  height: 165vh;
+  height: 146vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 8rem;
   z-index: 99;
 }

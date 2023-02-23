@@ -234,11 +234,10 @@ export default {
   }
 .techstack-ctn {
     background-color: #3617BA;
-    height: 100vh;
+    height: 85vh;
     padding-left: 50px;
     padding-right: 50px;
-    padding-top: 4rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
 
     .techstack-ctn-inner {
         text-align: left;
@@ -303,7 +302,7 @@ export default {
               transform: translateX(0%);
             }
             100% {
-              transform: translateX(-20%);
+              transform: translateX(-30%);
             }
           }
           
@@ -316,7 +315,7 @@ export default {
             padding: 15px 40px 15px 40px;
             border-radius: 15px;
             cursor: pointer;
-            margin: 4rem auto;
+            margin: 2rem auto;
             background:#fff;
             display: block;
             width: fit-content;
@@ -337,7 +336,7 @@ export default {
     .techstack-ctn {
     padding-left: 0px;
     padding-right: 0px;
-    height: 130vh;
+    height: 108vh;
 
     .techstack-ctn-inner {
         text-align: left;
