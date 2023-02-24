@@ -211,7 +211,7 @@
 
       <div class="ready-to-hire-ctn-inner">
         <div class="book-free-cons-section">
-          <h2>15-Days Risk Free Trail</h2>
+          <h2>Build Remote Engineering Teams In 48 Hours</h2>
 
           <form v-on:submit="checkFields" ref="form" id="free-consult">
             <div class="form-group">
