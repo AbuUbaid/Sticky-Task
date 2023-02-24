@@ -4,6 +4,13 @@
       <h2 class="text-center">{{ Impact ? Impact.heading : ''}} {{ icon?.url }}</h2>
       <P class="text-center subtext">{{ Impact ? (Impact.text ? Impact.text : '') : ''}}</P>
     </div>
+    <div v-if="Impact?.url == '#!1' " class="mid-count">
+        <div class="one">1</div>
+        <div class="line"><hr class="divider"></div>
+        <div class="one">2</div>
+        <div class="line"><hr class="divider"></div>
+        <div class="one">3</div>
+    </div>
     <div class="values-four">
       <div v-for="(icon, i) in (Impact ? Impact.icons : [])" :key="i" class="t-four">
         <img :src="imgUrl(icon.img)" alt="t-four" />
@@ -64,7 +71,31 @@ export default {
   font-size: 40px;
   margin: 10px 0;
 }
+.mid-count{
+    display: flex;
+    gap:50px;
+    margin-top: 30px;
+    justify-content: center;
 
+    .one{
+      text-align: center;
+      background-color: #EF861D;
+      font-size: 36px;
+      font-weight: bold;
+      width: 45px;
+      height: 45px;
+      border-radius: 100%;
+      color: white;
+    }
+    .line{
+      width: 25%;
+      margin-top: 18px;
+
+      .divider{
+        border: 1px solid gray;
+      }
+    }
+  }
 .values-four {
   display: flex;
   justify-content: left;
@@ -92,6 +123,9 @@ export default {
 }
 
 @media (max-width: 480px) {
+  .mid-count{
+   gap: 8px;
+  }
   .hire-dev{
     margin: 0px !important;
     padding: 22px !important;

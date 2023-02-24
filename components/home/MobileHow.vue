@@ -64,7 +64,6 @@ export default {
     gap:50px;
     margin-top: 30px;
     justify-content: center;
-    
 
     .one{
       text-align: center;

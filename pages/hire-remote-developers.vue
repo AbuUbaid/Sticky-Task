@@ -139,30 +139,15 @@
     <!-- Clients slider -->
     <div class="client-section-ctn-inner">
       <h2>Trusted by Top-Tier Companies</h2>
-      <marquee behavior="" direction="">
+      <!-- <marquee behavior="" direction=""> -->
         <div class="moving-box" id="movingBox">
           <div class="log1">
-            <img src="~/assets/images/clientc.webp" alt="" srcset="" />
-            <img src="~/assets/images/grid1.webp" alt="" srcset="" />
-            <img src="~/assets/images/gridb-1.webp" alt="" srcset="" />
-            <img src="~/assets/images/clientc.webp" alt="" srcset="" />
-            <img src="~/assets/images/grid1.webp" alt="" srcset="" />
-            <img src="~/assets/images/gridb-1.webp" alt="" srcset="" />
-            <img src="~/assets/images/clientc.webp" alt="" srcset="" />
-            <img src="~/assets/images/grid1.webp" alt="" srcset="" />
-            <img src="~/assets/images/gridb-1.webp" alt="" srcset="" />
-            <img src="~/assets/images/clientc.webp" alt="" srcset="" />
-            <img src="~/assets/images/grid1.webp" alt="" srcset="" />
-            <img src="~/assets/images/gridb-1.webp" alt="" srcset="" />
-            <img src="~/assets/images/clientc.webp" alt="" srcset="" />
-            <img src="~/assets/images/grid1.webp" alt="" srcset="" />
-            <img src="~/assets/images/gridb-1.webp" alt="" srcset="" />
-            <img src="~/assets/images/clientc.webp" alt="" srcset="" />
-            <img src="~/assets/images/grid1.webp" alt="" srcset="" />
-            <img src="~/assets/images/gridb-1.webp" alt="" srcset="" />
+            <img  src="~/assets/images/client-logo.png" alt="" srcset="" />
+            <!-- <img style="width:52%" src="~/assets/images/grid1.webp" alt="" srcset="" /> -->
+            <!-- <img src="~/assets/images/gridb-1.webp" alt="" srcset="" /> -->
           </div>
         </div>
-      </marquee>
+      <!-- </marquee> -->
     </div>
 
     <network :List="list" />
@@ -198,7 +183,14 @@
     </div>
 
     <!-- Forbes section -->
-    <mission-globe :Footprint="Footprint" />
+    <div class="global-section">
+      <div class="sec1">
+      <mission-globe :Footprint="Footprint" />
+      </div>
+      <div class="sec2">
+        <testimonial-slider/>
+      </div>
+    </div>
     <industry-counter :IndustryC="IndustryC" />
     <Forbes />
     <!-- Ready to hire -->
@@ -263,7 +255,7 @@
                 rows="5"
               ></textarea>
             </div>
-            <button type="submit" class="lets-connect">INQUIRE NOW</button>
+            <button type="submit" class="lets-connect">Hire Talent Now</button>
             <v-progress-circular
               indeterminate
               color="#E38601"
@@ -299,14 +291,13 @@
 
 <script>
 import axios from "axios";
+import TestimonialSlider from "../components/home/TestimonialSlider.vue";
 import Network from "../components/home/SNNetwrok.vue";
 import CounterArea from "../components/home/CounterArea.vue";
 import MissionGlobe from "../components/industry/MissionGlobe.vue";
 import Verification from "../components/home/Verification.vue";
 import TopTechStack from "../components/home/TopTechStack.vue";
 import Forbes from "../components/home/Forbes.vue";
-import IndustryCounter from "../components/industry/IndustryCounter.vue";
-
 var images = require.context("../assets/icons/", false, /\.png$/);
 
 import VueSlickCarousel from "vue-slick-carousel";
@@ -337,13 +328,15 @@ export default {
       },
       topTech: {
         heading: "Some of the Tech Stacks We Hire For",
+        formId: "#free-consult",
         description:
           "At Silicon Networks, we hire remote software developers for a wide range of tech stacks. We can surelyfind the right fit for you!",
       },
       list: {
         heading: "Supercharged for unicorn startups?",
         fromHeading: "Build Remote Engineering Teams In 48 Hours",
-        fromButton: "CONNECT ME WITH TALENT",
+        fromButton: "Hire Talent Now",
+
         item: [
           {
             text: "Hassle free hiring",
@@ -358,10 +351,16 @@ export default {
             text: "Receive candidates in next 24 hours",
           },
           {
+            text: "15 Days Risk-Free Trial",
+          },
+          {
             text: "Interview Candidates",
           },
           {
             text: "Hire them",
+          },
+          {
+            text: "Large Technical Pool with wider Technology Stack",
           },
         ],
       },
@@ -389,7 +388,7 @@ export default {
       Impact1: {
         heading: "Hire Your Ideal Engineering Team In 3 Simple Steps",
         text: "Leverage The Expertise Of The Best Remote Developers And Take The Tech World By Storm Without Going Through The Exhaustive Hiring Process. Here’s How To Hire Remote Developers In The Easiest And Quickest Way.",
-        url: "#!",
+        url: "#!1",
         icons: [
           {
             img: "NoPath - Copy (4).png",
@@ -444,6 +443,7 @@ export default {
   components: {
     Network,
     MissionGlobe,
+    TestimonialSlider,
     CounterArea,
     Verification,
     TopTechStack,
@@ -672,8 +672,26 @@ body {
   justify-content: center;
   flex-direction: column;
   gap: 50px;
-}
 
+  
+}
+.log1{
+    display: flex;
+    gap: 20px;
+    padding: 0px 15px;
+  }
+
+.global-section{
+  display: flex;
+  gap: 40px;
+
+  .sec1{
+    flex-basis: 50%;
+  }
+  .sec2{
+    flex-basis: 50%;
+  }
+}
 .free-consult {
   display: flex;
   margin-top: 25px;
@@ -862,6 +880,17 @@ body {
   color: #54595f;
 } /*# sourceMappingURL=style.css.map */
 @media (max-width: 480px) {
+
+  .global-section{
+  flex-direction: column;
+  gap: 20px;
+}
+  .log1{
+    img{
+      width: 361px;
+      margin-top: 12px;
+    }
+  }
   .slick-track{
     display: none;
   }
