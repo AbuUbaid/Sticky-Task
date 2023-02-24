@@ -492,6 +492,7 @@ body {
 .copyright {
   display: flex;
   justify-content: space-between;
+  padding:25px;
 }
 
 .copyright p {
