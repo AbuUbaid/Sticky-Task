@@ -31,7 +31,7 @@
           </p>
 
           <div class="free-consult">
-            <a href="#free-consult" class="button-blue">Hire Talent Now </a>
+            <a href="#free-consult" class="button-blue">Hire Developers Now </a>
             <!-- <a href="#free-consult"  class="button-blue">START 15 Days Risk Free Trial</a> -->
           </div>
           <div class="tech-logos">
@@ -255,7 +255,7 @@
                 rows="5"
               ></textarea>
             </div>
-            <button type="submit" class="lets-connect">Hire Talent Now</button>
+            <button type="submit" class="lets-connect">Hire Developers Now</button>
             <v-progress-circular
               indeterminate
               color="#E38601"
@@ -284,6 +284,10 @@
           <p style="margin-top: 12px !important">sales@siliconnet.com</p>
         </div>
       </div>
+    </div>
+    <div class="copyright">
+      <p>© 2023, Copyrights @ Silicon Networks</p>
+      <p>All Right Reserved.</p>
     </div>
   </div>
 </template>
@@ -335,7 +339,7 @@ export default {
       list: {
         heading: "Supercharged for unicorn startups?",
         fromHeading: "Build Remote Engineering Teams In 48 Hours",
-        fromButton: "Hire Talent Now",
+        fromButton: "Hire Developers Now",
 
         item: [
           {
@@ -484,6 +488,14 @@ export default {
 body {
   margin: 0px;
   padding: 0px;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright p {
+  font-size: 12px;
 }
 .slick-track{
   display: flex;
