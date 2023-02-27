@@ -84,7 +84,7 @@
           <div class="slide">
             <img src="~/assets/images/img7.png" alt="Slide 7" />
             <h2>Filip Morgen</h2>
-            <p>Backend Developer</p>
+            <p>Backend Developer• Kope, JP</p>
             <p>87% Job Success</p>
           </div>
           </div>
@@ -163,7 +163,7 @@
 
       <div class="ready-to-hire-ctn-inner">
         <div class="book-free-cons-section">
-          <h2>Build Remote Engineering Teams In 48 Hours</h2>
+          <h2>Request a Quote Now</h2>
 
           <form v-on:submit="checkFields" ref="form" id="free-consult">
             <div class="form-group">
@@ -350,18 +350,13 @@ export default {
         },
         {
           heading: "Specialty Staffing",
-          text:"If you are a company based outside India and want skilled remote talent from India, look no further than Silicon Networks. Based on your workforce requirements we identify, screen and hire remote talent to meet your business needs.",
-          img:"n4.svg"
-        },
-        {
-          heading: "Specialty Staffing",
           text:"We specialize in specialty staffing solutions. We sourcing talent for clients that having a need for a unique workforce or for a specific job that requires unique skillsets. We focus on providing a comprehensive level of service with a variety of flexible solutions that meet your business needs.",
-          img:"n5.svg"
+          img:"n4.svg"
         },
         {
           heading: "Managed Service Provider",
           text:"As a staffing industry specialist, we provide comprehensive managed services to clients. We not only specialize in the IT sector but also other sectors, BFSI, healthcare, engineering and manufacturing. We possess expertise in handling a huge number of operational back-end tasks that are critical for the success of a business.",
-          img:"n6.svg"
+          img:"n5.svg"
         },
       ],
       },
@@ -403,7 +398,7 @@ export default {
           {
             img: "pay (3).png",
             heading: "IT Companies Worked With",
-            desc: "We have worked with more than 10 of the top 20 IT companies in India and more than 40, Fortune 500 companies. We hire more than 100k candidates every year.",
+            desc: "We have worked with Fortune 500 companies. We hire more than 100k candidates every year.",
           },
           {
             img: "pay (2).png",
