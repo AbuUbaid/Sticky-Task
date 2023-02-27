@@ -2,14 +2,8 @@
   <div>
     <div class="blockchain-banner">
     <div class="features">
-      <div class="image-area">
-        <img :src="imgUrl(list.img)" :alt="list.img" />
-
-      </div>
       <div class="text-area">
-        <h2>{{list.heading}}</h2>
-        <p>{{list.description}}</p>
-        <div class="part2" v-if="list?.key && list.key == 'key'">
+        <div class="part2">
           <div class="values-four">
             <div
               v-for="(icon, i) in Impact ? Impact.icons : []"
@@ -27,6 +21,10 @@
           </div>
         </div>
       </div>
+      <div class="image-area">
+        <img src="~/assets/images/key-features-02.jpg" alt="key-features" />
+
+      </div>
     </div>
   </div>
 </div>
@@ -38,30 +36,24 @@ var images = require.context("../../assets/images/", false, /\.webp$/);
 var icons = require.context("../../assets/icons/", false, /\.png$/);
 export default {
   name: "Plantation",
-  props:['list'],
   data: () => {
     return {
       Impact: {
         icons: [
           {
-            img: "pay (2).png",
-            heading: "Diversity and Inclusion",
-            desc: "Focus on Diversity and Inclusion establishing a sense of belonging among the employees and foster better productivity in the workplace.",
-          },
-          {
             img: "pay (4).png",
-            heading: "AI-driven",
-            desc: "Use of the latest tools and technology including AI, tech screening tools, Psychometric tools, Functional assessments etc., in order to achieve essential results.",
+            heading: "Cost-effective solutions",
+            desc: "Cost-effective staffing solutions with the flexibility to upscale or downsize as per the organization’s need.",
           },
           {
             img: "pay (3).png",
-            heading: "Customized staffing solutions",
-            desc: "We offer a customized staffing model for better match of candidates and provide you the flexibility to scale up or scale down according to the dynamics.",
+            heading: "HRMS Software",
+            desc: "Robust HRMS system that ensures accurate data, as well as access to different types of data at a single click.",
           },
           {
             img: "pay (1).png",
-            heading: "Payroll and Statutory compliance adherence",
-            desc: "Ensure an error-free payroll and handling of statutory compliance with care and boasting a 100% compliance score.",
+            heading: "Efficient Turnaround time",
+            desc: "Increased operational efficiency with defined TAT helps us to proactively hire candidates in the pipeline",
           },
         ],
       },
@@ -101,10 +93,10 @@ export default {
 }
 
 .key-features{
-  background-color: #fafafa;
+  background-color: #fcfeff;
   .features{
     .image-area {
-      margin-top: 90px;
+      margin-top: -37px;
       text-align: center;
     }
     .text-area{
@@ -187,12 +179,11 @@ export default {
   .features {
     flex-wrap: wrap;
     margin-top: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     .image-area {
       flex-basis: 100%;
       width: 100%;
       text-align: center;
-      margin-top: 30px;
     }
     .text-area {
       flex-basis: 100%;

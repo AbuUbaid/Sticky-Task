@@ -209,7 +209,7 @@
         </div>
     </div>
 
-    <a :href="topTech.formId" class="hite-talent">Hire Developers Now</a>
+    <a :href="topTech.formId" class="hite-talent">{{ topTech?.button ? topTech.button : 'Hire Developers Now' }}</a>
 
   </div>
 
@@ -336,7 +336,7 @@ export default {
     .techstack-ctn {
     padding-left: 0px;
     padding-right: 0px;
-    height: 108vh;
+    height: 114vh;
 
     .techstack-ctn-inner {
         text-align: left;

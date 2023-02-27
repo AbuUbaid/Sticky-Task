@@ -1,24 +1,6 @@
 <template>
   <div>
     <service-banner :BannerData="bannerData" class="pro-main" />
-    <div class="part">
-      <div class="part1">
-        <h2>Efficiency meets expertise in RPO</h2>
-        <p>Despite the fact that our solutions are tailored to your specific requirements, they all fall into one of four categories.</p>
-        <a href="#contact-form" class="talk">Talk to Expert</a>
-      </div>
-      <div class="part2">
-        <div class="values-four">
-      <div v-for="(icon, i) in (Impact ? Impact.icons : [])" :key="i" class="t-four">
-        <img :src="imgUrl(icon.img)" alt="t-four" />
-        <h4>{{ icon.heading }}</h4>
-        <p>
-          {{ icon.desc }}
-        </p>
-      </div>
-       </div>
-      </div>
-    </div>
     <network :List="list" />
     <mission-globe :Footprint="Footprint" />
     

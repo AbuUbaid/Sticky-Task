@@ -1,97 +1,19 @@
 <template>
   <div class="home-container top-notch-container">
-    <h2>Coordinated HR Support</h2>
-    <p>In Order To Ensure That Their Companies Are Prepared For The Next Stage Of Transformation With The Right People In Place And A Culture That Attracts And Retains Top Talent In Challenging Market Conditions, HR Professionals Are At The Forefront Of Championing Change And Resiliency Within Their Organizations.</p>
+    <h2>{{ itemList.heading }}</h2>
+    <p>{{ itemList.description }}</p>
     <div class="clients">
-      <div class="clients-card">
+      <div class="clients-card" v-for="(item, index) in itemList.item" :key="index">
         <div class="logo-number">
           <div class="client-logo">
-          <img src="~/assets/images/n1.svg" class="img-fluid">
+        <img :src="imgUrl(item.img)" :alt="item.img" class="img-fluid" />
         </div>
         <div class="client-description">
-          <h2>Organizational structure</h2>
-        </div>
-        </div>
-        <div class="client-description">
-          <p>Refine and redefine how your operational standards and processes operate so that they work with your workforce rather than against it. Keep your talent, keep your composure, and aim high.</p>
-        </div>
-      </div>
-      <div class="clients-card">
-        <div class="logo-number">
-          <div class="client-logo">
-          <img src="~/assets/images/n2.svg" class="img-fluid">
-        </div>
-        <div class="client-description">
-          <h2>Recruiting</h2>
+          <h2>{{item.heading}}</h2>
         </div>
         </div>
         <div class="client-description">
-          <p>Assisting your company in finding and keeping outstanding employees. Both your time and the results matter..</p>
-        </div>
-      </div>
-      <div class="clients-card">
-        <div class="logo-number">
-          <div class="client-logo">
-          <img src="~/assets/images/n3.svg" class="img-fluid">
-        </div>
-        <div class="client-description">
-          <h2>HR Consulting</h2>
-        </div>
-        </div>
-        <div class="client-description">
-          <p>You can make wise modifications to your HR strategy with the assistance of insights and suggestions from an outside organization like ours. We prioritize the needs of people and offer guidance.</p>
-        </div>
-      </div>
-      <div class="clients-card">
-        <div class="logo-number">
-          <div class="client-logo">
-          <img src="~/assets/images/n4.svg" class="img-fluid">
-        </div>
-        <div class="client-description">
-          <h2>Oversight & Policies</h2>
-        </div>
-        </div>
-        <div class="client-description">
-          <p>Your duty to your people is to make sure you have the required policies in place that comply with the most recent legal standards.</p>
-        </div>
-      </div>
-      <div class="clients-card">
-        <div class="logo-number">
-          <div class="client-logo">
-          <img src="~/assets/images/n5.svg" class="img-fluid">
-        </div>
-        <div class="client-description">
-          <h2>Crisis Control</h2>
-        </div>
-        </div>
-        <div class="client-description">
-          <p>We help our clients create crisis management teams and plans for their businesses.</p>
-        </div>
-      </div>
-      <div class="clients-card">
-        <div class="logo-number">
-          <div class="client-logo">
-          <img src="~/assets/images/n6.svg" class="img-fluid">
-        </div>
-        <div class="client-description">
-          <h2>Recruiting talent</h2>
-        </div>
-        </div>
-        <div class="client-description">
-          <p>We help you define the benchmarks and build up your internal talent acquisition plan.</p>
-        </div>
-      </div>
-      <div class="clients-card">
-        <div class="logo-number">
-          <div class="client-logo">
-          <img src="~/assets/images/n7.svg" class="img-fluid">
-        </div>
-        <div class="client-description">
-          <h2>HR Solutions for Businesses</h2>
-        </div>
-        </div>
-        <div class="client-description">
-          <p>From virtual team support to full outsourcing, we can support and operate as an extension of your HR staff. Our experts help you make important decisions with confidence and objectivity</p>
+          <p>{{ item.text }}</p>
         </div>
       </div>
     </div>
@@ -99,8 +21,15 @@
 </template>
 
 <script>
+var images = require.context("../../assets/images/", false, /\.svg$/);
 export default {
   name: "HrSupport",
+  props:['itemList'],
+  methods: {
+    imgUrl: function (path) {
+      return images("./" + path);
+    },
+  },
 };
 </script>
 

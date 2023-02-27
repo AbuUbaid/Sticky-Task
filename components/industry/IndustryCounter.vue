@@ -3,7 +3,7 @@
     <div class="home-container">
       <div class="three">
         <div v-for="(item, i) in IndustryC.items" :key="i" class="count">
-          <p>{{ item.heading }}S</p>
+          <p>{{ item.heading }}</p>
           <h4>{{ item.value }}</h4>
         </div>
       </div>
@@ -66,6 +66,10 @@ export default {
   border-left: 0.5px solid #707070;
   border-right: 0.5px solid #707070;
 }
+.count:nth-child(4) {
+  border-left: 0.5px solid #707070;
+  border-right: 0.5px solid #707070;
+}
 
 .logos {
   display: flex;
@@ -87,6 +91,9 @@ export default {
     flex-wrap: wrap;
   }
   .count:nth-child(2) {
+    border: none;
+  }
+  .count:nth-child(4) {
     border: none;
   }
 }

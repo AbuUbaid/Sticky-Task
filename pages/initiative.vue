@@ -12,7 +12,7 @@
       </p>
     </div>
     <technical-training />
-    <plantation />
+    <plantation :list="list" />
     <blood-donation />
     <a-wasia />
   </div>
@@ -43,6 +43,11 @@ export default {
         img: "main-initiative.webp",
         heading: "",
         url: "#",
+      },
+      list: {
+        img:'plantation.webp',
+        heading: "Plantation Drive",
+        description: "Silicon Network held a successful plantation drive with hundreds of volunteers. The event promoted environmental awareness and greenery. Volunteers tirelessly planted fruit, shade, and ornamental trees. The event gave participants a chance to bond and help the community. The plantation drive was a success, and organizers hope to hold more.",
       },
     };
   },
