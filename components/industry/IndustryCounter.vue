@@ -89,7 +89,7 @@ export default {
 @media (max-width: 480px) {
   .three {
     flex-wrap: wrap;
-  }
+}
   .count:nth-child(2) {
     border: none;
   }

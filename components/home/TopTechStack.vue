@@ -336,7 +336,7 @@ export default {
     .techstack-ctn {
     padding-left: 0px;
     padding-right: 0px;
-    height: 114vh;
+    height: 108vh;
 
     .techstack-ctn-inner {
         text-align: left;
