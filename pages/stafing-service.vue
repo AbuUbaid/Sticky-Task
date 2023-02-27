@@ -351,12 +351,12 @@ export default {
         {
           heading: "Specialty Staffing",
           text:"We specialize in specialty staffing solutions. We sourcing talent for clients that having a need for a unique workforce or for a specific job that requires unique skillsets. We focus on providing a comprehensive level of service with a variety of flexible solutions that meet your business needs.",
-          img:"n5.svg"
+          img:"n6.svg"
         },
         {
           heading: "Managed Service Provider",
           text:"As a staffing industry specialist, we provide comprehensive managed services to clients. We not only specialize in the IT sector but also other sectors, BFSI, healthcare, engineering and manufacturing. We possess expertise in handling a huge number of operational back-end tasks that are critical for the success of a business.",
-          img:"n4.svg"
+          img:"n5.svg"
         },
       ],
       },
