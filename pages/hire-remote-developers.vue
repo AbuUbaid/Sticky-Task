@@ -460,12 +460,10 @@ export default {
     },
     checkFields(e) {
       e.preventDefault();
-      console.log("form data", this.formData);
       this.loading = true;
       axios
         .post("https://formspree.io/f/mbjegoag", this.formData)
         .then((res) => {
-          console.log("djfksdjf", res);
           if (res.status == 200) {
             this.success = true;
             this.formData = {
