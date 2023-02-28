@@ -6,8 +6,8 @@
       <div class="three">
         <div
           class="count"
-          v-for="counter in counterData.counters"
-          :key="counter"
+          v-for="(counter, index) in counterData.counters"
+          :key="index"
         >
           <p>{{ counter.text }}</p>
           <h4>{{ counter.number }}</h4>

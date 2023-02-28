@@ -1,11 +1,11 @@
 <template>
   <div>
-    <div class="post-banner">
-      <img :src="post.fimg_url ? post.fimg_url : 'https://sn.softception.digital/wp-content/uploads/2023/02/image5.png' " :alt="post.title?.rendered + ' image'" />
+    <div class="post-banner"  v-if="post">
+      <img :src="post?.fimg_url" :alt="post.title?.rendered + ' image'" />
     </div>
-    <div class="home-container post-content">
-      <h1>{{ post.title?.rendered }}</h1>
-      <div v-html="post.content?.rendered"></div>
+    <div class="home-container post-content" v-if="post">
+      <h1>{{ post?.title?.rendered }}</h1>
+      <div v-html="post?.content?.rendered"></div>
     </div>
   </div>
 </template>
@@ -18,24 +18,53 @@ export default {
       post: {},
     };
   },
+created(){
+  console.log("pages herer", this.$store.state.posts);
+  this.post = this.$store.state.posts.find(p => {
+  return p.slug == this.$route.params.slug;
+  });
 
-  async asyncData({ params, payload }) {
-    if (payload) {
-      return {
-        post: payload,
-      };
-    } else {
-      console.log("params in blos", params.slug)
-      return axios
-        .get("https://sn.softception.digital/wp-json/wp/v2/posts?slug=" + params.slug)
-        .then((res) => {
-          console.log("imag eurl", res.data[0].fimg_url);
-          return {
-            post: res.data[0],
-          };
+  console.log("post is post", this.post);
+
+},
+fetch({ store }) {
+    return axios
+      .get("https://sn.softception.digital/wp-json/wp/v2/posts")
+      .then((res) => {
+        console.log("res of blogs", res.data);
+        store.commit("frontPagePosts", res.data);
+        this.post = this.$store.state.posts.find(p => {
+        return p.slug == this.$route.params.slug;
         });
-    }
-  },
+        console.log("post is post", this.post);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+},
+computed: {
+  posts() {
+     return this.$store.state.posts;
+  }
+
+},
+  // async asyncData({ params, payload }) {
+  //   if (payload) {
+  //     return {
+  //       post: payload,
+  //     };
+  //   } else {
+  //     // console.log("params in blos", params.slug)
+  //     // return axios
+  //     //   .get("https://sn.softception.digital/wp-json/wp/v2/posts?slug=" + params.slug)
+  //     //   .then((res) => {
+  //     //     console.log("imag eurl", res.data);
+  //     //     return {
+  //     //       post: res.data[0],
+  //     //     };
+  //     //   });
+  //   }
+  // },
 };
 </script>
 
