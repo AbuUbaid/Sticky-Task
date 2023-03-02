@@ -424,6 +424,17 @@ export default {
         email: "",
         phone: "",
         message: "",
+        LeadSource:"",
+        LeadMedium: "",
+        GoogleClickID: "",
+        LandingPageUrl: "",
+        IP:"",
+        City:"",
+        ZIp:"",
+        Region:"",
+        Country:"",
+        Organization:"",
+        ISP:"",
       },
       Faqs: {
         title: "",
@@ -467,26 +478,56 @@ export default {
     };
   },
   methods: {
-    checkFields(e) {
-      e.preventDefault();
-      console.log("form data", this.formData);
-      this.loading = true;
-        axios
-          .post("https://formspree.io/f/mbjegoag", this.formData)
-          .then((res) => {
-            console.log("djfksdjf", res);
-            if (res.status == 200) {
-              this.success = true;
-              this.formData = {
-                name: "",
-                email: "",
-                phone: "", 
-                message: "",
-              };
-              this.loading = false;
-              this.$router.push('/thankyou');
-            }
-          });
+    async checkFields(e) {
+    e.preventDefault();
+    this.loading = true;
+     const data = await fetch('https://api.ipregistry.co?key=nwycadxz2ux4u0d8')
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (payload) {
+       return payload;
+    });
+    
+    this.formData.IP = data.ip;
+    this.formData.Organization = data.company.name;
+    this.formData.ISP = data.company.name;
+    this.formData.City = data.location.city;
+    this.formData.ZIp = data.location.postal;
+    this.formData.Country = data.location.country.name;
+    this.formData.Region = data.location.region.name;
+    this.formData.LandingPageUrl = 'https://www.siliconnet.com' + this.$route.fullPath;
+    this.formData.LeadSource = this.$route.query.src ? this.$route.query.src : 'Google';
+    this.formData.LeadMedium = this.$route.query.medium ? this.$route.query.medium : 'PPC';
+    this.formData.GoogleClickID = this.$route.query.id ? this.$route.query.id : '';
+
+    axios
+    .post("https://formspree.io/f/mbjegoag", this.formData)
+    .then((res) => {
+      console.log("djfksdjf", res);
+      if (res.status == 200) {
+        this.success = true;
+        this.formData = {
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+        LeadSource:"",
+        LeadMedium: "",
+        GoogleClickID: "",
+        LandingPageUrl: "",
+        IP:"",
+        City:"",
+        ZIp:"",
+        Region:"",
+        Country:"",
+        Organization:"",
+        ISP:"",
+      },
+        this.loading = false;
+        this.$router.push('/thankyou');
+      }
+    });
     },
   },
 };
