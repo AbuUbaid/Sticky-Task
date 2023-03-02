@@ -37,10 +37,10 @@
                             <input v-model="formData.phone" type="tel" id="phoneNumber" required>
                         </div>
                         <div style="padding:4px;" class="form-group">
-                            <label for="message">Message*</label>
+                            <label for="message">Message</label>
                             <br>
 
-                            <textarea v-model="formData.message" id="message" rows="5" required></textarea>
+                            <textarea v-model="formData.message" id="message" rows="5"></textarea>
                         </div>
                         <button type="submit" class="lets-connect">{{ List.fromButton ? List.fromButton : "LET'S CONNECT!" }}</button>
                         <v-progress-circular
