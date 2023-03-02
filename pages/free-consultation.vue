@@ -541,6 +541,7 @@ export default {
         (v) => !!v || "Message is required"
       ],
     };
+    
   },
   components: {
     TestimonialSlider,
