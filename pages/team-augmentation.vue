@@ -525,7 +525,7 @@ export default {
         ISP:"",
       },
         this.loading = false;
-        this.$router.push('/thankyou');
+        this.$router.push('/thankyou/');
       }
     });
     },
