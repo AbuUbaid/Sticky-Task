@@ -12,7 +12,7 @@
         <div class="one">3</div>
     </div>
     <div class="values-four">
-      <div v-for="(icon, i) in (Impact ? Impact.icons : [])" :key="i" class="t-four">
+      <div v-for="(icon, i) in (Impact ? Impact?.icons : [])" :key="i" class="t-four">
         <img :src="imgUrl(icon.img)" alt="t-four" />
         <h4>{{ icon.heading }}</h4>
         <p>

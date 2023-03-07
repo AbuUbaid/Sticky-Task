@@ -13,11 +13,8 @@
           </div>
 
           <div class="request-quote-btn-ctn">
-            <!-- <div class="quote-button">
-                    <a href="#free-consult" class="button-blue">START 15 Days Risk Free Trial</a>
-                </div> -->
             <div class="quote-button">
-              <a href="#free-consult" class="button-blue">Inquire Now</a>
+              <a @click="dialog = true" class="button-blue">Inquire Now</a>
             </div>
           </div>
         </div>
@@ -30,8 +27,7 @@
           </p>
 
           <div class="free-consult">
-            <a href="#free-consult" class="button-blue">Inquire Now </a>
-            <!-- <a href="#free-consult"  class="button-blue">START 15 Days Risk Free Trial</a> -->
+            <a @click="dialog = true" class="button-blue">Inquire Now </a>
           </div>
           <div class="tech-logos">
             <img src="~/assets/images/icon_1.png" alt="clutch" />
@@ -51,18 +47,6 @@
             <p>React Native Developer • New York, US</p>
             <p>84% Skill Score</p>
           </div>
-          <!-- <div class="slide">
-            <img src="~/assets/images/img2.png" alt="Slide 2" />
-            <h2>Hugo Mendes</h2>
-            <p>React Developer • Buenos Aires, ARG</p>
-            <p>87% Skill Score</p>
-          </div> -->
-          <!-- <div class="slide">
-            <img src="~/assets/images/img3.png" alt="Slide 3" />
-            <h2>Hugo Mendes</h2>
-            <p>React Developer • Buenos Aires, ARG</p>
-            <p>87% Skill Score</p>
-          </div> -->
           <div class="slide">
             <img src="~/assets/images/img4.png" alt="Slide 4" />
             <h2>Madison Bennet</h2>
@@ -104,43 +88,15 @@
         </div>
       <!-- </marquee> -->
     </div>
-
+    <div data-app>
+      <popup-form :listItem="listItem" v-if="dialog" />
+    </div>
     <network :List="list" />
     <verification :Impact="Impact1" class="hire-dev" />
     <support :itemList="itemList" />
     <TopTechStack :topTech="topTech" />
     <plantation :list="listKey" class="key-features" />
     <cost  class="key-features" />
-
-
-    <!-- why org choose remote -->
-    <!-- <div class="remote">
-      <h2>Why Organizations Choose Silicon Networks</h2>
-      <p class="subtext">
-        Here are some reasons why global companies prefer Silicon Networks for
-        hiring remote developers:
-      </p>
-      <div class="part">
-        <div class="part1">
-          <img src="~/assets/images/choose.webp" alt="" srcset="" />
-        </div>
-        <div class="part2">
-          <div class="values-four">
-            <div
-              v-for="(icon, i) in Impact ? Impact.icons : []"
-              :key="i"
-              class="t-four"
-            >
-              <img :src="imgUrl(icon.img)" alt="t-four" />
-              <h4>{{ icon.heading }}</h4>
-              <p>
-                {{ icon.desc }}
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
 
     <!-- Forbes section -->
     <div class="global-section">
@@ -264,6 +220,7 @@ import TopTechStack from "../components/home/TopTechStack.vue";
 import Support from "../components/home/HrSupport.vue";
 import Forbes from "../components/home/Forbes.vue";
 import Plantation from "../components/home/Plantation.vue";
+import PopupForm from "../components/home/PopupForm.vue";
 import cost from "../components/home/cost.vue";
 
 var images = require.context("../assets/icons/", false, /\.png$/);
@@ -274,12 +231,13 @@ import "vue-slick-carousel/dist/vue-slick-carousel-theme.css";
 
 export default {
   layout: "ad",
-  name: "Sttafing Service",
+  name: "StafingService",
   head: {
-    title: "Sttafing Service", // Other meta information
+    title: "Stafing Service", // Other meta information
   },
   data: () => {
     return {
+      dialog:false,
       loading: false,
       settings: {
         arrows: false,
@@ -307,7 +265,7 @@ export default {
       },
       topTech: {
         heading: "Discover the Technology Expertise We Provide Staffing Solutions For",
-        formId: "#free-consult",
+        formId: "free",
         button:"Inquire Now",
         description:
           "At Silicon Networks, we hire remote software developers for a wide range of tech stacks. We can surelyfind the right fit for you!",
@@ -339,6 +297,10 @@ export default {
               text:"Agnostic technology consulting"
             },
         ],
+      },
+      listItem:{
+        heading:"Request a Quote Now",
+        btnText: "Inquire Now",
       },
       itemList: {
        heading:"Scope of Services",
@@ -493,6 +455,7 @@ export default {
     Plantation,
     cost,
     VueSlickCarousel,
+    PopupForm
   },
   methods: {
     imgUrl: function (path) {

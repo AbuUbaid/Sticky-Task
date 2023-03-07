@@ -13,11 +13,8 @@
           </div>
 
           <div class="request-quote-btn-ctn">
-            <!-- <div class="quote-button">
-                    <a href="#free-consult" class="button-blue">START 15 Days Risk Free Trial</a>
-                </div> -->
             <div class="quote-button">
-              <a href="#free-consult" class="button-blue">Hire Engineers</a>
+              <a @click="dialog = true" class="button-blue">Hire Engineers</a>
             </div>
           </div>
         </div>
@@ -31,8 +28,7 @@
           </p>
 
           <div class="free-consult">
-            <a href="#free-consult" class="button-blue">Hire Developers Now </a>
-            <!-- <a href="#free-consult"  class="button-blue">START 15 Days Risk Free Trial</a> -->
+            <a @click="dialog = true" class="button-blue">Hire Developers Now </a>
           </div>
           <div class="tech-logos">
             <img src="~/assets/images/icon_1.png" alt="clutch" />
@@ -52,18 +48,6 @@
             <p>React Native Developer • New York, US</p>
             <p>84% Skill Score</p>
           </div>
-          <!-- <div class="slide">
-            <img src="~/assets/images/img2.png" alt="Slide 2" />
-            <h2>Hugo Mendes</h2>
-            <p>React Developer • Buenos Aires, ARG</p>
-            <p>87% Skill Score</p>
-          </div> -->
-          <!-- <div class="slide">
-            <img src="~/assets/images/img3.png" alt="Slide 3" />
-            <h2>Hugo Mendes</h2>
-            <p>React Developer • Buenos Aires, ARG</p>
-            <p>87% Skill Score</p>
-          </div> -->
           <div class="slide">
             <img src="~/assets/images/img4.png" alt="Slide 4" />
             <h2>Madison Bennet</h2>
@@ -89,67 +73,21 @@
             <p>87% Job Success</p>
           </div>
           </div>
-        <!-- <div class="card-slider">
-          <div class="slide ">
-            <img src="~/assets/images/img1.png" alt="Slide 1" />
-            <h2>John Doe</h2>
-            <p>Backend Developer</p>
-            <p>97% Job Success</p>
-          </div>
-          <div class="slide">
-            <img src="~/assets/images/img2.png" alt="Slide 2" />
-            <h2>John Doe</h2>
-            <p>Backend Developer</p>
-            <p>97% Job Success</p>
-          </div>
-          <div class="slide">
-            <img src="~/assets/images/img3.png" alt="Slide 3" />
-            <h2>John Doe</h2>
-            <p>Backend Developer</p>
-            <p>97% Job Success</p>
-          </div>
-          <div class="slide">
-            <img src="~/assets/images/img4.png" alt="Slide 4" />
-            <h2>John Doe</h2>
-            <p>Backend Developer</p>
-            <p>97% Job Success</p>
-          </div>
-          <div class="slide">
-            <img src="~/assets/images/img5.png" alt="Slide 5" />
-            <h2>John Doe</h2>
-            <p>Backend Developer</p>
-            <p>97% Job Success</p>
-          </div>
-          <div class="slide">
-            <img src="~/assets/images/img6.png" alt="Slide 6" />
-            <h2>John Doe</h2>
-            <p>Backend Developer</p>
-            <p>97% Job Success</p>
-          </div>
-          <div class="slide">
-            <img src="~/assets/images/img7.png" alt="Slide 7" />
-            <h2>John Doe</h2>
-            <p>Backend Developer</p>
-            <p>97% Job Success</p>
-          </div>
-        </div> -->
       </div>
     </div>
 
     <!-- Clients slider -->
     <div class="client-section-ctn-inner">
       <h2>Trusted by Top-Tier Companies</h2>
-      <!-- <marquee behavior="" direction=""> -->
         <div class="moving-box" id="movingBox">
           <div class="log1">
             <img  src="~/assets/images/client-logo.png" alt="" srcset="" />
-            <!-- <img style="width:52%" src="~/assets/images/grid1.webp" alt="" srcset="" /> -->
-            <!-- <img src="~/assets/images/gridb-1.webp" alt="" srcset="" /> -->
           </div>
         </div>
-      <!-- </marquee> -->
     </div>
-
+    <div data-app>
+      <popup-form :listItem="listItem" v-if="dialog" />
+    </div>
     <network :List="list" />
     <verification :Impact="Impact1" class="hire-dev" />
     <TopTechStack :topTech="topTech" />
@@ -295,6 +233,7 @@
 
 <script>
 import axios from "axios";
+import PopupForm from "../components/home/PopupForm.vue";
 import TestimonialSlider from "../components/home/TestimonialSlider.vue";
 import Network from "../components/home/SNNetwrok.vue";
 import CounterArea from "../components/home/CounterArea.vue";
@@ -316,6 +255,7 @@ export default {
   },
   data: () => {
     return {
+      dialog:false,
       loading: false,
       settings: {
         arrows: false,
@@ -343,9 +283,13 @@ export default {
       },
       topTech: {
         heading: "Some of the Tech Stacks We Hire For",
-        formId: "#free-consult",
+        formId: "free",
         description:
           "At Silicon Networks, we hire remote software developers for a wide range of tech stacks. We can surelyfind the right fit for you!",
+      },
+      listItem:{
+        heading:"Build Remote Engineering Teams In 48 Hours",
+        btnText: "Hire Developers Now",
       },
       list: {
         heading: "Supercharged for unicorn startups?",
@@ -464,6 +408,7 @@ export default {
     TopTechStack,
     Forbes,
     VueSlickCarousel,
+    PopupForm
   },
   methods: {
     imgUrl: function (path) {

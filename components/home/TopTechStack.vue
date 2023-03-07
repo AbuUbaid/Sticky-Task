@@ -209,7 +209,8 @@
         </div>
     </div>
 
-    <a :href="topTech.formId" class="hite-talent">{{ topTech?.button ? topTech.button : 'Hire Developers Now' }}</a>
+    <a v-if="topTech.formId == 'free'" @click="dialog = true" class="hite-talent">{{ topTech.button ? topTech.button : 'Hire Developers Now' }}</a>
+    <a v-else :href="topTech.formId" class="hite-talent">{{ topTech?.button ? topTech.button : 'Hire Developers Now' }}</a>
 
   </div>
 
@@ -218,13 +219,29 @@
 
 
 </div>
+<div data-app>
+      <popup-form :listItem="listItem" v-if="dialog" />
+ </div>
 </div>
 </template>
 
 <script>
+import PopupForm from "../home/PopupForm.vue";
+
 export default {
   name: "TopTechStack",
-  props:['topTech']
+  props:['topTech'],
+  data() {
+    return {
+      dialog:false,
+      listItem:{
+        heading:"Build Remote Engineering Teams In 48 Hours",
+        btnText: "Hire Developers Now",
+      },
+    }
+  },
+  components:{PopupForm}
+
 };
 </script>
 

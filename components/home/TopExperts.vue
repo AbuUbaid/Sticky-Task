@@ -75,14 +75,34 @@
           worry, Schedule a completely free 30-minute consultation with our
           Senior Business Development Executive.
         </p>
-        <a href="#free-consult" class="talk-experts"
+        <a @click="dialog = true"  class="talk-experts"
           >TALK TO OUR EXPERTS</a
         >
       </div>
     </div>
+    <div data-app>
+      <popup-form :listItem="listItem" v-if="dialog" />
+ </div>
   </div>
 </template>
 
+<script>
+import PopupForm from "../home/PopupForm.vue";
+
+export default ({
+  name:'TechnicalStack',
+  data() {
+    return {
+      dialog:false,
+      listItem:{
+        heading:"Book a Free Consultation",
+        btnText: "LET'S CONNECT!",
+      },
+    }
+  },
+  components:{PopupForm}
+})
+</script>
 <style lang="scss" scoped>
 .home-top-container {
   margin-top: 50px;

@@ -18,8 +18,8 @@
             Boost your team's momentum and expertise with capable engineers and
             talent.
           </p>
-          <a href="#contact-form" class="cta-orange">Free Consultation</a>
-          <a href="#contact-form" class="cta-orange">Hire a Team</a>
+          <a @click="dialog = true" class="cta-orange">Free Consultation</a>
+          <a @click="dialog = true" class="cta-orange">Hire a Team</a>
           <div class="tech-logos">
             <img src="~/assets/logos/js.svg" alt="Node Js" />
             <img src="~/assets/logos/python.svg" alt="Python" />
@@ -123,7 +123,7 @@
                         ></v-progress-circular>
                     </form>
 
-                </div>
+          </div>
         </div>
       </div>
     </div>
@@ -140,7 +140,7 @@
         <img src="~/assets/images/team.webp" alt="Dedicated Team" />
       </div>
     </div> -->
-
+     <popup-form :listItem="listItem" v-if="dialog" />
     <div class="benefits-container">
       <div class="home-container heading-content">
         <h2>We’re here to assist you!</h2>
@@ -198,7 +198,7 @@
         </div>
       </div>
       <div class="cta">
-        <a href="#contact-form" class="cta-orange">Grow your Team Now!</a>
+        <a @click="dialog = true" class="cta-orange">Grow your Team Now!</a>
       </div>
     </div>
     <div class="home-container robust-container">
@@ -385,7 +385,7 @@
         <li>Ionic Engineers</li>
         <li>Kotlin Engineers</li>
       </ul>
-      <a href="#contact-form" class="explore-link text-center"
+      <a @click="dialog = true" class="explore-link text-center"
         >Hire Top Talent Now!</a
       >
     </div>
@@ -399,8 +399,9 @@
 <script>
 import axios from "axios";  
 import TestimonialSlider from "../components/home/TestimonialSlider.vue";
+import PopupForm from "../components/home/PopupForm.vue";
 export default {
-  components: { TestimonialSlider },
+  components: { TestimonialSlider, PopupForm },
   name: "TeamAugmentation",
   layout: 'teamaug',
   head: {
@@ -416,6 +417,7 @@ export default {
   },
   data: () => {
     return {
+      dialog:false,
       loading: false,
       valid: true,
       success: false,
@@ -435,6 +437,10 @@ export default {
         Country:"",
         Organization:"",
         ISP:"",
+      },
+      listItem:{
+        heading:"Book a Free Consultation",
+        btnText: "LET'S CONNECT!",
       },
       Faqs: {
         title: "",
@@ -465,13 +471,13 @@ export default {
           {
             title: "What motivates top tech talent to join Silicon Networks?",
             answer: `The reasons Silicon Networks recruits talent include the following.
-<ul>
-<li>High potential for growth</li>
-<li>Once vetted, always eligible</li>
-<li>Tech exclusive community </li>
-<li>Extensive development and training</li>
-</ul>
-`,
+                    <ul>
+                    <li>High potential for growth</li>
+                    <li>Once vetted, always eligible</li>
+                    <li>Tech exclusive community </li>
+                    <li>Extensive development and training</li>
+                    </ul>
+                    `,
           },
         ],
       },

@@ -140,19 +140,30 @@
   </tr>
   </div>
   <div class="col-sm-12 text-center mt-4 free-consult">
-    <a href="#free-consult" class="talk-experts"
+    <a @click="dialog = true" class="talk-experts"
           >Schedule A Developer Interview</a
         >
   </div>
+  <div data-app>
+      <popup-form :listItem="listItem" v-if="dialog" />
+ </div>
 </div>
 </template>
 <script>
+import PopupForm from "../home/PopupForm.vue";
 
 export default ({
   name:'TechnicalStack',
   data() {
-    
+    return {
+      dialog:false,
+      listItem:{
+        heading:"Book a Free Consultation",
+        btnText: "LET'S CONNECT!",
+      },
+    }
   },
+  components:{PopupForm}
 })
 </script>
 

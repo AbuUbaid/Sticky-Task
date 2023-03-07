@@ -25,10 +25,10 @@
                 </div>
 
                 <div class="quote-button ">
-                    <a href="#free-consult" class="button-blue">START 15 Days Risk Free Trial</a>
+                    <a @click="dialog = true" class="button-blue">START 15 Days Risk Free Trial</a>
                 </div>
                 <div class="quote-button ">
-                <a href="#free-consult" class="button-blue">Request a Quote</a>
+                <a @click="dialog = true" class="button-blue">Request a Quote</a>
                 </div>
             </div>
 
@@ -50,7 +50,7 @@
                 </p>
 
                 <div class="free-consult">
-                  <a href="#free-consult" class="button-blue">Book a Free Consultation</a>
+                  <a @click="dialog = true" class="button-blue">Book a Free Consultation</a>
                   <!-- <button class="button-blue">Live Chat</button> -->
                 </div>
                 <div class="tech-logos">
@@ -281,12 +281,14 @@
             </div>
         </div>
         <div class="quote-button-trial">
-            <a href="#free-consult" class="button-blue">START 15 Days Risk Free Trial</a>
+            <a @click="dialog = true" class="button-blue">START 15 Days Risk Free Trial</a>
         </div>
     </div>
 </div>
 
-
+<div data-app>
+      <popup-form :listItem="listItem" v-if="dialog" />
+ </div>
 <!-- Technical Stack -->
 <technical-stack />
 <!-- about best developer -->
@@ -374,19 +376,6 @@
       </div>
 
       </div>
-      <!-- <ul>
-
-        <li>
-            Expert Developers With 10+ Years of Experience
-
-        </li>
-
-        <li>108 Worldwide Clients (Mostly Fortune 500 Companies)
-        </li>
-
-        <li> 200+ Silicon Valley-Caliber Developers
-        </li>
-        </ul> -->
     </div>
     <div class="sec2">
         <!-- Testimonials -->
@@ -498,6 +487,7 @@
 
 
 <script>
+import PopupForm from "../components/home/PopupForm.vue";
 import TestimonialSlider from "../components/home/TestimonialSlider.vue";
 import TopExperts from "../components/home/TopExperts.vue";
 import TechnicalStack from "../components/home/TechnicalStack.vue";
@@ -510,6 +500,7 @@ export default {
   },
   data: () => {
     return {
+      dialog:false,
       loading: false,
       valid: true,
       success: false,
@@ -531,6 +522,10 @@ export default {
         Organization:"",
         ISP:"",
       },
+      listItem:{
+        heading:"Book a Free Consultation",
+        btnText: "LET'S CONNECT!",
+      },
       nameRules: [(v) => !!v || "Name is required"],
       emailRules: [
         (v) => !!v || "E-mail is required",
@@ -546,7 +541,8 @@ export default {
   components: {
     TestimonialSlider,
     TopExperts,
-    TechnicalStack
+    TechnicalStack,
+    PopupForm
   },
   methods: {
     async checkFields(e) {
