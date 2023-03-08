@@ -2,8 +2,8 @@
   <v-row justify="center">
     <v-dialog v-model="$parent.dialog" max-width="500">
       <div class="form-ctn">
+        <a @click="$parent.dialog = false" class="close-btn ta-center">X</a>
         <h2>{{ listItem.heading }}</h2>
-
         <form v-on:submit="checkFields" ref="form">
           <div style="padding: 4px" class="form-group">
             <label for="fullName">Full Name*</label>
@@ -159,6 +159,7 @@ export default {
   padding: 2rem;
   border-radius: 15px;
   width: 100%;
+  position: relative;
 
   h2 {
     color: #091756;
@@ -167,6 +168,24 @@ export default {
     margin-bottom: 25px;
     text-align: center;
   }
+  .close-btn{
+    right: 0px;
+    top: -2px;
+    width: 35px;
+    height: 35px;
+    background: #091756;
+    border: 0;
+    color: #fff;
+    font-weight: 300;
+    /* padding-top: 3px; */
+    text-align: center;
+    border-radius: 50px;
+    align-items: center;
+    display: grid;
+    z-index: 1111111;
+    position: absolute;
+    cursor: pointer;
+    }
 
   form {
     input {
@@ -193,7 +212,6 @@ export default {
       cursor: pointer;
       width: 100%;
     }
-
     .lets-connect:hover {
       font-size: 19px;
       padding: 10px 20px;
