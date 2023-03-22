@@ -4,44 +4,44 @@
     <div class="form-parent home-container">
       <div class="form-container">
       <h2>Let's Get Started</h2>
-      <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
-  <form action='https://crm.zoho.com/crm/WebToLeadForm' method="POST" name=WebToLeads5666867000000732007  onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5666867000000732007()' accept-charset='UTF-8'>
- <input type='text' style='display:none;' name='xnQsjsdp' value='83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9'> 
- <input type='hidden' name='zc_gad' id='zc_gad' value=''> 
- <input type='text' style='display:none;' name='xmIwtLD' value='31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfc'> 
- <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='>
- <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;siliconnet.com&#x2f;thankyou&#x2f;'>
+            
+<div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='background-color: white;color: black;max-width: 600px;'>
+  <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5666867000000732007 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5666867000000732007()' accept-charset='UTF-8'>
+ <input type='text' style='display:none;' name='xnQsjsdp' value='83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9'></input> 
+ <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
+ <input type='text' style='display:none;' name='xmIwtLD' value='31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfc'></input> 
+ <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+ <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;siliconnet.com&#x2f;' > </input>
 	 <!-- Do not remove this code. -->
-	 <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'>
-	 <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'>
+	 <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
+	 <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
 	 <!-- Do not remove this code. -->
 <!-- <div class='zcwf_title' style='max-width: 600px;color: black;'>Contact Us ATS</div> -->
-<div class='zcwf_row'><div class='zcwf_col_lab'><label for='LEADCF1'>How can we help you?<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='LEADCF1' name='LEADCF1'  >
-			<option style="cursor: pointer; padding: 5px" value='-None-'></option>
-			<option style="cursor: pointer; padding: 5px" value='Mobile&#x20;App&#x20;Development'>Mobile App Development</option>
-			<option style="cursor: pointer; padding: 5px" value='Enterprise&#x20;Software&#x20;Development'>Enterprise Software Development</option>
-			<option style="cursor: pointer; padding: 5px" value='Web&#x20;Development'>Web Development</option>
-			<option style="cursor: pointer; padding: 5px" value='Dedicated&#x20;Teams'>Dedicated Teams</option>
-			<option style="cursor: pointer; padding: 5px" value='IT&#x20;Consulting'>IT Consulting</option>
-			<option style="cursor: pointer; padding: 5px" value='Internet&#x20;of&#x20;Things'>Internet of Things</option>
-			<option style="cursor: pointer; padding: 5px" value='Blockchain'>Blockchain</option>
-			<option style="cursor: pointer; padding: 5px" value='Augmented&#x20;Reality'>Augmented Reality</option>
-			<option style="cursor: pointer; padding: 5px" value='Artificial&#x20;Intelligence'>Artificial Intelligence</option>
-			<option style="cursor: pointer; padding: 5px" value='Cloud&#x20;Computing'>Cloud Computing</option>
-			<option style="cursor: pointer; padding: 5px" value='FinTech'>FinTech</option>
-			<option style="cursor: pointer; padding: 5px" value='Other'>Other</option>
+<div class='zcwf_row'><div class='zcwf_col_lab' ><label for='LEADCF1'>How can we help you?<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='LEADCF1' name='LEADCF1'  >
+			<option value='-None-'></option>
+			<option value='Mobile&#x20;App&#x20;Development'>Mobile App Development</option>
+			<option value='Enterprise&#x20;Software&#x20;Development'>Enterprise Software Development</option>
+			<option value='Web&#x20;Development'>Web Development</option>
+			<option value='Dedicated&#x20;Teams'>Dedicated Teams</option>
+			<option value='IT&#x20;Consulting'>IT Consulting</option>
+			<option value='Internet&#x20;of&#x20;Things'>Internet of Things</option>
+			<option value='Blockchain'>Blockchain</option>
+			<option value='Augmented&#x20;Reality'>Augmented Reality</option>
+			<option value='Artificial&#x20;Intelligence'>Artificial Intelligence</option>
+			<option value='Cloud&#x20;Computing'>Cloud Computing</option>
+			<option value='FinTech'>FinTech</option>
+			<option value='Other'>Other</option>
 		</select><div class='zcwf_col_help'></div></div></div>
     <div class="first-rwo">
-      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='Last_Name'>Name<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Name' maxlength='80'><div class='zcwf_col_help'></div></div></div>
-      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='Email'>Email<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' ftype='email' id='Email' name='Email' maxlength='100'><div class='zcwf_col_help'></div></div></div>
+      <div class='zcwf_row'><div class='zcwf_col_lab' ><label for='Last_Name'>Name<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Last Name' maxlength='80'></input><div class='zcwf_col_help'></div></div></div>
+      <div class='zcwf_row'><div class='zcwf_col_lab' ><label for='Email'>Email<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' ftype='email' id='Email' name='Email' maxlength='100'></input><div class='zcwf_col_help'></div></div></div>
     </div>
     <div class="first-rwo">
-      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='Phone'>Phone</label></div><div class='zcwf_col_fld'><input type='text' id='Phone' name='Phone' maxlength='30'><div class='zcwf_col_help'></div></div></div>
-      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='LEADCF5'>Organization</label></div><div class='zcwf_col_fld'><input type='text' id='LEADCF5' name='LEADCF5' maxlength='255'><div class='zcwf_col_help'></div></div></div>
+      <div class='zcwf_row'><div class='zcwf_col_lab' ><label for='Phone'>Phone</label></div><div class='zcwf_col_fld'><input type='text' id='Phone' name='Phone' maxlength='30'></input><div class='zcwf_col_help'></div></div></div>
+      <div class='zcwf_row'><div class='zcwf_col_lab' ><label for='LEADCF5'>Organization</label></div><div class='zcwf_col_fld'><input type='text' id='LEADCF5' name='LEADCF5' maxlength='255'></input><div class='zcwf_col_help'></div></div></div>
     </div>
-<div class='zcwf_row'><div class='zcwf_col_lab'><label for='Message'>Message</label></div><div class='zcwf_col_fld'><textarea id='Description' name='Description'></textarea><div class='zcwf_col_help'></div></div></div>
-<div class='zcwf_row'><div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Send Message' title='Submit'>
- </div></div>
+<div class='zcwf_row'><div class='zcwf_col_lab' ><label for='Description'>Message</label></div><div class='zcwf_col_fld'><textarea id='Description' name='Description'></textarea><div class='zcwf_col_help'></div></div></div>
+<div class='zcwf_row'><div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'><input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'></div></div>
 	</form>
 </div>
       </div>
@@ -55,27 +55,6 @@
 </template>
 
 <script>
-
-  /* Do not remove this code. */
- 	function rccallback5666867000000732007()
-	{
-		if(document.getElementById('recap5666867000000732007')!=undefined){
-			document.getElementById('recap5666867000000732007').setAttribute('captcha-verified',true);
-		}
-		if(document.getElementById('recapErr5666867000000732007')!=undefined && document.getElementById('recapErr5666867000000732007').style.visibility == 'visible' ){
-			document.getElementById('recapErr5666867000000732007').style.visibility='hidden';
-		}
-	}
-	function reCaptchaAlert5666867000000732007()
-	{
-		var recap = document.getElementById('recap5666867000000732007');
-		if( recap !=undefined && recap.getAttribute('captcha-verified') == 'false')
-		{
-			document.getElementById('recapErr5666867000000732007').style.visibility='visible';
-			return false;
-		}
-		return true;
-	}
 	function validateEmail5666867000000732007()
 	{
 		var form = document.forms['WebToLeads5666867000000732007'];
@@ -100,8 +79,8 @@
 	}
 
  	  function checkMandatory5666867000000732007() {
-		var mndFileds = new Array('Name');
-		var fldLangVal = new Array('Name');
+		var mndFileds = new Array('Last Name');
+		var fldLangVal = new Array('Last\x20Name');
 		for(i=0;i<mndFileds.length;i++) {
 		  var fieldObj=document.forms['WebToLeads5666867000000732007'][mndFileds[i]];
 		  if(fieldObj) {
@@ -129,7 +108,7 @@
 			   } 
 			 } 
 			 try {
-			     if(fieldObj.name == 'Name') {
+			     if(fieldObj.name == 'Last Name') {
 				name = fieldObj.value;
  	 	 	    }
 			} catch (e) {}
@@ -137,8 +116,6 @@
 		}
 		trackVisitor5666867000000732007();
 		if(!validateEmail5666867000000732007()){return false;}
-		
-		if(!reCaptchaAlert5666867000000732007()){return false;}
 		document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
 	}
 
@@ -157,7 +134,9 @@ function tooltipShow5666867000000732007(el){
 }
 </script>
 <script type='text/javascript' id='VisitorTracking'>var $zoho= $zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:'738cfd870777f809baa64c9149c46ae907c4701df07d176a80adba46865c6d8e8bc5c201f0e5d1a9486f9dbf87f44a7d', values:{},ready:function(){}};var d=document;s=d.createElement('script');s.type='text/javascript';s.id='zsiqscript';s.defer=true;s.src='https://salesiq.zoho.com/widget';t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);function trackVisitor5666867000000732007(){try{if($zoho){var LDTuvidObj = document.forms['WebToLeads5666867000000732007']['LDTuvid'];if(LDTuvidObj){LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();}var firstnameObj = document.forms['WebToLeads5666867000000732007']['First Name'];if(firstnameObj){name = firstnameObj.value +' '+name;}$zoho.salesiq.visitor.name(name);var emailObj = document.forms['WebToLeads5666867000000732007']['Email'];if(emailObj){email = emailObj.value;$zoho.salesiq.visitor.email(email);}}} catch(e){}}</script>
-	<!-- Do not remove this --- Analytics Tracking code starts --><script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfcgid83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9gid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script><!-- Do not remove this --- Analytics Tracking code ends. -->
+	<!-- Do not remove this --- Analytics Tracking code starts -->
+  <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfcgid83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9gid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+  <!-- Do not remove this --- Analytics Tracking code ends. -->
 <script>
 import axios from "axios";
 export default {
