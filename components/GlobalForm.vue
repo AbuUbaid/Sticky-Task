@@ -3,128 +3,60 @@
     <div class="background"></div>
     <div class="form-parent home-container">
       <div class="form-container">
-        <h2>Let's Get Started</h2>
-        <v-app>
-          <template>
-            <v-form
-              @submit.prevent="checkFields"
-              ref="form"
-              method="post"
-              v-model="valid"
-            >
-              <div class="form-group">
-                <div>
-                  <v-select
-                    v-model="formData.select"
-                    :items="items"
-                    :rules="[(v) => !!v || 'Item is required']"
-                    label="How can we help you?"
-                    required
-                  ></v-select>
-                </div>
-              </div>
-              <div class="form-group">
-                <div>
-                  <v-text-field
-                    v-model="formData.name"
-                    placeholder="Name"
-                    required
-                    :rules="nameRules"
-                  ></v-text-field>
-                </div>
-                <div>
-                  <v-text-field
-                    placeholder="Email"
-                    required
-                    v-model="formData.email"
-                    :rules="emailRules"
-                  ></v-text-field>
-                </div>
-              </div>
-              <div class="form-group">
-                <div>
-                  <v-text-field
-                    v-model="formData.phone"
-                    placeholder="Phone"
-                  ></v-text-field>
-                </div>
-                <div>
-                  <v-text-field
-                    v-model="formData.organization"
-                    placeholder="Organization"
-                  ></v-text-field>
-                </div>
-              </div>
-              <div class="form-group">
-                <v-textarea
-                  v-model="formData.message"
-                  placeholder="Message"
-                ></v-textarea>
-              </div>
-              <button type="submit" class="m-btn" :disabled="loading == true">
-                Send Message
-              </button>
-              <v-progress-circular
-                indeterminate
-                color="#E38601"
-                v-if="loading == true"
-              ></v-progress-circular>
-              <p v-if="success" class="successt">
-                Thanks for getting in touch!
-              </p>
-            </v-form>
-          </template>
-        </v-app>
+      <h2>Let's Get Started</h2>
+      <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm'>
+  <form action='https://crm.zoho.com/crm/WebToLeadForm' method="POST" name=WebToLeads5666867000000732007  onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5666867000000732007()' accept-charset='UTF-8'>
+ <input type='text' style='display:none;' name='xnQsjsdp' value='83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9'/> 
+ <input type='hidden' name='zc_gad' id='zc_gad' value=''/> 
+ <input type='text' style='display:none;' name='xmIwtLD' value='31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfc'/> 
+ <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='/>
+ <input type='text' style='display:none;' name='returnURL' value='https&#x3a;&#x2f;&#x2f;siliconnet.com&#x2f;thankyou&#x2f;'  />
+	 <!-- Do not remove this code. -->
+	 <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'/>
+	 <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'/>
+	 <!-- Do not remove this code. -->
+<!-- <div class='zcwf_title' style='max-width: 600px;color: black;'>Contact Us ATS</div> -->
+<div class='zcwf_row'><div class='zcwf_col_lab'><label for='LEADCF1'>How can we help you?<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><select class='zcwf_col_fld_slt' id='LEADCF1' name='LEADCF1'  >
+			<option style="cursor: pointer; padding: 5px" value='-None-'></option>
+			<option style="cursor: pointer; padding: 5px" value='Mobile&#x20;App&#x20;Development'>Mobile App Development</option>
+			<option style="cursor: pointer; padding: 5px" value='Enterprise&#x20;Software&#x20;Development'>Enterprise Software Development</option>
+			<option style="cursor: pointer; padding: 5px" value='Web&#x20;Development'>Web Development</option>
+			<option style="cursor: pointer; padding: 5px" value='Dedicated&#x20;Teams'>Dedicated Teams</option>
+			<option style="cursor: pointer; padding: 5px" value='IT&#x20;Consulting'>IT Consulting</option>
+			<option style="cursor: pointer; padding: 5px" value='Internet&#x20;of&#x20;Things'>Internet of Things</option>
+			<option style="cursor: pointer; padding: 5px" value='Blockchain'>Blockchain</option>
+			<option style="cursor: pointer; padding: 5px" value='Augmented&#x20;Reality'>Augmented Reality</option>
+			<option style="cursor: pointer; padding: 5px" value='Artificial&#x20;Intelligence'>Artificial Intelligence</option>
+			<option style="cursor: pointer; padding: 5px" value='Cloud&#x20;Computing'>Cloud Computing</option>
+			<option style="cursor: pointer; padding: 5px" value='FinTech'>FinTech</option>
+			<option style="cursor: pointer; padding: 5px" value='Other'>Other</option>
+		</select><div class='zcwf_col_help'></div></div></div>
+    <div class="first-rwo">
+      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='Last_Name'>Name<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Name' maxlength='80'/><div class='zcwf_col_help'></div></div></div>
+      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='Email'>Email<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' ftype='email' id='Email' name='Email' maxlength='100'/><div class='zcwf_col_help'></div></div></div>
+    </div>
+    <div class="first-rwo">
+      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='Phone'>Phone</label></div><div class='zcwf_col_fld'><input type='text' id='Phone' name='Phone' maxlength='30'/><div class='zcwf_col_help'></div></div></div>
+      <div class='zcwf_row'><div class='zcwf_col_lab'><label for='LEADCF5'>Organization</label></div><div class='zcwf_col_fld'><input type='text' id='LEADCF5' name='LEADCF5' maxlength='255'/><div class='zcwf_col_help'></div></div></div>
+    </div>
+<div class='zcwf_row'><div class='zcwf_col_lab'><label for='Message'>Message</label></div><div class='zcwf_col_fld'><textarea id='Description' name='Description'></textarea><div class='zcwf_col_help'></div></div></div>
+<div class='zcwf_row'><div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Send Message' title='Submit'>
+ </div></div>
+	</form>
+</div>
       </div>
       <div class="badges-container">
         <img src="~/assets/images/sf-clutch--black.svg" alt="Clutch" />
         <img src="~/assets/images/el-goodfirms.svg" alt="Good firms" />
         <hr />
-        <!-- <div class="sales-team">
-          <h4>Minal Ehsan</h4>
-          <p>Head of Sales</p>
-          <a href="mailto:minal@siliconnet.com">minal@siliconnet.com</a>
-          <div class="social-icons">
-            <a
-              href="https://www.linkedin.com/in/minal-a-b35364196/"
-              target="_blank"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  fill="#E38601"
-                  d="M18.335 18.339H15.67v-4.177c0-.996-.02-2.278-1.39-2.278-1.389 0-1.601 1.084-1.601 2.205v4.25h-2.666V9.75h2.56v1.17h.035c.358-.674 1.228-1.387 2.528-1.387 2.7 0 3.2 1.778 3.2 4.091v4.715zM7.003 8.575a1.546 1.546 0 0 1-1.548-1.549 1.548 1.548 0 1 1 1.547 1.549zm1.336 9.764H5.666V9.75H8.34v8.589zM19.67 3H4.329C3.593 3 3 3.58 3 4.297v15.406C3 20.42 3.594 21 4.328 21h15.338C20.4 21 21 20.42 21 19.703V4.297C21 3.58 20.4 3 19.666 3h.003z"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://join.skype.com/invite/fxTWFzScaPvP"
-              target="_blank"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-              >
-                <path fill="none" d="M0 0h24v24H0z" />
-                <path
-                  fill="#E38601"
-                  d="M13.31 20.4a8.5 8.5 0 0 1-9.71-9.71 5.25 5.25 0 0 1 7.09-7.09 8.5 8.5 0 0 1 9.71 9.71 5.25 5.25 0 0 1-7.09 7.09zm-1.258-3.244h-.04c2.872 0 4.303-1.386 4.303-3.243 0-1.198-.551-2.471-2.726-2.958l-1.983-.44c-.755-.172-1.622-.4-1.622-1.115s.62-1.213 1.724-1.213c2.23 0 2.027 1.528 3.131 1.528.576 0 1.093-.342 1.093-.93 0-1.37-2.197-2.4-4.056-2.4-2.021 0-4.173.859-4.173 3.144 0 1.098.394 2.27 2.56 2.813l2.689.671c.816.202 1.018.659 1.018 1.072 0 .687-.684 1.358-1.918 1.358-2.417 0-2.078-1.857-3.374-1.857-.58 0-1.003.398-1.003.971 0 1.114 1.352 2.598 4.377 2.598z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div> -->
       </div>
     </div>
   </div>
 </template>
+<!-- Do not remove this --- Analytics Tracking code starts -->
+<script type='text/javascript' id='VisitorTracking'>var $zoho= $zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:'738cfd870777f809baa64c9149c46ae907c4701df07d176a80adba46865c6d8e8bc5c201f0e5d1a9486f9dbf87f44a7d', values:{},ready:function(){}};var d=document;s=d.createElement('script');s.type='text/javascript';s.id='zsiqscript';s.defer=true;s.src='https://salesiq.zoho.com/widget';t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);function trackVisitor5666867000000732007(){try{if($zoho){var LDTuvidObj = document.forms['WebToLeads5666867000000732007']['LDTuvid'];if(LDTuvidObj){LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();}var firstnameObj = document.forms['WebToLeads5666867000000732007']['First Name'];if(firstnameObj){name = firstnameObj.value +' '+name;}$zoho.salesiq.visitor.name(name);var emailObj = document.forms['WebToLeads5666867000000732007']['Email'];if(emailObj){email = emailObj.value;$zoho.salesiq.visitor.email(email);}}} catch(e){}}</script>
+<script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfcgid83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9gid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+<!-- Do not remove this --- Analytics Tracking code ends. -->
 
 <script>
 import axios from "axios";
@@ -135,6 +67,7 @@ export default {
       loading: false,
       valid: true,
       success: false,
+      zoho:'',
       formData: {
         name: "",
         organization: "",
@@ -164,6 +97,14 @@ export default {
       ],
     };
   },
+  created(){
+    this.zoho= this.zoho || {};this.zoho.salesiq = this.zoho.salesiq || {widgetcode:'738cfd870777f809baa64c9149c46ae907c4701df07d176a80adba46865c6d8e8bc5c201f0e5d1a9486f9dbf87f44a7d', values:{},ready:function(){}};
+    // var d= document;s=d.createElement('script');
+    // s.type='text/javascript';s.id='zsiqscript';
+    // s.defer=true;s.src='https://salesiq.zoho.com/widget';
+    // t=d.getElementsByTagName('script')[0];
+    // t.parentNode.insertBefore(s,t);
+  },
   methods: {
     checkFields(e) {
       if (this.$refs.form.validate()) {
@@ -190,7 +131,86 @@ export default {
         return false;
       }
     },
-  },
+  validateEmail5666867000000732007()
+	{
+		var form = document.forms['WebToLeads5666867000000732007'];
+		var emailFld = form.querySelectorAll('[ftype=email]');
+		var i;
+		for (i = 0; i < emailFld.length; i++)
+		{
+			var emailVal = emailFld[i].value;
+			if((emailVal.replace(/^\s+|\s+$/g, '')).length!=0 )
+			{
+				var atpos=emailVal.indexOf('@');
+				var dotpos=emailVal.lastIndexOf('.');
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length)
+				{
+					alert('Please enter a valid email address. ');
+					emailFld[i].focus();
+					return false;
+				}
+			}
+		}
+		return true;
+	},
+
+ 	checkMandatory5666867000000732007(e) {
+    e.preventDefault();
+		var mndFileds = new Array('Name');
+		var fldLangVal = new Array('Name');
+		for(let i=0;i<mndFileds.length;i++) {
+		  var fieldObj=document.forms['WebToLeads5666867000000732007'][mndFileds[i]];
+		  if(fieldObj) {
+			if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+			 if(fieldObj.type =='file')
+				{ 
+				 alert('Please select a file to upload.'); 
+				 fieldObj.focus(); 
+				 return false;
+				} 
+			alert(fldLangVal[i] +' cannot be empty.'); 
+   	   	  	  fieldObj.focus();
+   	   	  	  return false;
+			}  else if(fieldObj.nodeName=='SELECT') {
+  	   	   	 if(fieldObj.options[fieldObj.selectedIndex].value=='-None-') {
+				alert(fldLangVal[i] +' cannot be none.'); 
+				fieldObj.focus();
+				return false;
+			   }
+			} else if(fieldObj.type =='checkbox'){
+ 	 	 	 if(fieldObj.checked == false){
+				alert('Please accept  '+fldLangVal[i]);
+				fieldObj.focus();
+				return false;
+			   } 
+			 } 
+			 try {
+			     if(fieldObj.name == 'Name') {
+				let name = fieldObj.value;
+ 	 	 	    }
+			} catch (e) {}
+		    }
+		}
+		this.trackVisitor5666867000000732007();
+		if(!this.validateEmail5666867000000732007()){return false;}
+		document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+	},
+
+tooltipShow5666867000000732007(el){
+	var tooltip = el.nextElementSibling;
+	var tooltipDisplay = tooltip.style.display;
+	if(tooltipDisplay == 'none'){
+		var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+		for(i=0; i<allTooltip.length; i++){
+			allTooltip[i].style.display='none';
+		}
+		tooltip.style.display = 'block';
+	}else{
+		tooltip.style.display='none';
+	}
+},
+
+},
 };
 </script>
 
@@ -310,5 +330,166 @@ export default {
       }
     }
   }
+}
+html,body{
+	margin: 0px;
+}
+.first-rwo{
+  display: flex;
+  justify-content: space-between;
+}
+#crmWebToEntityForm.zcwf_lblLeft {
+	width:100%;
+	padding: 2px;
+	margin: 4px 0;
+	box-sizing: border-box;
+}
+#crmWebToEntityForm.zcwf_lblLeft * {
+	box-sizing: border-box;
+}
+#crmWebToEntityForm{text-align: left;}
+#crmWebToEntityForm * {
+	direction: ltr;
+}
+.zcwf_lblLeft .zcwf_title {
+	word-wrap: break-word;
+	padding: 0px 6px 10px;
+	font-weight: bold;
+}
+.zcwf_lblLeft .zcwf_col_fld input[type=text], .zcwf_lblLeft .zcwf_col_fld textarea {
+	border-bottom: 1px solid #c0c6cc !important;
+  resize: vertical;
+  float: left;
+  line-height: 20px;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 0;
+  width: 100%;
+  border-style: none;
+}
+.zcwf_lblLeft .zcwf_col_lab {
+	width: 100%;
+	word-break: break-word;
+	padding: 0px 6px 0px;
+	margin-right: 10px;
+	margin-top: 5px;
+	float: left;
+	min-height: 1px;
+}
+.zcwf_lblLeft .zcwf_col_fld {
+	float: left;
+	width: 100%;
+	padding: 0px 6px 0px;
+	position: relative;
+	margin-top: 5px;
+}
+.zcwf_lblLeft .zcwf_privacy{padding: 6px;}
+.zcwf_lblLeft .wfrm_fld_dpNn{display: none;}
+.dIB{display: inline-block;}
+.zcwf_lblLeft .zcwf_col_fld_slt {
+	border-bottom: 1px solid #c0c6cc !important;
+  resize: vertical;
+  float: left;
+  line-height: 20px;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px 0;
+  width: 100%;
+  border-style: none;
+}
+.zcwf_lblLeft .zcwf_row:after, .zcwf_lblLeft .zcwf_col_fld:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+.zcwf_lblLeft .zcwf_col_help {
+	float: left;
+	margin-left: 7px;
+	font-size: 12px;
+	max-width: 35%;
+	word-break: break-word;
+}
+.zcwf_lblLeft .zcwf_help_icon {
+	cursor: pointer;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: #fff;
+	border: 1px solid #c0c6cc;
+	color: #c1c1c1;
+	text-align: center;
+	font-size: 11px;
+	line-height: 16px;
+	font-weight: bold;
+	border-radius: 50%;
+}
+.zcwf_lblLeft .zcwf_row {margin: 15px 0px;}
+.zcwf_lblLeft .formsubmit {
+	margin-right: 5px;
+	cursor: pointer;
+	color: var(--baseColor);
+	font-size: 12px;
+}
+.zcwf_lblLeft .zcwf_privacy_txt {
+	width: 90%;
+	color: rgb(0, 0, 0);
+	font-size: 12px;
+	font-family: Arial;
+	display: inline-block;
+	vertical-align: top;
+	color: var(--baseColor);
+	padding-top: 2px;
+	margin-left: 6px;
+}
+.zcwf_lblLeft .zcwf_button {
+	background-color: #ef861d;
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1em;
+  margin-right: 15px;
+  padding: 15px 40px;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  transition: .2s ease;
+	max-width: 230px;
+}
+.zcwf_lblLeft .zcwf_button:hover{
+  background-color: #000;
+}
+.zcwf_lblLeft .zcwf_tooltip_over{
+	position: relative;
+}
+.zcwf_lblLeft .zcwf_tooltip_ctn{
+	position: absolute;
+	background: #dedede;
+	padding: 3px 6px;
+	top: 3px;
+	border-radius: 4px;word-break: break-word;
+	min-width: 100px;
+	max-width: 150px;
+	color: var(--baseColor);
+	z-index: 100;
+}
+.zcwf_lblLeft .zcwf_ckbox{
+	float: left;
+}
+.zcwf_lblLeft .zcwf_file{
+	width: 55%;
+	box-sizing: border-box;
+	float: left;
+}
+.clearB:after{
+	content:'';
+	display: block;
+	clear: both;
+}
+@media all and (max-width: 600px) {
+	.zcwf_lblLeft .zcwf_col_lab, .zcwf_lblLeft .zcwf_col_fld {
+		width: auto;
+		float: none !important;
+	}
+	.zcwf_lblLeft .zcwf_col_help {width: 40%;}
 }
 </style>
