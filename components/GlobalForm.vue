@@ -36,7 +36,7 @@
 			<option value='FinTech'>FinTech</option>
 			<option value='Other'>Other</option>
 		</select><div class='zcwf_col_help'></div></div></div>
-    <div class="forst-rwo">
+    <div class="first-rwo">
       <div class='zcwf_row'><div class='zcwf_col_lab' ><label for='Last_Name'>Name<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' id='Last_Name' name='Last Name' maxlength='80'></input><div class='zcwf_col_help'></div></div></div>
       <div class='zcwf_row'><div class='zcwf_col_lab' ><label for='Email'>Email<span style='color:red;'>*</span></label></div><div class='zcwf_col_fld'><input type='text' ftype='email' id='Email' name='Email' maxlength='100'></input><div class='zcwf_col_help'></div></div></div>
     </div>
