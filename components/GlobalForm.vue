@@ -12,7 +12,7 @@
    - It is important that you test the modified form before going live.-->
 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='background-color: white;color: black;max-width: 600px;'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-   <META HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
+   <meta HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
 <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5666867000000732007 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5666867000000732007()' accept-charset='UTF-8'>
  <input type='text' style='display:none;' name='xnQsjsdp' value='83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9'></input> 
