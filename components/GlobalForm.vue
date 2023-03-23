@@ -5,7 +5,7 @@
     <div class="form-parent home-container">
       <div class="form-container">
       <h2>Let's Get Started</h2>
-          <!-- Note :
+      <!-- Note :
    - You can modify the font style and form style to suit your website. 
    - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code. 
    - The Mandatory check script can modified as to suit your business needs. 
@@ -13,8 +13,7 @@
 <div id='crmWebToEntityForm' class='zcwf_lblLeft crmWebToEntityForm' style='background-color: white;color: black;max-width: 600px;'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
    <meta HTTP-EQUIV ='content-type' CONTENT='text/html;charset=UTF-8'>
-   <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-<form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5666867000000732007 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5666867000000732007()' accept-charset='UTF-8'>
+   <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads5666867000000732007 method='POST' onSubmit='javascript:document.charset="UTF-8"; return checkMandatory5666867000000732007()' accept-charset='UTF-8'>
  <input type='text' style='display:none;' name='xnQsjsdp' value='83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9'></input> 
  <input type='hidden' name='zc_gad' id='zc_gad' value=''></input> 
  <input type='text' style='display:none;' name='xmIwtLD' value='31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfc'></input> 
@@ -225,29 +224,8 @@ html,body{
 <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='Country'>Country</label></div><div class='zcwf_col_fld'><input type='text' id='Country' name='Country' maxlength='100'></input><div class='zcwf_col_help'></div></div></div>
 <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='LEADCF2'>IP</label></div><div class='zcwf_col_fld'><input type='text' id='LEADCF2' name='LEADCF2' maxlength='255'></input><div class='zcwf_col_help'></div></div></div>
 <div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='LEADCF4'>IP to ISP</label></div><div class='zcwf_col_fld'><input type='text' id='LEADCF4' name='LEADCF4' maxlength='255'></input><div class='zcwf_col_help'></div></div></div>
-<div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='LEADCF3'>IP to Org</label></div><div class='zcwf_col_fld'><input type='text' id='LEADCF3' name='LEADCF3' maxlength='255'></input><div class='zcwf_col_help'></div></div></div><div class='zcwf_row'> <div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><div class='g-recaptcha' data-sitekey='6LeifxglAAAAAMimqECX74kJLz2dKwOfpHMaqSp1' data-theme='light' data-callback='rccallback5666867000000732007' captcha-verified='false' id='recap5666867000000732007'></div><div  id='recapErr5666867000000732007' style='font-size:12px;color:red;visibility:hidden;'>Captcha validation failed. If you are not a robot then please try again.</div></div></div><div class='zcwf_row'><div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'><input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'></div></div>
+<div class='zcwf_row'><div class='zcwf_col_lab' style='font-size:12px; font-family: Arial;'><label for='LEADCF3'>IP to Org</label></div><div class='zcwf_col_fld'><input type='text' id='LEADCF3' name='LEADCF3' maxlength='255'></input><div class='zcwf_col_help'></div></div></div><div class='zcwf_row'><div class='zcwf_col_lab'></div><div class='zcwf_col_fld'><input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Submit' title='Submit'><input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'></div></div>
 	<script>
-
-  /* Do not remove this code. */
- 	function rccallback5666867000000732007()
-	{
-		if(document.getElementById('recap5666867000000732007')!=undefined){
-			document.getElementById('recap5666867000000732007').setAttribute('captcha-verified',true);
-		}
-		if(document.getElementById('recapErr5666867000000732007')!=undefined && document.getElementById('recapErr5666867000000732007').style.visibility == 'visible' ){
-			document.getElementById('recapErr5666867000000732007').style.visibility='hidden';
-		}
-	}
-	function reCaptchaAlert5666867000000732007()
-	{
-		var recap = document.getElementById('recap5666867000000732007');
-		if( recap !=undefined && recap.getAttribute('captcha-verified') == 'false')
-		{
-			document.getElementById('recapErr5666867000000732007').style.visibility='visible';
-			return false;
-		}
-		return true;
-	}
 	function validateEmail5666867000000732007()
 	{
 		var form = document.forms['WebToLeads5666867000000732007'];
@@ -309,8 +287,6 @@ html,body{
 		}
 		trackVisitor5666867000000732007();
 		if(!validateEmail5666867000000732007()){return false;}
-		
-		if(!reCaptchaAlert5666867000000732007()){return false;}
 		document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
 	}
 
