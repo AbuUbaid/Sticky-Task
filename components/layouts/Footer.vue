@@ -19,17 +19,16 @@
           <h3>USA</h3>
           <p>44288 Fremont Blvd Fremont, CA 94538</p>
           <a href="tel:855-904-4417">855-904-4417</a>
-          <a href="mailto:info@siliconnet.com">info@siliconnet.com</a>
         </div>
         <div class="footer-text">
           <h3>Dubai</h3>
           <p>Office 403, Bay Square Building 3 - Dubai - UAE</p>
         </div>
-        <!-- <div class="footer-text">
-          <h3>Karachi Office</h3>
-          <p>47 Street No 6،, Darul Aman Society PECHS, Karachi, Pakistan</p>
-        </div>
         <div class="footer-text">
+          <h3>Germany</h3>
+          <p>Hermannstal 116 2119 Hamburg Germany</p>
+        </div>
+        <!--<div class="footer-text">
           <h3>Lahore Office</h3>
           <p>
             30 Khayaban-e-Iqbal, Sector XX DHA Phase 3, Lahore, Pakistan <br />
@@ -42,8 +41,8 @@
         <div class="relate">
           <input type="text" placeholder="your email address" />
           <button>Subscribe</button>
-        </div>
-        <h3 class="follow-us">Follow Us</h3>
+          <p>Email at: info@siliconnet.com</p>
+          <h3 class="follow-us">Follow Us</h3>
         <div class="contact contact-icons">
           <a
             href="https://www.linkedin.com/company/siliconnetwork/"
@@ -56,6 +55,8 @@
             ><img src="~/assets/icons/fb.svg" alt="Facebook"
           /></a>
         </div>
+        </div>
+        
       </div>
     </div>
     <div class="copyright">
@@ -67,12 +68,11 @@
       <span id="cn-notice-buttons" class="cn-buttons-container">
         <a href="javascript:void(0)" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok"  @click="closeNotice()">Accept</a>
         <a href="javascript:void(0)" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button" aria-label="Ok" style="margin-left:12px"  @click="closeNotice()">Cancel</a>
-      </span>
+      </span>  
     </div>
   </div>
   
 </template>
-
 <script>
 
 export default {
@@ -101,7 +101,7 @@ export default {
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .footer-container {
   padding-top: 50px;
   padding-bottom: 15px;
@@ -178,6 +178,11 @@ export default {
   background: #f9f9f9 0% 0% no-repeat padding-box;
 }
 
+.follow-us{
+  margin-bottom: 0px !important;
+  margin-left: 12px;
+}
+
 .logo img {
   width: 200px;
 }
@@ -205,6 +210,7 @@ export default {
   gap: 6%;
   width: auto;
   margin: 30px auto;
+  flex-wrap: wrap;
 }
 
 .footer-flex {
@@ -214,11 +220,14 @@ export default {
 .footer-texts {
   margin-top: 0;
   gap: 35px;
+  flex-wrap: unset !important;
 }
 
 .contact {
-  justify-content: left;
+  justify-content: center;
   flex: 2;
+  width: 120px;
+  gap: 25px;
 }
 
 .contact img {
@@ -248,9 +257,9 @@ export default {
 }
 
 .footer-texts {
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: center;
-  width: 515px;
+  width: 700px;
 }
 
 .footer-texts .footer-text {
@@ -272,6 +281,7 @@ export default {
 
 .relate {
   display: flex;
+  align-items: center;
 }
 
 .relate input {
@@ -289,14 +299,6 @@ export default {
   left: -20px;
   width: 125px;
   height: 45px;
-}
-
-.contact-icons {
-  margin-top: 10px;
-}
-
-.follow-us {
-  margin-top: 25px;
 }
 
 @media (min-width: 481px) and (max-width: 1024px) {
@@ -333,5 +335,23 @@ export default {
   .cn-button{
     width: 30%;
   }
+
+  .relate{
+    gap: 10px;
+    flex-wrap: wrap;
+    input{
+      flex-basis: 25%;
+    }
+    button{
+      flex-basis: 25%;
+    }
+    p{
+      flex-basis: 25%;
+    }
+    .contact{
+      flex-basis: 25%;
+    }
+  }
+
 }
 </style>

@@ -41,10 +41,11 @@ export default {
         defer: true,
       },
       {
-        hid: "tawk.to",
-        src: "https://embed.tawk.to/63ea565347425128791314d9/1gp5m2egt",
-        defer: true,
+        hid: "zoho.com",
+        src: "https://salesiq.zoho.com/widget",
+        defer: true, 
       },
+      
     ],
   },
 

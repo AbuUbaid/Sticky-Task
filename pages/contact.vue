@@ -2,16 +2,18 @@
   <div>
     <service-banner :BannerData="bannerData" class="mss-banner" />
     <contact-form />
+    <global-form/>
   </div>
 </template>
 
 <script>
 import ContactForm from "../components/contact/ContactForm.vue";
+import GlobalForm from "../components/GlobalForm.vue";
 
 import ServiceBanner from "../components/services/ServiceBanner.vue";
 import BuildingCta from "../components/BuildingCTA.vue";
 export default {
-  components: { ContactForm, BuildingCta, ServiceBanner },
+  components: { ContactForm,GlobalForm, BuildingCta, ServiceBanner },
   layout: 'noform',
   name: "ContactPage",
   head: {

@@ -36,15 +36,20 @@
         alt="Icon shape"
       />
     </div>
-    <div class="contact-form">
-    </div>
+    <!-- <div class="contact-form">
+      <global-form/>
+    </div> -->
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import GlobalForm from "../GlobalForm.vue";
 export default {
   name: "ContactForm",
+  components:{
+    GlobalForm
+  },
   data() {
     return {
       loading: false,

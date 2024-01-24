@@ -184,7 +184,7 @@ function tooltipShow5666867000000732007(el){
 </script>
 <script async defer type='text/javascript' id='VisitorTracking'> var $zoho= $zoho || {}; $zoho.salesiq = $zoho.salesiq || {widgetcode:'738cfd870777f809baa64c9149c46ae907c4701df07d176a80adba46865c6d8e8bc5c201f0e5d1a9486f9dbf87f44a7d', values:{},ready:function(){}};var d=document;s=d.createElement('script');s.type='text/javascript';s.id='zsiqscript';s.defer=true;s.src='https://salesiq.zoho.com/widget';t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);function trackVisitor5666867000000732007(){try{if($zoho){var LDTuvidObj = document.forms['WebToLeads5666867000000732007']['LDTuvid'];if(LDTuvidObj){LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();}var firstnameObj = document.forms['WebToLeads5666867000000732007']['First Name'];if(firstnameObj){name = firstnameObj.value +' '+name;}$zoho.salesiq.visitor.name(name);var emailObj = document.forms['WebToLeads5666867000000732007']['Email'];if(emailObj){email = emailObj.value;$zoho.salesiq.visitor.email(email);}}} catch(e){}}</script>
 	<!-- Do not remove this --- Analytics Tracking code starts -->
-  <script async defer id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfcgid83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9gid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script>
+  <!-- <script async defer id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=31df86b79df9162e83ac89da5ca807f7ee555de13b9464e3c8dd7315a8c64bfcgid83b0d711022caae66bd1d22ffb265a0813ad5d65632006f83c3c16e37766bdb9gid885e3c1045bd9bdcc91bdf30f82b5696gid14f4ec16431e0686150daa43f3210513&tw=61690b96c1d0471b638f31426f38e68aa67fb7ed6da86f32dc10ad817fe55a0a'></script> -->
   <!-- Do not remove this --- Analytics Tracking code ends. -->
 </form>
 </div>
@@ -198,8 +198,6 @@ function tooltipShow5666867000000732007(el){
   </div>
 </template>
 <script>
-
-
 import axios from "axios";
 export default {
   name: "GlobalForm",
